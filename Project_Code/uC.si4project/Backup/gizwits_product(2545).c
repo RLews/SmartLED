@@ -7,9 +7,10 @@
 * @version      V03030000
 * @copyright    Gizwits
 * 
-* @note         机智�?只为智能硬件而生
+* @note         机智云.只为智能硬件而生
 *               Gizwits Smart Cloud  for Smart Products
-*               链接|增值ֵ|开放|中立|安全|自有|自由|生�?*               www.gizwits.com
+*               链接|增值ֵ|开放|中立|安全|自有|自由|生态
+*               www.gizwits.com
 *
 ***********************************************************/
 
@@ -51,7 +52,6 @@ int8_t gizwitsEventProcess(eventInfo_t *info, uint8_t *gizdata, uint32_t len)
   dataPoint_t *dataPointPtr = (dataPoint_t *)gizdata;
   moduleStatusInfo_t *wifiData = (moduleStatusInfo_t *)gizdata;
   protocolTime_t *ptime = (protocolTime_t *)gizdata;
-  rtcTime_t setTime = {0};
   
 #if MODULE_TYPE
   gprsInfo_t *gprsInfoData = (gprsInfo_t *)gizdata;
@@ -113,13 +113,6 @@ int8_t gizwitsEventProcess(eventInfo_t *info, uint8_t *gizdata, uint32_t len)
         break;
       case WIFI_NTP:
         GIZWITS_LOG("WIFI_NTP : [%d-%d-%d %02d:%02d:%02d][%d] \n",ptime->year,ptime->month,ptime->day,ptime->hour,ptime->minute,ptime->second,ptime->ntp);
-		setTime.rtcYear = ptime->year;
-		setTime.rtcMon = ptime->month;
-		setTime.rtcDay = ptime->day;
-		setTime.rtcHour = ptime->hour;
-		setTime.rtcMin = ptime->minute;
-		setTime.rtcSec = ptime->second;
-        Hal_RtcSetTime(setTime);
         break;
       case MODULE_INFO:
             GIZWITS_LOG("MODULE INFO ...\n");
@@ -280,7 +273,7 @@ void timerInit(void)
 */
 void uartInit(void)
 {
-	//HAL_UART_Receive_IT(&huart2, (uint8_t *)&aRxBuffer, 1);//开启下一次接收中�? 
+	//HAL_UART_Receive_IT(&huart2, (uint8_t *)&aRxBuffer, 1);//开启下一次接收中断  
 }
 #endif
 /**

@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\uC.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\uC.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Wed Jun 26 22:25:59 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Wed Jun 26 22:51:05 2019
 <BR><P>
 <H3>Maximum Stack Usage =        348 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -618,6 +618,7 @@ Global Symbols
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hal_RtcJudgeLeap
 </UL>
 <BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hal_RtcInit
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gizwitsEventProcess
 </UL>
 
 <P><STRONG><a name="[8a]"></a>Hal_RunLedOff</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, hal_led.o(i.Hal_RunLedOff))
@@ -1348,12 +1349,13 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WifiTmrCallBack
 </UL>
 
-<P><STRONG><a name="[dc]"></a>gizwitsEventProcess</STRONG> (Thumb, 232 bytes, Stack size 56 bytes, gizwits_product.o(i.gizwitsEventProcess))
-<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = gizwitsEventProcess &rArr; Hal_WifiLedOn &rArr; Drv_GpioNameOut
+<P><STRONG><a name="[dc]"></a>gizwitsEventProcess</STRONG> (Thumb, 284 bytes, Stack size 64 bytes, gizwits_product.o(i.gizwitsEventProcess))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = gizwitsEventProcess &rArr; Hal_RtcSetTime &rArr; Drv_RtcSetCount &rArr; RTC_SetCounter
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hal_WifiLedOn
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hal_WifiLedOff
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WifiBsp_LogPrint
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hal_RtcSetTime
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gizwitsHandle
 </UL>

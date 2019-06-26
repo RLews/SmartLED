@@ -347,7 +347,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>4</Optim>
+            <Optim>1</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -365,7 +365,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\ApplicationLayer\inc;..\ComplexDriverLayer\inc;..\HardwareAbstractionLayer\inc;..\HardwareDriverLayer\inc;..\HardwareDriverLayer\STM32F10x_FWLib\inc;..\ServicesLayer\osal\inc;..\ServicesLayer\uCOSIII\uC-CPU;..\ServicesLayer\uCOSIII\uC-CPU\ARM-Cortex-M3\RealView;..\ServicesLayer\uCOSIII\uC-LIB;..\ServicesLayer\uCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView;..\ServicesLayer\uCOSIII\uCOS-Config;..\ServicesLayer\uCOSIII\uCOS-III\Source;..\ServicesLayer\uCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView;..\ServicesLayer\DataStructOpt\inc;..\ServicesLayer\Communication\inc;..\ServicesLayer;..\ServicesLayer\Uds\UdsCan;..\ServicesLayer\Uds\UdsHal;..\ServicesLayer\Uds\UdsServices;..\ServicesLayer\Uds\UdsSession;..\ServicesLayer\Uds\UdsTp;..\ServicesLayer\FATFS\src;..\ServicesLayer\Gizwits;..\ServicesLayer\Gizwits\Utils</IncludePath>
+              <IncludePath>..\ApplicationLayer\inc;..\ComplexDriverLayer\inc;..\HardwareAbstractionLayer\inc;..\HardwareDriverLayer\inc;..\HardwareDriverLayer\STM32F10x_FWLib\inc;..\ServicesLayer\osal\inc;..\ServicesLayer\DataStructOpt\inc;..\ServicesLayer\Communication\inc;..\ServicesLayer\Gizwits;..\ServicesLayer\Gizwits\Utils</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>

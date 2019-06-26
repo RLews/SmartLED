@@ -236,6 +236,7 @@ Section Cross References
     gizwits_product.o(i.gizwitsEventProcess) refers to gizwits_product.o(i.WifiBsp_LogPrint) for WifiBsp_LogPrint
     gizwits_product.o(i.gizwitsEventProcess) refers to hal_led.o(i.Hal_WifiLedOn) for Hal_WifiLedOn
     gizwits_product.o(i.gizwitsEventProcess) refers to hal_led.o(i.Hal_WifiLedOff) for Hal_WifiLedOff
+    gizwits_product.o(i.gizwitsEventProcess) refers to hal_rtc.o(i.Hal_RtcSetTime) for Hal_RtcSetTime
     gizwits_product.o(i.gizwitsEventProcess) refers to gizwits_product.o(.data) for currentDataPoint
     gizwits_product.o(i.uartWrite) refers to hal_uart.o(i.Hal_UartWrite) for Hal_UartWrite
     gizwits_product.o(i.uartWrite) refers to srv_wifi_comm.o(i.Srv_WifiCommTx) for Srv_WifiCommTx
@@ -1490,28 +1491,28 @@ Image Symbol Table
     i.gizStandardDecompressionValue          0x08002fd0   Section        0  datapointtools.o(i.gizStandardDecompressionValue)
     i.gizTimerMs                             0x08003094   Section        0  gizwits_product.o(i.gizTimerMs)
     i.gizwitsEventProcess                    0x080030a4   Section        0  gizwits_product.o(i.gizwitsEventProcess)
-    i.gizwitsGetNTP                          0x08003238   Section        0  gizwits_protocol.o(i.gizwitsGetNTP)
-    i.gizwitsHandle                          0x080032bc   Section        0  gizwits_protocol.o(i.gizwitsHandle)
-    i.gizwitsInit                            0x08003628   Section        0  gizwits_protocol.o(i.gizwitsInit)
-    i.gizwitsSetMode                         0x08003688   Section        0  gizwits_protocol.o(i.gizwitsSetMode)
-    i.main                                   0x08003910   Section        0  uc.o(i.main)
-    i.mcuRestart                             0x08003944   Section        0  gizwits_product.o(i.mcuRestart)
-    i.rbCanRead                              0x08003950   Section        0  ringbuffer.o(i.rbCanRead)
-    i.rbCanWrite                             0x08003988   Section        0  ringbuffer.o(i.rbCanWrite)
-    i.rbCapacity                             0x080039a6   Section        0  ringbuffer.o(i.rbCapacity)
-    i.rbCreate                               0x080039b4   Section        0  ringbuffer.o(i.rbCreate)
-    i.rbRead                                 0x080039ca   Section        0  ringbuffer.o(i.rbRead)
-    i.rbWrite                                0x08003a6c   Section        0  ringbuffer.o(i.rbWrite)
-    i.uartWrite                              0x08003b08   Section        0  gizwits_product.o(i.uartWrite)
-    i.userHandle                             0x08003bd8   Section        0  gizwits_product.o(i.userHandle)
-    i.userInit                               0x08003bf4   Section        0  gizwits_product.o(i.userInit)
-    .constdata                               0x08003c00   Section       32  hal_rtc.o(.constdata)
-    rtcMonTbl                                0x08003c00   Data          12  hal_rtc.o(.constdata)
-    rtcWeekTbl                               0x08003c0c   Data          12  hal_rtc.o(.constdata)
-    .constdata                               0x08003c20   Section      140  drv_gpio.o(.constdata)
-    gpioConfigArry                           0x08003c20   Data         140  drv_gpio.o(.constdata)
-    .constdata                               0x08003cac   Section       64  drv_uart.o(.constdata)
-    uartConfigTbl                            0x08003cac   Data          64  drv_uart.o(.constdata)
+    i.gizwitsGetNTP                          0x0800326c   Section        0  gizwits_protocol.o(i.gizwitsGetNTP)
+    i.gizwitsHandle                          0x080032f0   Section        0  gizwits_protocol.o(i.gizwitsHandle)
+    i.gizwitsInit                            0x0800365c   Section        0  gizwits_protocol.o(i.gizwitsInit)
+    i.gizwitsSetMode                         0x080036bc   Section        0  gizwits_protocol.o(i.gizwitsSetMode)
+    i.main                                   0x08003944   Section        0  uc.o(i.main)
+    i.mcuRestart                             0x08003978   Section        0  gizwits_product.o(i.mcuRestart)
+    i.rbCanRead                              0x08003984   Section        0  ringbuffer.o(i.rbCanRead)
+    i.rbCanWrite                             0x080039bc   Section        0  ringbuffer.o(i.rbCanWrite)
+    i.rbCapacity                             0x080039da   Section        0  ringbuffer.o(i.rbCapacity)
+    i.rbCreate                               0x080039e8   Section        0  ringbuffer.o(i.rbCreate)
+    i.rbRead                                 0x080039fe   Section        0  ringbuffer.o(i.rbRead)
+    i.rbWrite                                0x08003aa0   Section        0  ringbuffer.o(i.rbWrite)
+    i.uartWrite                              0x08003b3c   Section        0  gizwits_product.o(i.uartWrite)
+    i.userHandle                             0x08003c0c   Section        0  gizwits_product.o(i.userHandle)
+    i.userInit                               0x08003c28   Section        0  gizwits_product.o(i.userInit)
+    .constdata                               0x08003c34   Section       32  hal_rtc.o(.constdata)
+    rtcMonTbl                                0x08003c34   Data          12  hal_rtc.o(.constdata)
+    rtcWeekTbl                               0x08003c40   Data          12  hal_rtc.o(.constdata)
+    .constdata                               0x08003c54   Section      140  drv_gpio.o(.constdata)
+    gpioConfigArry                           0x08003c54   Data         140  drv_gpio.o(.constdata)
+    .constdata                               0x08003ce0   Section       64  drv_uart.o(.constdata)
+    uartConfigTbl                            0x08003ce0   Data          64  drv_uart.o(.constdata)
     .data                                    0x20000000   Section        5  app_led.o(.data)
     Ts                                       0x20000000   Data           4  app_led.o(.data)
     runFlag                                  0x20000004   Data           1  app_led.o(.data)
@@ -1768,24 +1769,24 @@ Image Symbol Table
     gizStandardCompressValue                 0x08002f51   Thumb Code   128  datapointtools.o(i.gizStandardCompressValue)
     gizStandardDecompressionValue            0x08002fd1   Thumb Code   194  datapointtools.o(i.gizStandardDecompressionValue)
     gizTimerMs                               0x08003095   Thumb Code    12  gizwits_product.o(i.gizTimerMs)
-    gizwitsEventProcess                      0x080030a5   Thumb Code   232  gizwits_product.o(i.gizwitsEventProcess)
-    gizwitsGetNTP                            0x08003239   Thumb Code    94  gizwits_protocol.o(i.gizwitsGetNTP)
-    gizwitsHandle                            0x080032bd   Thumb Code   596  gizwits_protocol.o(i.gizwitsHandle)
-    gizwitsInit                              0x08003629   Thumb Code    44  gizwits_protocol.o(i.gizwitsInit)
-    gizwitsSetMode                           0x08003689   Thumb Code   590  gizwits_protocol.o(i.gizwitsSetMode)
-    main                                     0x08003911   Thumb Code    30  uc.o(i.main)
-    mcuRestart                               0x08003945   Thumb Code    12  gizwits_product.o(i.mcuRestart)
-    rbCanRead                                0x08003951   Thumb Code    56  ringbuffer.o(i.rbCanRead)
-    rbCanWrite                               0x08003989   Thumb Code    30  ringbuffer.o(i.rbCanWrite)
-    rbCapacity                               0x080039a7   Thumb Code    14  ringbuffer.o(i.rbCapacity)
-    rbCreate                                 0x080039b5   Thumb Code    22  ringbuffer.o(i.rbCreate)
-    rbRead                                   0x080039cb   Thumb Code   162  ringbuffer.o(i.rbRead)
-    rbWrite                                  0x08003a6d   Thumb Code   154  ringbuffer.o(i.rbWrite)
-    uartWrite                                0x08003b09   Thumb Code   158  gizwits_product.o(i.uartWrite)
-    userHandle                               0x08003bd9   Thumb Code    24  gizwits_product.o(i.userHandle)
-    userInit                                 0x08003bf5   Thumb Code     8  gizwits_product.o(i.userInit)
-    Region$$Table$$Base                      0x08003cec   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08003d0c   Number         0  anon$$obj.o(Region$$Table)
+    gizwitsEventProcess                      0x080030a5   Thumb Code   284  gizwits_product.o(i.gizwitsEventProcess)
+    gizwitsGetNTP                            0x0800326d   Thumb Code    94  gizwits_protocol.o(i.gizwitsGetNTP)
+    gizwitsHandle                            0x080032f1   Thumb Code   596  gizwits_protocol.o(i.gizwitsHandle)
+    gizwitsInit                              0x0800365d   Thumb Code    44  gizwits_protocol.o(i.gizwitsInit)
+    gizwitsSetMode                           0x080036bd   Thumb Code   590  gizwits_protocol.o(i.gizwitsSetMode)
+    main                                     0x08003945   Thumb Code    30  uc.o(i.main)
+    mcuRestart                               0x08003979   Thumb Code    12  gizwits_product.o(i.mcuRestart)
+    rbCanRead                                0x08003985   Thumb Code    56  ringbuffer.o(i.rbCanRead)
+    rbCanWrite                               0x080039bd   Thumb Code    30  ringbuffer.o(i.rbCanWrite)
+    rbCapacity                               0x080039db   Thumb Code    14  ringbuffer.o(i.rbCapacity)
+    rbCreate                                 0x080039e9   Thumb Code    22  ringbuffer.o(i.rbCreate)
+    rbRead                                   0x080039ff   Thumb Code   162  ringbuffer.o(i.rbRead)
+    rbWrite                                  0x08003aa1   Thumb Code   154  ringbuffer.o(i.rbWrite)
+    uartWrite                                0x08003b3d   Thumb Code   158  gizwits_product.o(i.uartWrite)
+    userHandle                               0x08003c0d   Thumb Code    24  gizwits_product.o(i.userHandle)
+    userInit                                 0x08003c29   Thumb Code     8  gizwits_product.o(i.userInit)
+    Region$$Table$$Base                      0x08003d20   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08003d40   Number         0  anon$$obj.o(Region$$Table)
     currentDataPoint                         0x2000003d   Data           1  gizwits_product.o(.data)
     gizwitsProtocol                          0x200002ac   Data         244  gizwits_protocol.o(.bss)
     pRb                                      0x200003a0   Data          16  gizwits_protocol.o(.bss)
@@ -1799,9 +1800,9 @@ Memory Map of the image
 
   Image Entry point : 0x080000ed
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003d78, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003dac, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00003d0c, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00003d40, Max: 0x00010000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2037,27 +2038,27 @@ Memory Map of the image
     0x08002fd0   0x000000c2   Code   RO         1364    i.gizStandardDecompressionValue  datapointtools.o
     0x08003092   0x00000002   PAD
     0x08003094   0x00000010   Code   RO         1054    i.gizTimerMs        gizwits_product.o
-    0x080030a4   0x00000194   Code   RO         1055    i.gizwitsEventProcess  gizwits_product.o
-    0x08003238   0x00000084   Code   RO         1148    i.gizwitsGetNTP     gizwits_protocol.o
-    0x080032bc   0x0000036c   Code   RO         1149    i.gizwitsHandle     gizwits_protocol.o
-    0x08003628   0x00000060   Code   RO         1150    i.gizwitsInit       gizwits_protocol.o
-    0x08003688   0x00000288   Code   RO         1152    i.gizwitsSetMode    gizwits_protocol.o
-    0x08003910   0x00000034   Code   RO          111    i.main              uc.o
-    0x08003944   0x0000000c   Code   RO         1056    i.mcuRestart        gizwits_product.o
-    0x08003950   0x00000038   Code   RO         1430    i.rbCanRead         ringbuffer.o
-    0x08003988   0x0000001e   Code   RO         1431    i.rbCanWrite        ringbuffer.o
-    0x080039a6   0x0000000e   Code   RO         1432    i.rbCapacity        ringbuffer.o
-    0x080039b4   0x00000016   Code   RO         1433    i.rbCreate          ringbuffer.o
-    0x080039ca   0x000000a2   Code   RO         1435    i.rbRead            ringbuffer.o
-    0x08003a6c   0x0000009a   Code   RO         1436    i.rbWrite           ringbuffer.o
-    0x08003b06   0x00000002   PAD
-    0x08003b08   0x000000d0   Code   RO         1057    i.uartWrite         gizwits_product.o
-    0x08003bd8   0x0000001c   Code   RO         1058    i.userHandle        gizwits_product.o
-    0x08003bf4   0x0000000c   Code   RO         1059    i.userInit          gizwits_product.o
-    0x08003c00   0x00000020   Data   RO          859    .constdata          hal_rtc.o
-    0x08003c20   0x0000008c   Data   RO         1528    .constdata          drv_gpio.o
-    0x08003cac   0x00000040   Data   RO         1618    .constdata          drv_uart.o
-    0x08003cec   0x00000020   Data   RO         4852    Region$$Table       anon$$obj.o
+    0x080030a4   0x000001c8   Code   RO         1055    i.gizwitsEventProcess  gizwits_product.o
+    0x0800326c   0x00000084   Code   RO         1148    i.gizwitsGetNTP     gizwits_protocol.o
+    0x080032f0   0x0000036c   Code   RO         1149    i.gizwitsHandle     gizwits_protocol.o
+    0x0800365c   0x00000060   Code   RO         1150    i.gizwitsInit       gizwits_protocol.o
+    0x080036bc   0x00000288   Code   RO         1152    i.gizwitsSetMode    gizwits_protocol.o
+    0x08003944   0x00000034   Code   RO          111    i.main              uc.o
+    0x08003978   0x0000000c   Code   RO         1056    i.mcuRestart        gizwits_product.o
+    0x08003984   0x00000038   Code   RO         1430    i.rbCanRead         ringbuffer.o
+    0x080039bc   0x0000001e   Code   RO         1431    i.rbCanWrite        ringbuffer.o
+    0x080039da   0x0000000e   Code   RO         1432    i.rbCapacity        ringbuffer.o
+    0x080039e8   0x00000016   Code   RO         1433    i.rbCreate          ringbuffer.o
+    0x080039fe   0x000000a2   Code   RO         1435    i.rbRead            ringbuffer.o
+    0x08003aa0   0x0000009a   Code   RO         1436    i.rbWrite           ringbuffer.o
+    0x08003b3a   0x00000002   PAD
+    0x08003b3c   0x000000d0   Code   RO         1057    i.uartWrite         gizwits_product.o
+    0x08003c0c   0x0000001c   Code   RO         1058    i.userHandle        gizwits_product.o
+    0x08003c28   0x0000000c   Code   RO         1059    i.userInit          gizwits_product.o
+    0x08003c34   0x00000020   Data   RO          859    .constdata          hal_rtc.o
+    0x08003c54   0x0000008c   Data   RO         1528    .constdata          drv_gpio.o
+    0x08003ce0   0x00000040   Data   RO         1618    .constdata          drv_uart.o
+    0x08003d20   0x00000020   Data   RO         4852    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x000009e0, Max: 0x00005000, ABSOLUTE)
@@ -2108,7 +2109,7 @@ Image component sizes
        336         16        140          1          0       3694   drv_gpio.o
        354          8          0          4          0       3575   drv_rtc.o
        528         64         64          1          0       6822   drv_uart.o
-       706        264          0          6          0      21069   gizwits_product.o
+       758        264          0          6          0      21145   gizwits_product.o
       6400       2096          0         16        304      19062   gizwits_protocol.o
         48          6          0          1          0       1022   hal.o
        718         46          0          9        272      29016   hal_int.o
@@ -2132,7 +2133,7 @@ Image component sizes
         64         22          0          0          0        867   uc.o
 
     ----------------------------------------------------------------------
-     14806       2988        504        108       2420     398671   Object Totals
+     14858       2988        504        108       2420     398747   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         38          0          0         11          4          0   (incl. Padding)
 
@@ -2176,15 +2177,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     15124       3004        504        108       2420     388479   Grand Totals
-     15124       3004        504        108       2420     388479   ELF Image Totals
-     15124       3004        504        108          0          0   ROM Totals
+     15176       3004        504        108       2420     388555   Grand Totals
+     15176       3004        504        108       2420     388555   ELF Image Totals
+     15176       3004        504        108          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                15628 (  15.26kB)
+    Total RO  Size (Code + RO Data)                15680 (  15.31kB)
     Total RW  Size (RW Data + ZI Data)              2528 (   2.47kB)
-    Total ROM Size (Code + RO Data + RW Data)      15736 (  15.37kB)
+    Total ROM Size (Code + RO Data + RW Data)      15788 (  15.42kB)
 
 ==============================================================================
 

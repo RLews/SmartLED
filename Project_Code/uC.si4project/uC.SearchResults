@@ -1,19 +1,18 @@
----- PendSV_Handler Matches (1 in 1 files) ----
-hal_int.h (HardwareAbstractionLayer\inc) line 28 : /*void PendSV_Handler(void); //this uC/OS manage */
----- PendSV_Handler Search Errors Encountered (15) ----
-The following 15 files could not be processed:
-E:\KeilWorkspace\M3\SmartLed_c8t6\ServicesLayer\FATFS\src\00readme.txt : File could not be opened.
-E:\KeilWorkspace\M3\SmartLed_c8t6\ServicesLayer\FATFS\src\option\cc932.c : File could not be opened.
-E:\KeilWorkspace\M3\SmartLed_c8t6\ServicesLayer\FATFS\src\option\cc936.c : File could not be opened.
-E:\KeilWorkspace\M3\SmartLed_c8t6\ServicesLayer\FATFS\src\option\cc949.c : File could not be opened.
-E:\KeilWorkspace\M3\SmartLed_c8t6\ServicesLayer\FATFS\src\option\cc950.c : File could not be opened.
-E:\KeilWorkspace\M3\SmartLed_c8t6\ServicesLayer\FATFS\src\option\ccsbcs.c : File could not be opened.
-E:\KeilWorkspace\M3\SmartLed_c8t6\ServicesLayer\FATFS\src\diskio.c : File could not be opened.
-E:\KeilWorkspace\M3\SmartLed_c8t6\ServicesLayer\FATFS\src\diskio.h : File could not be opened.
-E:\KeilWorkspace\M3\SmartLed_c8t6\ServicesLayer\FATFS\src\ff.c : File could not be opened.
-E:\KeilWorkspace\M3\SmartLed_c8t6\ServicesLayer\FATFS\src\ff.h : File could not be opened.
-E:\KeilWorkspace\M3\SmartLed_c8t6\ServicesLayer\FATFS\src\ffconf.h : File could not be opened.
-E:\KeilWorkspace\M3\SmartLed_c8t6\ServicesLayer\FATFS\src\history.txt : File could not be opened.
-E:\KeilWorkspace\M3\SmartLed_c8t6\ServicesLayer\FATFS\src\integer.h : File could not be opened.
-E:\KeilWorkspace\M3\SmartLed_c8t6\ServicesLayer\FATFS\src\option\syscall.c : File could not be opened.
-E:\KeilWorkspace\M3\SmartLed_c8t6\ServicesLayer\FATFS\src\option\unicode.c : File could not be opened.
+---- uartWrite Matches (17 in 3 files) ----
+gizwits_product.c (ServicesLayer\Gizwits) line 294 : int32_t uartWrite(uint8_t *buf, uint32_t len)
+gizwits_product.h (ServicesLayer\Gizwits) line 64 : int32_t uartWrite(uint8_t *buf, uint32_t len);
+gizProtocolIssuedDataAck in gizwits_protocol.c (ServicesLayer\Gizwits) :     ret = uartWrite(tx_buf, data_len+4);
+gizReportData in gizwits_protocol.c (ServicesLayer\Gizwits) :     ret = uartWrite((uint8_t *)&protocolReport, sizeof(protocolReport_t));
+gizProtocolResendData in gizwits_protocol.c (ServicesLayer\Gizwits) :     ret = uartWrite(gizwitsProtocol.waitAck.buf, gizwitsProtocol.waitAck.dataLen);
+gizProtocolCommonAck in gizwits_protocol.c (ServicesLayer\Gizwits) :     ret = uartWrite((uint8_t *)&ack, sizeof(protocolCommon_t));
+gizProtocolGetDeviceInfo in gizwits_protocol.c (ServicesLayer\Gizwits) :     ret = uartWrite((uint8_t *)&deviceInfo, sizeof(protocolDeviceInfo_t));
+gizProtocolErrorCmd in gizwits_protocol.c (ServicesLayer\Gizwits) :     ret = uartWrite((uint8_t *)&errorType, sizeof(protocolErrorType_t));
+gizwitsSetMode in gizwits_protocol.c (ServicesLayer\Gizwits) :             ret = uartWrite((uint8_t *)&setDefault, sizeof(protocolCommon_t));
+gizwitsSetMode in gizwits_protocol.c (ServicesLayer\Gizwits) :             ret = uartWrite((uint8_t *)&cfgMode, sizeof(protocolCfgMode_t));
+gizwitsSetMode in gizwits_protocol.c (ServicesLayer\Gizwits) :             ret = uartWrite((uint8_t *)&cfgMode, sizeof(protocolCfgMode_t));
+gizwitsSetMode in gizwits_protocol.c (ServicesLayer\Gizwits) :             ret = uartWrite((uint8_t *)&setDefault, sizeof(protocolCommon_t));
+gizwitsSetMode in gizwits_protocol.c (ServicesLayer\Gizwits) :             ret = uartWrite((uint8_t *)&setDefault, sizeof(protocolCommon_t));
+gizwitsSetMode in gizwits_protocol.c (ServicesLayer\Gizwits) :             ret = uartWrite((uint8_t *)&setDefault, sizeof(protocolCommon_t));
+gizwitsGetNTP in gizwits_protocol.c (ServicesLayer\Gizwits) :     ret = uartWrite((uint8_t *)&getNTP, sizeof(protocolCommon_t));
+gizwitsGetModuleInfo in gizwits_protocol.c (ServicesLayer\Gizwits) :     ret = uartWrite((uint8_t *)&getModuleInfo, sizeof(protocolGetModuleInfo_t));
+gizwitsPassthroughData in gizwits_protocol.c (ServicesLayer\Gizwits) : 	ret = uartWrite(tx_buf, data_len+4);

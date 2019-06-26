@@ -113,7 +113,7 @@ void SystemLedFlash(void)
 	static uint32_t Ts = 0;
 	static uint8_t runFlag = D_SYS_STD_OFF;
 
-	if (Osal_DiffTsToUsec(Ts) >= (500*D_SYS_MS_COUNT))
+	if (Osal_DiffTsToUsec(Ts) >= (500*1000ul))
 	{
 		Ts = Osal_GetCurTs();
 		if (runFlag == D_SYS_STD_OFF)

@@ -36,4 +36,3 @@
 .\objects\app_wifi.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
 .\objects\app_wifi.o: ..\ServicesLayer\Gizwits\gizwits_product.h
 .\objects\app_wifi.o: ..\ServicesLayer\Communication\inc\srv_wifi_comm.h
-.\objects\app_wifi.o: ..\ServicesLayer\uCOSIII\uCOS-Config\os_cfg_app.h

@@ -34,8 +34,6 @@ void WifiTaskInit(void);
 
 #if (D_UC_OS_III_ENABLE != D_SYS_STD_ON)
 
-#define D_SYS_MS_COUNT				(1000ul)
-
 void WifiTaskHandle(void);
 void SystemLedFlash(void);
 

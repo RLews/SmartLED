@@ -143,7 +143,7 @@ void WifiTaskHandle(void)
 #endif
 	}
 
-	if (Osal_DiffTsToUsec(Ts) >= (5*D_SYS_MS_COUNT))
+	if (Osal_DiffTsToUsec(Ts) >= 5000)
 	{
 		Ts = Osal_GetCurTs();
 		WifiTmrCallBack();

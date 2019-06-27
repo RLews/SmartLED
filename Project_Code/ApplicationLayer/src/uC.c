@@ -72,15 +72,13 @@ int main(void)
 	);
 							
 	D_OSAL_EXIT_CRITICAL();
-	#if (D_SRV_COMM_ENABLE == D_SYS_STD_ON)
-	Srv_SysCommTransmit(D_COMM_APP_TRANS_ID, (uint8_t *)"Starting...", sizeof("Starting..."));
-	#endif
+
 	D_OSAL_START_SCHE(&tErr);
 
     return 0;
 
 #else
-	Hal_UartWrite(EN_SYS_COM, (uint8_t *)"System_Running...", sizeof("System_Running..."));
+
 	AppStartTask();
 	while (1)
 	{

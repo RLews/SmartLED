@@ -24,3 +24,4 @@
 .\objects\hal_uart.o: ..\HardwareDriverLayer\STM32F10x_FWLib\inc\stm32f10x_usart.h
 .\objects\hal_uart.o: ..\HardwareDriverLayer\STM32F10x_FWLib\inc\misc.h
 .\objects\hal_uart.o: ..\ServicesLayer\DataStructOpt\inc\srv_queue.h
+.\objects\hal_uart.o: ..\ServicesLayer\osal\inc\osal.h

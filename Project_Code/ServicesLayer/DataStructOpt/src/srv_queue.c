@@ -23,7 +23,7 @@
 * Returns     : void.
 ************************************************************************************************************************
 */
-void Srv_QueueInit(volatile srvQueue_t *pQue, volatile uint8_t pBuf[], uint8_t bufSize)
+void Srv_QueueInit(volatile srvQueue_t *pQue, volatile uint8_t pBuf[], uint16_t bufSize)
 {
 	pQue->frontInx = 0;
 	pQue->rearInx = 0;

@@ -365,7 +365,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\ApplicationLayer\inc;..\ComplexDriverLayer\inc;..\HardwareAbstractionLayer\inc;..\HardwareDriverLayer\inc;..\HardwareDriverLayer\STM32F10x_FWLib\inc;..\ServicesLayer\osal\inc;..\ServicesLayer\DataStructOpt\inc;..\ServicesLayer\Communication\inc;..\ServicesLayer\Gizwits;..\ServicesLayer\Gizwits\Utils</IncludePath>
+              <IncludePath>..\ApplicationLayer\inc;..\ComplexDriverLayer\inc;..\HardwareAbstractionLayer\inc;..\HardwareDriverLayer\inc;..\HardwareDriverLayer\STM32F10x_FWLib\inc;..\ServicesLayer\osal\inc;..\ServicesLayer\DataStructOpt\inc;..\ServicesLayer\Communication\inc;..\ServicesLayer\Gizwits;..\ServicesLayer\Gizwits\Utils;..\ServicesLayer\Lib</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -596,10 +596,19 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>ComplexDrvSrc</GroupName>
-        </Group>
-        <Group>
-          <GroupName>ComplexDrvInc</GroupName>
+          <GroupName>StdLib</GroupName>
+          <Files>
+            <File>
+              <FileName>std_lib.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\ServicesLayer\Lib\std_lib.c</FilePath>
+            </File>
+            <File>
+              <FileName>std_lib.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\ServicesLayer\Lib\std_lib.h</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>CommSrc</GroupName>

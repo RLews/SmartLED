@@ -30,6 +30,24 @@
 
 #define D_WIFI_REQUEST_TIME		(30000ul * 1000ul) //30s
 
+#define D_WIFI_LED_PERIOD_TICK	D_WIFI_TMR_MS
+
+
+typedef enum _WIFI_SET_MODE_T
+{
+	EN_WIFI_MODE_RUN = 0,
+	EN_WIFI_MODE_AIR_LINK,
+	EN_WIFI_MODE_SOFT_AP,
+	EN_WIFI_MODE_RESET
+}wifiSetMode_t;
+
+typedef struct _WIFI_SET_INFO_T
+{
+	uint8_t recordLedSta;
+	uint32_t setTs;
+	wifiSetMode_t setMode;
+}wifiSetInfo_t;
+
 #endif
 
 

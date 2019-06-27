@@ -69,9 +69,6 @@ void SysCommInit(void)
 							(OSAL_ERROR *)&tErr
 	);
 	D_OSAL_EXIT_CRITICAL();
-#if (D_SRV_COMM_ENABLE == D_SYS_STD_ON)
-	Srv_SysCommTransmit(D_COMM_APP_TRANS_ID, (uint8_t *)"Communication is ready.", sizeof("Communication is ready."));
-#endif
 }
 
 /*

@@ -1,18 +1,8 @@
----- uartWrite Matches (17 in 3 files) ----
-gizwits_product.c (ServicesLayer\Gizwits) line 294 : int32_t uartWrite(uint8_t *buf, uint32_t len)
-gizwits_product.h (ServicesLayer\Gizwits) line 64 : int32_t uartWrite(uint8_t *buf, uint32_t len);
-gizProtocolIssuedDataAck in gizwits_protocol.c (ServicesLayer\Gizwits) :     ret = uartWrite(tx_buf, data_len+4);
-gizReportData in gizwits_protocol.c (ServicesLayer\Gizwits) :     ret = uartWrite((uint8_t *)&protocolReport, sizeof(protocolReport_t));
-gizProtocolResendData in gizwits_protocol.c (ServicesLayer\Gizwits) :     ret = uartWrite(gizwitsProtocol.waitAck.buf, gizwitsProtocol.waitAck.dataLen);
-gizProtocolCommonAck in gizwits_protocol.c (ServicesLayer\Gizwits) :     ret = uartWrite((uint8_t *)&ack, sizeof(protocolCommon_t));
-gizProtocolGetDeviceInfo in gizwits_protocol.c (ServicesLayer\Gizwits) :     ret = uartWrite((uint8_t *)&deviceInfo, sizeof(protocolDeviceInfo_t));
-gizProtocolErrorCmd in gizwits_protocol.c (ServicesLayer\Gizwits) :     ret = uartWrite((uint8_t *)&errorType, sizeof(protocolErrorType_t));
-gizwitsSetMode in gizwits_protocol.c (ServicesLayer\Gizwits) :             ret = uartWrite((uint8_t *)&setDefault, sizeof(protocolCommon_t));
-gizwitsSetMode in gizwits_protocol.c (ServicesLayer\Gizwits) :             ret = uartWrite((uint8_t *)&cfgMode, sizeof(protocolCfgMode_t));
-gizwitsSetMode in gizwits_protocol.c (ServicesLayer\Gizwits) :             ret = uartWrite((uint8_t *)&cfgMode, sizeof(protocolCfgMode_t));
-gizwitsSetMode in gizwits_protocol.c (ServicesLayer\Gizwits) :             ret = uartWrite((uint8_t *)&setDefault, sizeof(protocolCommon_t));
-gizwitsSetMode in gizwits_protocol.c (ServicesLayer\Gizwits) :             ret = uartWrite((uint8_t *)&setDefault, sizeof(protocolCommon_t));
-gizwitsSetMode in gizwits_protocol.c (ServicesLayer\Gizwits) :             ret = uartWrite((uint8_t *)&setDefault, sizeof(protocolCommon_t));
-gizwitsGetNTP in gizwits_protocol.c (ServicesLayer\Gizwits) :     ret = uartWrite((uint8_t *)&getNTP, sizeof(protocolCommon_t));
-gizwitsGetModuleInfo in gizwits_protocol.c (ServicesLayer\Gizwits) :     ret = uartWrite((uint8_t *)&getModuleInfo, sizeof(protocolGetModuleInfo_t));
-gizwitsPassthroughData in gizwits_protocol.c (ServicesLayer\Gizwits) : 	ret = uartWrite(tx_buf, data_len+4);
+---- D_SRV_COMM_ENABLE Matches (7 in 4 files) ----
+SysCommInit in app_comm.c (ApplicationLayer\src) : #if (D_SRV_COMM_ENABLE == D_SYS_STD_ON)
+SysCommHandle in app_comm.c (ApplicationLayer\src) : 	#if (D_SRV_COMM_ENABLE == D_SYS_STD_ON)
+srv_comm.c (ServicesLayer\Communication\src) line 13 : #if (D_SRV_COMM_ENABLE == D_SYS_STD_ON)
+srv_comm.h (ServicesLayer\Communication\inc) line 19 : #define D_SRV_COMM_ENABLE				D_SYS_STD_OFF
+srv_comm.h (ServicesLayer\Communication\inc) line 26 : #if (D_SRV_COMM_ENABLE == D_SYS_STD_ON)
+main in uC.c (ApplicationLayer\src) : #if (D_SRV_COMM_ENABLE == D_SYS_STD_ON)
+main in uC.c (ApplicationLayer\src) : 	#if (D_SRV_COMM_ENABLE == D_SYS_STD_ON)

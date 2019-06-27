@@ -12,12 +12,12 @@
 #define _HAL_UART_H
 
 #include "hal_public.h"
-
+#include "osal.h"
 
 #define D_SYSTEM_ALL_UART_NUM			EN_ALL_UART_NUM
 
-#define D_SYS_UART_TX_BUFFER_SIZE		(60u)
-#define D_SYS_UART_RX_BUFFER_SIZE		(60u)
+#define D_SYS_UART_TX_BUFFER_SIZE		(128u)
+#define D_SYS_UART_RX_BUFFER_SIZE		(64u)
 
 #define D_SYS_UART_ENABLE_INT(ch)			do {\
 	Drv_UartITRxEnable(ch); \

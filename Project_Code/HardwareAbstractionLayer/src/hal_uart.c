@@ -131,6 +131,7 @@ srvQueueError_t Hal_UartWrite(uartName_t name, const uint8_t dat[], uint8_t len)
 	volatile srvQueue_t *pQueue = &sysUartTxQueue[name];
 	stdBoolean_t txFlagTrigger = EN_STD_FALSE;
 	uint8_t firstDat = 0;
+	D_OSAL_ALLOC_CRITICAL_SR();
 	
 	if ((len == 0) || (len > D_SYS_UART_TX_BUFFER_SIZE))
 	{
@@ -139,6 +140,7 @@ srvQueueError_t Hal_UartWrite(uartName_t name, const uint8_t dat[], uint8_t len)
 	}
 
 	Drv_UartITTxDisable(name);
+	D_OSAL_ENTER_CRITICAL();
 	
 	if (Srv_QueueIsEmpty(pQueue) == EN_STD_TRUE)
 	{
@@ -163,6 +165,7 @@ srvQueueError_t Hal_UartWrite(uartName_t name, const uint8_t dat[], uint8_t len)
 		}
 	}
 
+	D_OSAL_EXIT_CRITICAL();
 	Drv_UartITTxEnable(name);
 	
 	return opt;

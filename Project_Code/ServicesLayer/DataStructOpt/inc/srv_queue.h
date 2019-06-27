@@ -24,14 +24,14 @@ typedef enum _QUEUE_ERROR_T
 
 typedef struct _SRV_QUEUE_T
 {
-	uint8_t frontInx;
-	uint8_t rearInx;
+	uint16_t frontInx;
+	uint16_t rearInx;
 	volatile uint8_t *qBuffer;
-	uint8_t bufSize;
-	uint8_t maxBufSize;
+	uint16_t bufSize;
+	uint16_t maxBufSize;
 }srvQueue_t;
 
-void Srv_QueueInit(volatile srvQueue_t *pQue, volatile uint8_t pBuf[], uint8_t bufSize);
+void Srv_QueueInit(volatile srvQueue_t *pQue, volatile uint8_t pBuf[], uint16_t bufSize);
 
 srvQueueError_t Srv_QueueIn(volatile srvQueue_t *pQue, uint8_t dat);
 

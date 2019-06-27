@@ -38,7 +38,7 @@ typedef void (*gizTimerFunc_t)(void *arg );
 * @name Log print macro definition
 * @{
 */
-#define GIZWITS_LOG                                 WifiBsp_LogPrint///<Run log print
+#define GIZWITS_LOG                                 printf///<Run log print
 #define PROTOCOL_DEBUG                              ///<Protocol data print
 
 #ifndef GIZWITS_LOG_NOFORMAT

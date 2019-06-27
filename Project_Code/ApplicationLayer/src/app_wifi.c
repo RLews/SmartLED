@@ -28,12 +28,15 @@ static OSAL_TMR wifiTmr;
 static void WifiTaskHandle(void);
 
 #endif
+static wifiSetInfo_t wifiSetInfo = {0};
 
 static void WifiTmrCallBack(void);
 static void WifiKeyHandle(void);
 static void WifiLedCtrl(void);
 static void WifiUpdateTime(void);
 static void WifiDataHandle(void);
+static void WifiWorkManage(void);
+static stdBoolean_t WifiLedSetFlash(uint16_t freq, uint16_t flashTimes);
 
 
 /*
@@ -55,6 +58,11 @@ void WifiTaskInit(void)
 	OSAL_ERROR tErr = (OSAL_ERROR)0;
 #endif
 	D_OSAL_ALLOC_CRITICAL_SR();
+	
+#if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
+	printf("------ Wifi Uart Debug Starting ------\n");
+	printf("--------------------------------------\n");
+#endif
 
 	Srv_WifiCommInit();
 	gizwitsInit();
@@ -110,7 +118,7 @@ static void WifiTaskHandle(void)
 		(void)gizPutData(&revDat, 1);
 		
 #if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
-		(void)Hal_UartWrite(EN_SYS_COM, (uint8_t *)&revDat, 1);
+		printf("%02x " ,revDat);
 #endif
 	}
 }
@@ -139,7 +147,7 @@ void WifiTaskHandle(void)
 		(void)gizPutData(&revDat, 1);
 		
 #if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
-		(void)Hal_UartWrite(EN_SYS_COM, (uint8_t *)&revDat, 1);
+		printf("%02x " ,revDat);
 #endif
 	}
 
@@ -195,13 +203,104 @@ static void WifiUpdateTime(void)
 static void WifiDataHandle(void)
 {
 	static uint32_t updateTim = 0;
+	wifiSetInfo_t *pSet = &wifiSetInfo;
 
 	if (Osal_DiffTsToUsec(updateTim) >= D_WIFI_UPDATE_PERIOD)
 	{
 		updateTim = Osal_GetCurTs();
-		userHandle();
+		if (pSet->setMode == EN_WIFI_MODE_RUN)
+		{
+			userHandle();
+		}
 		gizwitsHandle((dataPoint_t *)&currentDataPoint);
 	}
+}
+
+/*
+************************************************************************************************************************
+* Function Name    : WifiLedResetFlash
+* Description      : 5ms
+* Input Arguments  : 
+* Output Arguments : 
+* Returns          : 
+* Notes            : 
+* Author           : Lews Hammond
+* Time             : 2019-6-27
+************************************************************************************************************************
+*/
+
+static stdBoolean_t WifiLedSetFlash(uint16_t freq, uint16_t flashTimes)
+{
+	stdBoolean_t optRes = EN_STD_FALSE;
+	static uint16_t tick = 0;
+	static uint16_t times = 0;
+	wifiSetInfo_t *pSet = &wifiSetInfo;
+
+	tick++;
+	if (tick >= (freq / D_WIFI_LED_PERIOD_TICK) )
+	{
+		tick = 0;
+		times++;
+		WifiLedCtrl();
+
+		if (times >= flashTimes)
+		{
+			times = 0;
+			optRes = EN_STD_TRUE;
+			if (pSet->recordLedSta == D_SYS_STD_OFF)
+			{
+				Hal_WifiLedOff();
+			}
+			else
+			{
+				Hal_WifiLedOn();
+			}
+		}
+	}
+
+	return optRes;
+}
+
+/*
+************************************************************************************************************************
+* Function Name    : WifiWorkManage
+* Description      : 
+* Input Arguments  : 
+* Output Arguments : 
+* Returns          : 
+* Notes            : 
+* Author           : Lews Hammond
+* Time             : 2019-6-27
+************************************************************************************************************************
+*/
+
+static void WifiWorkManage(void)
+{
+	wifiSetInfo_t *pSet = &wifiSetInfo;
+
+	switch (pSet->setMode)
+	{
+		case EN_WIFI_MODE_RUN:
+			WifiUpdateTime();
+			break;
+		case EN_WIFI_MODE_AIR_LINK:
+		case EN_WIFI_MODE_SOFT_AP:
+			if (WifiLedSetFlash(500, 6) == EN_STD_TRUE)
+			{
+				pSet->setMode = EN_WIFI_MODE_RUN;
+			}
+			break;
+		case EN_WIFI_MODE_RESET:
+			if (WifiLedSetFlash(200, 10) == EN_STD_TRUE)
+			{
+				pSet->setMode = EN_WIFI_MODE_RUN;
+			}
+			break;
+		default:
+			break;
+	}
+	
+	WifiDataHandle();
 }
 
 /*
@@ -228,8 +327,7 @@ static void WifiTmrCallBack(void)
 	
 	Hal_KeyScan();
 	WifiKeyHandle();
-	WifiDataHandle();
-	WifiUpdateTime();
+	WifiWorkManage();
 }
 
 
@@ -248,30 +346,51 @@ static void WifiTmrCallBack(void)
 
 static void WifiKeyHandle(void)
 {
+	wifiSetInfo_t *pSet = &wifiSetInfo;
 	if (Hal_CheckNewKey(EN_KEY_WIFI) == EN_STD_TRUE)
 	{
 		switch (Hal_GetKeySta(EN_KEY_WIFI))
 		{
 			case EN_KEY_PRESS_UP:
-				WifiLedCtrl();
+#if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
+				printf("\nKey Press.\n");
+#endif
+				if (pSet->setMode == EN_WIFI_MODE_RUN)
+				{
+					WifiLedCtrl();
+				}
 				break;
 				
 			case EN_KEY_REPEAT:
+#if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
+				printf("\nKey Repeat.\n");
+#endif
 				gizwitsSetMode(WIFI_AIRLINK_MODE);//Air-link mode
-                Hal_WifiLedOn();
+				pSet->setMode = EN_WIFI_MODE_AIR_LINK;
+				pSet->recordLedSta = Hal_GetWifiLedSta();
+				pSet->setTs = Osal_GetCurTs();
 				break;
 
 			case EN_KEY_DOUBLE_PRESS_UP:
+#if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
+				printf("\nKey Double Click.\n");
+#endif
 				gizwitsSetMode(WIFI_RESET_MODE);
-                Hal_WifiLedOff();
+				pSet->setMode = EN_WIFI_MODE_RESET;
+				pSet->recordLedSta = Hal_GetWifiLedSta();
+				pSet->setTs = Osal_GetCurTs();
 				break;
 				
 			default:
+#if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
+				printf("\nKey Action Is Not Support.\n");
+#endif
 				break;
 		}
         Hal_ClearNewKeyFlg(EN_KEY_WIFI);
 	}
 }
+
 
 /*
 ************************************************************************************************************************

@@ -224,6 +224,7 @@ void mcuRestart(void)
 }
 
 /**@} */
+#if 0
 
 #ifdef __GNUC__
   /* With GCC/RAISONANCE, small printf (option LD Linker->Libraries->Small printf
@@ -245,7 +246,7 @@ PUTCHAR_PROTOTYPE
  
   return ch;
 }
-#if 0
+
 /**
   * @brief  Period elapsed callback in non blocking mode 
   * @param  htim : TIM handle
@@ -300,28 +301,18 @@ int32_t uartWrite(uint8_t *buf, uint32_t len)
     {
         return -1;
     }
-#if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
-	(void)Hal_UartWrite(EN_SYS_COM, (uint8_t *)"\nWIFI Tx: ", sizeof("\nWIFI Tx: "));
-#endif
+
 
     for(i=0; i<len; i++)
     {
         (void)Srv_WifiCommTx((uint8_t *)&buf[i], 1);
-    #if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
-        (void)Hal_UartWrite(EN_SYS_COM, (uint8_t *)&buf[i], 1);
-	#endif
+
         if(i >=2 && buf[i] == 0xFF)
         {
 			(void)Srv_WifiCommTx((uint8_t *)&crc, 1);
-		#if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
-			(void)Hal_UartWrite(EN_SYS_COM, (uint8_t *)&crc, 1);
-		#endif
         }
     }
     
-#if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
-	(void)Hal_UartWrite(EN_SYS_COM, (uint8_t *)"\n", sizeof("\n"));
-#endif
 
 #ifdef PROTOCOL_DEBUG
     GIZWITS_LOG("MCU2WiFi[%4d:%4d]: ", gizGetTimerCount(), len);

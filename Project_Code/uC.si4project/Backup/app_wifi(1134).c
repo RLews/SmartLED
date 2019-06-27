@@ -60,8 +60,8 @@ void WifiTaskInit(void)
 	D_OSAL_ALLOC_CRITICAL_SR();
 	
 #if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
-	printf("\n------ Wifi Uart Debug Starting ------");
-	printf("\n--------------------------------------\n");
+	printf("------ Wifi Uart Debug Starting ------\n");
+	printf("--------------------------------------\n");
 #endif
 
 	Srv_WifiCommInit();
@@ -118,7 +118,7 @@ static void WifiTaskHandle(void)
 		(void)gizPutData(&revDat, 1);
 		
 #if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
-		printf("\nWIFI2MCU: %02x \n" ,revDat);
+		printf("%02x " ,revDat);
 #endif
 	}
 }
@@ -147,7 +147,7 @@ void WifiTaskHandle(void)
 		(void)gizPutData(&revDat, 1);
 		
 #if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
-		printf("\nWIFI2MCU: %02x " ,revDat);
+		printf("%02x " ,revDat);
 #endif
 	}
 

@@ -17,27 +17,20 @@
 #include "srv_comm.h"
 
 
-#define D_SYS_COMM_ENABLE		D_SYS_STD_OFF
-
-#if (D_SYS_COMM_ENABLE == D_SYS_STD_ON)
-void SysCommInit(void);
-#endif
 
 
-#if (D_FILE_SYSTEM_ENABLE == D_SYS_STD_ON)
-void FilesTaskInit(void);
-#endif
 
-void SystemLedInit(void);
 
-void WifiTaskInit(void);
+void Sys_LedInit(void);
+
+void Wifi_TaskInit(void);
 
 #if (D_UC_OS_III_ENABLE != D_SYS_STD_ON)
 
 #define D_SYS_MS_COUNT				(1000ul)
 
-void WifiTaskHandle(void);
-void SystemLedFlash(void);
+void Wifi_TaskHandle(void);
+void Sys_LedFlash(void);
 
 
 #endif

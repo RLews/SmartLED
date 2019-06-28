@@ -1,8 +1,6 @@
 --cpu Cortex-M3
 ".\objects\app_led.o"
 ".\objects\uc.o"
-".\objects\app_comm.o"
-".\objects\app_files.o"
 ".\objects\app_wifi.o"
 ".\objects\osal.o"
 ".\objects\hal.o"

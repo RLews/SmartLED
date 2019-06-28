@@ -22,12 +22,12 @@ static OSAL_TCB runFlagTaskTCB = {0};
 static OSAL_CPU_STACK	runFlagTaskStack[D_SYSTEM_RUN_FLAG_TASK_STACK_SIZE] = {0};
 
 
-static void SystemLedFlash(void);
+static void Sys_LedFlash(void);
 #endif
 
 /*
 ************************************************************************************************************************
-* Function Name    : SystemLedInit
+* Function Name    : Sys_LedInit
 * Description      : System led flash init
 * Input Arguments  : void
 * Output Arguments : void
@@ -38,7 +38,7 @@ static void SystemLedFlash(void);
 ************************************************************************************************************************
 */
 
-void SystemLedInit(void)
+void Sys_LedInit(void)
 {
 #if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
 	OSAL_ERROR tErr = (OSAL_ERROR)0;
@@ -47,7 +47,7 @@ void SystemLedInit(void)
 	D_OSAL_ENTER_CRITICAL();
 	D_OSAL_CREATE_TASK_FUNC((OSAL_TCB *)&runFlagTaskTCB,
 							(OSAL_CHAR *)"Run_Led",
-							(OSAL_TASK_FUNC_PTR)SystemLedFlash,
+							(OSAL_TASK_FUNC_PTR)Sys_LedFlash,
 							(void *) 0,
 							(OSAL_PRIO)D_SYSTEM_RUN_FLAG_TASK_PRIO,
 							(OSAL_CPU_STACK *)&runFlagTaskStack[0],
@@ -75,7 +75,7 @@ void SystemLedInit(void)
 * Returns     : void
 ************************************************************************************************************************
 */
-static void SystemLedFlash(void)
+static void Sys_LedFlash(void)
 {
 #if (D_SYS_LED_STACK_DEBUG == D_SYS_STD_ON)
 	OSAL_CPU_STK_SIZE free = 0;
@@ -97,7 +97,7 @@ static void SystemLedFlash(void)
 
 /*
 ************************************************************************************************************************
-* Function Name    : SystemLedFlash
+* Function Name    : Sys_LedFlash
 * Description      : 
 * Input Arguments  : 
 * Output Arguments : 
@@ -108,7 +108,7 @@ static void SystemLedFlash(void)
 ************************************************************************************************************************
 */
 
-void SystemLedFlash(void)
+void Sys_LedFlash(void)
 {
 	static uint32_t Ts = 0;
 	static uint8_t runFlag = D_SYS_STD_OFF;

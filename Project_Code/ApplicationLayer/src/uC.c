@@ -82,8 +82,8 @@ int main(void)
 	AppStartTask();
 	while (1)
 	{
-		SystemLedFlash();
-		WifiTaskHandle();
+		Sys_LedFlash();
+		Wifi_TaskHandle();
 	}
 
 #endif
@@ -112,15 +112,9 @@ static void AppStartTask(void)
 #endif
 
 	/* Create Application Task */
-#if (D_SYS_COMM_ENABLE == D_SYS_STD_ON)
-	SysCommInit();
-#endif
-#if (D_FILE_SYSTEM_ENABLE == D_SYS_STD_ON)
-	FilesTaskInit();
-#endif
-	WifiTaskInit();
+	Wifi_TaskInit();
 	
-	SystemLedInit();
+	Sys_LedInit();
 #if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
 	D_OSAL_TASK_DEL_FUNC((OSAL_TCB *)0, (OSAL_ERROR *)&tErr);//delete self
 #endif

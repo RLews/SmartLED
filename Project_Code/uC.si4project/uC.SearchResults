@@ -1,8 +1,3 @@
----- D_SRV_COMM_ENABLE Matches (7 in 4 files) ----
-SysCommInit in app_comm.c (ApplicationLayer\src) : #if (D_SRV_COMM_ENABLE == D_SYS_STD_ON)
-SysCommHandle in app_comm.c (ApplicationLayer\src) : 	#if (D_SRV_COMM_ENABLE == D_SYS_STD_ON)
-srv_comm.c (ServicesLayer\Communication\src) line 13 : #if (D_SRV_COMM_ENABLE == D_SYS_STD_ON)
-srv_comm.h (ServicesLayer\Communication\inc) line 19 : #define D_SRV_COMM_ENABLE				D_SYS_STD_OFF
-srv_comm.h (ServicesLayer\Communication\inc) line 26 : #if (D_SRV_COMM_ENABLE == D_SYS_STD_ON)
-main in uC.c (ApplicationLayer\src) : #if (D_SRV_COMM_ENABLE == D_SYS_STD_ON)
-main in uC.c (ApplicationLayer\src) : 	#if (D_SRV_COMM_ENABLE == D_SYS_STD_ON)
+---- D_SYS_COMM_ENABLE Matches (2 in 2 files) ----
+app_public.h (ApplicationLayer\inc) line 20 : #define D_SYS_COMM_ENABLE		D_SYS_STD_OFF
+AppStartTask in uC.c (ApplicationLayer\src) : #if (D_SYS_COMM_ENABLE == D_SYS_STD_ON)

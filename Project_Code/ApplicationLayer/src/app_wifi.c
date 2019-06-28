@@ -25,23 +25,23 @@ static OSAL_CPU_STACK wifiTaskStack[D_WIFI_TASK_STACK_SIZE] = {0};
 
 static OSAL_TMR wifiTmr;
 
-static void WifiTaskHandle(void);
+static void Wifi_TaskHandle(void);
 
 #endif
 static wifiSetInfo_t wifiSetInfo = {0};
 
-static void WifiTmrCallBack(void);
-static void WifiKeyHandle(void);
-static void WifiLedCtrl(void);
-static void WifiUpdateTime(void);
-static void WifiDataHandle(void);
-static void WifiWorkManage(void);
-static stdBoolean_t WifiLedSetFlash(uint16_t freq, uint16_t flashTimes);
+static void Wifi_TmrCallBack(void);
+static void Wifi_KeyHandle(void);
+static void Wifi_LedCtrl(void);
+static void Wifi_UpdateTime(void);
+static void Wifi_DataHandle(void);
+static void Wifi_WorkManage(void);
+static stdBoolean_t Wifi_LedSetFlash(uint16_t freq, uint16_t flashTimes);
 
 
 /*
 ************************************************************************************************************************
-* Function Name    : WifiTaskInit
+* Function Name    : Wifi_TaskInit
 * Description      : wifi task initial
 * Input Arguments  : 
 * Output Arguments : 
@@ -52,7 +52,7 @@ static stdBoolean_t WifiLedSetFlash(uint16_t freq, uint16_t flashTimes);
 ************************************************************************************************************************
 */
 
-void WifiTaskInit(void)
+void Wifi_TaskInit(void)
 {
 #if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
 	OSAL_ERROR tErr = (OSAL_ERROR)0;
@@ -69,12 +69,12 @@ void WifiTaskInit(void)
 	userInit();
 	
 #if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
-	(void)Osal_TmrCreate(&wifiTmr, "Wifi_Tmr", D_WIFI_TIMER_TICK, D_OSAL_OPT_TMR_PERIODIC, (OSAL_TMR_CALLBACK_PTR)WifiTmrCallBack);
+	(void)Osal_TmrCreate(&wifiTmr, "Wifi_Tmr", D_WIFI_TIMER_TICK, D_OSAL_OPT_TMR_PERIODIC, (OSAL_TMR_CALLBACK_PTR)Wifi_TmrCallBack);
 
 	D_OSAL_ENTER_CRITICAL();
 	D_OSAL_CREATE_TASK_FUNC((OSAL_TCB *)&wifiTaskTCB,
 							(OSAL_CHAR *)"WIFI_Task",
-							(OSAL_TASK_FUNC_PTR)WifiTaskHandle,
+							(OSAL_TASK_FUNC_PTR)Wifi_TaskHandle,
 							(void *)0,
 							(OSAL_PRIO)D_WIFI_TASK_PRIO,
 							(OSAL_CPU_STACK *)&wifiTaskStack[0],
@@ -96,7 +96,7 @@ void WifiTaskInit(void)
 
 /*
 ************************************************************************************************************************
-* Function Name    : WifiTaskHandle
+* Function Name    : Wifi_TaskHandle
 * Description      : wifi task handle
 * Input Arguments  : 
 * Output Arguments : 
@@ -107,7 +107,7 @@ void WifiTaskInit(void)
 ************************************************************************************************************************
 */
 
-static void WifiTaskHandle(void)
+static void Wifi_TaskHandle(void)
 {
 	uint8_t revDat = 0;
 
@@ -126,7 +126,7 @@ static void WifiTaskHandle(void)
 #else
 /*
 ************************************************************************************************************************
-* Function Name    : WifiTaskHandle
+* Function Name    : Wifi_TaskHandle
 * Description      : 
 * Input Arguments  : 
 * Output Arguments : 
@@ -137,7 +137,7 @@ static void WifiTaskHandle(void)
 ************************************************************************************************************************
 */
 
-void WifiTaskHandle(void)
+void Wifi_TaskHandle(void)
 {
 	static uint32_t Ts = 0;
 	uint8_t revDat = 0;
@@ -154,7 +154,7 @@ void WifiTaskHandle(void)
 	if (Osal_DiffTsToUsec(Ts) >= (5*D_SYS_MS_COUNT))
 	{
 		Ts = Osal_GetCurTs();
-		WifiTmrCallBack();
+		Wifi_TmrCallBack();
 	}
 }
 
@@ -162,7 +162,7 @@ void WifiTaskHandle(void)
 
 /*
 ************************************************************************************************************************
-* Function Name    : WifiUpdateTime
+* Function Name    : Wifi_UpdateTime
 * Description      : request netework time
 * Input Arguments  : 
 * Output Arguments : 
@@ -173,7 +173,7 @@ void WifiTaskHandle(void)
 ************************************************************************************************************************
 */
 
-static void WifiUpdateTime(void)
+static void Wifi_UpdateTime(void)
 {
 	static uint32_t reqNtpTim = 0;
 
@@ -189,7 +189,7 @@ static void WifiUpdateTime(void)
 
 /*
 ************************************************************************************************************************
-* Function Name    : WifiDataHandle
+* Function Name    : Wifi_DataHandle
 * Description      : user data handle
 * Input Arguments  : 
 * Output Arguments : 
@@ -200,7 +200,7 @@ static void WifiUpdateTime(void)
 ************************************************************************************************************************
 */
 
-static void WifiDataHandle(void)
+static void Wifi_DataHandle(void)
 {
 	static uint32_t updateTim = 0;
 	wifiSetInfo_t *pSet = &wifiSetInfo;
@@ -229,7 +229,7 @@ static void WifiDataHandle(void)
 ************************************************************************************************************************
 */
 
-static stdBoolean_t WifiLedSetFlash(uint16_t freq, uint16_t flashTimes)
+static stdBoolean_t Wifi_LedSetFlash(uint16_t freq, uint16_t flashTimes)
 {
 	stdBoolean_t optRes = EN_STD_FALSE;
 	static uint16_t tick = 0;
@@ -241,7 +241,7 @@ static stdBoolean_t WifiLedSetFlash(uint16_t freq, uint16_t flashTimes)
 	{
 		tick = 0;
 		times++;
-		WifiLedCtrl();
+		Wifi_LedCtrl();
 
 		if (times >= flashTimes)
 		{
@@ -263,7 +263,7 @@ static stdBoolean_t WifiLedSetFlash(uint16_t freq, uint16_t flashTimes)
 
 /*
 ************************************************************************************************************************
-* Function Name    : WifiWorkManage
+* Function Name    : Wifi_WorkManage
 * Description      : 
 * Input Arguments  : 
 * Output Arguments : 
@@ -274,24 +274,24 @@ static stdBoolean_t WifiLedSetFlash(uint16_t freq, uint16_t flashTimes)
 ************************************************************************************************************************
 */
 
-static void WifiWorkManage(void)
+static void Wifi_WorkManage(void)
 {
 	wifiSetInfo_t *pSet = &wifiSetInfo;
 
 	switch (pSet->setMode)
 	{
 		case EN_WIFI_MODE_RUN:
-			WifiUpdateTime();
+			Wifi_UpdateTime();
 			break;
 		case EN_WIFI_MODE_AIR_LINK:
 		case EN_WIFI_MODE_SOFT_AP:
-			if (WifiLedSetFlash(500, 6) == EN_STD_TRUE)
+			if (Wifi_LedSetFlash(500, 6) == EN_STD_TRUE)
 			{
 				pSet->setMode = EN_WIFI_MODE_RUN;
 			}
 			break;
 		case EN_WIFI_MODE_RESET:
-			if (WifiLedSetFlash(200, 10) == EN_STD_TRUE)
+			if (Wifi_LedSetFlash(200, 10) == EN_STD_TRUE)
 			{
 				pSet->setMode = EN_WIFI_MODE_RUN;
 			}
@@ -300,12 +300,12 @@ static void WifiWorkManage(void)
 			break;
 	}
 	
-	WifiDataHandle();
+	Wifi_DataHandle();
 }
 
 /*
 ************************************************************************************************************************
-* Function Name    : WifiTmrCallBack
+* Function Name    : Wifi_TmrCallBack
 * Description      : period schedule
 * Input Arguments  : 
 * Output Arguments : 
@@ -316,7 +316,7 @@ static void WifiWorkManage(void)
 ************************************************************************************************************************
 */
 
-static void WifiTmrCallBack(void)
+static void Wifi_TmrCallBack(void)
 {
 	uint8_t i = 0;
 
@@ -326,14 +326,14 @@ static void WifiTmrCallBack(void)
 	}
 	
 	Hal_KeyScan();
-	WifiKeyHandle();
-	WifiWorkManage();
+	Wifi_KeyHandle();
+	Wifi_WorkManage();
 }
 
 
 /*
 ************************************************************************************************************************
-* Function Name    : WifiKeyHandle
+* Function Name    : Wifi_KeyHandle
 * Description      : 
 * Input Arguments  : 
 * Output Arguments : 
@@ -344,7 +344,7 @@ static void WifiTmrCallBack(void)
 ************************************************************************************************************************
 */
 
-static void WifiKeyHandle(void)
+static void Wifi_KeyHandle(void)
 {
 	wifiSetInfo_t *pSet = &wifiSetInfo;
 	if (Hal_CheckNewKey(EN_KEY_WIFI) == EN_STD_TRUE)
@@ -357,7 +357,7 @@ static void WifiKeyHandle(void)
 #endif
 				if (pSet->setMode == EN_WIFI_MODE_RUN)
 				{
-					WifiLedCtrl();
+					Wifi_LedCtrl();
 				}
 				break;
 				
@@ -394,7 +394,7 @@ static void WifiKeyHandle(void)
 
 /*
 ************************************************************************************************************************
-* Function Name    : WifiLedCtrl
+* Function Name    : Wifi_LedCtrl
 * Description      : wifi led control
 * Input Arguments  : 
 * Output Arguments : 
@@ -405,7 +405,7 @@ static void WifiKeyHandle(void)
 ************************************************************************************************************************
 */
 
-static void WifiLedCtrl(void)
+static void Wifi_LedCtrl(void)
 {
 	if (Hal_GetWifiLedSta() == D_SYS_STD_OFF)
 	{

@@ -419,16 +419,6 @@
               <FilePath>..\ApplicationLayer\src\uC.c</FilePath>
             </File>
             <File>
-              <FileName>app_comm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\ApplicationLayer\src\app_comm.c</FilePath>
-            </File>
-            <File>
-              <FileName>app_files.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\ApplicationLayer\src\app_files.c</FilePath>
-            </File>
-            <File>
               <FileName>app_wifi.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\ApplicationLayer\src\app_wifi.c</FilePath>
@@ -449,19 +439,9 @@
               <FilePath>..\ApplicationLayer\inc\uC.h</FilePath>
             </File>
             <File>
-              <FileName>app_comm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\ApplicationLayer\inc\app_comm.h</FilePath>
-            </File>
-            <File>
               <FileName>app_public.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\ApplicationLayer\inc\app_public.h</FilePath>
-            </File>
-            <File>
-              <FileName>app_files.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\ApplicationLayer\inc\app_files.h</FilePath>
             </File>
             <File>
               <FileName>app_wifi.h</FileName>

@@ -203,10 +203,15 @@ static void Wifi_UpdateTime(void)
 static void Wifi_DataHandle(void)
 {
 	static uint32_t updateTim = 0;
+	wifiSetInfo_t *pSet = &wifiSetInfo;
 
 	if (Osal_DiffTsToUsec(updateTim) >= D_WIFI_UPDATE_PERIOD)
 	{
 		updateTim = Osal_GetCurTs();
+		if (pSet->setMode == EN_WIFI_MODE_RUN)
+		{
+			userHandle();
+		}
 		gizwitsHandle((dataPoint_t *)&currentDataPoint);
 	}
 }
@@ -276,7 +281,6 @@ static void Wifi_WorkManage(void)
 	switch (pSet->setMode)
 	{
 		case EN_WIFI_MODE_RUN:
-			userHandle();
 			Wifi_UpdateTime();
 			break;
 		case EN_WIFI_MODE_AIR_LINK:

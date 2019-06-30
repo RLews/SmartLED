@@ -16,14 +16,14 @@
 #include "osal.h"
 #include "srv_comm_check.h"
 
-#define D_SRV_COMM_ENABLE				D_SYS_STD_OFF
-#define D_SRV_UDS_ENABLE				D_SYS_STD_OFF
+#define D_SRV_COMM_ENABLE				D_STD_OFF
+#define D_SRV_UDS_ENABLE				D_STD_OFF
 
-#if (D_SRV_UDS_ENABLE == D_SYS_STD_ON)
+#if (D_SRV_UDS_ENABLE == D_STD_ON)
 #include "udscan_callbacks.h"
 #endif
 
-#if (D_SRV_COMM_ENABLE == D_SYS_STD_ON)
+#if (D_SRV_COMM_ENABLE == D_STD_ON)
 
 #define D_COMM_FRAME_HEAD1				(0xAB)
 #define D_COMM_FRAME_HEAD2				(0xBA)

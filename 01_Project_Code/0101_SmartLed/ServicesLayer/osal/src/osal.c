@@ -10,7 +10,7 @@
 
 #include "osal.h"
 
-#if (D_FILE_SYSTEM_ENABLE == D_SYS_STD_ON)
+#if (D_FILE_SYSTEM_ENABLE == D_STD_ON)
 static fsDirAnaySta_t Fsal_AnaysisDir(const FSAL_CHAR *pDir, uint32_t dirLev, uint32_t len, FSAL_CHAR *pDest);
 #endif
 
@@ -19,7 +19,7 @@ static fsDirAnaySta_t Fsal_AnaysisDir(const FSAL_CHAR *pDir, uint32_t dirLev, ui
 * uC OS III 
 ************************************************************************************************************************
 */
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 
 /*
 ************************************************************************************************************************
@@ -503,7 +503,7 @@ uint32_t Osal_DiffTsToUsec(uint32_t lastTs)
 * FatFS
 ************************************************************************************************************************
 */
-#if (D_FILE_SYSTEM_ENABLE == D_SYS_STD_ON)
+#if (D_FILE_SYSTEM_ENABLE == D_STD_ON)
 
 /*
 ************************************************************************************************************************

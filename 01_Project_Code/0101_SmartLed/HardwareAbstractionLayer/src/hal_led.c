@@ -10,7 +10,7 @@
 
 #include "hal_led.h"
 
-static uint8_t wifiLedSta = D_SYS_STD_OFF;
+static uint8_t wifiLedSta = D_STD_OFF;
 
 /*
 ************************************************************************************************************************
@@ -75,7 +75,7 @@ void Hal_WifiLedOn(void)
 {
 	Drv_GpioNameOut(EN_WIFI_LED_GPIO, EN_GPIO_LOW);
 	
-	wifiLedSta = D_SYS_STD_ON;
+	wifiLedSta = D_STD_ON;
 }
 
 /*
@@ -93,7 +93,7 @@ void Hal_WifiLedOff(void)
 {
 	Drv_GpioNameOut(EN_WIFI_LED_GPIO, EN_GPIO_HIGH);
 	
-	wifiLedSta = D_SYS_STD_OFF;
+	wifiLedSta = D_STD_OFF;
 }
 
 

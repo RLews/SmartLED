@@ -10,7 +10,7 @@
 
 #include "drv_spi.h"
 
-#if (D_PLATFORMS_SPI_ENABLE == D_SYS_STD_ON)
+#if (D_PLATFORMS_SPI_ENABLE == D_STD_ON)
 
 static const spiConfig_t spiConfigArr[EN_ALL_SPI_NUM] = {
 	D_SPI_CONFIG_ARRAY

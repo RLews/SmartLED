@@ -25,7 +25,7 @@ void BusFault_Handler(void);
 void UsageFault_Handler(void);
 void SVC_Handler(void);
 void DebugMon_Handler(void);
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 
 #else
 void PendSV_Handler(void); //this uC/OS manage 

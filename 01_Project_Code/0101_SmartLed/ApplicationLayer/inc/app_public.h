@@ -25,7 +25,7 @@ void Sys_LedInit(void);
 
 void Wifi_TaskInit(void);
 
-#if (D_UC_OS_III_ENABLE != D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE != D_STD_ON)
 
 #define D_SYS_MS_COUNT				(1000ul)
 

@@ -52,7 +52,7 @@ void Hal_KeyScan(void)
 	}
 }
 
-#if (D_ENABLE_KEY_DOUBLE_PRESS == D_SYS_STD_ON)
+#if (D_ENABLE_KEY_DOUBLE_PRESS == D_STD_ON)
 /*
 ************************************************************************************************************************
 * Function Name    : Hal_KeyStateManage

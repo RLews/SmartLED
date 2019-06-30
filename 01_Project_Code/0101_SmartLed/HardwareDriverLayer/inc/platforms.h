@@ -25,8 +25,12 @@ typedef enum _STD_BOOLEAN_T
 	EN_STD_TRUE
 }stdBoolean_t;
 
-#define D_SYS_STD_OFF			(0u)
-#define D_SYS_STD_ON			(1u)
+
+#define D_STD_OFF			(0u)
+#define D_STD_ON			(1u)
+#define D_STD_ENABLE		(1u)
+#define D_STD_DISABLE		(0u)
+
 
 
 

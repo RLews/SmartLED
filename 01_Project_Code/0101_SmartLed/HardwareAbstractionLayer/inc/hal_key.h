@@ -13,7 +13,7 @@
 #include "hal_public.h"
 #include "osal.h"
 
-#define D_ENABLE_KEY_DOUBLE_PRESS		D_SYS_STD_ON
+#define D_ENABLE_KEY_DOUBLE_PRESS		D_STD_ON
 
 #define D_KEY_SCAN_PEROID_MS			5
 

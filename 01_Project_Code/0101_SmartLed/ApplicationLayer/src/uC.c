@@ -10,7 +10,7 @@
 
 #include "uC.h"
 
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 
 /* Start Task */
 #define D_SYSTEM_START_TASK_PRIO		3
@@ -38,21 +38,18 @@ static void AppStartTask(void);
 */
 int main(void)
 {
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 	OSAL_ERROR tErr = (OSAL_ERROR)0;
 #endif
 	D_OSAL_ALLOC_CRITICAL_SR();
 
 	Hal_SysInit();
-#if (D_SRV_COMM_ENABLE == D_SYS_STD_ON)
-	Srv_SysCommInit();
-#endif
 
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 	Osal_OsInit();
 #endif
 
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 
 	D_OSAL_ENTER_CRITICAL();
 
@@ -104,7 +101,7 @@ int main(void)
 */
 static void AppStartTask(void)
 {
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 
 	OSAL_ERROR tErr = (OSAL_ERROR)0;
 	
@@ -115,7 +112,7 @@ static void AppStartTask(void)
 	Wifi_TaskInit();
 	
 	Sys_LedInit();
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 	D_OSAL_TASK_DEL_FUNC((OSAL_TCB *)0, (OSAL_ERROR *)&tErr);//delete self
 #endif
 	

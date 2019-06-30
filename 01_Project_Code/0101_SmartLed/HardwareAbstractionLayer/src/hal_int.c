@@ -123,13 +123,13 @@ void Hal_SysISRSet(sysIntIsr_t isrId, SysISRFunc isrFunc)
 	
 	if (isrId < EN_ALL_SYS_ISR_NUM)
 	{
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 		D_OSAL_ENTER_CRITICAL();
 #else
 		Hal_DisableAllInt();
 #endif
 		sysIntVectTbl[isrId] = isrFunc;
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 		D_OSAL_EXIT_CRITICAL();
 #else
 		Hal_EnableAllInt();
@@ -181,13 +181,13 @@ static void Hal_ExcptionHandle(void)
 void Hal_SetFaultFunc(FaultRecordFunc pFunc)
 {
     D_OSAL_ALLOC_CRITICAL_SR();
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 	D_OSAL_ENTER_CRITICAL();
 #else
 	Hal_DisableAllInt();
 #endif
 	sysFaultFunc = pFunc;
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 	D_OSAL_EXIT_CRITICAL();
 #else
 	Hal_EnableAllInt();
@@ -228,7 +228,7 @@ static void Hal_SysIntHandle(sysIntIsr_t isrId)
 	SysISRFunc isr = D_HAL_INT_NULL;
 	D_OSAL_ALLOC_CRITICAL_SR();
 
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 	D_OSAL_ENTER_CRITICAL();
 	D_OSAL_INT_ENTER();/* Tell the OS that we are starting an ISR            */
 	D_OSAL_EXIT_CRITICAL();
@@ -243,13 +243,13 @@ static void Hal_SysIntHandle(sysIntIsr_t isrId)
 			isr();
 		}
 	}
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 	D_OSAL_INT_EXIT();/* Tell the OS that we are leaving the ISR            */
 #endif
 }
 
 
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 
 #else
 

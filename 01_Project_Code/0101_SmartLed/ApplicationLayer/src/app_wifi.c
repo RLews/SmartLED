@@ -9,7 +9,7 @@
 
 #include "app_wifi.h"
 
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 
 /* wifi task */
 #define D_WIFI_TASK_PRIO					5
@@ -54,12 +54,12 @@ static stdBoolean_t Wifi_LedSetFlash(uint16_t freq, uint16_t flashTimes);
 
 void Wifi_TaskInit(void)
 {
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 	OSAL_ERROR tErr = (OSAL_ERROR)0;
 #endif
 	D_OSAL_ALLOC_CRITICAL_SR();
 	
-#if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
+#if (D_WIFI_UART_DEBUG == D_STD_ON)
 	printf("\n------ Wifi Uart Debug Starting ------");
 	printf("\n--------------------------------------\n");
 #endif
@@ -68,7 +68,7 @@ void Wifi_TaskInit(void)
 	gizwitsInit();
 	userInit();
 	
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 	(void)Osal_TmrCreate(&wifiTmr, "Wifi_Tmr", D_WIFI_TIMER_TICK, D_OSAL_OPT_TMR_PERIODIC, (OSAL_TMR_CALLBACK_PTR)Wifi_TmrCallBack);
 
 	D_OSAL_ENTER_CRITICAL();
@@ -92,7 +92,7 @@ void Wifi_TaskInit(void)
 #endif
 }
 
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 
 /*
 ************************************************************************************************************************
@@ -117,7 +117,7 @@ static void Wifi_TaskHandle(void)
 		(void)Hal_UartReadByte(EN_WIFI_COM, &revDat);
 		(void)gizPutData(&revDat, 1);
 		
-#if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
+#if (D_WIFI_UART_DEBUG == D_STD_ON)
 		printf("\nWIFI2MCU: %02x \n" ,revDat);
 #endif
 	}
@@ -146,7 +146,7 @@ void Wifi_TaskHandle(void)
 	{
 		(void)gizPutData(&revDat, 1);
 		
-#if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
+#if (D_WIFI_UART_DEBUG == D_STD_ON)
 		printf("\nWIFI2MCU: %02x " ,revDat);
 #endif
 	}
@@ -180,7 +180,7 @@ static void Wifi_UpdateTime(void)
 	if (Osal_DiffTsToUsec(reqNtpTim) >= D_WIFI_REQUEST_TIME)
 	{
 		reqNtpTim = Osal_GetCurTs();
-		if (Wifi_GetConnectSta() == D_SYS_STD_ON)
+		if (Wifi_GetConnectSta() == D_STD_ON)
 		{
 			gizwitsGetNTP();
 		}
@@ -242,7 +242,7 @@ static stdBoolean_t Wifi_LedSetFlash(uint16_t freq, uint16_t flashTimes)
 		{
 			times = 0;
 			optRes = EN_STD_TRUE;
-			if (pSet->recordLedSta == D_SYS_STD_OFF)
+			if (pSet->recordLedSta == D_STD_OFF)
 			{
 				Hal_WifiLedOff();
 			}
@@ -348,7 +348,7 @@ static void Wifi_KeyHandle(void)
 		switch (Hal_GetKeySta(EN_KEY_WIFI))
 		{
 			case EN_KEY_PRESS_UP:
-#if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
+#if (D_WIFI_UART_DEBUG == D_STD_ON)
 				printf("\nKey Press.\n");
 #endif
 				if (pSet->setMode == EN_WIFI_MODE_RUN)
@@ -358,7 +358,7 @@ static void Wifi_KeyHandle(void)
 				break;
 				
 			case EN_KEY_REPEAT:
-#if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
+#if (D_WIFI_UART_DEBUG == D_STD_ON)
 				printf("\nKey Repeat.\n");
 #endif
 				gizwitsSetMode(WIFI_AIRLINK_MODE);//Air-link mode
@@ -368,7 +368,7 @@ static void Wifi_KeyHandle(void)
 				break;
 
 			case EN_KEY_DOUBLE_PRESS_UP:
-#if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
+#if (D_WIFI_UART_DEBUG == D_STD_ON)
 				printf("\nKey Double Click.\n");
 #endif
 				gizwitsSetMode(WIFI_RESET_MODE);
@@ -378,7 +378,7 @@ static void Wifi_KeyHandle(void)
 				break;
 				
 			default:
-#if (D_WIFI_UART_DEBUG == D_SYS_STD_ON)
+#if (D_WIFI_UART_DEBUG == D_STD_ON)
 				printf("\nKey Action Is Not Support.\n");
 #endif
 				break;
@@ -403,7 +403,7 @@ static void Wifi_KeyHandle(void)
 
 static void Wifi_LedCtrl(void)
 {
-	if (Hal_GetWifiLedSta() == D_SYS_STD_OFF)
+	if (Hal_GetWifiLedSta() == D_STD_OFF)
 	{
 		Hal_WifiLedOn();
 	}

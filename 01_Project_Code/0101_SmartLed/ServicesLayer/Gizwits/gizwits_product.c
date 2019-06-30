@@ -19,7 +19,7 @@
 
 static uint32_t timerMsCount;
 //uint8_t aRxBuffer;
-static uint8_t wifiConnectSta = D_SYS_STD_OFF;
+static uint8_t wifiConnectSta = D_STD_OFF;
 
 /** User area the current device state structure*/
 dataPoint_t currentDataPoint;
@@ -99,10 +99,10 @@ int8_t gizwitsEventProcess(eventInfo_t *info, uint8_t *gizdata, uint32_t len)
  
         break;
       case WIFI_CON_M2M:
- 		wifiConnectSta = D_SYS_STD_ON;
+ 		wifiConnectSta = D_STD_ON;
         break;
       case WIFI_DISCON_M2M:
-      	wifiConnectSta = D_SYS_STD_OFF;
+      	wifiConnectSta = D_STD_OFF;
         break;
       case WIFI_RSSI:
         GIZWITS_LOG("RSSI %d\n", wifiData->rssi);
@@ -155,7 +155,7 @@ uint8_t Wifi_GetConnectSta(void)
 */
 void userHandle(void)
 {
-	if (Hal_GetWifiLedSta() == D_SYS_STD_OFF)
+	if (Hal_GetWifiLedSta() == D_STD_OFF)
 	{
 		currentDataPoint.valueLedStatusFlag = 0;
 	}

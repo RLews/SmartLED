@@ -11,7 +11,7 @@
 #include "drv_wdg.h"
 
 
-#if (D_SYS_WDG_ENABLE == D_SYS_STD_ON)
+#if (D_SYS_WDG_ENABLE == D_STD_ON)
 
 static stdBoolean_t wdgInitFinished = EN_STD_FALSE;
 

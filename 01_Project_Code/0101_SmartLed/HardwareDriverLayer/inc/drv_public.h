@@ -13,8 +13,8 @@
 
 #include "platforms.h"
 
-#define D_PLATFORMS_SPI_ENABLE				D_SYS_STD_OFF
-#define D_PLATFORMS_SD_ENABLE				D_SYS_STD_OFF
+#define D_PLATFORMS_SPI_ENABLE				D_STD_OFF
+#define D_PLATFORMS_SD_ENABLE				D_STD_OFF
 
 /*
 ************************************************************************************************************************
@@ -85,7 +85,7 @@ uint8_t Drv_UartGetRevData(uartName_t name);
 * SPI Interface
 ************************************************************************************************************************
 */
-#if (D_PLATFORMS_SPI_ENABLE == D_SYS_STD_ON)
+#if (D_PLATFORMS_SPI_ENABLE == D_STD_ON)
 
 typedef enum _SPI_NAME_T
 {
@@ -113,7 +113,7 @@ void Drv_Spi2SetSpeed(uint8_t baudRatePre);
 * SD Card Interface
 ************************************************************************************************************************
 */
-#if (D_PLATFORMS_SD_ENABLE == D_SYS_STD_ON)
+#if (D_PLATFORMS_SD_ENABLE == D_STD_ON)
 typedef enum _SD_CARD_ERR_T
 
 {
@@ -235,9 +235,9 @@ void Drv_RtcIsrHandle(void);
 * Watchdog Interface
 ************************************************************************************************************************
 */
-#define D_SYS_WDG_ENABLE			D_SYS_STD_OFF
+#define D_SYS_WDG_ENABLE			D_STD_OFF
 
-#if (D_SYS_WDG_ENABLE == D_SYS_STD_ON)
+#if (D_SYS_WDG_ENABLE == D_STD_ON)
 void Drv_WdgInit(void);
 void Drv_WdgFeed(void);
 stdBoolean_t Drv_GetWdgInitSta(void);

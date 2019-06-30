@@ -11,11 +11,11 @@
 #ifndef __OSAL_H
 #define __OSAL_H
 
-#define D_UC_OS_III_ENABLE			D_SYS_STD_OFF
+#define D_UC_OS_III_ENABLE			D_STD_OFF
 
 #include "hal_public.h"
 
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 #include  <cpu.h>
 #include  <lib_def.h>
 #include  <lib_ascii.h>
@@ -146,9 +146,9 @@ uint32_t Osal_DiffTsToUsec(uint32_t lastTs);
 * FatFS  Interface
 ************************************************************************************************************************
 */
-#define D_FILE_SYSTEM_ENABLE			D_SYS_STD_OFF
+#define D_FILE_SYSTEM_ENABLE			D_STD_OFF
 
-#if (D_FILE_SYSTEM_ENABLE == D_SYS_STD_ON)
+#if (D_FILE_SYSTEM_ENABLE == D_STD_ON)
 
 #include "ff.h"
 #include "diskio.h"

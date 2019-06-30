@@ -9,7 +9,7 @@
 
 #include "hal_sd.h"
 
-#if (D_PLATFORMS_SD_ENABLE == D_SYS_STD_ON)
+#if (D_PLATFORMS_SD_ENABLE == D_STD_ON)
 
 static uint8_t sdCardType = D_SD_TYPE_ERR;
 

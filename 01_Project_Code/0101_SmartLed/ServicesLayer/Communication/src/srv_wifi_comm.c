@@ -9,7 +9,7 @@
 
 #include "srv_wifi_comm.h"
 
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 static OSAL_SEM wifiUartRxSem;
 
 static void Srv_WifiCommRxSemPost(void);
@@ -31,7 +31,7 @@ void Srv_WifiCommInit(void)
 {
 	D_OSAL_ALLOC_CRITICAL_SR();
 	
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 	Osal_SemCreate(&wifiUartRxSem, 0, "WIFI_UART_RX");
 	D_OSAL_ENTER_CRITICAL();
 	Hal_SetWifiRxSemPostFunc(Srv_WifiCommRxSemPost);
@@ -54,7 +54,7 @@ void Srv_WifiCommInit(void)
 
 void Srv_WifiCommWaitRev(void)
 {
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 	Osal_SemWait(&wifiUartRxSem, 0);
 #endif	
 }
@@ -77,7 +77,7 @@ void Srv_WifiCommTx(const uint8_t pDat[], uint16_t len)
 	(void)Hal_UartWrite(EN_WIFI_COM, pDat, len);
 }
 
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 
 /*
 ************************************************************************************************************************

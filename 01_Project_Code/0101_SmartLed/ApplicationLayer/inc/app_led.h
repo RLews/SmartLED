@@ -13,7 +13,7 @@
 
 #include "app_public.h"
 
-#define D_SYS_LED_STACK_DEBUG		D_SYS_STD_OFF
+#define D_SYS_LED_STACK_DEBUG		D_STD_OFF
 
 #define D_SYS_LED_FLASH_TIME		500//unit: ms
 

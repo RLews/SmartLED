@@ -168,7 +168,7 @@ void Hal_EnableAllInt(void);
 * Watchdog  Interface
 ************************************************************************************************************************
 */
-#if (D_SYS_WDG_ENABLE == D_SYS_STD_ON)
+#if (D_SYS_WDG_ENABLE == D_STD_ON)
 #define D_HAL_WDG_INIT()			Drv_WdgInit()
 #define D_HAL_WDG_FEED()			Drv_WdgFeed()
 #endif
@@ -227,7 +227,7 @@ void Hal_RtcSetTime(rtcTime_t times);
 * SD Card  Interface
 ************************************************************************************************************************
 */
-#if (D_PLATFORMS_SD_ENABLE == D_SYS_STD_ON)
+#if (D_PLATFORMS_SD_ENABLE == D_STD_ON)
 
 sdCardErr_t Hal_SDCardGetCID(uint8_t *pCID);
 sdCardErr_t Hal_SDCardGetCSD(uint8_t *pCSD);

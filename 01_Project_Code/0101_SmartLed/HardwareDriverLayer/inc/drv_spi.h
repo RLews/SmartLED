@@ -15,7 +15,7 @@
 
 #include "drv_public.h"
 
-#if (D_PLATFORMS_SPI_ENABLE == D_SYS_STD_ON)
+#if (D_PLATFORMS_SPI_ENABLE == D_STD_ON)
 
 #define D_SD_CARD_CRC_CONFIG			(7u)
 

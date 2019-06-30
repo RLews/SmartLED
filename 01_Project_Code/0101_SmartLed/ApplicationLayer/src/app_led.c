@@ -10,7 +10,7 @@
 
 #include "app_led.h"
 
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 /* System Run Led Task */
 #define D_SYSTEM_RUN_FLAG_TASK_PRIO			6
 #define D_SYSTEM_RUN_FLAG_TASK_STACK_SIZE	128
@@ -40,7 +40,7 @@ static void Sys_LedFlash(void);
 
 void Sys_LedInit(void)
 {
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 	OSAL_ERROR tErr = (OSAL_ERROR)0;
 	D_OSAL_ALLOC_CRITICAL_SR();
 
@@ -63,7 +63,7 @@ void Sys_LedInit(void)
 #endif
 }
 
-#if (D_UC_OS_III_ENABLE == D_SYS_STD_ON)
+#if (D_UC_OS_III_ENABLE == D_STD_ON)
 /*
 ************************************************************************************************************************
 *                                               System Running Led Flash Task
@@ -77,7 +77,7 @@ void Sys_LedInit(void)
 */
 static void Sys_LedFlash(void)
 {
-#if (D_SYS_LED_STACK_DEBUG == D_SYS_STD_ON)
+#if (D_SYS_LED_STACK_DEBUG == D_STD_ON)
 	OSAL_CPU_STK_SIZE free = 0;
 	OSAL_CPU_STK_SIZE used = 0;
 #endif
@@ -87,7 +87,7 @@ static void Sys_LedFlash(void)
 		Osal_DelayMs(D_SYS_LED_FLASH_TIME);
 		Hal_RunLedOff();
 		Osal_DelayMs(D_SYS_LED_FLASH_TIME);
-	#if (D_SYS_LED_STACK_DEBUG == D_SYS_STD_ON)
+	#if (D_SYS_LED_STACK_DEBUG == D_STD_ON)
 		(void)Osal_TaskStkChk(&runFlagTaskTCB, &free, &used);
 	#endif
 	}
@@ -111,19 +111,19 @@ static void Sys_LedFlash(void)
 void Sys_LedFlash(void)
 {
 	static uint32_t Ts = 0;
-	static uint8_t runFlag = D_SYS_STD_OFF;
+	static uint8_t runFlag = D_STD_OFF;
 
 	if (Osal_DiffTsToUsec(Ts) >= (500*D_SYS_MS_COUNT))
 	{
 		Ts = Osal_GetCurTs();
-		if (runFlag == D_SYS_STD_OFF)
+		if (runFlag == D_STD_OFF)
 		{
-			runFlag = D_SYS_STD_ON;
+			runFlag = D_STD_ON;
 			Hal_RunLedOn();
 		}
 		else
 		{
-			runFlag = D_SYS_STD_OFF;
+			runFlag = D_STD_OFF;
 			Hal_RunLedOff();
 		}
 	}

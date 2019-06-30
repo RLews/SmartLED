@@ -10,7 +10,7 @@
 
 #include "srv_comm.h"
 
-#if (D_SRV_COMM_ENABLE == D_SYS_STD_ON)
+#if (D_SRV_COMM_ENABLE == D_STD_ON)
 
 static const commFrameConfig_t commFrameConfig[EN_COMM_ALL_NUM] = {
 	D_COMM_FRAME_CONFIG
@@ -452,7 +452,7 @@ static void Srv_RevDataHandle(void)
 			break;
 			
 		case EN_COMM_DSG_MSG:
-		#if (D_SRV_UDS_ENABLE == D_SYS_STD_ON)
+		#if (D_SRV_UDS_ENABLE == D_STD_ON)
 			UdsCan_LData_RxIndication(pDat->id, pDat->data[D_COMM_TYPE_OR_CMD_DLC_INDEX], &pDat->data[D_COMM_DATA_INDEX]);
 		#endif
 			break;
@@ -541,7 +541,7 @@ void Srv_SysCommTransmit(uint8_t id, const uint8_t dat[], uint16_t len)
 /* TODO */
 void UdsCan_LData_TxRequest( uint32_t msgId, uint8_t numBytes, uint8_t* pBytes )
 {
-#if (D_SRV_UDS_ENABLE == D_SYS_STD_ON)
+#if (D_SRV_UDS_ENABLE == D_STD_ON)
 	uint8_t buf[D_COMM_UDS_FRAME_MAX_SIZE + 1] = {0};
 	uint8_t cnt = 0;
 	uint8_t i = 0;

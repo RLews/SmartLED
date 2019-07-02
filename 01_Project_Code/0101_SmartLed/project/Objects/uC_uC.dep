@@ -57,7 +57,7 @@ I (..\ServicesLayer\DataStructOpt\inc\srv_queue.h)(0x5D14B287)
 I (..\ServicesLayer\osal\inc\osal.h)(0x5D18BEFF)
 I (..\ServicesLayer\Communication\inc\srv_comm.h)(0x5D18BF02)
 I (..\ServicesLayer\Communication\inc\srv_comm_check.h)(0x5CF66612)
-F (..\ApplicationLayer\src\app_wifi.c)(0x5D18BF02)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ApplicationLayer\inc -I..\ComplexDriverLayer\inc -I..\HardwareAbstractionLayer\inc -I..\HardwareDriverLayer\inc -I..\HardwareDriverLayer\STM32F10x_FWLib\inc -I..\ServicesLayer\osal\inc -I..\ServicesLayer\DataStructOpt\inc -I..\ServicesLayer\Communication\inc -I..\ServicesLayer\Gizwits -I..\ServicesLayer\Gizwits\Utils -I..\ServicesLayer\Lib-I E:\git\SmartLED_for_c8t6\01_Project_Code\0101_SmartLed\project\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\app_wifi.o --omf_browse .\objects\app_wifi.crf --depend .\objects\app_wifi.d)
+F (..\ApplicationLayer\src\app_wifi.c)(0x5D1B7BA2)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ApplicationLayer\inc -I..\ComplexDriverLayer\inc -I..\HardwareAbstractionLayer\inc -I..\HardwareDriverLayer\inc -I..\HardwareDriverLayer\STM32F10x_FWLib\inc -I..\ServicesLayer\osal\inc -I..\ServicesLayer\DataStructOpt\inc -I..\ServicesLayer\Communication\inc -I..\ServicesLayer\Gizwits -I..\ServicesLayer\Gizwits\Utils -I..\ServicesLayer\Lib-I E:\git\SmartLED_for_c8t6\01_Project_Code\0101_SmartLed\project\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\app_wifi.o --omf_browse .\objects\app_wifi.crf --depend .\objects\app_wifi.d)
 I (..\ApplicationLayer\inc\app_wifi.h)(0x5D18BEFD)
 I (..\ApplicationLayer\inc\app_public.h)(0x5D18BF02)
 I (..\HardwareAbstractionLayer\inc\hal_public.h)(0x5D18BEFE)
@@ -225,7 +225,7 @@ I (..\HardwareDriverLayer\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x54FAFEBF)
 I (..\HardwareDriverLayer\STM32F10x_FWLib\inc\misc.h)(0x54FAFECB)
 I (..\ServicesLayer\DataStructOpt\inc\srv_queue.h)(0x5D14B287)
 F (..\HardwareAbstractionLayer\src\hal_uart.c)(0x5D14B369)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ApplicationLayer\inc -I..\ComplexDriverLayer\inc -I..\HardwareAbstractionLayer\inc -I..\HardwareDriverLayer\inc -I..\HardwareDriverLayer\STM32F10x_FWLib\inc -I..\ServicesLayer\osal\inc -I..\ServicesLayer\DataStructOpt\inc -I..\ServicesLayer\Communication\inc -I..\ServicesLayer\Gizwits -I..\ServicesLayer\Gizwits\Utils -I..\ServicesLayer\Lib-I E:\git\SmartLED_for_c8t6\01_Project_Code\0101_SmartLed\project\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\hal_uart.o --omf_browse .\objects\hal_uart.crf --depend .\objects\hal_uart.d)
-I (..\HardwareAbstractionLayer\inc\hal_uart.h)(0x5D14B369)
+I (..\HardwareAbstractionLayer\inc\hal_uart.h)(0x5D1B7C2F)
 I (..\HardwareAbstractionLayer\inc\hal_public.h)(0x5D18BEFE)
 I (..\HardwareDriverLayer\inc\drv_public.h)(0x5D18BEFD)
 I (..\HardwareDriverLayer\inc\platforms.h)(0x5D18BF02)
@@ -355,7 +355,7 @@ F (..\HardwareAbstractionLayer\inc\hal.h)(0x5CF6660E)()
 F (..\HardwareAbstractionLayer\inc\hal_int.h)(0x5D18BEFE)()
 F (..\HardwareAbstractionLayer\inc\hal_led.h)(0x5CF66610)()
 F (..\HardwareAbstractionLayer\inc\hal_timer.h)(0x5CF6660F)()
-F (..\HardwareAbstractionLayer\inc\hal_uart.h)(0x5D14B369)()
+F (..\HardwareAbstractionLayer\inc\hal_uart.h)(0x5D1B7C2F)()
 F (..\HardwareAbstractionLayer\inc\hal_wdg.h)(0x5CF6660E)()
 F (..\HardwareAbstractionLayer\inc\hal_public.h)(0x5D18BEFE)()
 F (..\HardwareAbstractionLayer\inc\hal_rtc.h)(0x5D026B5D)()
@@ -752,7 +752,7 @@ I (..\HardwareDriverLayer\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x54FAFEBF)
 I (..\HardwareDriverLayer\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x54FAFEBF)
 I (..\HardwareDriverLayer\STM32F10x_FWLib\inc\misc.h)(0x54FAFECB)
 F (..\HardwareDriverLayer\src\drv_uart.c)(0x5D0B9E69)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\ApplicationLayer\inc -I..\ComplexDriverLayer\inc -I..\HardwareAbstractionLayer\inc -I..\HardwareDriverLayer\inc -I..\HardwareDriverLayer\STM32F10x_FWLib\inc -I..\ServicesLayer\osal\inc -I..\ServicesLayer\DataStructOpt\inc -I..\ServicesLayer\Communication\inc -I..\ServicesLayer\Gizwits -I..\ServicesLayer\Gizwits\Utils -I..\ServicesLayer\Lib-I E:\git\SmartLED_for_c8t6\01_Project_Code\0101_SmartLed\project\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\drv_uart.o --omf_browse .\objects\drv_uart.crf --depend .\objects\drv_uart.d)
-I (..\HardwareDriverLayer\inc\drv_uart.h)(0x5D10BEAE)
+I (..\HardwareDriverLayer\inc\drv_uart.h)(0x5D1B7BAF)
 I (..\HardwareDriverLayer\inc\drv_public.h)(0x5D18BEFD)
 I (..\HardwareDriverLayer\inc\platforms.h)(0x5D18BF02)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5475F2FA)
@@ -888,7 +888,7 @@ F (..\HardwareDriverLayer\inc\drv_dwt.h)(0x5CF6660F)()
 F (..\HardwareDriverLayer\inc\drv_gpio.h)(0x5D10CB3E)()
 F (..\HardwareDriverLayer\inc\drv_int.h)(0x5CF66610)()
 F (..\HardwareDriverLayer\inc\drv_timer.h)(0x5CF66610)()
-F (..\HardwareDriverLayer\inc\drv_uart.h)(0x5D10BEAE)()
+F (..\HardwareDriverLayer\inc\drv_uart.h)(0x5D1B7BAF)()
 F (..\HardwareDriverLayer\inc\platforms.h)(0x5D18BF02)()
 F (..\HardwareDriverLayer\inc\stm32f10x.h)(0x4D783CB4)()
 F (..\HardwareDriverLayer\inc\stm32f10x_conf.h)(0x5D0CD9F5)()

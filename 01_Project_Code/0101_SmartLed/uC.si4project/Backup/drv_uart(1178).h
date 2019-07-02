@@ -32,9 +32,9 @@ typedef struct _UART_CONFIG_T
 }uartConfig_t;
 
 #define D_UART_CONFIG_TABLE		\
-	{EN_SYS_COM, RCC_APB2Periph_USART1, USART1, USART1_IRQn, 1, 3, 115200, USART_WordLength_8b, \
+	{EN_SYS_COM, RCC_APB2Periph_USART1, USART1, USART1_IRQn, 3, 3, 115200, USART_WordLength_8b, \
 	 USART_StopBits_1, USART_Parity_No, USART_HardwareFlowControl_None, (USART_Mode_Rx | USART_Mode_Tx)}, \
-	{EN_WIFI_COM, RCC_APB1Periph_USART2, USART2, USART2_IRQn, 2, 3, 9600, USART_WordLength_8b, \
+	{EN_WIFI_COM, RCC_APB1Periph_USART2, USART2, USART2_IRQn, 2, 3, 115200, USART_WordLength_8b, \
 	 USART_StopBits_1, USART_Parity_No, USART_HardwareFlowControl_None, (USART_Mode_Rx | USART_Mode_Tx)}
 
 

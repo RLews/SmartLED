@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\uC.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\uC.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Sun Jun 30 22:09:04 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Tue Jul 02 23:45:53 2019
 <BR><P>
 <H3>Maximum Stack Usage =        356 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -674,7 +674,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hal_SysInit
 </UL>
 
-<P><STRONG><a name="[94]"></a>Hal_SysUartInit</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, hal_uart.o(i.Hal_SysUartInit))
+<P><STRONG><a name="[94]"></a>Hal_SysUartInit</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, hal_uart.o(i.Hal_SysUartInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = Hal_SysUartInit &rArr; Drv_SysUartInit &rArr; USART_Init &rArr; RCC_GetClocksFreq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hal_SysISRSet
@@ -1212,7 +1212,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wifi_UpdateTime
 </UL>
 
-<P><STRONG><a name="[b0]"></a>Wifi_TaskHandle</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, app_wifi.o(i.Wifi_TaskHandle))
+<P><STRONG><a name="[b0]"></a>Wifi_TaskHandle</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, app_wifi.o(i.Wifi_TaskHandle))
 <BR><BR>[Stack]<UL><LI>Max Depth = 356<LI>Call Chain = Wifi_TaskHandle &rArr; Wifi_TmrCallBack &rArr; Wifi_WorkManage &rArr; Wifi_DataHandle &rArr; gizwitsHandle &rArr; gizProtocolGetDeviceInfo &rArr; uartWrite &rArr; Srv_WifiCommTx &rArr; Hal_UartWrite &rArr; Drv_UartITTxEnable &rArr; USART_ITConfig
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gizPutData
@@ -1220,7 +1220,6 @@ Global Symbols
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wifi_TmrCallBack
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Osal_GetCurTs
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Osal_DiffTsToUsec
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1252,7 +1251,6 @@ Global Symbols
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gizPutData
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wifi_KeyHandle
 <LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wifi_TaskInit
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wifi_TaskHandle
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gizReportData
 <LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gizProtocolWaitAckCheck
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gizProtocolWaitAck

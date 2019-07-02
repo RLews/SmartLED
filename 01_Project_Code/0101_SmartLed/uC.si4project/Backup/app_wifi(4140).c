@@ -116,6 +116,10 @@ static void Wifi_TaskHandle(void)
 		Srv_WifiCommWaitRev();
 		(void)Hal_UartReadByte(EN_WIFI_COM, &revDat);
 		(void)gizPutData(&revDat, 1);
+		
+#if (D_WIFI_UART_DEBUG == D_STD_ON)
+		printf("\nWIFI2MCU: %02x \n" ,revDat);
+#endif
 	}
 }
 
@@ -141,6 +145,10 @@ void Wifi_TaskHandle(void)
 	if (EN_QUEUE_OPT_OK == Hal_UartReadByte(EN_WIFI_COM, &revDat))
 	{
 		(void)gizPutData(&revDat, 1);
+		
+#if (D_WIFI_UART_DEBUG == D_STD_ON)
+		printf("\nWIFI2MCU: %02x " ,revDat);
+#endif
 	}
 
 	if (Osal_DiffTsToUsec(Ts) >= (5*D_SYS_MS_COUNT))

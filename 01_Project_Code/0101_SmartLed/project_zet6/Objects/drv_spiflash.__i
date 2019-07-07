@@ -1,6 +1,0 @@
--c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\ApplicationLayer\inc -I..\ComplexDriverLayer\inc -I..\HardwareAbstractionLayer\inc -I..\HardwareDriverLayer\inc -I..\HardwareDriverLayer\STM32F10x_FWLib\inc -I..\ServicesLayer\osal\inc -I..\ServicesLayer\uCOSIII\uC-CPU -I..\ServicesLayer\uCOSIII\uC-CPU\ARM-Cortex-M3\RealView -I..\ServicesLayer\uCOSIII\uC-LIB -I..\ServicesLayer\uCOSIII\uC-LIB\Ports\ARM-Cortex-M3\RealView -I..\ServicesLayer\uCOSIII\uCOS-Config -I..\ServicesLayer\uCOSIII\uCOS-III\Source -I..\ServicesLayer\uCOSIII\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView -I..\ServicesLayer\DataStructOpt\inc -I..\ServicesLayer\Communication\inc
--I E:\KeilWorkspace\M3\uCOS_III_mdk5\project\RTE
--I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0
--I D:\Keil_v5\ARM\CMSIS\Include
--D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER
--o .\objects\drv_spiflash.o --omf_browse .\objects\drv_spiflash.crf --depend .\objects\drv_spiflash.d "..\ComplexDriverLayer\src\drv_spiflash.c"

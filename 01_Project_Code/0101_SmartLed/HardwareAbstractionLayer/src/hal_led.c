@@ -26,6 +26,7 @@ static uint8_t wifiLedSta = D_STD_OFF;
 void Hal_IoInit(void)
 {
 	Drv_GpioInit();
+	Drv_PwmInit();
 }
 
 /*
@@ -73,7 +74,7 @@ void Hal_RunLedOff(void)
 */
 void Hal_WifiLedOn(void)
 {
-	Drv_GpioNameOut(EN_WIFI_LED_GPIO, EN_GPIO_LOW);
+	Drv_PwmSetDuty(EN_TEST_PWM, D_DRV_PWM_LEVEL_MAX);
 	
 	wifiLedSta = D_STD_ON;
 }
@@ -91,7 +92,7 @@ void Hal_WifiLedOn(void)
 */
 void Hal_WifiLedOff(void)
 {
-	Drv_GpioNameOut(EN_WIFI_LED_GPIO, EN_GPIO_HIGH);
+	Drv_PwmSetDuty(EN_TEST_PWM, 0);
 	
 	wifiLedSta = D_STD_OFF;
 }
@@ -114,4 +115,5 @@ uint8_t Hal_GetWifiLedSta(void)
 {
 	return wifiLedSta;
 }
+
 

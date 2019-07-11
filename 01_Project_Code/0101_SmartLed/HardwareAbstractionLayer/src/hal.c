@@ -11,7 +11,6 @@
 #include "hal.h"
 
 
-static halInitSta_t halInitSta = EN_HAL_UNINIT;
 
 /*
 ************************************************************************************************************************
@@ -26,42 +25,22 @@ static halInitSta_t halInitSta = EN_HAL_UNINIT;
 */
 void Hal_SysInit(void)
 {
-	halInitSta_t *pInitSta = &halInitSta;
 #if (D_SYS_WDG_ENABLE == D_STD_ON)
 	D_HAL_WDG_INIT();
-	*pInitSta = EN_HAL_WDG_INIT_FINISH;
 #endif	
 	Hal_SysIntInit();
-	*pInitSta = EN_HAL_INT_INIT_FINISH;
 	
 	Hal_IoInit();
-	*pInitSta = EN_HAL_IO_INIT_FINISH;
+
+	Hal_AdcInit();
 	
 	Hal_SysUartInit();
-	*pInitSta = EN_HAL_UART_INIT_FINISH;
 
 	Hal_RtcInit();
-	*pInitSta = EN_HAL_ALL_INIT_FINISH;
 	
 #if (D_UC_OS_III_ENABLE != D_STD_ON)
 	Drv_DwtInit();//dwt initial
 #endif
-}
-
-/*
-************************************************************************************************************************
-*                                            get hardware abstraction layer inital status
-*
-* Description : get hardware abstraction layer inital status.
-*
-* Arguments   : void.
-*
-* Returns     : halInitSta_t. initial status.
-************************************************************************************************************************
-*/
-halInitSta_t Hal_GetInitStatus(void)
-{
-	return halInitSta;
 }
 
 

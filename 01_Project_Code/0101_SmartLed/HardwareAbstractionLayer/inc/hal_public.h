@@ -26,19 +26,7 @@ typedef void (*UartRxSemPost)(void);
 * Hardware Abstraction Layer initial Interface
 ************************************************************************************************************************
 */
-typedef enum _HAL_INIT_STA_T
-{
-	EN_HAL_UNINIT = 0,
-	EN_HAL_WDG_INIT_FINISH,
-	EN_HAL_INT_INIT_FINISH,
-	EN_HAL_IO_INIT_FINISH,
-	EN_HAL_UART_INIT_FINISH,
-	EN_HAL_RTC_INIT_FINISH,
-	EN_HAL_ALL_INIT_FINISH
-}halInitSta_t;
-
 void Hal_SysInit(void);
-halInitSta_t Hal_GetInitStatus(void);
 
 
 /*
@@ -174,12 +162,34 @@ void Hal_EnableAllInt(void);
 #endif
 
 
+/*
+************************************************************************************************************************
+* Adc  Interface
+************************************************************************************************************************
+*/
+
+void Hal_AdcInit(void);
+uint16_t Hal_ScanShock(void);
+
+
+/*
+************************************************************************************************************************
+* Timer  Interface
+************************************************************************************************************************
+*/
+void Hal_SysTickInit(uint16_t tim);
 
 /*
 ************************************************************************************************************************
 * Led  Interface
 ************************************************************************************************************************
 */
+#define D_HAL_SET_WARM_LED(duty)		Drv_PwmSetDuty(EN_WARM_PWM, duty)
+#define D_HAL_SET_RED_LED(duty)			Drv_PwmSetDuty(EN_RED_PWM, duty)
+#define D_HAL_SET_GREEN_LED(duty)		Drv_PwmSetDuty(EN_GREEN_PWM, duty)
+#define D_HAL_SET_BLUE_LED(duty)		Drv_PwmSetDuty(EN_BLUE_PWM, duty)
+
+
 void Hal_IoInit(void);
 void Hal_RunLedOn(void);
 void Hal_RunLedOff(void);

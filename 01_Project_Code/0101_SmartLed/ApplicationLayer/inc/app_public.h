@@ -31,6 +31,8 @@ void Wifi_TaskInit(void);
 
 void Wifi_TaskHandle(void);
 void Sys_LedFlash(void);
+void Shk_PeriodHandle(void);
+void Led_CtrlInit(void);
 
 
 #endif

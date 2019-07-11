@@ -137,7 +137,7 @@
           <Target>
             <UseTarget>1</UseTarget>
             <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
-            <RunToMain>0</RunToMain>
+            <RunToMain>1</RunToMain>
             <RestoreBreakpoints>1</RestoreBreakpoints>
             <RestoreWatchpoints>1</RestoreWatchpoints>
             <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
@@ -175,7 +175,7 @@
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3>"" ()</Flash3>
+          <Flash3></Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -423,6 +423,16 @@
               <FileType>1</FileType>
               <FilePath>..\ApplicationLayer\src\app_wifi.c</FilePath>
             </File>
+            <File>
+              <FileName>app_shock.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\ApplicationLayer\src\app_shock.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_led_ctrl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\ApplicationLayer\src\app_led_ctrl.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -447,6 +457,16 @@
               <FileName>app_wifi.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\ApplicationLayer\inc\app_wifi.h</FilePath>
+            </File>
+            <File>
+              <FileName>app_shock.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\ApplicationLayer\inc\app_shock.h</FilePath>
+            </File>
+            <File>
+              <FileName>app_led_ctrl.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\ApplicationLayer\inc\app_led_ctrl.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -518,6 +538,11 @@
               <FileType>1</FileType>
               <FilePath>..\HardwareAbstractionLayer\src\hal_key.c</FilePath>
             </File>
+            <File>
+              <FileName>hal_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HardwareAbstractionLayer\src\hal_adc.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -572,6 +597,11 @@
               <FileName>hal_key.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\HardwareAbstractionLayer\inc\hal_key.h</FilePath>
+            </File>
+            <File>
+              <FileName>hal_adc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\HardwareAbstractionLayer\inc\hal_adc.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -768,6 +798,11 @@
               <FileType>2</FileType>
               <FilePath>..\HardwareDriverLayer\src\startup_stm32f10x_md.s</FilePath>
             </File>
+            <File>
+              <FileName>drv_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HardwareDriverLayer\src\drv_adc.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -847,6 +882,11 @@
               <FileName>drv_rtc.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\HardwareDriverLayer\inc\drv_rtc.h</FilePath>
+            </File>
+            <File>
+              <FileName>drv_adc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\HardwareDriverLayer\inc\drv_adc.h</FilePath>
             </File>
           </Files>
         </Group>

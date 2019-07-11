@@ -223,67 +223,7 @@ void mcuRestart(void)
     }
 }
 
-/**@} */
-#if 0
 
-#ifdef __GNUC__
-  /* With GCC/RAISONANCE, small printf (option LD Linker->Libraries->Small printf
-     set to 'Yes') calls __io_putchar() */
-  #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
-#else
-  #define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
-#endif /* __GNUC__ */
-/**
-  * @brief  Retargets the C library printf function to the USART.
-  * @param  None
-  * @retval None
-  */
-PUTCHAR_PROTOTYPE
-{
-  /* Place your implementation of fputc here */
-  /* e.g. write a character to the USART1 and Loop until the end of transmission */
-  (void)Srv_WifiCommTx((uint8_t *)&ch, 1);
- 
-  return ch;
-}
-
-/**
-  * @brief  Period elapsed callback in non blocking mode 
-  * @param  htim : TIM handle
-  * @retval None
-  */
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-{
-	if(htim==&htim2)
-	{
-		//keyHandle((keysTypedef_t *)&keys);
-		gizTimerMs();
-	}
-}
-
-/**
-* @brief Timer TIM3 init function
-
-* @param none
-* @return none
-*/
-void timerInit(void)
-{
-	//HAL_TIM_Base_Start_IT(&htim2);
-}
-
-/**
-* @brief USART init function
-
-* Serial communication between WiFi modules and device MCU
-* @param none
-* @return none
-*/
-void uartInit(void)
-{
-	//HAL_UART_Receive_IT(&huart2, (uint8_t *)&aRxBuffer, 1);//开启下一次接收中�? 
-}
-#endif
 /**
 * @brief Serial port write operation, send data to WiFi module
 *
@@ -331,20 +271,8 @@ int32_t uartWrite(uint8_t *buf, uint32_t len)
 	return len;
 }  
 
-/*
-************************************************************************************************************************
-* Function Name    : WifiBsp_LogPrint
-* Description      : wifi log output
-* Input Arguments  : 
-* Output Arguments : 
-* Returns          : 
-* Notes            : 
-* Author           : Lews Hammond
-* Time             : 2019-6-20
-************************************************************************************************************************
-*/
 
-void WifiBsp_LogPrint(const char *pBuf, ...)
+void Bsp_GizPrintf(char *format, ...)
 {
 	
 }

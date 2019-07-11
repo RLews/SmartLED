@@ -35,7 +35,7 @@ void Drv_GpioInit(void)
 
 	for (i = 0; i < (uint8_t)EN_ALL_GPIO_NUM; i++)
 	{
-		RCC_APB2PeriphClockCmd(pIOConfig[i].gpioPeriphClock, ENABLE);
+		RCC_APB2PeriphClockCmd((pIOConfig[i].gpioPeriphClock | pIOConfig[i].gpioMult), ENABLE);
 		GPIO_InitStructure.GPIO_Pin = pIOConfig[i].gpioPin;
 		GPIO_InitStructure.GPIO_Mode = pIOConfig[i].gpioMode;
 		GPIO_InitStructure.GPIO_Speed = pIOConfig[i].gpioSpd;

@@ -24,18 +24,15 @@
 typedef enum _GPIO_NAME_T
 {
 	EN_SYSTEM_RUN_LED = 0,
-	EN_WIFI_LED_GPIO,
+	EN_TEST_LED_GPIO,
+	EN_WARM_LED_GPIO,
+	EN_RED_LED_GPIO,
+	EN_GREEN_LED_GPIO,
+	EN_BLUE_LED_GPIO,
+	EN_SHOCK_SNS_GPIO,
 	EN_WIFI_KEY_IO,
 	EN_SYSTEM_UART_TX,
 	EN_SYSTEM_UART_RX,
-/*
-	EN_W25Q63_CS,
-	EN_NRFxx_CS,
-	EN_SD_CARD_CS,
-	EN_SPI2_SCK,
-	EN_SPI2_MISO,
-	EN_SPI2_MOSI,
-*/
 	EN_WIFI_UART_TX,
 	EN_WIFI_UART_RX,
 	EN_ALL_GPIO_NUM
@@ -54,6 +51,21 @@ void Drv_GpioInit(void);
 stdBoolean_t Drv_GetGpioInitSta(void);
 void Drv_GpioNameOut(gpioName_t name, gpioState_t sta);
 gpioState_t Drv_GpioNameIn(gpioName_t name);
+
+
+/*
+************************************************************************************************************************
+* ADC Interface
+************************************************************************************************************************
+*/
+typedef enum _ADC_SIGNAL_NAME_T
+{
+	EN_ADC_SHOCK_SNS = 0,
+	EN_ADC_ALL_SIGNAL
+}adcSignalName_t;
+
+void Drv_AdcInit(void);
+uint16_t Drv_AdcScanCh(adcSignalName_t name);
 
 
 /*
@@ -199,11 +211,26 @@ uint32_t Drv_GetCpuFreq(void);
 * Timer Interface
 ************************************************************************************************************************
 */
+#define D_DRV_PWM_LEVEL_MAX			1023
+
+typedef enum _TIMER_NAME_T
+{
+	EN_TEST_PWM = 0,
+	EN_WARM_PWM,
+	EN_RED_PWM,
+	EN_GREEN_PWM,
+	EN_BLUE_PWM,
+	EN_TIMER_ALL_TYPE
+}timerName_t;
+
 void Drv_SysTickIntEnable(void);
 void Drv_SysTickIntDisable(void);
 void Drv_SysTickOpen(void);
 void Drv_SysTickClose(void);
 void Drv_SysTickSetReload(uint32_t val);
+
+void Drv_PwmInit(void);
+void Drv_PwmSetDuty(timerName_t name, uint16_t duty);
 
 
 /*
@@ -235,7 +262,7 @@ void Drv_RtcIsrHandle(void);
 * Watchdog Interface
 ************************************************************************************************************************
 */
-#define D_SYS_WDG_ENABLE			D_STD_OFF
+#define D_SYS_WDG_ENABLE			D_STD_ON
 
 #if (D_SYS_WDG_ENABLE == D_STD_ON)
 void Drv_WdgInit(void);

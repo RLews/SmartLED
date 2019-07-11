@@ -31,6 +31,7 @@ static void Wifi_TaskHandle(void);
 static wifiSetInfo_t wifiSetInfo = {0};
 
 static void Wifi_TmrCallBack(void);
+static void Wifi_ShockHandle(void);
 static void Wifi_KeyHandle(void);
 static void Wifi_LedCtrl(void);
 static void Wifi_UpdateTime(void);
@@ -168,12 +169,12 @@ void Wifi_TaskHandle(void)
 static void Wifi_UpdateTime(void)
 {
 	static uint32_t reqNtpTim = 0;
-
-	if (Osal_DiffTsToUsec(reqNtpTim) >= D_WIFI_REQUEST_TIME)
+	
+	if (Wifi_GetConnectSta() == D_STD_ON)
 	{
-		reqNtpTim = Osal_GetCurTs();
-		if (Wifi_GetConnectSta() == D_STD_ON)
+		if (Osal_DiffTsToUsec(reqNtpTim) >= D_WIFI_REQUEST_TIME)
 		{
+			reqNtpTim = Osal_GetCurTs();
 			gizwitsGetNTP();
 		}
 	}
@@ -316,8 +317,33 @@ static void Wifi_TmrCallBack(void)
 	Hal_KeyScan();
 	Wifi_KeyHandle();
 	Wifi_WorkManage();
+	Wifi_ShockHandle();
 }
 
+/*
+************************************************************************************************************************
+* Function Name    : Wifi_ShockHandle
+* Description      : 
+* Input Arguments  : 
+* Output Arguments : 
+* Returns          : 
+* Notes            : 
+* Author           : Lews Hammond
+* Time             : 2019-7-11
+************************************************************************************************************************
+*/
+
+static void Wifi_ShockHandle(void)
+{
+	if (Shk_GetSnsSta() == EN_SHOCK_PRESS)
+	{
+#if (D_WIFI_UART_DEBUG == D_STD_ON)
+		printf("\nShock Press.\n");
+#endif
+		Shk_ClrSnsSta();
+		Led_ModeCycling();
+	}
+}
 
 /*
 ************************************************************************************************************************

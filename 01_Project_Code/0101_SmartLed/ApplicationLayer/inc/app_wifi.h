@@ -13,6 +13,7 @@
 #include "app_public.h"
 #include "gizwits_product.h"
 #include "srv_wifi_comm.h"
+#include "app_shock.h"
 
 #if (D_UC_OS_III_ENABLE == D_STD_ON)
 
@@ -28,7 +29,7 @@
 
 #define D_WIFI_UPDATE_PERIOD	(100 * 1000ul)
 
-#define D_WIFI_REQUEST_TIME		(30000ul * 1000ul) //30s
+#define D_WIFI_REQUEST_TIME		(10000ul * 1000ul) //10s
 
 #define D_WIFI_LED_PERIOD_TICK	D_WIFI_TMR_MS
 

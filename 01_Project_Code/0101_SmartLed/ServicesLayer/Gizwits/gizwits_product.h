@@ -63,7 +63,7 @@ void mcuRestart(void);
 uint32_t gizGetTimerCount(void);
 int32_t uartWrite(uint8_t *buf, uint32_t len);
 int8_t gizwitsEventProcess(eventInfo_t *info, uint8_t *data, uint32_t len);
-void WifiBsp_LogPrint(const char *pBuf, ...);
+void Bsp_GizPrintf(char *format, ...);
 
 #ifdef __cplusplus
 }

@@ -14,8 +14,6 @@
 
 #define D_LED_MIN_BRIGHTNESS			3
 
-#define D_LED_GRADIENT_DEFAULT_FREQ		500
-
 #define D_LED_BRIGHTNESS_MAX			D_DRV_PWM_LEVEL_MAX
 
 typedef enum _LED_MODE_T
@@ -48,9 +46,6 @@ void Led_ModeCycling(void);
 void Led_AllOff(void);
 
 void Led_ModeCycling(void);
-
-void Led_GradientAlgor(void);
-
 
 #endif
 

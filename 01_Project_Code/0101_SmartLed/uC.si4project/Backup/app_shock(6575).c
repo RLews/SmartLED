@@ -32,8 +32,6 @@ static void Shk_Scan(void)
 {
 	shockSensorSta_t *pSta = &shockSta;
 	static uint8_t shockShake = 0;
-	static uint32_t dlyTs = 0;/* 防止多次处理 */
-	static stdBoolean_t updateFlag = EN_STD_TRUE;
 	uint16_t scanRes = 0;
 	
 	scanRes = Hal_ScanShock();
@@ -45,19 +43,12 @@ static void Shk_Scan(void)
 		}
 		if (shockShake == D_SHOCK_VAILD_SCAN_TIMES)
 		{
-			*pSta = (updateFlag == EN_STD_TRUE) ? (EN_SHOCK_PRESS) : (EN_SHOCK_NONE);
-			dlyTs = Osal_GetCurTs();
-			updateFlag = EN_STD_FALSE;
+			*pSta = EN_SHOCK_PRESS;
 		}
 	}
 	else
 	{
 		shockShake = 0;
-	}
-
-	if ((updateFlag == EN_STD_FALSE) && (Osal_DiffTsToUsec(dlyTs) > D_SHOCK_SHAKE_TIMES))
-	{
-		updateFlag = EN_STD_TRUE;
 	}
 }
 
@@ -112,6 +103,12 @@ void Shk_ClrSnsSta(void)
 
 void Shk_PeriodHandle(void)
 {
-	Shk_Scan();
+	static uint32_t Ts = 0;
+
+	if (Osal_DiffTsToUsec(Ts) >= (D_SYS_MS_COUNT))
+	{
+		Ts = Osal_GetCurTs();
+		Shk_Scan();
+	}
 }
 

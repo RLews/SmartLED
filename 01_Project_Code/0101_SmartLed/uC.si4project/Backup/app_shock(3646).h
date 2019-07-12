@@ -13,9 +13,8 @@
 #include "app_public.h"
 
 
-#define D_SHOCK_VAILD_SCAN_TIMES		2
-#define D_SHOCK_PRESS_SCAN_VALUE		0x100
-#define D_SHOCK_SHAKE_TIMES				(100 * D_SYS_MS_COUNT)
+#define D_SHOCK_VAILD_SCAN_TIMES		3
+#define D_SHOCK_PRESS_SCAN_VALUE		0x50
 
 typedef enum _SHOCK_SENSOR_STA_T
 {

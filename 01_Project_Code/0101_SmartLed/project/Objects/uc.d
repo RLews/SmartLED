@@ -31,3 +31,5 @@
 .\objects\uc.o: ..\ServicesLayer\osal\inc\osal.h
 .\objects\uc.o: ..\ServicesLayer\Communication\inc\srv_comm.h
 .\objects\uc.o: ..\ServicesLayer\Communication\inc\srv_comm_check.h
+.\objects\uc.o: ..\ApplicationLayer\inc\app_led_ctrl.h
+.\objects\uc.o: ..\ApplicationLayer\inc\app_public.h

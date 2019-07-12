@@ -32,10 +32,9 @@ void Hal_SysTickInit(uint16_t tim)
 	tReload *= 1000000 / (tim);//根据delay_ostickspersec设定溢出时间
 
 	//Hal_SysISRSet(EN_SYS_TICK_ISR, Bsp_Os_SysTickHandler);
-	Drv_SysTickIntDisable();
+	Drv_SysTickIntEnable();
 	Drv_SysTickSetReload(tReload);
 	Drv_SysTickOpen();
-	Drv_SysTickIntEnable();
 }
 
 

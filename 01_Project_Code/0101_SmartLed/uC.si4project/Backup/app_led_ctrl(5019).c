@@ -14,7 +14,6 @@ static volatile ledData_t ledData = {0};
 static volatile ledData_t setLedDat = {0};
 
 static ledMode_t ledMode = EN_LED_SLEEP;
-static uint16_t ledDutyBak = 0;
 
 static void Led_CtrlHandle(void);
 static void Led_Mode0(void);
@@ -40,49 +39,7 @@ static void Led_Gradient(void);
 void Led_CtrlInit(void)
 {
 	Hal_SysISRSet(EN_SYS_TICK_ISR, Led_CtrlHandle);
-	Hal_SysTickInit(D_LED_GRADIENT_DEFAULT_FREQ);
-	ledDutyBak = D_LED_GRADIENT_DEFAULT_FREQ;
-}
-
-/*
-************************************************************************************************************************
-* Function Name    : Led_GradientAlgor
-* Description      : 
-* Input Arguments  : 
-* Output Arguments : 
-* Returns          : 
-* Notes            : 
-* Author           : Lews Hammond
-* Time             : 2019-7-12
-************************************************************************************************************************
-*/
-
-void Led_GradientAlgor(void)
-{
-	volatile ledData_t *pSetDat = &setLedDat;
-	volatile ledData_t *pData = &ledData;
-	uint16_t calcDuty = 0xFFFFu;
-	uint32_t calcTmp = 0;
-
-	if (pSetDat->warmLedDuty != 0)
-	{
-		/* duty = 0.001x^2 + 200 */
-		calcTmp = (uint32_t)(pData->warmLedDuty * pData->warmLedDuty);
-		calcTmp = calcTmp / 1000;
-		calcTmp += 200;
-		calcDuty = (uint16_t)calcTmp;
-	}
-	else
-	{
-		calcDuty = D_LED_GRADIENT_DEFAULT_FREQ;
-	}
-
-	/* update gradient frequence */
-	if (calcDuty != ledDutyBak)
-	{
-		ledDutyBak = calcDuty;
-		Hal_SysTickInit(calcDuty);
-	}
+	Hal_SysTickInit(500);
 }
 
 /*
@@ -146,7 +103,7 @@ static void Led_Mode0(void)
 	pSetDat->greenLedDuty = 0;
 	pSetDat->ledSwitch = EN_STD_TRUE;
 	pSetDat->redLedDuty = 0;
-	pSetDat->warmLedDuty = D_LED_BRIGHTNESS_MAX / 5;
+	pSetDat->warmLedDuty = D_LED_BRIGHTNESS_MAX / 2;
 }
 
 /*

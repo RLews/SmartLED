@@ -1,6 +1,5 @@
----- Hal_WifiLedOn Matches (5 in 4 files) ----
-Wifi_LedSetFlash in app_wifi.c (ApplicationLayer\src) : 				Hal_WifiLedOn();
-Wifi_LedCtrl in app_wifi.c (ApplicationLayer\src) : 		Hal_WifiLedOn();
-gizwitsEventProcess in gizwits_product.c (ServicesLayer\Gizwits) :           Hal_WifiLedOn();
-hal_led.c (HardwareAbstractionLayer\src) line 74 : void Hal_WifiLedOn(void)
-hal_public.h (HardwareAbstractionLayer\inc) line 186 : void Hal_WifiLedOn(void);
+---- Shk_PeriodHandle Matches (4 in 3 files) ----
+app_public.h (ApplicationLayer\inc) line 34 : void Shk_PeriodHandle(void);
+app_shock.c (ApplicationLayer\src) line 93 : * Function Name    : Shk_PeriodHandle
+app_shock.c (ApplicationLayer\src) line 104 : void Shk_PeriodHandle(void)
+main in uC.c (ApplicationLayer\src) : 		Shk_PeriodHandle();

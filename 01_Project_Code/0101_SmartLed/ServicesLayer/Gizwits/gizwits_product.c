@@ -271,6 +271,18 @@ int32_t uartWrite(uint8_t *buf, uint32_t len)
 	return len;
 }  
 
+/*
+************************************************************************************************************************
+* Function Name    : Bsp_GizPrintf
+* Description      : gizwits log printf
+* Input Arguments  : 
+* Output Arguments : 
+* Returns          : 
+* Notes            : this function is null. 
+* Author           : Lews Hammond
+* Time             : 2019-7-13
+************************************************************************************************************************
+*/
 
 void Bsp_GizPrintf(char *format, ...)
 {

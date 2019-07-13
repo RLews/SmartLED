@@ -1,0 +1,4 @@
+---- userHandle Matches (3 in 3 files) ----
+Wifi_WorkManage in app_wifi.c (ApplicationLayer\src) : 			userHandle();
+gizwits_product.c (ServicesLayer\Gizwits) line 184 : void userHandle(void)
+gizwits_product.h (ServicesLayer\Gizwits) line 51 : void userHandle(void);

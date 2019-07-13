@@ -1,0 +1,9 @@
+.\objects\datapointtools.o: ..\ServicesLayer\Gizwits\Utils\dataPointTools.c
+.\objects\datapointtools.o: ..\ServicesLayer\Gizwits\Utils\dataPointTools.h
+.\objects\datapointtools.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\datapointtools.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\datapointtools.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\datapointtools.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\datapointtools.o: ..\ServicesLayer\Gizwits\Utils\common.h
+.\objects\datapointtools.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\datapointtools.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h

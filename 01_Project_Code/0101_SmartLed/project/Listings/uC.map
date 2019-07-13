@@ -975,7 +975,7 @@ Removing Unused input sections from the image.
     Removing app_led.o(i.Sys_LedFlash), (68 bytes).
     Removing app_led.o(i.Sys_LedInit), (2 bytes).
     Removing app_led.o(.data), (5 bytes).
-    Removing app_led_ctrl.o(i.Led_SetRGBDat), (24 bytes).
+    Removing app_led_ctrl.o(i.Led_SetRGBDat), (36 bytes).
     Removing app_led_ctrl.o(i.Led_SetWarmDat), (28 bytes).
     Removing app_led_ctrl.o(i.Led_WarmOff), (12 bytes).
     Removing hal_int.o(i.ADC3_IRQHandler), (10 bytes).
@@ -1454,7 +1454,7 @@ Removing Unused input sections from the image.
     Removing cdrcmple.o(.text), (48 bytes).
     Removing depilogue.o(.text), (186 bytes).
 
-481 unused section(s) (total 21729 bytes) removed from the image.
+481 unused section(s) (total 21741 bytes) removed from the image.
 
 ==============================================================================
 

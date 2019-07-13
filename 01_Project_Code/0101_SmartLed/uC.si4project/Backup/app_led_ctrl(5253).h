@@ -49,11 +49,8 @@ void Led_AllOff(void);
 
 void Led_ModeCycling(void);
 
-void Led_PeriodProc(void);
+void Led_GradientAlgor(void);
 
-void Led_CtrlInit(void);
-
-void Led_PeriodProc(void);
 
 #endif
 

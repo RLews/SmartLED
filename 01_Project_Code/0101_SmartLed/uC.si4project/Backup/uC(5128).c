@@ -82,7 +82,7 @@ int main(void)
 		D_HAL_WDG_FEED();
 		Wifi_TaskHandle();
 		Shk_PeriodHandle();
-		Led_PeriodProc();
+		Led_GradientAlgor();
 	}
 
 #endif

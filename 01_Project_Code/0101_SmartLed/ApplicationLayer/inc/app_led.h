@@ -18,6 +18,8 @@
 #define D_SYS_LED_FLASH_TIME		500//unit: ms
 
 
+void Sys_LedInit(void);
+void Sys_LedFlash(void);
 
 
 

@@ -14,7 +14,6 @@
 #include "gizwits_product.h"
 #include "srv_wifi_comm.h"
 #include "app_shock.h"
-#include "app_led_ctrl.h"
 
 #if (D_UC_OS_III_ENABLE == D_STD_ON)
 
@@ -49,11 +48,6 @@ typedef struct _WIFI_SET_INFO_T
 	uint32_t setTs;
 	wifiSetMode_t setMode;
 }wifiSetInfo_t;
-
-
-
-void Wifi_TaskInit(void);
-void Wifi_TaskHandle(void);
 
 #endif
 

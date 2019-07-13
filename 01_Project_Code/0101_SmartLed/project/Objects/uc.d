@@ -31,5 +31,15 @@
 .\objects\uc.o: ..\ServicesLayer\osal\inc\osal.h
 .\objects\uc.o: ..\ServicesLayer\Communication\inc\srv_comm.h
 .\objects\uc.o: ..\ServicesLayer\Communication\inc\srv_comm_check.h
+.\objects\uc.o: ..\ApplicationLayer\inc\app_led.h
 .\objects\uc.o: ..\ApplicationLayer\inc\app_led_ctrl.h
-.\objects\uc.o: ..\ApplicationLayer\inc\app_public.h
+.\objects\uc.o: ..\ApplicationLayer\inc\app_wifi.h
+.\objects\uc.o: ..\ServicesLayer\Gizwits\gizwits_product.h
+.\objects\uc.o: ..\ServicesLayer\Gizwits\gizwits_protocol.h
+.\objects\uc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\uc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\uc.o: ..\ServicesLayer\Gizwits\Utils\common.h
+.\objects\uc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+.\objects\uc.o: ..\ServicesLayer\Gizwits\gizwits_product.h
+.\objects\uc.o: ..\ServicesLayer\Communication\inc\srv_wifi_comm.h
+.\objects\uc.o: ..\ApplicationLayer\inc\app_shock.h

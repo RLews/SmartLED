@@ -39,15 +39,14 @@ static void Shk_Scan(void)
 	scanRes = Hal_ScanShock();
 	if (scanRes <= D_SHOCK_PRESS_SCAN_VALUE)
 	{
-		dlyTs = Osal_GetCurTs();
 		if (shockShake < 0xFF)
 		{
 			shockShake++;
 		}
-		
 		if (shockShake == D_SHOCK_VAILD_SCAN_TIMES)
 		{
 			*pSta = (updateFlag == EN_STD_TRUE) ? (EN_SHOCK_PRESS) : (EN_SHOCK_NONE);
+			dlyTs = Osal_GetCurTs();
 			updateFlag = EN_STD_FALSE;
 		}
 	}

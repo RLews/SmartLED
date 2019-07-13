@@ -31,8 +31,6 @@
 .\objects\app_wifi.o: ..\ServicesLayer\osal\inc\osal.h
 .\objects\app_wifi.o: ..\ServicesLayer\Communication\inc\srv_comm.h
 .\objects\app_wifi.o: ..\ServicesLayer\Communication\inc\srv_comm_check.h
-.\objects\app_wifi.o: ..\ApplicationLayer\inc\app_led_ctrl.h
-.\objects\app_wifi.o: ..\ApplicationLayer\inc\app_public.h
 .\objects\app_wifi.o: ..\ServicesLayer\Gizwits\gizwits_product.h
 .\objects\app_wifi.o: ..\ServicesLayer\Gizwits\gizwits_protocol.h
 .\objects\app_wifi.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
@@ -42,3 +40,4 @@
 .\objects\app_wifi.o: ..\ServicesLayer\Gizwits\gizwits_product.h
 .\objects\app_wifi.o: ..\ServicesLayer\Communication\inc\srv_wifi_comm.h
 .\objects\app_wifi.o: ..\ApplicationLayer\inc\app_shock.h
+.\objects\app_wifi.o: ..\ApplicationLayer\inc\app_led_ctrl.h

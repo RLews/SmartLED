@@ -31,5 +31,3 @@
 .\objects\app_shock.o: ..\ServicesLayer\osal\inc\osal.h
 .\objects\app_shock.o: ..\ServicesLayer\Communication\inc\srv_comm.h
 .\objects\app_shock.o: ..\ServicesLayer\Communication\inc\srv_comm_check.h
-.\objects\app_shock.o: ..\ApplicationLayer\inc\app_led_ctrl.h
-.\objects\app_shock.o: ..\ApplicationLayer\inc\app_public.h

@@ -1,6 +1,6 @@
 /*
 ************************************************************************************************************************
-* file : E:\KeilWorkspace\M3\uCOS_III_mdk5\ApplicationLayer\inc\uC.h
+* file : E:\KeilWorkspace\M3\uCOS_III_mdk5\ApplicationLayer\inc\app_led.h
 * Description : 
 * Owner : Lews Hammond
 * Time : 2019-6-4
@@ -8,15 +8,18 @@
 */
 
 
-#ifndef __UC_H
-#define __UC_H
+#ifndef __APP_LED_H
+#define __APP_LED_H
 
 #include "app_public.h"
-#include "app_led.h"
-#include "app_led_ctrl.h"
-#include "app_wifi.h"
-#include "app_shock.h"
+
+#define D_SYS_LED_STACK_DEBUG		D_STD_OFF
+
+#define D_SYS_LED_FLASH_TIME		500//unit: ms
+
+
+
+
 
 
 #endif
-

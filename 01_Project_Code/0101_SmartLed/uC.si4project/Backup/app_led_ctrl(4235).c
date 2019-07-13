@@ -22,7 +22,6 @@ static void Led_Mode1(void);
 static void Led_Mode2Handle(void);
 
 static void Led_Gradient(void);
-static void Led_GradientAlgor(void);
 
 
 /*
@@ -58,7 +57,7 @@ void Led_CtrlInit(void)
 ************************************************************************************************************************
 */
 
-static void Led_GradientAlgor(void)
+void Led_GradientAlgor(void)
 {
 	volatile ledData_t *pSetDat = &setLedDat;
 	volatile ledData_t *pData = &ledData;
@@ -84,25 +83,6 @@ static void Led_GradientAlgor(void)
 		ledDutyBak = calcDuty;
 		Hal_SysTickInit(calcDuty);
 	}
-}
-
-/*
-************************************************************************************************************************
-* Function Name    : Led_PeriodProc
-* Description      : 
-* Input Arguments  : 
-* Output Arguments : 
-* Returns          : 
-* Notes            : 
-* Author           : Lews Hammond
-* Time             : 2019-7-13
-************************************************************************************************************************
-*/
-
-void Led_PeriodProc(void)
-{
-	Led_Mode2Handle();
-	Led_GradientAlgor();
 }
 
 /*
@@ -215,12 +195,12 @@ void Led_SetWarmDat(uint16_t duty)
 		duty = D_LED_MIN_BRIGHTNESS;
 	}
 
-	//D_OSAL_ENTER_CRITICAL();
+	D_OSAL_ENTER_CRITICAL();
 	pData->blueLedDuty = 0;
 	pData->greenLedDuty = 0;
 	pData->redLedDuty = 0;
 	pData->warmLedDuty = duty;
-	//D_OSAL_EXIT_CRITICAL();
+	D_OSAL_EXIT_CRITICAL();
 }
 
 /*
@@ -240,12 +220,12 @@ void Led_SetRGBDat(uint16_t rDuty, uint16_t gDuty, uint16_t bDuty)
 {
 	volatile ledData_t *pData = &setLedDat;
 
-	//D_OSAL_ENTER_CRITICAL();
+	D_OSAL_ENTER_CRITICAL();
 	pData->blueLedDuty = bDuty;
 	pData->greenLedDuty = gDuty;
 	pData->redLedDuty = rDuty;
 	pData->warmLedDuty = 0;
-	//D_OSAL_EXIT_CRITICAL();
+	D_OSAL_EXIT_CRITICAL();
 }
 
 /*
@@ -387,6 +367,7 @@ static void Led_Gradient(void)
 static void Led_CtrlHandle(void)
 {
 	Led_Gradient();
+	Led_Mode2Handle();
 }
 
 /*

@@ -1,7 +1,2 @@
----- Sys_LedFlash Matches (6 in 2 files) ----
-app_led.c (ApplicationLayer\src) line 25 : static void Sys_LedFlash(void);
-Sys_LedInit in app_led.c (ApplicationLayer\src) : 							(OSAL_TASK_FUNC_PTR)Sys_LedFlash,
-app_led.c (ApplicationLayer\src) line 78 : static void Sys_LedFlash(void)
-app_led.c (ApplicationLayer\src) line 100 : * Function Name    : Sys_LedFlash
-app_led.c (ApplicationLayer\src) line 111 : void Sys_LedFlash(void)
-app_public.h (ApplicationLayer\inc) line 32 : void Sys_LedFlash(void);
+---- cmd code error Matches (1 in 1 files) ----
+gizwitsHandle in gizwits_protocol.c (ServicesLayer\Gizwits) :                 GIZWITS_LOG("ERR: cmd code error!\n");

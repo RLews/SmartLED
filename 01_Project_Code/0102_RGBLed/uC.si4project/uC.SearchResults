@@ -1,4 +1,3 @@
----- userHandle Matches (3 in 3 files) ----
-Wifi_WorkManage in app_wifi.c (ApplicationLayer\src) : 			userHandle();
-gizwits_product.c (ServicesLayer\Gizwits) line 184 : void userHandle(void)
-gizwits_product.h (ServicesLayer\Gizwits) line 51 : void userHandle(void);
+---- D_WIFI_UPDATE_PERIOD Matches (2 in 2 files) ----
+Wifi_DataHandle in app_wifi.c (ApplicationLayer\src) : 	if (Osal_DiffTsToUsec(updateTim) >= D_WIFI_UPDATE_PERIOD)
+app_wifi.h (ApplicationLayer\inc) line 31 : #define D_WIFI_UPDATE_PERIOD	(200 * 1000ul)

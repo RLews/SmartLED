@@ -28,7 +28,7 @@
 
 #endif
 
-#define D_WIFI_UPDATE_PERIOD	(200 * 1000ul)
+#define D_WIFI_UPDATE_PERIOD	(100 * 1000ul)
 
 #define D_WIFI_REQUEST_TIME		(10000ul * 1000ul) //10s
 
@@ -40,12 +40,12 @@ typedef enum _WIFI_SET_MODE_T
 	EN_WIFI_MODE_RUN = 0,
 	EN_WIFI_MODE_AIR_LINK,
 	EN_WIFI_MODE_SOFT_AP,
+	EN_WIFI_MODE_SLEEP,
 	EN_WIFI_MODE_RESET
 }wifiSetMode_t;
 
 typedef struct _WIFI_SET_INFO_T
 {
-	uint8_t recordLedSta;
 	uint32_t setTs;
 	wifiSetMode_t setMode;
 }wifiSetInfo_t;

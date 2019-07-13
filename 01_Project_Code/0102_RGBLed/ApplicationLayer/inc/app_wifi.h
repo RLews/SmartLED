@@ -28,7 +28,7 @@
 
 #endif
 
-#define D_WIFI_UPDATE_PERIOD	(100 * 1000ul)
+#define D_WIFI_UPDATE_PERIOD	(200 * 1000ul)
 
 #define D_WIFI_REQUEST_TIME		(10000ul * 1000ul) //10s
 

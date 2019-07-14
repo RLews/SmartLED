@@ -1,3 +1,5 @@
-# SmartLED_for_c8t6
+# SmartLED
+
+
 
 Esp8266WiFi模块联网，同步LED状态。

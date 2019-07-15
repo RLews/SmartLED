@@ -121,7 +121,7 @@ int8_t gizwitsEventProcess(eventInfo_t *info, uint8_t *gizdata, uint32_t len)
         currentDataPoint.valueLed_Brightness = dataPointPtr->valueLed_Brightness;
         GIZWITS_LOG("Evt:EVENT_Led_Brightness %d\n",currentDataPoint.valueLed_Brightness);
         //user handle
-        Led_SetWarmDat((uint16_t)(dataPointPtr->valueLed_Brightness / 4));
+        Led_SetWarmDat((uint16_t)dataPointPtr->valueLed_Brightness);
         break;
 
 
@@ -189,30 +189,8 @@ int8_t gizwitsEventProcess(eventInfo_t *info, uint8_t *gizdata, uint32_t len)
 */
 void userHandle(void)
 {
-	uint16_t warm = Led_GetWarmDuty();
-	uint16_t red = Led_GetRedDuty();
-	uint16_t green = Led_GetGreenDuty();
-	uint16_t blue = Led_GetBlueDuty();
-
-	warm = (warm == 0) ? (0) : (warm + 1); 
 	/* TODO: user data report */
-	currentDataPoint.valueLed_WarmSta = (warm != 0) ? (D_STD_ON) : (D_STD_OFF);
-	currentDataPoint.valueLed_BVal = blue;
-	currentDataPoint.valueLed_GVal = green;
-	currentDataPoint.valueLed_RVal = red;
-	currentDataPoint.valueLed_Brightness = (uint32_t)(warm * 4);
-
-	if ( (warm == 0) 
-	  && (red == 0)
-	  && (green == 0)
-	  && (blue == 0) )
-	{
-		currentDataPoint.valueLedOnOff = D_STD_OFF;
-	}
-	else
-	{
-		currentDataPoint.valueLedOnOff = D_STD_ON;
-	}
+	
 }
 
 /**

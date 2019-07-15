@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\uC.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\uC.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Sat Jul 13 17:38:11 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Mon Jul 15 22:05:02 2019
 <BR><P>
 <H3>Maximum Stack Usage =        372 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -88,7 +88,7 @@ Global Symbols
 <P><STRONG><a name="[37]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(.text)
 </UL>
-<P><STRONG><a name="[124]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+<P><STRONG><a name="[128]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
 
 <P><STRONG><a name="[3e]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
@@ -98,15 +98,15 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[125]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+<P><STRONG><a name="[129]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
 
-<P><STRONG><a name="[126]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+<P><STRONG><a name="[12a]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
 
-<P><STRONG><a name="[127]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+<P><STRONG><a name="[12b]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
 
-<P><STRONG><a name="[128]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+<P><STRONG><a name="[12c]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
 
-<P><STRONG><a name="[129]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+<P><STRONG><a name="[12d]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
 
 <P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
@@ -139,16 +139,16 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gizProtocolGetDeviceInfo
 </UL>
 
-<P><STRONG><a name="[12a]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+<P><STRONG><a name="[12e]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
 <P><STRONG><a name="[44]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
 <LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 
-<P><STRONG><a name="[12b]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[12f]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
-<P><STRONG><a name="[12c]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[130]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[43]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -167,7 +167,7 @@ Global Symbols
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Drv_AdcInit
 </UL>
 
-<P><STRONG><a name="[12d]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[131]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[45]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -177,13 +177,13 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[12e]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+<P><STRONG><a name="[132]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
 
 <P><STRONG><a name="[41]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[12f]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+<P><STRONG><a name="[133]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
 
 <P><STRONG><a name="[3f]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
@@ -191,7 +191,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[130]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[134]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
 <P><STRONG><a name="[1c]"></a>ADC1_2_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, hal_int.o(i.ADC1_2_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ADC1_2_IRQHandler &rArr; Hal_SysIntHandle
@@ -952,6 +952,22 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wifi_WorkManage
 </UL>
 
+<P><STRONG><a name="[127]"></a>Led_GetBlueDuty</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, app_led_ctrl.o(i.Led_GetBlueDuty))
+<BR><BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;userHandle
+</UL>
+
+<P><STRONG><a name="[126]"></a>Led_GetGreenDuty</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, app_led_ctrl.o(i.Led_GetGreenDuty))
+<BR><BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;userHandle
+</UL>
+
+<P><STRONG><a name="[125]"></a>Led_GetRedDuty</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, app_led_ctrl.o(i.Led_GetRedDuty))
+<BR><BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;userHandle
+</UL>
+
+<P><STRONG><a name="[124]"></a>Led_GetWarmDuty</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, app_led_ctrl.o(i.Led_GetWarmDuty))
+<BR><BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;userHandle
+</UL>
+
 <P><STRONG><a name="[cb]"></a>Led_ModeCycling</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, app_led_ctrl.o(i.Led_ModeCycling))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Led_ModeCycling
 </UL>
@@ -1551,7 +1567,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[131]"></a>__1printf$8</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8), UNUSED)
+<P><STRONG><a name="[135]"></a>__1printf$8</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8), UNUSED)
 
 <P><STRONG><a name="[f7]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
@@ -1584,11 +1600,11 @@ Global Symbols
 <LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gizwitsEventProcess
 </UL>
 
-<P><STRONG><a name="[132]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[136]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[133]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[137]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[134]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[138]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
 <P><STRONG><a name="[fc]"></a>exchangeBytes</STRONG> (Thumb, 26 bytes, Stack size 12 bytes, common.o(i.exchangeBytes))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = exchangeBytes
@@ -1696,7 +1712,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gizDataPoints2ReportData
 </UL>
 
-<P><STRONG><a name="[11c]"></a>gizwitsEventProcess</STRONG> (Thumb, 450 bytes, Stack size 64 bytes, gizwits_product.o(i.gizwitsEventProcess))
+<P><STRONG><a name="[11c]"></a>gizwitsEventProcess</STRONG> (Thumb, 454 bytes, Stack size 64 bytes, gizwits_product.o(i.gizwitsEventProcess))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = gizwitsEventProcess &rArr; Hal_RtcSetTime &rArr; Drv_RtcSetCount &rArr; RTC_SetCounter
 </UL>
 <BR>[Calls]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_WarmOn
@@ -1860,8 +1876,15 @@ Global Symbols
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gizProtocolCommonAck
 </UL>
 
-<P><STRONG><a name="[f1]"></a>userHandle</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, gizwits_product.o(i.userHandle))
-<BR><BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wifi_WorkManage
+<P><STRONG><a name="[f1]"></a>userHandle</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, gizwits_product.o(i.userHandle))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = userHandle
+</UL>
+<BR>[Calls]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_GetWarmDuty
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_GetRedDuty
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_GetGreenDuty
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Led_GetBlueDuty
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wifi_WorkManage
 </UL>
 
 <P><STRONG><a name="[eb]"></a>userInit</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, gizwits_product.o(i.userInit))
@@ -1952,7 +1975,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wifi_WorkManage
 </UL>
 
-<P><STRONG><a name="[ed]"></a>Wifi_WorkManage</STRONG> (Thumb, 90 bytes, Stack size 8 bytes, app_wifi.o(i.Wifi_WorkManage))
+<P><STRONG><a name="[ed]"></a>Wifi_WorkManage</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, app_wifi.o(i.Wifi_WorkManage))
 <BR><BR>[Stack]<UL><LI>Max Depth = 356<LI>Call Chain = Wifi_WorkManage &rArr; Wifi_DataHandle &rArr; gizwitsHandle &rArr; gizProtocolGetDeviceInfo &rArr; uartWrite &rArr; Srv_WifiCommTx &rArr; Hal_UartWrite &rArr; Drv_UartITTxEnable &rArr; USART_ITConfig
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;userHandle
@@ -1964,7 +1987,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Wifi_TmrCallBack
 </UL>
 
-<P><STRONG><a name="[d6]"></a>Shk_Scan</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, app_shock.o(i.Shk_Scan))
+<P><STRONG><a name="[d6]"></a>Shk_Scan</STRONG> (Thumb, 106 bytes, Stack size 16 bytes, app_shock.o(i.Shk_Scan))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = Shk_Scan &rArr; Osal_DiffTsToUsec &rArr; __aeabi_uldivmod
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hal_ScanShock

@@ -42,7 +42,7 @@ typedef struct _TIMER_CONFIG_T
 
 #define D_TIMER_CONFIG_TABLE \
 {EN_TEST_PWM, TIM3, EN_TIMER_PWM_CH3, RCC_APB1Periph_TIM3, D_DRV_PWM_LEVEL_MAX, 0, 0, \
-TIM_CounterMode_Up, TIM_OCMode_PWM2, TIM_OutputState_Enable, TIM_OCPolarity_High}, \
+TIM_CounterMode_Up, TIM_OCMode_PWM2, TIM_OutputState_Enable, TIM_OCPolarity_Low}, \
 {EN_WARM_PWM, TIM2, EN_TIMER_PWM_CH1, RCC_APB1Periph_TIM2, D_DRV_PWM_LEVEL_MAX, 0, 0, \
 TIM_CounterMode_Up, TIM_OCMode_PWM2, TIM_OutputState_Enable, TIM_OCPolarity_Low}, \
 {EN_RED_PWM, TIM2, EN_TIMER_PWM_CH2, RCC_APB1Periph_TIM2, D_DRV_PWM_LEVEL_MAX, 0, 0, \

@@ -260,7 +260,6 @@ static void Wifi_WorkManage(void)
 	switch (pSet->setMode)
 	{
 		case EN_WIFI_MODE_RUN:
-		case EN_WIFI_MODE_SLEEP:
 			userHandle();
 			Wifi_UpdateTime();
 			break;

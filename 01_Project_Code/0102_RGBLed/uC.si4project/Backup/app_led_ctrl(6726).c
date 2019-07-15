@@ -166,7 +166,7 @@ static void Led_Mode0(void)
 	pSetDat->blueLedDuty = 0;
 	pSetDat->greenLedDuty = 0;
 	pSetDat->redLedDuty = 0;
-	pSetDat->warmLedDuty = D_LED_BRIGHTNESS_MAX / 6;
+	pSetDat->warmLedDuty = D_LED_BRIGHTNESS_MAX / 5;
 }
 
 /*
@@ -189,7 +189,7 @@ static void Led_Mode1(void)
 	pSetDat->blueLedDuty = 0;
 	pSetDat->greenLedDuty = 0;
 	pSetDat->redLedDuty = 0;
-	pSetDat->warmLedDuty = D_LED_BRIGHTNESS_MAX / 2;
+	pSetDat->warmLedDuty = D_LED_BRIGHTNESS_MAX;
 }
 
 /*
@@ -530,21 +530,21 @@ void Led_SetFlash(void)
 
 uint16_t Led_GetWarmDuty(void)
 {
-	return setLedDat.warmLedDuty;
+	return ledData.warmLedDuty;
 }
 
 uint16_t Led_GetRedDuty(void)
 {
-	return setLedDat.redLedDuty;
+	return ledData.redLedDuty;
 }
 
 uint16_t Led_GetGreenDuty(void)
 {
-	return setLedDat.greenLedDuty;
+	return ledData.greenLedDuty;
 }
 
 uint16_t Led_GetBlueDuty(void)
 {
-	return setLedDat.blueLedDuty;
+	return ledData.blueLedDuty;
 }
 

@@ -199,7 +199,6 @@ static void Wifi_DataHandle(void)
 	if (Osal_DiffTsToUsec(updateTim) >= D_WIFI_UPDATE_PERIOD)
 	{
 		updateTim = Osal_GetCurTs();
-		
 		gizwitsHandle((dataPoint_t *)&currentDataPoint);
 	}
 }

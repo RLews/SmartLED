@@ -18,8 +18,6 @@
 
 #define D_LED_BRIGHTNESS_MAX			(D_DRV_PWM_LEVEL_MAX)
 
-#define D_LED_SYNC_TIMEOUT				(500 * D_SYS_MS_COUNT)
-
 typedef enum _LED_MODE_T
 {
 	EN_LED_SLEEP = 0,
@@ -36,6 +34,7 @@ typedef struct _LED_DATA_T
 	uint16_t greenLedDuty;
 	uint16_t blueLedDuty;
 }ledData_t;
+
 
 void Led_SetWarmDat(uint16_t duty);
 
@@ -70,8 +69,6 @@ uint16_t Led_GetRedDuty(void);
 uint16_t Led_GetGreenDuty(void);
 
 uint16_t Led_GetBlueDuty(void);
-
-
 
 #endif
 

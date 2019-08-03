@@ -24,8 +24,9 @@ static void Led_Mode2Handle(void);
 
 static void Led_Gradient(void);
 static void Led_GradientAlgor(void);
+static void Led_SyncHandle(void);
 
-
+static ledSync_t ledSyncSta = {0};
 
 
 /*
@@ -106,6 +107,49 @@ void Led_PeriodProc(void)
 {
 	Led_Mode2Handle();
 	Led_GradientAlgor();
+	Led_SyncHandle();
+}
+
+/*!
+************************************************************************************************************************
+* Function 
+* @brief 
+* @param[in] 
+* @param[out] 
+* @returns 
+* @note 
+* @author Lews Hammond
+* @date 2019-8-3
+************************************************************************************************************************
+*/
+
+static void Led_SyncHandle(void)
+{
+	if (ledSyncSta.ledSyncLock == EN_STD_TRUE)
+	{
+		if (Osal_DelayMs(ledSyncSta.ledSyncTs) >= D_LED_SYNC_TIMEOUT)
+		{
+			ledSyncSta.ledSyncLock = EN_STD_FALSE;
+		}
+	}
+}
+
+/*!
+************************************************************************************************************************
+* Function 
+* @brief 
+* @param[in] 
+* @param[out] 
+* @returns 
+* @note 
+* @author Lews Hammond
+* @date 2019-8-3
+************************************************************************************************************************
+*/
+
+stdBoolean_t Led_GetSyncSta(void)
+{
+	return ledSyncSta.ledSyncLock;
 }
 
 
@@ -219,6 +263,8 @@ void Led_SetWarmDat(uint16_t duty)
 
 	//D_OSAL_ENTER_CRITICAL();
 	ledMode = EN_LED_SLEEP;
+	ledSyncSta.ledSyncLock = EN_STD_TRUE;
+	ledSyncSta.ledSyncTs = Osal_GetCurTs();
 	pData->blueLedDuty = 0;
 	pData->greenLedDuty = 0;
 	pData->redLedDuty = 0;
@@ -251,6 +297,8 @@ void Led_SetRGBDat(uint16_t rDuty, uint16_t gDuty, uint16_t bDuty)
 	}
 
 	ledMode = EN_LED_SLEEP;
+	ledSyncSta.ledSyncLock = EN_STD_TRUE;
+	ledSyncSta.ledSyncTs = Osal_GetCurTs();
 	//D_OSAL_ENTER_CRITICAL();
 	pData->blueLedDuty = bDuty;
 	pData->greenLedDuty = gDuty;

@@ -1758,208 +1758,208 @@ Image Symbol Table
     i.Led_PeriodProc                         0x080019a8   Section        0  app_led_ctrl.o(i.Led_PeriodProc)
     i.Led_SetFlash                           0x080019b4   Section        0  app_led_ctrl.o(i.Led_SetFlash)
     i.Led_SetRGBDat                          0x080019e4   Section        0  app_led_ctrl.o(i.Led_SetRGBDat)
-    i.Led_SetWarmDat                         0x08001a08   Section        0  app_led_ctrl.o(i.Led_SetWarmDat)
-    i.Led_WarmOff                            0x08001a24   Section        0  app_led_ctrl.o(i.Led_WarmOff)
-    i.Led_WarmOn                             0x08001a30   Section        0  app_led_ctrl.o(i.Led_WarmOn)
-    i.MemManage_Handler                      0x08001a40   Section        0  hal_int.o(i.MemManage_Handler)
-    i.NMI_Handler                            0x08001a4a   Section        0  hal_int.o(i.NMI_Handler)
-    i.NVIC_Init                              0x08001a54   Section        0  misc.o(i.NVIC_Init)
-    i.NVIC_PriorityGroupConfig               0x08001ac4   Section        0  misc.o(i.NVIC_PriorityGroupConfig)
-    i.Osal_DiffTsToUsec                      0x08001ad8   Section        0  osal.o(i.Osal_DiffTsToUsec)
-    i.Osal_GetCurTs                          0x08001b2c   Section        0  osal.o(i.Osal_GetCurTs)
-    i.PVD_IRQHandler                         0x08001b34   Section        0  hal_int.o(i.PVD_IRQHandler)
-    i.PWR_BackupAccessCmd                    0x08001b40   Section        0  stm32f10x_pwr.o(i.PWR_BackupAccessCmd)
-    i.PendSV_Handler                         0x08001b4c   Section        0  hal_int.o(i.PendSV_Handler)
-    i.RCC_ADCCLKConfig                       0x08001b5c   Section        0  stm32f10x_rcc.o(i.RCC_ADCCLKConfig)
-    i.RCC_APB1PeriphClockCmd                 0x08001b74   Section        0  stm32f10x_rcc.o(i.RCC_APB1PeriphClockCmd)
-    i.RCC_APB1PeriphResetCmd                 0x08001b94   Section        0  stm32f10x_rcc.o(i.RCC_APB1PeriphResetCmd)
-    i.RCC_APB2PeriphClockCmd                 0x08001bb4   Section        0  stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd)
-    i.RCC_APB2PeriphResetCmd                 0x08001bd4   Section        0  stm32f10x_rcc.o(i.RCC_APB2PeriphResetCmd)
-    i.RCC_BackupResetCmd                     0x08001bf4   Section        0  stm32f10x_rcc.o(i.RCC_BackupResetCmd)
-    i.RCC_GetClocksFreq                      0x08001c00   Section        0  stm32f10x_rcc.o(i.RCC_GetClocksFreq)
-    i.RCC_GetFlagStatus                      0x08001cd4   Section        0  stm32f10x_rcc.o(i.RCC_GetFlagStatus)
-    i.RCC_IRQHandler                         0x08001d10   Section        0  hal_int.o(i.RCC_IRQHandler)
-    i.RCC_LSEConfig                          0x08001d1c   Section        0  stm32f10x_rcc.o(i.RCC_LSEConfig)
-    i.RCC_RTCCLKCmd                          0x08001d50   Section        0  stm32f10x_rcc.o(i.RCC_RTCCLKCmd)
-    i.RCC_RTCCLKConfig                       0x08001d5c   Section        0  stm32f10x_rcc.o(i.RCC_RTCCLKConfig)
-    i.RTCAlarm_IRQHandler                    0x08001d6c   Section        0  hal_int.o(i.RTCAlarm_IRQHandler)
-    i.RTC_ClearITPendingBit                  0x08001d78   Section        0  stm32f10x_rtc.o(i.RTC_ClearITPendingBit)
-    i.RTC_EnterConfigMode                    0x08001d88   Section        0  stm32f10x_rtc.o(i.RTC_EnterConfigMode)
-    i.RTC_ExitConfigMode                     0x08001d9c   Section        0  stm32f10x_rtc.o(i.RTC_ExitConfigMode)
-    i.RTC_GetITStatus                        0x08001db0   Section        0  stm32f10x_rtc.o(i.RTC_GetITStatus)
-    i.RTC_IRQHandler                         0x08001dd4   Section        0  hal_int.o(i.RTC_IRQHandler)
-    i.RTC_ITConfig                           0x08001de0   Section        0  stm32f10x_rtc.o(i.RTC_ITConfig)
-    i.RTC_SetCounter                         0x08001e00   Section        0  stm32f10x_rtc.o(i.RTC_SetCounter)
-    i.RTC_SetPrescaler                       0x08001e1c   Section        0  stm32f10x_rtc.o(i.RTC_SetPrescaler)
-    i.RTC_WaitForLastTask                    0x08001e3c   Section        0  stm32f10x_rtc.o(i.RTC_WaitForLastTask)
-    i.RTC_WaitForSynchro                     0x08001e50   Section        0  stm32f10x_rtc.o(i.RTC_WaitForSynchro)
-    i.SPI1_IRQHandler                        0x08001e74   Section        0  hal_int.o(i.SPI1_IRQHandler)
-    i.SPI2_IRQHandler                        0x08001e7e   Section        0  hal_int.o(i.SPI2_IRQHandler)
-    i.SVC_Handler                            0x08001e88   Section        0  hal_int.o(i.SVC_Handler)
-    i.SetSysClock                            0x08001e92   Section        0  system_stm32f10x.o(i.SetSysClock)
-    SetSysClock                              0x08001e93   Thumb Code     8  system_stm32f10x.o(i.SetSysClock)
-    i.SetSysClockTo72                        0x08001e9c   Section        0  system_stm32f10x.o(i.SetSysClockTo72)
-    SetSysClockTo72                          0x08001e9d   Thumb Code   214  system_stm32f10x.o(i.SetSysClockTo72)
-    i.Shk_ClrSnsSta                          0x08001f7c   Section        0  app_shock.o(i.Shk_ClrSnsSta)
-    i.Shk_DisableScan                        0x08001f88   Section        0  app_shock.o(i.Shk_DisableScan)
-    i.Shk_EnableScan                         0x08001f94   Section        0  app_shock.o(i.Shk_EnableScan)
-    i.Shk_GetSnsSta                          0x08001fa0   Section        0  app_shock.o(i.Shk_GetSnsSta)
-    i.Shk_PeriodHandle                       0x08001fac   Section        0  app_shock.o(i.Shk_PeriodHandle)
-    i.Shk_Scan                               0x08001fc0   Section        0  app_shock.o(i.Shk_Scan)
-    Shk_Scan                                 0x08001fc1   Thumb Code   106  app_shock.o(i.Shk_Scan)
-    i.Srv_QueueIn                            0x08002040   Section        0  srv_queue.o(i.Srv_QueueIn)
-    i.Srv_QueueInit                          0x08002072   Section        0  srv_queue.o(i.Srv_QueueInit)
-    i.Srv_QueueIsEmpty                       0x08002080   Section        0  srv_queue.o(i.Srv_QueueIsEmpty)
-    i.Srv_QueueOut                           0x0800208c   Section        0  srv_queue.o(i.Srv_QueueOut)
-    i.Srv_ReadQueueHead                      0x080020bc   Section        0  srv_queue.o(i.Srv_ReadQueueHead)
-    i.Srv_WifiCommInit                       0x080020d4   Section        0  srv_wifi_comm.o(i.Srv_WifiCommInit)
-    i.Srv_WifiCommTx                         0x080020d6   Section        0  srv_wifi_comm.o(i.Srv_WifiCommTx)
-    i.SysTick_Handler                        0x080020e8   Section        0  hal_int.o(i.SysTick_Handler)
-    i.SystemInit                             0x080020f4   Section        0  system_stm32f10x.o(i.SystemInit)
-    i.TAMPER_IRQHandler                      0x08002154   Section        0  hal_int.o(i.TAMPER_IRQHandler)
-    i.TIM1_BRK_IRQHandler                    0x0800215e   Section        0  hal_int.o(i.TIM1_BRK_IRQHandler)
-    i.TIM1_CC_IRQHandler                     0x08002168   Section        0  hal_int.o(i.TIM1_CC_IRQHandler)
-    i.TIM1_TRG_COM_IRQHandler                0x08002172   Section        0  hal_int.o(i.TIM1_TRG_COM_IRQHandler)
-    i.TIM1_UP_IRQHandler                     0x0800217c   Section        0  hal_int.o(i.TIM1_UP_IRQHandler)
-    i.TIM2_IRQHandler                        0x08002186   Section        0  hal_int.o(i.TIM2_IRQHandler)
-    i.TIM3_IRQHandler                        0x08002190   Section        0  hal_int.o(i.TIM3_IRQHandler)
-    i.TIM4_IRQHandler                        0x0800219a   Section        0  hal_int.o(i.TIM4_IRQHandler)
-    i.TIM_Cmd                                0x080021a4   Section        0  stm32f10x_tim.o(i.TIM_Cmd)
-    i.TIM_OC1Init                            0x080021bc   Section        0  stm32f10x_tim.o(i.TIM_OC1Init)
-    i.TIM_OC1PreloadConfig                   0x08002254   Section        0  stm32f10x_tim.o(i.TIM_OC1PreloadConfig)
-    i.TIM_OC2Init                            0x08002268   Section        0  stm32f10x_tim.o(i.TIM_OC2Init)
-    i.TIM_OC2PreloadConfig                   0x0800230c   Section        0  stm32f10x_tim.o(i.TIM_OC2PreloadConfig)
-    i.TIM_OC3Init                            0x08002328   Section        0  stm32f10x_tim.o(i.TIM_OC3Init)
-    i.TIM_OC3PreloadConfig                   0x080023c8   Section        0  stm32f10x_tim.o(i.TIM_OC3PreloadConfig)
-    i.TIM_OC4Init                            0x080023dc   Section        0  stm32f10x_tim.o(i.TIM_OC4Init)
-    i.TIM_OC4PreloadConfig                   0x08002458   Section        0  stm32f10x_tim.o(i.TIM_OC4PreloadConfig)
-    i.TIM_SetCompare1                        0x08002472   Section        0  stm32f10x_tim.o(i.TIM_SetCompare1)
-    i.TIM_SetCompare2                        0x08002476   Section        0  stm32f10x_tim.o(i.TIM_SetCompare2)
-    i.TIM_SetCompare3                        0x0800247a   Section        0  stm32f10x_tim.o(i.TIM_SetCompare3)
-    i.TIM_SetCompare4                        0x0800247e   Section        0  stm32f10x_tim.o(i.TIM_SetCompare4)
-    i.TIM_TimeBaseInit                       0x08002484   Section        0  stm32f10x_tim.o(i.TIM_TimeBaseInit)
-    i.USART1_IRQHandler                      0x08002528   Section        0  hal_int.o(i.USART1_IRQHandler)
-    i.USART2_IRQHandler                      0x08002532   Section        0  hal_int.o(i.USART2_IRQHandler)
-    i.USART3_IRQHandler                      0x0800253c   Section        0  hal_int.o(i.USART3_IRQHandler)
-    i.USART_Cmd                              0x08002546   Section        0  stm32f10x_usart.o(i.USART_Cmd)
-    i.USART_DeInit                           0x08002560   Section        0  stm32f10x_usart.o(i.USART_DeInit)
-    i.USART_GetITStatus                      0x080025fc   Section        0  stm32f10x_usart.o(i.USART_GetITStatus)
-    i.USART_ITConfig                         0x08002650   Section        0  stm32f10x_usart.o(i.USART_ITConfig)
-    i.USART_Init                             0x0800269c   Section        0  stm32f10x_usart.o(i.USART_Init)
-    i.USART_ReceiveData                      0x08002774   Section        0  stm32f10x_usart.o(i.USART_ReceiveData)
-    i.USART_SendData                         0x0800277e   Section        0  stm32f10x_usart.o(i.USART_SendData)
-    i.USBWakeUp_IRQHandler                   0x08002786   Section        0  hal_int.o(i.USBWakeUp_IRQHandler)
-    i.USB_HP_CAN1_TX_IRQHandler              0x08002790   Section        0  hal_int.o(i.USB_HP_CAN1_TX_IRQHandler)
-    i.USB_LP_CAN1_RX0_IRQHandler             0x0800279a   Section        0  hal_int.o(i.USB_LP_CAN1_RX0_IRQHandler)
-    i.UsageFault_Handler                     0x080027a4   Section        0  hal_int.o(i.UsageFault_Handler)
-    i.WWDG_IRQHandler                        0x080027ae   Section        0  hal_int.o(i.WWDG_IRQHandler)
-    i.Wifi_DataHandle                        0x080027b8   Section        0  app_wifi.o(i.Wifi_DataHandle)
-    Wifi_DataHandle                          0x080027b9   Thumb Code    32  app_wifi.o(i.Wifi_DataHandle)
-    i.Wifi_GetConnectSta                     0x080027e4   Section        0  gizwits_product.o(i.Wifi_GetConnectSta)
-    i.Wifi_KeyHandle                         0x080027f0   Section        0  app_wifi.o(i.Wifi_KeyHandle)
-    Wifi_KeyHandle                           0x080027f1   Thumb Code   128  app_wifi.o(i.Wifi_KeyHandle)
-    i.Wifi_LedSetFlash                       0x08002874   Section        0  app_wifi.o(i.Wifi_LedSetFlash)
-    Wifi_LedSetFlash                         0x08002875   Thumb Code    70  app_wifi.o(i.Wifi_LedSetFlash)
-    i.Wifi_ShockHandle                       0x080028c4   Section        0  app_wifi.o(i.Wifi_ShockHandle)
-    Wifi_ShockHandle                         0x080028c5   Thumb Code    20  app_wifi.o(i.Wifi_ShockHandle)
-    i.Wifi_TaskHandle                        0x080028d8   Section        0  app_wifi.o(i.Wifi_TaskHandle)
-    i.Wifi_TaskInit                          0x08002914   Section        0  app_wifi.o(i.Wifi_TaskInit)
-    i.Wifi_TmrCallBack                       0x08002924   Section        0  app_wifi.o(i.Wifi_TmrCallBack)
-    Wifi_TmrCallBack                         0x08002925   Thumb Code    38  app_wifi.o(i.Wifi_TmrCallBack)
-    i.Wifi_UpdateTime                        0x0800294c   Section        0  app_wifi.o(i.Wifi_UpdateTime)
-    Wifi_UpdateTime                          0x0800294d   Thumb Code    38  app_wifi.o(i.Wifi_UpdateTime)
-    i.Wifi_WorkManage                        0x0800297c   Section        0  app_wifi.o(i.Wifi_WorkManage)
-    Wifi_WorkManage                          0x0800297d   Thumb Code    86  app_wifi.o(i.Wifi_WorkManage)
-    i.__0printf$8                            0x080029d8   Section        0  printf8.o(i.__0printf$8)
-    i.__scatterload_copy                     0x080029f8   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x08002a06   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x08002a08   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i._printf_core                           0x08002a18   Section        0  printf8.o(i._printf_core)
-    _printf_core                             0x08002a19   Thumb Code   996  printf8.o(i._printf_core)
-    i._printf_post_padding                   0x08002e28   Section        0  printf8.o(i._printf_post_padding)
-    _printf_post_padding                     0x08002e29   Thumb Code    36  printf8.o(i._printf_post_padding)
-    i._printf_pre_padding                    0x08002e4c   Section        0  printf8.o(i._printf_pre_padding)
-    _printf_pre_padding                      0x08002e4d   Thumb Code    46  printf8.o(i._printf_pre_padding)
-    i.exchangeBytes                          0x08002e7a   Section        0  common.o(i.exchangeBytes)
-    i.exchangeWord                           0x08002e94   Section        0  common.o(i.exchangeWord)
-    i.fputc                                  0x08002eae   Section        0  std_lib.o(i.fputc)
-    i.gizAcrossByteJudge                     0x08002ec0   Section        0  datapointtools.o(i.gizAcrossByteJudge)
-    i.gizByteOrderExchange                   0x08002eea   Section        0  datapointtools.o(i.gizByteOrderExchange)
-    i.gizCheckReport                         0x08002f1c   Section        0  gizwits_protocol.o(i.gizCheckReport)
-    gizCheckReport                           0x08002f1d   Thumb Code   164  gizwits_protocol.o(i.gizCheckReport)
-    i.gizDataPoint2Event                     0x08003088   Section        0  gizwits_protocol.o(i.gizDataPoint2Event)
-    gizDataPoint2Event                       0x08003089   Thumb Code   280  gizwits_protocol.o(i.gizDataPoint2Event)
-    i.gizDataPoints2ReportData               0x080031cc   Section        0  gizwits_protocol.o(i.gizDataPoints2ReportData)
-    gizDataPoints2ReportData                 0x080031cd   Thumb Code   134  gizwits_protocol.o(i.gizDataPoints2ReportData)
-    i.gizDevReportPolicy                     0x08003284   Section        0  gizwits_protocol.o(i.gizDevReportPolicy)
-    gizDevReportPolicy                       0x08003285   Thumb Code   128  gizwits_protocol.o(i.gizDevReportPolicy)
-    i.gizGetTimerCount                       0x08003340   Section        0  gizwits_product.o(i.gizGetTimerCount)
-    i.gizProtocolAckHandle                   0x0800334c   Section        0  gizwits_protocol.o(i.gizProtocolAckHandle)
-    gizProtocolAckHandle                     0x0800334d   Thumb Code    94  gizwits_protocol.o(i.gizProtocolAckHandle)
-    i.gizProtocolCommonAck                   0x080033d8   Section        0  gizwits_protocol.o(i.gizProtocolCommonAck)
-    gizProtocolCommonAck                     0x080033d9   Thumb Code    86  gizwits_protocol.o(i.gizProtocolCommonAck)
-    i.gizProtocolErrorCmd                    0x08003478   Section        0  gizwits_protocol.o(i.gizProtocolErrorCmd)
-    gizProtocolErrorCmd                      0x08003479   Thumb Code    90  gizwits_protocol.o(i.gizProtocolErrorCmd)
-    i.gizProtocolGetDeviceInfo               0x0800351c   Section        0  gizwits_protocol.o(i.gizProtocolGetDeviceInfo)
-    gizProtocolGetDeviceInfo                 0x0800351d   Thumb Code   182  gizwits_protocol.o(i.gizProtocolGetDeviceInfo)
-    i.gizProtocolGetOnePacket                0x08003698   Section        0  gizwits_protocol.o(i.gizProtocolGetOnePacket)
-    gizProtocolGetOnePacket                  0x08003699   Thumb Code   358  gizwits_protocol.o(i.gizProtocolGetOnePacket)
-    i.gizProtocolHeadInit                    0x08003840   Section        0  gizwits_protocol.o(i.gizProtocolHeadInit)
-    gizProtocolHeadInit                      0x08003841   Thumb Code    34  gizwits_protocol.o(i.gizProtocolHeadInit)
-    i.gizProtocolIssuedDataAck               0x08003890   Section        0  gizwits_protocol.o(i.gizProtocolIssuedDataAck)
-    gizProtocolIssuedDataAck                 0x08003891   Thumb Code   226  gizwits_protocol.o(i.gizProtocolIssuedDataAck)
-    i.gizProtocolIssuedProcess               0x080039cc   Section        0  gizwits_protocol.o(i.gizProtocolIssuedProcess)
-    gizProtocolIssuedProcess                 0x080039cd   Thumb Code   220  gizwits_protocol.o(i.gizProtocolIssuedProcess)
-    i.gizProtocolModuleInfoHandle            0x08003adc   Section        0  gizwits_protocol.o(i.gizProtocolModuleInfoHandle)
-    gizProtocolModuleInfoHandle              0x08003add   Thumb Code    70  gizwits_protocol.o(i.gizProtocolModuleInfoHandle)
-    i.gizProtocolModuleStatus                0x08003b38   Section        0  gizwits_protocol.o(i.gizProtocolModuleStatus)
-    gizProtocolModuleStatus                  0x08003b39   Thumb Code   816  gizwits_protocol.o(i.gizProtocolModuleStatus)
-    i.gizProtocolNTP                         0x0800403c   Section        0  gizwits_protocol.o(i.gizProtocolNTP)
-    gizProtocolNTP                           0x0800403d   Thumb Code   112  gizwits_protocol.o(i.gizProtocolNTP)
-    i.gizProtocolReboot                      0x080040c4   Section        0  gizwits_protocol.o(i.gizProtocolReboot)
-    gizProtocolReboot                        0x080040c5   Thumb Code    28  gizwits_protocol.o(i.gizProtocolReboot)
-    i.gizProtocolResendData                  0x080040e0   Section        0  gizwits_protocol.o(i.gizProtocolResendData)
-    gizProtocolResendData                    0x080040e1   Thumb Code    64  gizwits_protocol.o(i.gizProtocolResendData)
-    i.gizProtocolSum                         0x0800415c   Section        0  common.o(i.gizProtocolSum)
-    i.gizProtocolWaitAck                     0x08004184   Section        0  gizwits_protocol.o(i.gizProtocolWaitAck)
-    gizProtocolWaitAck                       0x08004185   Thumb Code    70  gizwits_protocol.o(i.gizProtocolWaitAck)
-    i.gizProtocolWaitAckCheck                0x080041e8   Section        0  gizwits_protocol.o(i.gizProtocolWaitAckCheck)
-    gizProtocolWaitAckCheck                  0x080041e9   Thumb Code    44  gizwits_protocol.o(i.gizProtocolWaitAckCheck)
-    i.gizPutData                             0x08004230   Section        0  gizwits_protocol.o(i.gizPutData)
-    i.gizReportData                          0x080042a4   Section        0  gizwits_protocol.o(i.gizReportData)
-    gizReportData                            0x080042a5   Thumb Code   142  gizwits_protocol.o(i.gizReportData)
-    i.gizStandardCompressValue               0x0800437c   Section        0  datapointtools.o(i.gizStandardCompressValue)
-    i.gizStandardDecompressionValue          0x080043fc   Section        0  datapointtools.o(i.gizStandardDecompressionValue)
-    i.gizTimerMs                             0x080044c0   Section        0  gizwits_product.o(i.gizTimerMs)
-    i.gizX2Y                                 0x080044d0   Section        0  datapointtools.o(i.gizX2Y)
-    i.gizY2X                                 0x080044dc   Section        0  datapointtools.o(i.gizY2X)
-    i.gizwitsEventProcess                    0x080044ec   Section        0  gizwits_product.o(i.gizwitsEventProcess)
-    i.gizwitsGetNTP                          0x080047e0   Section        0  gizwits_protocol.o(i.gizwitsGetNTP)
-    i.gizwitsHandle                          0x08004864   Section        0  gizwits_protocol.o(i.gizwitsHandle)
-    i.gizwitsInit                            0x08004bd0   Section        0  gizwits_protocol.o(i.gizwitsInit)
-    i.gizwitsSetMode                         0x08004c34   Section        0  gizwits_protocol.o(i.gizwitsSetMode)
-    i.main                                   0x08004ebc   Section        0  uc.o(i.main)
-    i.mcuRestart                             0x08004ed8   Section        0  gizwits_product.o(i.mcuRestart)
-    i.rbCanRead                              0x08004ee4   Section        0  ringbuffer.o(i.rbCanRead)
-    i.rbCanWrite                             0x08004f1c   Section        0  ringbuffer.o(i.rbCanWrite)
-    i.rbCapacity                             0x08004f3a   Section        0  ringbuffer.o(i.rbCapacity)
-    i.rbCreate                               0x08004f48   Section        0  ringbuffer.o(i.rbCreate)
-    i.rbRead                                 0x08004f5e   Section        0  ringbuffer.o(i.rbRead)
-    i.rbWrite                                0x08005000   Section        0  ringbuffer.o(i.rbWrite)
-    i.uartWrite                              0x0800509c   Section        0  gizwits_product.o(i.uartWrite)
-    i.userHandle                             0x08005138   Section        0  gizwits_product.o(i.userHandle)
-    i.userInit                               0x0800519c   Section        0  gizwits_product.o(i.userInit)
-    .constdata                               0x080051ac   Section       32  hal_rtc.o(.constdata)
-    rtcMonTbl                                0x080051ac   Data          12  hal_rtc.o(.constdata)
-    rtcWeekTbl                               0x080051b8   Data          12  hal_rtc.o(.constdata)
-    .constdata                               0x080051cc   Section      288  drv_gpio.o(.constdata)
-    gpioConfigArry                           0x080051cc   Data         288  drv_gpio.o(.constdata)
-    .constdata                               0x080052ec   Section      160  drv_timer.o(.constdata)
-    timerConfig                              0x080052ec   Data         160  drv_timer.o(.constdata)
-    .constdata                               0x0800538c   Section       64  drv_uart.o(.constdata)
-    uartConfigTbl                            0x0800538c   Data          64  drv_uart.o(.constdata)
-    .constdata                               0x080053cc   Section       36  drv_adc.o(.constdata)
-    adcConfig                                0x080053cc   Data          36  drv_adc.o(.constdata)
+    i.Led_SetWarmDat                         0x08001a10   Section        0  app_led_ctrl.o(i.Led_SetWarmDat)
+    i.Led_WarmOff                            0x08001a34   Section        0  app_led_ctrl.o(i.Led_WarmOff)
+    i.Led_WarmOn                             0x08001a40   Section        0  app_led_ctrl.o(i.Led_WarmOn)
+    i.MemManage_Handler                      0x08001a50   Section        0  hal_int.o(i.MemManage_Handler)
+    i.NMI_Handler                            0x08001a5a   Section        0  hal_int.o(i.NMI_Handler)
+    i.NVIC_Init                              0x08001a64   Section        0  misc.o(i.NVIC_Init)
+    i.NVIC_PriorityGroupConfig               0x08001ad4   Section        0  misc.o(i.NVIC_PriorityGroupConfig)
+    i.Osal_DiffTsToUsec                      0x08001ae8   Section        0  osal.o(i.Osal_DiffTsToUsec)
+    i.Osal_GetCurTs                          0x08001b3c   Section        0  osal.o(i.Osal_GetCurTs)
+    i.PVD_IRQHandler                         0x08001b44   Section        0  hal_int.o(i.PVD_IRQHandler)
+    i.PWR_BackupAccessCmd                    0x08001b50   Section        0  stm32f10x_pwr.o(i.PWR_BackupAccessCmd)
+    i.PendSV_Handler                         0x08001b5c   Section        0  hal_int.o(i.PendSV_Handler)
+    i.RCC_ADCCLKConfig                       0x08001b6c   Section        0  stm32f10x_rcc.o(i.RCC_ADCCLKConfig)
+    i.RCC_APB1PeriphClockCmd                 0x08001b84   Section        0  stm32f10x_rcc.o(i.RCC_APB1PeriphClockCmd)
+    i.RCC_APB1PeriphResetCmd                 0x08001ba4   Section        0  stm32f10x_rcc.o(i.RCC_APB1PeriphResetCmd)
+    i.RCC_APB2PeriphClockCmd                 0x08001bc4   Section        0  stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd)
+    i.RCC_APB2PeriphResetCmd                 0x08001be4   Section        0  stm32f10x_rcc.o(i.RCC_APB2PeriphResetCmd)
+    i.RCC_BackupResetCmd                     0x08001c04   Section        0  stm32f10x_rcc.o(i.RCC_BackupResetCmd)
+    i.RCC_GetClocksFreq                      0x08001c10   Section        0  stm32f10x_rcc.o(i.RCC_GetClocksFreq)
+    i.RCC_GetFlagStatus                      0x08001ce4   Section        0  stm32f10x_rcc.o(i.RCC_GetFlagStatus)
+    i.RCC_IRQHandler                         0x08001d20   Section        0  hal_int.o(i.RCC_IRQHandler)
+    i.RCC_LSEConfig                          0x08001d2c   Section        0  stm32f10x_rcc.o(i.RCC_LSEConfig)
+    i.RCC_RTCCLKCmd                          0x08001d60   Section        0  stm32f10x_rcc.o(i.RCC_RTCCLKCmd)
+    i.RCC_RTCCLKConfig                       0x08001d6c   Section        0  stm32f10x_rcc.o(i.RCC_RTCCLKConfig)
+    i.RTCAlarm_IRQHandler                    0x08001d7c   Section        0  hal_int.o(i.RTCAlarm_IRQHandler)
+    i.RTC_ClearITPendingBit                  0x08001d88   Section        0  stm32f10x_rtc.o(i.RTC_ClearITPendingBit)
+    i.RTC_EnterConfigMode                    0x08001d98   Section        0  stm32f10x_rtc.o(i.RTC_EnterConfigMode)
+    i.RTC_ExitConfigMode                     0x08001dac   Section        0  stm32f10x_rtc.o(i.RTC_ExitConfigMode)
+    i.RTC_GetITStatus                        0x08001dc0   Section        0  stm32f10x_rtc.o(i.RTC_GetITStatus)
+    i.RTC_IRQHandler                         0x08001de4   Section        0  hal_int.o(i.RTC_IRQHandler)
+    i.RTC_ITConfig                           0x08001df0   Section        0  stm32f10x_rtc.o(i.RTC_ITConfig)
+    i.RTC_SetCounter                         0x08001e10   Section        0  stm32f10x_rtc.o(i.RTC_SetCounter)
+    i.RTC_SetPrescaler                       0x08001e2c   Section        0  stm32f10x_rtc.o(i.RTC_SetPrescaler)
+    i.RTC_WaitForLastTask                    0x08001e4c   Section        0  stm32f10x_rtc.o(i.RTC_WaitForLastTask)
+    i.RTC_WaitForSynchro                     0x08001e60   Section        0  stm32f10x_rtc.o(i.RTC_WaitForSynchro)
+    i.SPI1_IRQHandler                        0x08001e84   Section        0  hal_int.o(i.SPI1_IRQHandler)
+    i.SPI2_IRQHandler                        0x08001e8e   Section        0  hal_int.o(i.SPI2_IRQHandler)
+    i.SVC_Handler                            0x08001e98   Section        0  hal_int.o(i.SVC_Handler)
+    i.SetSysClock                            0x08001ea2   Section        0  system_stm32f10x.o(i.SetSysClock)
+    SetSysClock                              0x08001ea3   Thumb Code     8  system_stm32f10x.o(i.SetSysClock)
+    i.SetSysClockTo72                        0x08001eac   Section        0  system_stm32f10x.o(i.SetSysClockTo72)
+    SetSysClockTo72                          0x08001ead   Thumb Code   214  system_stm32f10x.o(i.SetSysClockTo72)
+    i.Shk_ClrSnsSta                          0x08001f8c   Section        0  app_shock.o(i.Shk_ClrSnsSta)
+    i.Shk_DisableScan                        0x08001f98   Section        0  app_shock.o(i.Shk_DisableScan)
+    i.Shk_EnableScan                         0x08001fa4   Section        0  app_shock.o(i.Shk_EnableScan)
+    i.Shk_GetSnsSta                          0x08001fb0   Section        0  app_shock.o(i.Shk_GetSnsSta)
+    i.Shk_PeriodHandle                       0x08001fbc   Section        0  app_shock.o(i.Shk_PeriodHandle)
+    i.Shk_Scan                               0x08001fd0   Section        0  app_shock.o(i.Shk_Scan)
+    Shk_Scan                                 0x08001fd1   Thumb Code   106  app_shock.o(i.Shk_Scan)
+    i.Srv_QueueIn                            0x08002050   Section        0  srv_queue.o(i.Srv_QueueIn)
+    i.Srv_QueueInit                          0x08002082   Section        0  srv_queue.o(i.Srv_QueueInit)
+    i.Srv_QueueIsEmpty                       0x08002090   Section        0  srv_queue.o(i.Srv_QueueIsEmpty)
+    i.Srv_QueueOut                           0x0800209c   Section        0  srv_queue.o(i.Srv_QueueOut)
+    i.Srv_ReadQueueHead                      0x080020cc   Section        0  srv_queue.o(i.Srv_ReadQueueHead)
+    i.Srv_WifiCommInit                       0x080020e4   Section        0  srv_wifi_comm.o(i.Srv_WifiCommInit)
+    i.Srv_WifiCommTx                         0x080020e6   Section        0  srv_wifi_comm.o(i.Srv_WifiCommTx)
+    i.SysTick_Handler                        0x080020f8   Section        0  hal_int.o(i.SysTick_Handler)
+    i.SystemInit                             0x08002104   Section        0  system_stm32f10x.o(i.SystemInit)
+    i.TAMPER_IRQHandler                      0x08002164   Section        0  hal_int.o(i.TAMPER_IRQHandler)
+    i.TIM1_BRK_IRQHandler                    0x0800216e   Section        0  hal_int.o(i.TIM1_BRK_IRQHandler)
+    i.TIM1_CC_IRQHandler                     0x08002178   Section        0  hal_int.o(i.TIM1_CC_IRQHandler)
+    i.TIM1_TRG_COM_IRQHandler                0x08002182   Section        0  hal_int.o(i.TIM1_TRG_COM_IRQHandler)
+    i.TIM1_UP_IRQHandler                     0x0800218c   Section        0  hal_int.o(i.TIM1_UP_IRQHandler)
+    i.TIM2_IRQHandler                        0x08002196   Section        0  hal_int.o(i.TIM2_IRQHandler)
+    i.TIM3_IRQHandler                        0x080021a0   Section        0  hal_int.o(i.TIM3_IRQHandler)
+    i.TIM4_IRQHandler                        0x080021aa   Section        0  hal_int.o(i.TIM4_IRQHandler)
+    i.TIM_Cmd                                0x080021b4   Section        0  stm32f10x_tim.o(i.TIM_Cmd)
+    i.TIM_OC1Init                            0x080021cc   Section        0  stm32f10x_tim.o(i.TIM_OC1Init)
+    i.TIM_OC1PreloadConfig                   0x08002264   Section        0  stm32f10x_tim.o(i.TIM_OC1PreloadConfig)
+    i.TIM_OC2Init                            0x08002278   Section        0  stm32f10x_tim.o(i.TIM_OC2Init)
+    i.TIM_OC2PreloadConfig                   0x0800231c   Section        0  stm32f10x_tim.o(i.TIM_OC2PreloadConfig)
+    i.TIM_OC3Init                            0x08002338   Section        0  stm32f10x_tim.o(i.TIM_OC3Init)
+    i.TIM_OC3PreloadConfig                   0x080023d8   Section        0  stm32f10x_tim.o(i.TIM_OC3PreloadConfig)
+    i.TIM_OC4Init                            0x080023ec   Section        0  stm32f10x_tim.o(i.TIM_OC4Init)
+    i.TIM_OC4PreloadConfig                   0x08002468   Section        0  stm32f10x_tim.o(i.TIM_OC4PreloadConfig)
+    i.TIM_SetCompare1                        0x08002482   Section        0  stm32f10x_tim.o(i.TIM_SetCompare1)
+    i.TIM_SetCompare2                        0x08002486   Section        0  stm32f10x_tim.o(i.TIM_SetCompare2)
+    i.TIM_SetCompare3                        0x0800248a   Section        0  stm32f10x_tim.o(i.TIM_SetCompare3)
+    i.TIM_SetCompare4                        0x0800248e   Section        0  stm32f10x_tim.o(i.TIM_SetCompare4)
+    i.TIM_TimeBaseInit                       0x08002494   Section        0  stm32f10x_tim.o(i.TIM_TimeBaseInit)
+    i.USART1_IRQHandler                      0x08002538   Section        0  hal_int.o(i.USART1_IRQHandler)
+    i.USART2_IRQHandler                      0x08002542   Section        0  hal_int.o(i.USART2_IRQHandler)
+    i.USART3_IRQHandler                      0x0800254c   Section        0  hal_int.o(i.USART3_IRQHandler)
+    i.USART_Cmd                              0x08002556   Section        0  stm32f10x_usart.o(i.USART_Cmd)
+    i.USART_DeInit                           0x08002570   Section        0  stm32f10x_usart.o(i.USART_DeInit)
+    i.USART_GetITStatus                      0x0800260c   Section        0  stm32f10x_usart.o(i.USART_GetITStatus)
+    i.USART_ITConfig                         0x08002660   Section        0  stm32f10x_usart.o(i.USART_ITConfig)
+    i.USART_Init                             0x080026ac   Section        0  stm32f10x_usart.o(i.USART_Init)
+    i.USART_ReceiveData                      0x08002784   Section        0  stm32f10x_usart.o(i.USART_ReceiveData)
+    i.USART_SendData                         0x0800278e   Section        0  stm32f10x_usart.o(i.USART_SendData)
+    i.USBWakeUp_IRQHandler                   0x08002796   Section        0  hal_int.o(i.USBWakeUp_IRQHandler)
+    i.USB_HP_CAN1_TX_IRQHandler              0x080027a0   Section        0  hal_int.o(i.USB_HP_CAN1_TX_IRQHandler)
+    i.USB_LP_CAN1_RX0_IRQHandler             0x080027aa   Section        0  hal_int.o(i.USB_LP_CAN1_RX0_IRQHandler)
+    i.UsageFault_Handler                     0x080027b4   Section        0  hal_int.o(i.UsageFault_Handler)
+    i.WWDG_IRQHandler                        0x080027be   Section        0  hal_int.o(i.WWDG_IRQHandler)
+    i.Wifi_DataHandle                        0x080027c8   Section        0  app_wifi.o(i.Wifi_DataHandle)
+    Wifi_DataHandle                          0x080027c9   Thumb Code    32  app_wifi.o(i.Wifi_DataHandle)
+    i.Wifi_GetConnectSta                     0x080027f4   Section        0  gizwits_product.o(i.Wifi_GetConnectSta)
+    i.Wifi_KeyHandle                         0x08002800   Section        0  app_wifi.o(i.Wifi_KeyHandle)
+    Wifi_KeyHandle                           0x08002801   Thumb Code   128  app_wifi.o(i.Wifi_KeyHandle)
+    i.Wifi_LedSetFlash                       0x08002884   Section        0  app_wifi.o(i.Wifi_LedSetFlash)
+    Wifi_LedSetFlash                         0x08002885   Thumb Code    70  app_wifi.o(i.Wifi_LedSetFlash)
+    i.Wifi_ShockHandle                       0x080028d4   Section        0  app_wifi.o(i.Wifi_ShockHandle)
+    Wifi_ShockHandle                         0x080028d5   Thumb Code    20  app_wifi.o(i.Wifi_ShockHandle)
+    i.Wifi_TaskHandle                        0x080028e8   Section        0  app_wifi.o(i.Wifi_TaskHandle)
+    i.Wifi_TaskInit                          0x08002924   Section        0  app_wifi.o(i.Wifi_TaskInit)
+    i.Wifi_TmrCallBack                       0x08002934   Section        0  app_wifi.o(i.Wifi_TmrCallBack)
+    Wifi_TmrCallBack                         0x08002935   Thumb Code    38  app_wifi.o(i.Wifi_TmrCallBack)
+    i.Wifi_UpdateTime                        0x0800295c   Section        0  app_wifi.o(i.Wifi_UpdateTime)
+    Wifi_UpdateTime                          0x0800295d   Thumb Code    38  app_wifi.o(i.Wifi_UpdateTime)
+    i.Wifi_WorkManage                        0x0800298c   Section        0  app_wifi.o(i.Wifi_WorkManage)
+    Wifi_WorkManage                          0x0800298d   Thumb Code    86  app_wifi.o(i.Wifi_WorkManage)
+    i.__0printf$8                            0x080029e8   Section        0  printf8.o(i.__0printf$8)
+    i.__scatterload_copy                     0x08002a08   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08002a16   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08002a18   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i._printf_core                           0x08002a28   Section        0  printf8.o(i._printf_core)
+    _printf_core                             0x08002a29   Thumb Code   996  printf8.o(i._printf_core)
+    i._printf_post_padding                   0x08002e38   Section        0  printf8.o(i._printf_post_padding)
+    _printf_post_padding                     0x08002e39   Thumb Code    36  printf8.o(i._printf_post_padding)
+    i._printf_pre_padding                    0x08002e5c   Section        0  printf8.o(i._printf_pre_padding)
+    _printf_pre_padding                      0x08002e5d   Thumb Code    46  printf8.o(i._printf_pre_padding)
+    i.exchangeBytes                          0x08002e8a   Section        0  common.o(i.exchangeBytes)
+    i.exchangeWord                           0x08002ea4   Section        0  common.o(i.exchangeWord)
+    i.fputc                                  0x08002ebe   Section        0  std_lib.o(i.fputc)
+    i.gizAcrossByteJudge                     0x08002ed0   Section        0  datapointtools.o(i.gizAcrossByteJudge)
+    i.gizByteOrderExchange                   0x08002efa   Section        0  datapointtools.o(i.gizByteOrderExchange)
+    i.gizCheckReport                         0x08002f2c   Section        0  gizwits_protocol.o(i.gizCheckReport)
+    gizCheckReport                           0x08002f2d   Thumb Code   164  gizwits_protocol.o(i.gizCheckReport)
+    i.gizDataPoint2Event                     0x08003098   Section        0  gizwits_protocol.o(i.gizDataPoint2Event)
+    gizDataPoint2Event                       0x08003099   Thumb Code   280  gizwits_protocol.o(i.gizDataPoint2Event)
+    i.gizDataPoints2ReportData               0x080031dc   Section        0  gizwits_protocol.o(i.gizDataPoints2ReportData)
+    gizDataPoints2ReportData                 0x080031dd   Thumb Code   134  gizwits_protocol.o(i.gizDataPoints2ReportData)
+    i.gizDevReportPolicy                     0x08003294   Section        0  gizwits_protocol.o(i.gizDevReportPolicy)
+    gizDevReportPolicy                       0x08003295   Thumb Code   128  gizwits_protocol.o(i.gizDevReportPolicy)
+    i.gizGetTimerCount                       0x08003350   Section        0  gizwits_product.o(i.gizGetTimerCount)
+    i.gizProtocolAckHandle                   0x0800335c   Section        0  gizwits_protocol.o(i.gizProtocolAckHandle)
+    gizProtocolAckHandle                     0x0800335d   Thumb Code    94  gizwits_protocol.o(i.gizProtocolAckHandle)
+    i.gizProtocolCommonAck                   0x080033e8   Section        0  gizwits_protocol.o(i.gizProtocolCommonAck)
+    gizProtocolCommonAck                     0x080033e9   Thumb Code    86  gizwits_protocol.o(i.gizProtocolCommonAck)
+    i.gizProtocolErrorCmd                    0x08003488   Section        0  gizwits_protocol.o(i.gizProtocolErrorCmd)
+    gizProtocolErrorCmd                      0x08003489   Thumb Code    90  gizwits_protocol.o(i.gizProtocolErrorCmd)
+    i.gizProtocolGetDeviceInfo               0x0800352c   Section        0  gizwits_protocol.o(i.gizProtocolGetDeviceInfo)
+    gizProtocolGetDeviceInfo                 0x0800352d   Thumb Code   182  gizwits_protocol.o(i.gizProtocolGetDeviceInfo)
+    i.gizProtocolGetOnePacket                0x080036a8   Section        0  gizwits_protocol.o(i.gizProtocolGetOnePacket)
+    gizProtocolGetOnePacket                  0x080036a9   Thumb Code   358  gizwits_protocol.o(i.gizProtocolGetOnePacket)
+    i.gizProtocolHeadInit                    0x08003850   Section        0  gizwits_protocol.o(i.gizProtocolHeadInit)
+    gizProtocolHeadInit                      0x08003851   Thumb Code    34  gizwits_protocol.o(i.gizProtocolHeadInit)
+    i.gizProtocolIssuedDataAck               0x080038a0   Section        0  gizwits_protocol.o(i.gizProtocolIssuedDataAck)
+    gizProtocolIssuedDataAck                 0x080038a1   Thumb Code   226  gizwits_protocol.o(i.gizProtocolIssuedDataAck)
+    i.gizProtocolIssuedProcess               0x080039dc   Section        0  gizwits_protocol.o(i.gizProtocolIssuedProcess)
+    gizProtocolIssuedProcess                 0x080039dd   Thumb Code   220  gizwits_protocol.o(i.gizProtocolIssuedProcess)
+    i.gizProtocolModuleInfoHandle            0x08003aec   Section        0  gizwits_protocol.o(i.gizProtocolModuleInfoHandle)
+    gizProtocolModuleInfoHandle              0x08003aed   Thumb Code    70  gizwits_protocol.o(i.gizProtocolModuleInfoHandle)
+    i.gizProtocolModuleStatus                0x08003b48   Section        0  gizwits_protocol.o(i.gizProtocolModuleStatus)
+    gizProtocolModuleStatus                  0x08003b49   Thumb Code   816  gizwits_protocol.o(i.gizProtocolModuleStatus)
+    i.gizProtocolNTP                         0x0800404c   Section        0  gizwits_protocol.o(i.gizProtocolNTP)
+    gizProtocolNTP                           0x0800404d   Thumb Code   112  gizwits_protocol.o(i.gizProtocolNTP)
+    i.gizProtocolReboot                      0x080040d4   Section        0  gizwits_protocol.o(i.gizProtocolReboot)
+    gizProtocolReboot                        0x080040d5   Thumb Code    28  gizwits_protocol.o(i.gizProtocolReboot)
+    i.gizProtocolResendData                  0x080040f0   Section        0  gizwits_protocol.o(i.gizProtocolResendData)
+    gizProtocolResendData                    0x080040f1   Thumb Code    64  gizwits_protocol.o(i.gizProtocolResendData)
+    i.gizProtocolSum                         0x0800416c   Section        0  common.o(i.gizProtocolSum)
+    i.gizProtocolWaitAck                     0x08004194   Section        0  gizwits_protocol.o(i.gizProtocolWaitAck)
+    gizProtocolWaitAck                       0x08004195   Thumb Code    70  gizwits_protocol.o(i.gizProtocolWaitAck)
+    i.gizProtocolWaitAckCheck                0x080041f8   Section        0  gizwits_protocol.o(i.gizProtocolWaitAckCheck)
+    gizProtocolWaitAckCheck                  0x080041f9   Thumb Code    44  gizwits_protocol.o(i.gizProtocolWaitAckCheck)
+    i.gizPutData                             0x08004240   Section        0  gizwits_protocol.o(i.gizPutData)
+    i.gizReportData                          0x080042b4   Section        0  gizwits_protocol.o(i.gizReportData)
+    gizReportData                            0x080042b5   Thumb Code   142  gizwits_protocol.o(i.gizReportData)
+    i.gizStandardCompressValue               0x0800438c   Section        0  datapointtools.o(i.gizStandardCompressValue)
+    i.gizStandardDecompressionValue          0x0800440c   Section        0  datapointtools.o(i.gizStandardDecompressionValue)
+    i.gizTimerMs                             0x080044d0   Section        0  gizwits_product.o(i.gizTimerMs)
+    i.gizX2Y                                 0x080044e0   Section        0  datapointtools.o(i.gizX2Y)
+    i.gizY2X                                 0x080044ec   Section        0  datapointtools.o(i.gizY2X)
+    i.gizwitsEventProcess                    0x080044fc   Section        0  gizwits_product.o(i.gizwitsEventProcess)
+    i.gizwitsGetNTP                          0x080047f0   Section        0  gizwits_protocol.o(i.gizwitsGetNTP)
+    i.gizwitsHandle                          0x08004874   Section        0  gizwits_protocol.o(i.gizwitsHandle)
+    i.gizwitsInit                            0x08004be0   Section        0  gizwits_protocol.o(i.gizwitsInit)
+    i.gizwitsSetMode                         0x08004c44   Section        0  gizwits_protocol.o(i.gizwitsSetMode)
+    i.main                                   0x08004ecc   Section        0  uc.o(i.main)
+    i.mcuRestart                             0x08004ee8   Section        0  gizwits_product.o(i.mcuRestart)
+    i.rbCanRead                              0x08004ef4   Section        0  ringbuffer.o(i.rbCanRead)
+    i.rbCanWrite                             0x08004f2c   Section        0  ringbuffer.o(i.rbCanWrite)
+    i.rbCapacity                             0x08004f4a   Section        0  ringbuffer.o(i.rbCapacity)
+    i.rbCreate                               0x08004f58   Section        0  ringbuffer.o(i.rbCreate)
+    i.rbRead                                 0x08004f6e   Section        0  ringbuffer.o(i.rbRead)
+    i.rbWrite                                0x08005010   Section        0  ringbuffer.o(i.rbWrite)
+    i.uartWrite                              0x080050ac   Section        0  gizwits_product.o(i.uartWrite)
+    i.userHandle                             0x08005148   Section        0  gizwits_product.o(i.userHandle)
+    i.userInit                               0x080051ac   Section        0  gizwits_product.o(i.userInit)
+    .constdata                               0x080051bc   Section       32  hal_rtc.o(.constdata)
+    rtcMonTbl                                0x080051bc   Data          12  hal_rtc.o(.constdata)
+    rtcWeekTbl                               0x080051c8   Data          12  hal_rtc.o(.constdata)
+    .constdata                               0x080051dc   Section      288  drv_gpio.o(.constdata)
+    gpioConfigArry                           0x080051dc   Data         288  drv_gpio.o(.constdata)
+    .constdata                               0x080052fc   Section      160  drv_timer.o(.constdata)
+    timerConfig                              0x080052fc   Data         160  drv_timer.o(.constdata)
+    .constdata                               0x0800539c   Section       64  drv_uart.o(.constdata)
+    uartConfigTbl                            0x0800539c   Data          64  drv_uart.o(.constdata)
+    .constdata                               0x080053dc   Section       36  drv_adc.o(.constdata)
+    adcConfig                                0x080053dc   Data          36  drv_adc.o(.constdata)
     .data                                    0x20000000   Section       24  app_wifi.o(.data)
     wifiSetInfo                              0x20000000   Data           8  app_wifi.o(.data)
     Ts                                       0x20000008   Data           4  app_wifi.o(.data)
@@ -2220,136 +2220,136 @@ Image Symbol Table
     Led_ModeCycling                          0x08001965   Thumb Code    64  app_led_ctrl.o(i.Led_ModeCycling)
     Led_PeriodProc                           0x080019a9   Thumb Code    12  app_led_ctrl.o(i.Led_PeriodProc)
     Led_SetFlash                             0x080019b5   Thumb Code    42  app_led_ctrl.o(i.Led_SetFlash)
-    Led_SetRGBDat                            0x080019e5   Thumb Code    30  app_led_ctrl.o(i.Led_SetRGBDat)
-    Led_SetWarmDat                           0x08001a09   Thumb Code    22  app_led_ctrl.o(i.Led_SetWarmDat)
-    Led_WarmOff                              0x08001a25   Thumb Code     8  app_led_ctrl.o(i.Led_WarmOff)
-    Led_WarmOn                               0x08001a31   Thumb Code    10  app_led_ctrl.o(i.Led_WarmOn)
-    MemManage_Handler                        0x08001a41   Thumb Code    10  hal_int.o(i.MemManage_Handler)
-    NMI_Handler                              0x08001a4b   Thumb Code    10  hal_int.o(i.NMI_Handler)
-    NVIC_Init                                0x08001a55   Thumb Code   100  misc.o(i.NVIC_Init)
-    NVIC_PriorityGroupConfig                 0x08001ac5   Thumb Code    10  misc.o(i.NVIC_PriorityGroupConfig)
-    Osal_DiffTsToUsec                        0x08001ad9   Thumb Code    78  osal.o(i.Osal_DiffTsToUsec)
-    Osal_GetCurTs                            0x08001b2d   Thumb Code     8  osal.o(i.Osal_GetCurTs)
-    PVD_IRQHandler                           0x08001b35   Thumb Code    10  hal_int.o(i.PVD_IRQHandler)
-    PWR_BackupAccessCmd                      0x08001b41   Thumb Code     6  stm32f10x_pwr.o(i.PWR_BackupAccessCmd)
-    PendSV_Handler                           0x08001b4d   Thumb Code    10  hal_int.o(i.PendSV_Handler)
-    RCC_ADCCLKConfig                         0x08001b5d   Thumb Code    18  stm32f10x_rcc.o(i.RCC_ADCCLKConfig)
-    RCC_APB1PeriphClockCmd                   0x08001b75   Thumb Code    26  stm32f10x_rcc.o(i.RCC_APB1PeriphClockCmd)
-    RCC_APB1PeriphResetCmd                   0x08001b95   Thumb Code    26  stm32f10x_rcc.o(i.RCC_APB1PeriphResetCmd)
-    RCC_APB2PeriphClockCmd                   0x08001bb5   Thumb Code    26  stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd)
-    RCC_APB2PeriphResetCmd                   0x08001bd5   Thumb Code    26  stm32f10x_rcc.o(i.RCC_APB2PeriphResetCmd)
-    RCC_BackupResetCmd                       0x08001bf5   Thumb Code     6  stm32f10x_rcc.o(i.RCC_BackupResetCmd)
-    RCC_GetClocksFreq                        0x08001c01   Thumb Code   192  stm32f10x_rcc.o(i.RCC_GetClocksFreq)
-    RCC_GetFlagStatus                        0x08001cd5   Thumb Code    56  stm32f10x_rcc.o(i.RCC_GetFlagStatus)
-    RCC_IRQHandler                           0x08001d11   Thumb Code    10  hal_int.o(i.RCC_IRQHandler)
-    RCC_LSEConfig                            0x08001d1d   Thumb Code    46  stm32f10x_rcc.o(i.RCC_LSEConfig)
-    RCC_RTCCLKCmd                            0x08001d51   Thumb Code     6  stm32f10x_rcc.o(i.RCC_RTCCLKCmd)
-    RCC_RTCCLKConfig                         0x08001d5d   Thumb Code    12  stm32f10x_rcc.o(i.RCC_RTCCLKConfig)
-    RTCAlarm_IRQHandler                      0x08001d6d   Thumb Code    10  hal_int.o(i.RTCAlarm_IRQHandler)
-    RTC_ClearITPendingBit                    0x08001d79   Thumb Code    12  stm32f10x_rtc.o(i.RTC_ClearITPendingBit)
-    RTC_EnterConfigMode                      0x08001d89   Thumb Code    14  stm32f10x_rtc.o(i.RTC_EnterConfigMode)
-    RTC_ExitConfigMode                       0x08001d9d   Thumb Code    16  stm32f10x_rtc.o(i.RTC_ExitConfigMode)
-    RTC_GetITStatus                          0x08001db1   Thumb Code    32  stm32f10x_rtc.o(i.RTC_GetITStatus)
-    RTC_IRQHandler                           0x08001dd5   Thumb Code    10  hal_int.o(i.RTC_IRQHandler)
-    RTC_ITConfig                             0x08001de1   Thumb Code    26  stm32f10x_rtc.o(i.RTC_ITConfig)
-    RTC_SetCounter                           0x08001e01   Thumb Code    24  stm32f10x_rtc.o(i.RTC_SetCounter)
-    RTC_SetPrescaler                         0x08001e1d   Thumb Code    26  stm32f10x_rtc.o(i.RTC_SetPrescaler)
-    RTC_WaitForLastTask                      0x08001e3d   Thumb Code    16  stm32f10x_rtc.o(i.RTC_WaitForLastTask)
-    RTC_WaitForSynchro                       0x08001e51   Thumb Code    30  stm32f10x_rtc.o(i.RTC_WaitForSynchro)
-    SPI1_IRQHandler                          0x08001e75   Thumb Code    10  hal_int.o(i.SPI1_IRQHandler)
-    SPI2_IRQHandler                          0x08001e7f   Thumb Code    10  hal_int.o(i.SPI2_IRQHandler)
-    SVC_Handler                              0x08001e89   Thumb Code    10  hal_int.o(i.SVC_Handler)
-    Shk_ClrSnsSta                            0x08001f7d   Thumb Code     8  app_shock.o(i.Shk_ClrSnsSta)
-    Shk_DisableScan                          0x08001f89   Thumb Code     8  app_shock.o(i.Shk_DisableScan)
-    Shk_EnableScan                           0x08001f95   Thumb Code     8  app_shock.o(i.Shk_EnableScan)
-    Shk_GetSnsSta                            0x08001fa1   Thumb Code     6  app_shock.o(i.Shk_GetSnsSta)
-    Shk_PeriodHandle                         0x08001fad   Thumb Code    16  app_shock.o(i.Shk_PeriodHandle)
-    Srv_QueueIn                              0x08002041   Thumb Code    50  srv_queue.o(i.Srv_QueueIn)
-    Srv_QueueInit                            0x08002073   Thumb Code    14  srv_queue.o(i.Srv_QueueInit)
-    Srv_QueueIsEmpty                         0x08002081   Thumb Code    12  srv_queue.o(i.Srv_QueueIsEmpty)
-    Srv_QueueOut                             0x0800208d   Thumb Code    48  srv_queue.o(i.Srv_QueueOut)
-    Srv_ReadQueueHead                        0x080020bd   Thumb Code    24  srv_queue.o(i.Srv_ReadQueueHead)
-    Srv_WifiCommInit                         0x080020d5   Thumb Code     2  srv_wifi_comm.o(i.Srv_WifiCommInit)
-    Srv_WifiCommTx                           0x080020d7   Thumb Code    18  srv_wifi_comm.o(i.Srv_WifiCommTx)
-    SysTick_Handler                          0x080020e9   Thumb Code    10  hal_int.o(i.SysTick_Handler)
-    SystemInit                               0x080020f5   Thumb Code    78  system_stm32f10x.o(i.SystemInit)
-    TAMPER_IRQHandler                        0x08002155   Thumb Code    10  hal_int.o(i.TAMPER_IRQHandler)
-    TIM1_BRK_IRQHandler                      0x0800215f   Thumb Code    10  hal_int.o(i.TIM1_BRK_IRQHandler)
-    TIM1_CC_IRQHandler                       0x08002169   Thumb Code    10  hal_int.o(i.TIM1_CC_IRQHandler)
-    TIM1_TRG_COM_IRQHandler                  0x08002173   Thumb Code    10  hal_int.o(i.TIM1_TRG_COM_IRQHandler)
-    TIM1_UP_IRQHandler                       0x0800217d   Thumb Code    10  hal_int.o(i.TIM1_UP_IRQHandler)
-    TIM2_IRQHandler                          0x08002187   Thumb Code    10  hal_int.o(i.TIM2_IRQHandler)
-    TIM3_IRQHandler                          0x08002191   Thumb Code    10  hal_int.o(i.TIM3_IRQHandler)
-    TIM4_IRQHandler                          0x0800219b   Thumb Code    10  hal_int.o(i.TIM4_IRQHandler)
-    TIM_Cmd                                  0x080021a5   Thumb Code    24  stm32f10x_tim.o(i.TIM_Cmd)
-    TIM_OC1Init                              0x080021bd   Thumb Code   132  stm32f10x_tim.o(i.TIM_OC1Init)
-    TIM_OC1PreloadConfig                     0x08002255   Thumb Code    18  stm32f10x_tim.o(i.TIM_OC1PreloadConfig)
-    TIM_OC2Init                              0x08002269   Thumb Code   154  stm32f10x_tim.o(i.TIM_OC2Init)
-    TIM_OC2PreloadConfig                     0x0800230d   Thumb Code    26  stm32f10x_tim.o(i.TIM_OC2PreloadConfig)
-    TIM_OC3Init                              0x08002329   Thumb Code   150  stm32f10x_tim.o(i.TIM_OC3Init)
-    TIM_OC3PreloadConfig                     0x080023c9   Thumb Code    18  stm32f10x_tim.o(i.TIM_OC3PreloadConfig)
-    TIM_OC4Init                              0x080023dd   Thumb Code   114  stm32f10x_tim.o(i.TIM_OC4Init)
-    TIM_OC4PreloadConfig                     0x08002459   Thumb Code    26  stm32f10x_tim.o(i.TIM_OC4PreloadConfig)
-    TIM_SetCompare1                          0x08002473   Thumb Code     4  stm32f10x_tim.o(i.TIM_SetCompare1)
-    TIM_SetCompare2                          0x08002477   Thumb Code     4  stm32f10x_tim.o(i.TIM_SetCompare2)
-    TIM_SetCompare3                          0x0800247b   Thumb Code     4  stm32f10x_tim.o(i.TIM_SetCompare3)
-    TIM_SetCompare4                          0x0800247f   Thumb Code     6  stm32f10x_tim.o(i.TIM_SetCompare4)
-    TIM_TimeBaseInit                         0x08002485   Thumb Code   122  stm32f10x_tim.o(i.TIM_TimeBaseInit)
-    USART1_IRQHandler                        0x08002529   Thumb Code    10  hal_int.o(i.USART1_IRQHandler)
-    USART2_IRQHandler                        0x08002533   Thumb Code    10  hal_int.o(i.USART2_IRQHandler)
-    USART3_IRQHandler                        0x0800253d   Thumb Code    10  hal_int.o(i.USART3_IRQHandler)
-    USART_Cmd                                0x08002547   Thumb Code    24  stm32f10x_usart.o(i.USART_Cmd)
-    USART_DeInit                             0x08002561   Thumb Code   134  stm32f10x_usart.o(i.USART_DeInit)
-    USART_GetITStatus                        0x080025fd   Thumb Code    84  stm32f10x_usart.o(i.USART_GetITStatus)
-    USART_ITConfig                           0x08002651   Thumb Code    74  stm32f10x_usart.o(i.USART_ITConfig)
-    USART_Init                               0x0800269d   Thumb Code   210  stm32f10x_usart.o(i.USART_Init)
-    USART_ReceiveData                        0x08002775   Thumb Code    10  stm32f10x_usart.o(i.USART_ReceiveData)
-    USART_SendData                           0x0800277f   Thumb Code     8  stm32f10x_usart.o(i.USART_SendData)
-    USBWakeUp_IRQHandler                     0x08002787   Thumb Code    10  hal_int.o(i.USBWakeUp_IRQHandler)
-    USB_HP_CAN1_TX_IRQHandler                0x08002791   Thumb Code    10  hal_int.o(i.USB_HP_CAN1_TX_IRQHandler)
-    USB_LP_CAN1_RX0_IRQHandler               0x0800279b   Thumb Code    10  hal_int.o(i.USB_LP_CAN1_RX0_IRQHandler)
-    UsageFault_Handler                       0x080027a5   Thumb Code    10  hal_int.o(i.UsageFault_Handler)
-    WWDG_IRQHandler                          0x080027af   Thumb Code    10  hal_int.o(i.WWDG_IRQHandler)
-    Wifi_GetConnectSta                       0x080027e5   Thumb Code     6  gizwits_product.o(i.Wifi_GetConnectSta)
-    Wifi_TaskHandle                          0x080028d9   Thumb Code    54  app_wifi.o(i.Wifi_TaskHandle)
-    Wifi_TaskInit                            0x08002915   Thumb Code    16  app_wifi.o(i.Wifi_TaskInit)
-    __0printf$8                              0x080029d9   Thumb Code    22  printf8.o(i.__0printf$8)
-    __1printf$8                              0x080029d9   Thumb Code     0  printf8.o(i.__0printf$8)
-    __2printf                                0x080029d9   Thumb Code     0  printf8.o(i.__0printf$8)
-    __scatterload_copy                       0x080029f9   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x08002a07   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x08002a09   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    exchangeBytes                            0x08002e7b   Thumb Code    26  common.o(i.exchangeBytes)
-    exchangeWord                             0x08002e95   Thumb Code    26  common.o(i.exchangeWord)
-    fputc                                    0x08002eaf   Thumb Code    18  std_lib.o(i.fputc)
-    gizAcrossByteJudge                       0x08002ec1   Thumb Code    42  datapointtools.o(i.gizAcrossByteJudge)
-    gizByteOrderExchange                     0x08002eeb   Thumb Code    50  datapointtools.o(i.gizByteOrderExchange)
-    gizGetTimerCount                         0x08003341   Thumb Code     6  gizwits_product.o(i.gizGetTimerCount)
-    gizProtocolSum                           0x0800415d   Thumb Code    38  common.o(i.gizProtocolSum)
-    gizPutData                               0x08004231   Thumb Code    52  gizwits_protocol.o(i.gizPutData)
-    gizStandardCompressValue                 0x0800437d   Thumb Code   128  datapointtools.o(i.gizStandardCompressValue)
-    gizStandardDecompressionValue            0x080043fd   Thumb Code   194  datapointtools.o(i.gizStandardDecompressionValue)
-    gizTimerMs                               0x080044c1   Thumb Code    12  gizwits_product.o(i.gizTimerMs)
-    gizX2Y                                   0x080044d1   Thumb Code    12  datapointtools.o(i.gizX2Y)
-    gizY2X                                   0x080044dd   Thumb Code    14  datapointtools.o(i.gizY2X)
-    gizwitsEventProcess                      0x080044ed   Thumb Code   454  gizwits_product.o(i.gizwitsEventProcess)
-    gizwitsGetNTP                            0x080047e1   Thumb Code    94  gizwits_protocol.o(i.gizwitsGetNTP)
-    gizwitsHandle                            0x08004865   Thumb Code   596  gizwits_protocol.o(i.gizwitsHandle)
-    gizwitsInit                              0x08004bd1   Thumb Code    46  gizwits_protocol.o(i.gizwitsInit)
-    gizwitsSetMode                           0x08004c35   Thumb Code   590  gizwits_protocol.o(i.gizwitsSetMode)
-    main                                     0x08004ebd   Thumb Code    28  uc.o(i.main)
-    mcuRestart                               0x08004ed9   Thumb Code    12  gizwits_product.o(i.mcuRestart)
-    rbCanRead                                0x08004ee5   Thumb Code    56  ringbuffer.o(i.rbCanRead)
-    rbCanWrite                               0x08004f1d   Thumb Code    30  ringbuffer.o(i.rbCanWrite)
-    rbCapacity                               0x08004f3b   Thumb Code    14  ringbuffer.o(i.rbCapacity)
-    rbCreate                                 0x08004f49   Thumb Code    22  ringbuffer.o(i.rbCreate)
-    rbRead                                   0x08004f5f   Thumb Code   162  ringbuffer.o(i.rbRead)
-    rbWrite                                  0x08005001   Thumb Code   154  ringbuffer.o(i.rbWrite)
-    uartWrite                                0x0800509d   Thumb Code   118  gizwits_product.o(i.uartWrite)
-    userHandle                               0x08005139   Thumb Code    94  gizwits_product.o(i.userHandle)
-    userInit                                 0x0800519d   Thumb Code    12  gizwits_product.o(i.userInit)
-    Region$$Table$$Base                      0x080053f0   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08005410   Number         0  anon$$obj.o(Region$$Table)
+    Led_SetRGBDat                            0x080019e5   Thumb Code    34  app_led_ctrl.o(i.Led_SetRGBDat)
+    Led_SetWarmDat                           0x08001a11   Thumb Code    26  app_led_ctrl.o(i.Led_SetWarmDat)
+    Led_WarmOff                              0x08001a35   Thumb Code     8  app_led_ctrl.o(i.Led_WarmOff)
+    Led_WarmOn                               0x08001a41   Thumb Code    10  app_led_ctrl.o(i.Led_WarmOn)
+    MemManage_Handler                        0x08001a51   Thumb Code    10  hal_int.o(i.MemManage_Handler)
+    NMI_Handler                              0x08001a5b   Thumb Code    10  hal_int.o(i.NMI_Handler)
+    NVIC_Init                                0x08001a65   Thumb Code   100  misc.o(i.NVIC_Init)
+    NVIC_PriorityGroupConfig                 0x08001ad5   Thumb Code    10  misc.o(i.NVIC_PriorityGroupConfig)
+    Osal_DiffTsToUsec                        0x08001ae9   Thumb Code    78  osal.o(i.Osal_DiffTsToUsec)
+    Osal_GetCurTs                            0x08001b3d   Thumb Code     8  osal.o(i.Osal_GetCurTs)
+    PVD_IRQHandler                           0x08001b45   Thumb Code    10  hal_int.o(i.PVD_IRQHandler)
+    PWR_BackupAccessCmd                      0x08001b51   Thumb Code     6  stm32f10x_pwr.o(i.PWR_BackupAccessCmd)
+    PendSV_Handler                           0x08001b5d   Thumb Code    10  hal_int.o(i.PendSV_Handler)
+    RCC_ADCCLKConfig                         0x08001b6d   Thumb Code    18  stm32f10x_rcc.o(i.RCC_ADCCLKConfig)
+    RCC_APB1PeriphClockCmd                   0x08001b85   Thumb Code    26  stm32f10x_rcc.o(i.RCC_APB1PeriphClockCmd)
+    RCC_APB1PeriphResetCmd                   0x08001ba5   Thumb Code    26  stm32f10x_rcc.o(i.RCC_APB1PeriphResetCmd)
+    RCC_APB2PeriphClockCmd                   0x08001bc5   Thumb Code    26  stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd)
+    RCC_APB2PeriphResetCmd                   0x08001be5   Thumb Code    26  stm32f10x_rcc.o(i.RCC_APB2PeriphResetCmd)
+    RCC_BackupResetCmd                       0x08001c05   Thumb Code     6  stm32f10x_rcc.o(i.RCC_BackupResetCmd)
+    RCC_GetClocksFreq                        0x08001c11   Thumb Code   192  stm32f10x_rcc.o(i.RCC_GetClocksFreq)
+    RCC_GetFlagStatus                        0x08001ce5   Thumb Code    56  stm32f10x_rcc.o(i.RCC_GetFlagStatus)
+    RCC_IRQHandler                           0x08001d21   Thumb Code    10  hal_int.o(i.RCC_IRQHandler)
+    RCC_LSEConfig                            0x08001d2d   Thumb Code    46  stm32f10x_rcc.o(i.RCC_LSEConfig)
+    RCC_RTCCLKCmd                            0x08001d61   Thumb Code     6  stm32f10x_rcc.o(i.RCC_RTCCLKCmd)
+    RCC_RTCCLKConfig                         0x08001d6d   Thumb Code    12  stm32f10x_rcc.o(i.RCC_RTCCLKConfig)
+    RTCAlarm_IRQHandler                      0x08001d7d   Thumb Code    10  hal_int.o(i.RTCAlarm_IRQHandler)
+    RTC_ClearITPendingBit                    0x08001d89   Thumb Code    12  stm32f10x_rtc.o(i.RTC_ClearITPendingBit)
+    RTC_EnterConfigMode                      0x08001d99   Thumb Code    14  stm32f10x_rtc.o(i.RTC_EnterConfigMode)
+    RTC_ExitConfigMode                       0x08001dad   Thumb Code    16  stm32f10x_rtc.o(i.RTC_ExitConfigMode)
+    RTC_GetITStatus                          0x08001dc1   Thumb Code    32  stm32f10x_rtc.o(i.RTC_GetITStatus)
+    RTC_IRQHandler                           0x08001de5   Thumb Code    10  hal_int.o(i.RTC_IRQHandler)
+    RTC_ITConfig                             0x08001df1   Thumb Code    26  stm32f10x_rtc.o(i.RTC_ITConfig)
+    RTC_SetCounter                           0x08001e11   Thumb Code    24  stm32f10x_rtc.o(i.RTC_SetCounter)
+    RTC_SetPrescaler                         0x08001e2d   Thumb Code    26  stm32f10x_rtc.o(i.RTC_SetPrescaler)
+    RTC_WaitForLastTask                      0x08001e4d   Thumb Code    16  stm32f10x_rtc.o(i.RTC_WaitForLastTask)
+    RTC_WaitForSynchro                       0x08001e61   Thumb Code    30  stm32f10x_rtc.o(i.RTC_WaitForSynchro)
+    SPI1_IRQHandler                          0x08001e85   Thumb Code    10  hal_int.o(i.SPI1_IRQHandler)
+    SPI2_IRQHandler                          0x08001e8f   Thumb Code    10  hal_int.o(i.SPI2_IRQHandler)
+    SVC_Handler                              0x08001e99   Thumb Code    10  hal_int.o(i.SVC_Handler)
+    Shk_ClrSnsSta                            0x08001f8d   Thumb Code     8  app_shock.o(i.Shk_ClrSnsSta)
+    Shk_DisableScan                          0x08001f99   Thumb Code     8  app_shock.o(i.Shk_DisableScan)
+    Shk_EnableScan                           0x08001fa5   Thumb Code     8  app_shock.o(i.Shk_EnableScan)
+    Shk_GetSnsSta                            0x08001fb1   Thumb Code     6  app_shock.o(i.Shk_GetSnsSta)
+    Shk_PeriodHandle                         0x08001fbd   Thumb Code    16  app_shock.o(i.Shk_PeriodHandle)
+    Srv_QueueIn                              0x08002051   Thumb Code    50  srv_queue.o(i.Srv_QueueIn)
+    Srv_QueueInit                            0x08002083   Thumb Code    14  srv_queue.o(i.Srv_QueueInit)
+    Srv_QueueIsEmpty                         0x08002091   Thumb Code    12  srv_queue.o(i.Srv_QueueIsEmpty)
+    Srv_QueueOut                             0x0800209d   Thumb Code    48  srv_queue.o(i.Srv_QueueOut)
+    Srv_ReadQueueHead                        0x080020cd   Thumb Code    24  srv_queue.o(i.Srv_ReadQueueHead)
+    Srv_WifiCommInit                         0x080020e5   Thumb Code     2  srv_wifi_comm.o(i.Srv_WifiCommInit)
+    Srv_WifiCommTx                           0x080020e7   Thumb Code    18  srv_wifi_comm.o(i.Srv_WifiCommTx)
+    SysTick_Handler                          0x080020f9   Thumb Code    10  hal_int.o(i.SysTick_Handler)
+    SystemInit                               0x08002105   Thumb Code    78  system_stm32f10x.o(i.SystemInit)
+    TAMPER_IRQHandler                        0x08002165   Thumb Code    10  hal_int.o(i.TAMPER_IRQHandler)
+    TIM1_BRK_IRQHandler                      0x0800216f   Thumb Code    10  hal_int.o(i.TIM1_BRK_IRQHandler)
+    TIM1_CC_IRQHandler                       0x08002179   Thumb Code    10  hal_int.o(i.TIM1_CC_IRQHandler)
+    TIM1_TRG_COM_IRQHandler                  0x08002183   Thumb Code    10  hal_int.o(i.TIM1_TRG_COM_IRQHandler)
+    TIM1_UP_IRQHandler                       0x0800218d   Thumb Code    10  hal_int.o(i.TIM1_UP_IRQHandler)
+    TIM2_IRQHandler                          0x08002197   Thumb Code    10  hal_int.o(i.TIM2_IRQHandler)
+    TIM3_IRQHandler                          0x080021a1   Thumb Code    10  hal_int.o(i.TIM3_IRQHandler)
+    TIM4_IRQHandler                          0x080021ab   Thumb Code    10  hal_int.o(i.TIM4_IRQHandler)
+    TIM_Cmd                                  0x080021b5   Thumb Code    24  stm32f10x_tim.o(i.TIM_Cmd)
+    TIM_OC1Init                              0x080021cd   Thumb Code   132  stm32f10x_tim.o(i.TIM_OC1Init)
+    TIM_OC1PreloadConfig                     0x08002265   Thumb Code    18  stm32f10x_tim.o(i.TIM_OC1PreloadConfig)
+    TIM_OC2Init                              0x08002279   Thumb Code   154  stm32f10x_tim.o(i.TIM_OC2Init)
+    TIM_OC2PreloadConfig                     0x0800231d   Thumb Code    26  stm32f10x_tim.o(i.TIM_OC2PreloadConfig)
+    TIM_OC3Init                              0x08002339   Thumb Code   150  stm32f10x_tim.o(i.TIM_OC3Init)
+    TIM_OC3PreloadConfig                     0x080023d9   Thumb Code    18  stm32f10x_tim.o(i.TIM_OC3PreloadConfig)
+    TIM_OC4Init                              0x080023ed   Thumb Code   114  stm32f10x_tim.o(i.TIM_OC4Init)
+    TIM_OC4PreloadConfig                     0x08002469   Thumb Code    26  stm32f10x_tim.o(i.TIM_OC4PreloadConfig)
+    TIM_SetCompare1                          0x08002483   Thumb Code     4  stm32f10x_tim.o(i.TIM_SetCompare1)
+    TIM_SetCompare2                          0x08002487   Thumb Code     4  stm32f10x_tim.o(i.TIM_SetCompare2)
+    TIM_SetCompare3                          0x0800248b   Thumb Code     4  stm32f10x_tim.o(i.TIM_SetCompare3)
+    TIM_SetCompare4                          0x0800248f   Thumb Code     6  stm32f10x_tim.o(i.TIM_SetCompare4)
+    TIM_TimeBaseInit                         0x08002495   Thumb Code   122  stm32f10x_tim.o(i.TIM_TimeBaseInit)
+    USART1_IRQHandler                        0x08002539   Thumb Code    10  hal_int.o(i.USART1_IRQHandler)
+    USART2_IRQHandler                        0x08002543   Thumb Code    10  hal_int.o(i.USART2_IRQHandler)
+    USART3_IRQHandler                        0x0800254d   Thumb Code    10  hal_int.o(i.USART3_IRQHandler)
+    USART_Cmd                                0x08002557   Thumb Code    24  stm32f10x_usart.o(i.USART_Cmd)
+    USART_DeInit                             0x08002571   Thumb Code   134  stm32f10x_usart.o(i.USART_DeInit)
+    USART_GetITStatus                        0x0800260d   Thumb Code    84  stm32f10x_usart.o(i.USART_GetITStatus)
+    USART_ITConfig                           0x08002661   Thumb Code    74  stm32f10x_usart.o(i.USART_ITConfig)
+    USART_Init                               0x080026ad   Thumb Code   210  stm32f10x_usart.o(i.USART_Init)
+    USART_ReceiveData                        0x08002785   Thumb Code    10  stm32f10x_usart.o(i.USART_ReceiveData)
+    USART_SendData                           0x0800278f   Thumb Code     8  stm32f10x_usart.o(i.USART_SendData)
+    USBWakeUp_IRQHandler                     0x08002797   Thumb Code    10  hal_int.o(i.USBWakeUp_IRQHandler)
+    USB_HP_CAN1_TX_IRQHandler                0x080027a1   Thumb Code    10  hal_int.o(i.USB_HP_CAN1_TX_IRQHandler)
+    USB_LP_CAN1_RX0_IRQHandler               0x080027ab   Thumb Code    10  hal_int.o(i.USB_LP_CAN1_RX0_IRQHandler)
+    UsageFault_Handler                       0x080027b5   Thumb Code    10  hal_int.o(i.UsageFault_Handler)
+    WWDG_IRQHandler                          0x080027bf   Thumb Code    10  hal_int.o(i.WWDG_IRQHandler)
+    Wifi_GetConnectSta                       0x080027f5   Thumb Code     6  gizwits_product.o(i.Wifi_GetConnectSta)
+    Wifi_TaskHandle                          0x080028e9   Thumb Code    54  app_wifi.o(i.Wifi_TaskHandle)
+    Wifi_TaskInit                            0x08002925   Thumb Code    16  app_wifi.o(i.Wifi_TaskInit)
+    __0printf$8                              0x080029e9   Thumb Code    22  printf8.o(i.__0printf$8)
+    __1printf$8                              0x080029e9   Thumb Code     0  printf8.o(i.__0printf$8)
+    __2printf                                0x080029e9   Thumb Code     0  printf8.o(i.__0printf$8)
+    __scatterload_copy                       0x08002a09   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08002a17   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08002a19   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    exchangeBytes                            0x08002e8b   Thumb Code    26  common.o(i.exchangeBytes)
+    exchangeWord                             0x08002ea5   Thumb Code    26  common.o(i.exchangeWord)
+    fputc                                    0x08002ebf   Thumb Code    18  std_lib.o(i.fputc)
+    gizAcrossByteJudge                       0x08002ed1   Thumb Code    42  datapointtools.o(i.gizAcrossByteJudge)
+    gizByteOrderExchange                     0x08002efb   Thumb Code    50  datapointtools.o(i.gizByteOrderExchange)
+    gizGetTimerCount                         0x08003351   Thumb Code     6  gizwits_product.o(i.gizGetTimerCount)
+    gizProtocolSum                           0x0800416d   Thumb Code    38  common.o(i.gizProtocolSum)
+    gizPutData                               0x08004241   Thumb Code    52  gizwits_protocol.o(i.gizPutData)
+    gizStandardCompressValue                 0x0800438d   Thumb Code   128  datapointtools.o(i.gizStandardCompressValue)
+    gizStandardDecompressionValue            0x0800440d   Thumb Code   194  datapointtools.o(i.gizStandardDecompressionValue)
+    gizTimerMs                               0x080044d1   Thumb Code    12  gizwits_product.o(i.gizTimerMs)
+    gizX2Y                                   0x080044e1   Thumb Code    12  datapointtools.o(i.gizX2Y)
+    gizY2X                                   0x080044ed   Thumb Code    14  datapointtools.o(i.gizY2X)
+    gizwitsEventProcess                      0x080044fd   Thumb Code   454  gizwits_product.o(i.gizwitsEventProcess)
+    gizwitsGetNTP                            0x080047f1   Thumb Code    94  gizwits_protocol.o(i.gizwitsGetNTP)
+    gizwitsHandle                            0x08004875   Thumb Code   596  gizwits_protocol.o(i.gizwitsHandle)
+    gizwitsInit                              0x08004be1   Thumb Code    46  gizwits_protocol.o(i.gizwitsInit)
+    gizwitsSetMode                           0x08004c45   Thumb Code   590  gizwits_protocol.o(i.gizwitsSetMode)
+    main                                     0x08004ecd   Thumb Code    28  uc.o(i.main)
+    mcuRestart                               0x08004ee9   Thumb Code    12  gizwits_product.o(i.mcuRestart)
+    rbCanRead                                0x08004ef5   Thumb Code    56  ringbuffer.o(i.rbCanRead)
+    rbCanWrite                               0x08004f2d   Thumb Code    30  ringbuffer.o(i.rbCanWrite)
+    rbCapacity                               0x08004f4b   Thumb Code    14  ringbuffer.o(i.rbCapacity)
+    rbCreate                                 0x08004f59   Thumb Code    22  ringbuffer.o(i.rbCreate)
+    rbRead                                   0x08004f6f   Thumb Code   162  ringbuffer.o(i.rbRead)
+    rbWrite                                  0x08005011   Thumb Code   154  ringbuffer.o(i.rbWrite)
+    uartWrite                                0x080050ad   Thumb Code   118  gizwits_product.o(i.uartWrite)
+    userHandle                               0x08005149   Thumb Code    94  gizwits_product.o(i.userHandle)
+    userInit                                 0x080051ad   Thumb Code    12  gizwits_product.o(i.userInit)
+    Region$$Table$$Base                      0x08005400   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08005420   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000074   Data           4  system_stm32f10x.o(.data)
     AHBPrescTable                            0x20000078   Data          16  system_stm32f10x.o(.data)
     __stdout                                 0x200000a4   Data           4  stdout.o(.data)
@@ -2366,9 +2366,9 @@ Memory Map of the image
 
   Image Entry point : 0x080000ed
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000054b8, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000054c8, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00005410, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00005420, Max: 0x00010000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2522,188 +2522,188 @@ Memory Map of the image
     0x08001964   0x00000044   Code   RO          282    i.Led_ModeCycling   app_led_ctrl.o
     0x080019a8   0x0000000c   Code   RO          283    i.Led_PeriodProc    app_led_ctrl.o
     0x080019b4   0x00000030   Code   RO          284    i.Led_SetFlash      app_led_ctrl.o
-    0x080019e4   0x00000024   Code   RO          285    i.Led_SetRGBDat     app_led_ctrl.o
-    0x08001a08   0x0000001c   Code   RO          286    i.Led_SetWarmDat    app_led_ctrl.o
-    0x08001a24   0x0000000c   Code   RO          287    i.Led_WarmOff       app_led_ctrl.o
-    0x08001a30   0x00000010   Code   RO          288    i.Led_WarmOn        app_led_ctrl.o
-    0x08001a40   0x0000000a   Code   RO          469    i.MemManage_Handler  hal_int.o
-    0x08001a4a   0x0000000a   Code   RO          470    i.NMI_Handler       hal_int.o
-    0x08001a54   0x00000070   Code   RO         2047    i.NVIC_Init         misc.o
-    0x08001ac4   0x00000014   Code   RO         2048    i.NVIC_PriorityGroupConfig  misc.o
-    0x08001ad8   0x00000054   Code   RO          396    i.Osal_DiffTsToUsec  osal.o
-    0x08001b2c   0x00000008   Code   RO          397    i.Osal_GetCurTs     osal.o
-    0x08001b34   0x0000000a   Code   RO          471    i.PVD_IRQHandler    hal_int.o
-    0x08001b3e   0x00000002   PAD
-    0x08001b40   0x0000000c   Code   RO         3579    i.PWR_BackupAccessCmd  stm32f10x_pwr.o
-    0x08001b4c   0x00000010   Code   RO          472    i.PendSV_Handler    hal_int.o
-    0x08001b5c   0x00000018   Code   RO         3639    i.RCC_ADCCLKConfig  stm32f10x_rcc.o
-    0x08001b74   0x00000020   Code   RO         3641    i.RCC_APB1PeriphClockCmd  stm32f10x_rcc.o
-    0x08001b94   0x00000020   Code   RO         3642    i.RCC_APB1PeriphResetCmd  stm32f10x_rcc.o
-    0x08001bb4   0x00000020   Code   RO         3643    i.RCC_APB2PeriphClockCmd  stm32f10x_rcc.o
-    0x08001bd4   0x00000020   Code   RO         3644    i.RCC_APB2PeriphResetCmd  stm32f10x_rcc.o
-    0x08001bf4   0x0000000c   Code   RO         3646    i.RCC_BackupResetCmd  stm32f10x_rcc.o
-    0x08001c00   0x000000d4   Code   RO         3651    i.RCC_GetClocksFreq  stm32f10x_rcc.o
-    0x08001cd4   0x0000003c   Code   RO         3652    i.RCC_GetFlagStatus  stm32f10x_rcc.o
-    0x08001d10   0x0000000a   Code   RO          473    i.RCC_IRQHandler    hal_int.o
-    0x08001d1a   0x00000002   PAD
-    0x08001d1c   0x00000034   Code   RO         3659    i.RCC_LSEConfig     stm32f10x_rcc.o
-    0x08001d50   0x0000000c   Code   RO         3666    i.RCC_RTCCLKCmd     stm32f10x_rcc.o
-    0x08001d5c   0x00000010   Code   RO         3667    i.RCC_RTCCLKConfig  stm32f10x_rcc.o
-    0x08001d6c   0x0000000a   Code   RO          474    i.RTCAlarm_IRQHandler  hal_int.o
-    0x08001d76   0x00000002   PAD
-    0x08001d78   0x00000010   Code   RO         3840    i.RTC_ClearITPendingBit  stm32f10x_rtc.o
-    0x08001d88   0x00000014   Code   RO         3841    i.RTC_EnterConfigMode  stm32f10x_rtc.o
-    0x08001d9c   0x00000014   Code   RO         3842    i.RTC_ExitConfigMode  stm32f10x_rtc.o
-    0x08001db0   0x00000024   Code   RO         3846    i.RTC_GetITStatus   stm32f10x_rtc.o
-    0x08001dd4   0x0000000a   Code   RO          475    i.RTC_IRQHandler    hal_int.o
-    0x08001dde   0x00000002   PAD
-    0x08001de0   0x00000020   Code   RO         3847    i.RTC_ITConfig      stm32f10x_rtc.o
-    0x08001e00   0x0000001c   Code   RO         3849    i.RTC_SetCounter    stm32f10x_rtc.o
-    0x08001e1c   0x00000020   Code   RO         3850    i.RTC_SetPrescaler  stm32f10x_rtc.o
-    0x08001e3c   0x00000014   Code   RO         3851    i.RTC_WaitForLastTask  stm32f10x_rtc.o
-    0x08001e50   0x00000024   Code   RO         3852    i.RTC_WaitForSynchro  stm32f10x_rtc.o
-    0x08001e74   0x0000000a   Code   RO          477    i.SPI1_IRQHandler   hal_int.o
-    0x08001e7e   0x0000000a   Code   RO          478    i.SPI2_IRQHandler   hal_int.o
-    0x08001e88   0x0000000a   Code   RO          480    i.SVC_Handler       hal_int.o
-    0x08001e92   0x00000008   Code   RO         1886    i.SetSysClock       system_stm32f10x.o
-    0x08001e9a   0x00000002   PAD
-    0x08001e9c   0x000000e0   Code   RO         1887    i.SetSysClockTo72   system_stm32f10x.o
-    0x08001f7c   0x0000000c   Code   RO          225    i.Shk_ClrSnsSta     app_shock.o
-    0x08001f88   0x0000000c   Code   RO          226    i.Shk_DisableScan   app_shock.o
-    0x08001f94   0x0000000c   Code   RO          227    i.Shk_EnableScan    app_shock.o
-    0x08001fa0   0x0000000c   Code   RO          228    i.Shk_GetSnsSta     app_shock.o
-    0x08001fac   0x00000014   Code   RO          229    i.Shk_PeriodHandle  app_shock.o
-    0x08001fc0   0x00000080   Code   RO          230    i.Shk_Scan          app_shock.o
-    0x08002040   0x00000032   Code   RO         1201    i.Srv_QueueIn       srv_queue.o
-    0x08002072   0x0000000e   Code   RO         1202    i.Srv_QueueInit     srv_queue.o
-    0x08002080   0x0000000c   Code   RO         1203    i.Srv_QueueIsEmpty  srv_queue.o
-    0x0800208c   0x00000030   Code   RO         1205    i.Srv_QueueOut      srv_queue.o
-    0x080020bc   0x00000018   Code   RO         1206    i.Srv_ReadQueueHead  srv_queue.o
-    0x080020d4   0x00000002   Code   RO         1177    i.Srv_WifiCommInit  srv_wifi_comm.o
-    0x080020d6   0x00000012   Code   RO         1178    i.Srv_WifiCommTx    srv_wifi_comm.o
-    0x080020e8   0x0000000a   Code   RO          481    i.SysTick_Handler   hal_int.o
-    0x080020f2   0x00000002   PAD
-    0x080020f4   0x00000060   Code   RO         1889    i.SystemInit        system_stm32f10x.o
-    0x08002154   0x0000000a   Code   RO          482    i.TAMPER_IRQHandler  hal_int.o
-    0x0800215e   0x0000000a   Code   RO          483    i.TIM1_BRK_IRQHandler  hal_int.o
-    0x08002168   0x0000000a   Code   RO          484    i.TIM1_CC_IRQHandler  hal_int.o
-    0x08002172   0x0000000a   Code   RO          485    i.TIM1_TRG_COM_IRQHandler  hal_int.o
-    0x0800217c   0x0000000a   Code   RO          486    i.TIM1_UP_IRQHandler  hal_int.o
-    0x08002186   0x0000000a   Code   RO          487    i.TIM2_IRQHandler   hal_int.o
-    0x08002190   0x0000000a   Code   RO          488    i.TIM3_IRQHandler   hal_int.o
-    0x0800219a   0x0000000a   Code   RO          489    i.TIM4_IRQHandler   hal_int.o
-    0x080021a4   0x00000018   Code   RO         4278    i.TIM_Cmd           stm32f10x_tim.o
-    0x080021bc   0x00000098   Code   RO         4307    i.TIM_OC1Init       stm32f10x_tim.o
-    0x08002254   0x00000012   Code   RO         4310    i.TIM_OC1PreloadConfig  stm32f10x_tim.o
-    0x08002266   0x00000002   PAD
-    0x08002268   0x000000a4   Code   RO         4312    i.TIM_OC2Init       stm32f10x_tim.o
-    0x0800230c   0x0000001a   Code   RO         4315    i.TIM_OC2PreloadConfig  stm32f10x_tim.o
-    0x08002326   0x00000002   PAD
-    0x08002328   0x000000a0   Code   RO         4317    i.TIM_OC3Init       stm32f10x_tim.o
-    0x080023c8   0x00000012   Code   RO         4320    i.TIM_OC3PreloadConfig  stm32f10x_tim.o
-    0x080023da   0x00000002   PAD
-    0x080023dc   0x0000007c   Code   RO         4322    i.TIM_OC4Init       stm32f10x_tim.o
-    0x08002458   0x0000001a   Code   RO         4324    i.TIM_OC4PreloadConfig  stm32f10x_tim.o
-    0x08002472   0x00000004   Code   RO         4339    i.TIM_SetCompare1   stm32f10x_tim.o
-    0x08002476   0x00000004   Code   RO         4340    i.TIM_SetCompare2   stm32f10x_tim.o
-    0x0800247a   0x00000004   Code   RO         4341    i.TIM_SetCompare3   stm32f10x_tim.o
-    0x0800247e   0x00000006   Code   RO         4342    i.TIM_SetCompare4   stm32f10x_tim.o
-    0x08002484   0x000000a4   Code   RO         4349    i.TIM_TimeBaseInit  stm32f10x_tim.o
-    0x08002528   0x0000000a   Code   RO          499    i.USART1_IRQHandler  hal_int.o
-    0x08002532   0x0000000a   Code   RO          500    i.USART2_IRQHandler  hal_int.o
-    0x0800253c   0x0000000a   Code   RO          501    i.USART3_IRQHandler  hal_int.o
-    0x08002546   0x00000018   Code   RO         4814    i.USART_Cmd         stm32f10x_usart.o
-    0x0800255e   0x00000002   PAD
-    0x08002560   0x0000009c   Code   RO         4816    i.USART_DeInit      stm32f10x_usart.o
-    0x080025fc   0x00000054   Code   RO         4818    i.USART_GetITStatus  stm32f10x_usart.o
-    0x08002650   0x0000004a   Code   RO         4820    i.USART_ITConfig    stm32f10x_usart.o
-    0x0800269a   0x00000002   PAD
-    0x0800269c   0x000000d8   Code   RO         4821    i.USART_Init        stm32f10x_usart.o
-    0x08002774   0x0000000a   Code   RO         4828    i.USART_ReceiveData  stm32f10x_usart.o
-    0x0800277e   0x00000008   Code   RO         4831    i.USART_SendData    stm32f10x_usart.o
-    0x08002786   0x0000000a   Code   RO          502    i.USBWakeUp_IRQHandler  hal_int.o
-    0x08002790   0x0000000a   Code   RO          503    i.USB_HP_CAN1_TX_IRQHandler  hal_int.o
-    0x0800279a   0x0000000a   Code   RO          504    i.USB_LP_CAN1_RX0_IRQHandler  hal_int.o
-    0x080027a4   0x0000000a   Code   RO          505    i.UsageFault_Handler  hal_int.o
-    0x080027ae   0x0000000a   Code   RO          506    i.WWDG_IRQHandler   hal_int.o
-    0x080027b8   0x0000002c   Code   RO          170    i.Wifi_DataHandle   app_wifi.o
-    0x080027e4   0x0000000c   Code   RO         1244    i.Wifi_GetConnectSta  gizwits_product.o
-    0x080027f0   0x00000084   Code   RO          171    i.Wifi_KeyHandle    app_wifi.o
-    0x08002874   0x00000050   Code   RO          172    i.Wifi_LedSetFlash  app_wifi.o
-    0x080028c4   0x00000014   Code   RO          173    i.Wifi_ShockHandle  app_wifi.o
-    0x080028d8   0x0000003c   Code   RO          174    i.Wifi_TaskHandle   app_wifi.o
-    0x08002914   0x00000010   Code   RO          175    i.Wifi_TaskInit     app_wifi.o
-    0x08002924   0x00000026   Code   RO          176    i.Wifi_TmrCallBack  app_wifi.o
-    0x0800294a   0x00000002   PAD
-    0x0800294c   0x00000030   Code   RO          177    i.Wifi_UpdateTime   app_wifi.o
-    0x0800297c   0x0000005c   Code   RO          178    i.Wifi_WorkManage   app_wifi.o
-    0x080029d8   0x00000020   Code   RO         5266    i.__0printf$8       mc_w.l(printf8.o)
-    0x080029f8   0x0000000e   Code   RO         5372    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08002a06   0x00000002   Code   RO         5373    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08002a08   0x0000000e   Code   RO         5374    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x08002a16   0x00000002   PAD
-    0x08002a18   0x00000410   Code   RO         5273    i._printf_core      mc_w.l(printf8.o)
-    0x08002e28   0x00000024   Code   RO         5274    i._printf_post_padding  mc_w.l(printf8.o)
-    0x08002e4c   0x0000002e   Code   RO         5275    i._printf_pre_padding  mc_w.l(printf8.o)
-    0x08002e7a   0x0000001a   Code   RO         1477    i.exchangeBytes     common.o
-    0x08002e94   0x0000001a   Code   RO         1478    i.exchangeWord      common.o
-    0x08002eae   0x00000012   Code   RO         1130    i.fputc             std_lib.o
-    0x08002ec0   0x0000002a   Code   RO         1550    i.gizAcrossByteJudge  datapointtools.o
-    0x08002eea   0x00000032   Code   RO         1551    i.gizByteOrderExchange  datapointtools.o
-    0x08002f1c   0x0000016c   Code   RO         1314    i.gizCheckReport    gizwits_protocol.o
-    0x08003088   0x00000144   Code   RO         1315    i.gizDataPoint2Event  gizwits_protocol.o
-    0x080031cc   0x000000b8   Code   RO         1316    i.gizDataPoints2ReportData  gizwits_protocol.o
-    0x08003284   0x000000bc   Code   RO         1317    i.gizDevReportPolicy  gizwits_protocol.o
-    0x08003340   0x0000000c   Code   RO         1245    i.gizGetTimerCount  gizwits_product.o
-    0x0800334c   0x0000008c   Code   RO         1318    i.gizProtocolAckHandle  gizwits_protocol.o
-    0x080033d8   0x000000a0   Code   RO         1319    i.gizProtocolCommonAck  gizwits_protocol.o
-    0x08003478   0x000000a4   Code   RO         1320    i.gizProtocolErrorCmd  gizwits_protocol.o
-    0x0800351c   0x0000017c   Code   RO         1321    i.gizProtocolGetDeviceInfo  gizwits_protocol.o
-    0x08003698   0x000001a8   Code   RO         1322    i.gizProtocolGetOnePacket  gizwits_protocol.o
-    0x08003840   0x00000050   Code   RO         1323    i.gizProtocolHeadInit  gizwits_protocol.o
-    0x08003890   0x0000013c   Code   RO         1324    i.gizProtocolIssuedDataAck  gizwits_protocol.o
-    0x080039cc   0x00000110   Code   RO         1325    i.gizProtocolIssuedProcess  gizwits_protocol.o
-    0x08003adc   0x0000005c   Code   RO         1326    i.gizProtocolModuleInfoHandle  gizwits_protocol.o
-    0x08003b38   0x00000504   Code   RO         1327    i.gizProtocolModuleStatus  gizwits_protocol.o
-    0x0800403c   0x00000088   Code   RO         1328    i.gizProtocolNTP    gizwits_protocol.o
-    0x080040c4   0x0000001c   Code   RO         1329    i.gizProtocolReboot  gizwits_protocol.o
-    0x080040e0   0x0000007c   Code   RO         1330    i.gizProtocolResendData  gizwits_protocol.o
-    0x0800415c   0x00000026   Code   RO         1480    i.gizProtocolSum    common.o
-    0x08004182   0x00000002   PAD
-    0x08004184   0x00000064   Code   RO         1331    i.gizProtocolWaitAck  gizwits_protocol.o
-    0x080041e8   0x00000048   Code   RO         1332    i.gizProtocolWaitAckCheck  gizwits_protocol.o
-    0x08004230   0x00000074   Code   RO         1333    i.gizPutData        gizwits_protocol.o
-    0x080042a4   0x000000d8   Code   RO         1334    i.gizReportData     gizwits_protocol.o
-    0x0800437c   0x00000080   Code   RO         1552    i.gizStandardCompressValue  datapointtools.o
-    0x080043fc   0x000000c2   Code   RO         1553    i.gizStandardDecompressionValue  datapointtools.o
-    0x080044be   0x00000002   PAD
-    0x080044c0   0x00000010   Code   RO         1246    i.gizTimerMs        gizwits_product.o
-    0x080044d0   0x0000000c   Code   RO         1556    i.gizX2Y            datapointtools.o
-    0x080044dc   0x0000000e   Code   RO         1558    i.gizY2X            datapointtools.o
-    0x080044ea   0x00000002   PAD
-    0x080044ec   0x000002f4   Code   RO         1247    i.gizwitsEventProcess  gizwits_product.o
-    0x080047e0   0x00000084   Code   RO         1336    i.gizwitsGetNTP     gizwits_protocol.o
-    0x08004864   0x0000036c   Code   RO         1337    i.gizwitsHandle     gizwits_protocol.o
-    0x08004bd0   0x00000064   Code   RO         1338    i.gizwitsInit       gizwits_protocol.o
-    0x08004c34   0x00000288   Code   RO         1340    i.gizwitsSetMode    gizwits_protocol.o
-    0x08004ebc   0x0000001c   Code   RO          120    i.main              uc.o
-    0x08004ed8   0x0000000c   Code   RO         1248    i.mcuRestart        gizwits_product.o
-    0x08004ee4   0x00000038   Code   RO         1619    i.rbCanRead         ringbuffer.o
-    0x08004f1c   0x0000001e   Code   RO         1620    i.rbCanWrite        ringbuffer.o
-    0x08004f3a   0x0000000e   Code   RO         1621    i.rbCapacity        ringbuffer.o
-    0x08004f48   0x00000016   Code   RO         1622    i.rbCreate          ringbuffer.o
-    0x08004f5e   0x000000a2   Code   RO         1624    i.rbRead            ringbuffer.o
-    0x08005000   0x0000009a   Code   RO         1625    i.rbWrite           ringbuffer.o
-    0x0800509a   0x00000002   PAD
-    0x0800509c   0x0000009c   Code   RO         1249    i.uartWrite         gizwits_product.o
-    0x08005138   0x00000064   Code   RO         1250    i.userHandle        gizwits_product.o
-    0x0800519c   0x00000010   Code   RO         1251    i.userInit          gizwits_product.o
-    0x080051ac   0x00000020   Data   RO         1016    .constdata          hal_rtc.o
-    0x080051cc   0x00000120   Data   RO         1720    .constdata          drv_gpio.o
-    0x080052ec   0x000000a0   Data   RO         1768    .constdata          drv_timer.o
-    0x0800538c   0x00000040   Data   RO         1824    .constdata          drv_uart.o
-    0x080053cc   0x00000024   Data   RO         2026    .constdata          drv_adc.o
-    0x080053f0   0x00000020   Data   RO         5370    Region$$Table       anon$$obj.o
+    0x080019e4   0x0000002c   Code   RO          285    i.Led_SetRGBDat     app_led_ctrl.o
+    0x08001a10   0x00000024   Code   RO          286    i.Led_SetWarmDat    app_led_ctrl.o
+    0x08001a34   0x0000000c   Code   RO          287    i.Led_WarmOff       app_led_ctrl.o
+    0x08001a40   0x00000010   Code   RO          288    i.Led_WarmOn        app_led_ctrl.o
+    0x08001a50   0x0000000a   Code   RO          469    i.MemManage_Handler  hal_int.o
+    0x08001a5a   0x0000000a   Code   RO          470    i.NMI_Handler       hal_int.o
+    0x08001a64   0x00000070   Code   RO         2047    i.NVIC_Init         misc.o
+    0x08001ad4   0x00000014   Code   RO         2048    i.NVIC_PriorityGroupConfig  misc.o
+    0x08001ae8   0x00000054   Code   RO          396    i.Osal_DiffTsToUsec  osal.o
+    0x08001b3c   0x00000008   Code   RO          397    i.Osal_GetCurTs     osal.o
+    0x08001b44   0x0000000a   Code   RO          471    i.PVD_IRQHandler    hal_int.o
+    0x08001b4e   0x00000002   PAD
+    0x08001b50   0x0000000c   Code   RO         3579    i.PWR_BackupAccessCmd  stm32f10x_pwr.o
+    0x08001b5c   0x00000010   Code   RO          472    i.PendSV_Handler    hal_int.o
+    0x08001b6c   0x00000018   Code   RO         3639    i.RCC_ADCCLKConfig  stm32f10x_rcc.o
+    0x08001b84   0x00000020   Code   RO         3641    i.RCC_APB1PeriphClockCmd  stm32f10x_rcc.o
+    0x08001ba4   0x00000020   Code   RO         3642    i.RCC_APB1PeriphResetCmd  stm32f10x_rcc.o
+    0x08001bc4   0x00000020   Code   RO         3643    i.RCC_APB2PeriphClockCmd  stm32f10x_rcc.o
+    0x08001be4   0x00000020   Code   RO         3644    i.RCC_APB2PeriphResetCmd  stm32f10x_rcc.o
+    0x08001c04   0x0000000c   Code   RO         3646    i.RCC_BackupResetCmd  stm32f10x_rcc.o
+    0x08001c10   0x000000d4   Code   RO         3651    i.RCC_GetClocksFreq  stm32f10x_rcc.o
+    0x08001ce4   0x0000003c   Code   RO         3652    i.RCC_GetFlagStatus  stm32f10x_rcc.o
+    0x08001d20   0x0000000a   Code   RO          473    i.RCC_IRQHandler    hal_int.o
+    0x08001d2a   0x00000002   PAD
+    0x08001d2c   0x00000034   Code   RO         3659    i.RCC_LSEConfig     stm32f10x_rcc.o
+    0x08001d60   0x0000000c   Code   RO         3666    i.RCC_RTCCLKCmd     stm32f10x_rcc.o
+    0x08001d6c   0x00000010   Code   RO         3667    i.RCC_RTCCLKConfig  stm32f10x_rcc.o
+    0x08001d7c   0x0000000a   Code   RO          474    i.RTCAlarm_IRQHandler  hal_int.o
+    0x08001d86   0x00000002   PAD
+    0x08001d88   0x00000010   Code   RO         3840    i.RTC_ClearITPendingBit  stm32f10x_rtc.o
+    0x08001d98   0x00000014   Code   RO         3841    i.RTC_EnterConfigMode  stm32f10x_rtc.o
+    0x08001dac   0x00000014   Code   RO         3842    i.RTC_ExitConfigMode  stm32f10x_rtc.o
+    0x08001dc0   0x00000024   Code   RO         3846    i.RTC_GetITStatus   stm32f10x_rtc.o
+    0x08001de4   0x0000000a   Code   RO          475    i.RTC_IRQHandler    hal_int.o
+    0x08001dee   0x00000002   PAD
+    0x08001df0   0x00000020   Code   RO         3847    i.RTC_ITConfig      stm32f10x_rtc.o
+    0x08001e10   0x0000001c   Code   RO         3849    i.RTC_SetCounter    stm32f10x_rtc.o
+    0x08001e2c   0x00000020   Code   RO         3850    i.RTC_SetPrescaler  stm32f10x_rtc.o
+    0x08001e4c   0x00000014   Code   RO         3851    i.RTC_WaitForLastTask  stm32f10x_rtc.o
+    0x08001e60   0x00000024   Code   RO         3852    i.RTC_WaitForSynchro  stm32f10x_rtc.o
+    0x08001e84   0x0000000a   Code   RO          477    i.SPI1_IRQHandler   hal_int.o
+    0x08001e8e   0x0000000a   Code   RO          478    i.SPI2_IRQHandler   hal_int.o
+    0x08001e98   0x0000000a   Code   RO          480    i.SVC_Handler       hal_int.o
+    0x08001ea2   0x00000008   Code   RO         1886    i.SetSysClock       system_stm32f10x.o
+    0x08001eaa   0x00000002   PAD
+    0x08001eac   0x000000e0   Code   RO         1887    i.SetSysClockTo72   system_stm32f10x.o
+    0x08001f8c   0x0000000c   Code   RO          225    i.Shk_ClrSnsSta     app_shock.o
+    0x08001f98   0x0000000c   Code   RO          226    i.Shk_DisableScan   app_shock.o
+    0x08001fa4   0x0000000c   Code   RO          227    i.Shk_EnableScan    app_shock.o
+    0x08001fb0   0x0000000c   Code   RO          228    i.Shk_GetSnsSta     app_shock.o
+    0x08001fbc   0x00000014   Code   RO          229    i.Shk_PeriodHandle  app_shock.o
+    0x08001fd0   0x00000080   Code   RO          230    i.Shk_Scan          app_shock.o
+    0x08002050   0x00000032   Code   RO         1201    i.Srv_QueueIn       srv_queue.o
+    0x08002082   0x0000000e   Code   RO         1202    i.Srv_QueueInit     srv_queue.o
+    0x08002090   0x0000000c   Code   RO         1203    i.Srv_QueueIsEmpty  srv_queue.o
+    0x0800209c   0x00000030   Code   RO         1205    i.Srv_QueueOut      srv_queue.o
+    0x080020cc   0x00000018   Code   RO         1206    i.Srv_ReadQueueHead  srv_queue.o
+    0x080020e4   0x00000002   Code   RO         1177    i.Srv_WifiCommInit  srv_wifi_comm.o
+    0x080020e6   0x00000012   Code   RO         1178    i.Srv_WifiCommTx    srv_wifi_comm.o
+    0x080020f8   0x0000000a   Code   RO          481    i.SysTick_Handler   hal_int.o
+    0x08002102   0x00000002   PAD
+    0x08002104   0x00000060   Code   RO         1889    i.SystemInit        system_stm32f10x.o
+    0x08002164   0x0000000a   Code   RO          482    i.TAMPER_IRQHandler  hal_int.o
+    0x0800216e   0x0000000a   Code   RO          483    i.TIM1_BRK_IRQHandler  hal_int.o
+    0x08002178   0x0000000a   Code   RO          484    i.TIM1_CC_IRQHandler  hal_int.o
+    0x08002182   0x0000000a   Code   RO          485    i.TIM1_TRG_COM_IRQHandler  hal_int.o
+    0x0800218c   0x0000000a   Code   RO          486    i.TIM1_UP_IRQHandler  hal_int.o
+    0x08002196   0x0000000a   Code   RO          487    i.TIM2_IRQHandler   hal_int.o
+    0x080021a0   0x0000000a   Code   RO          488    i.TIM3_IRQHandler   hal_int.o
+    0x080021aa   0x0000000a   Code   RO          489    i.TIM4_IRQHandler   hal_int.o
+    0x080021b4   0x00000018   Code   RO         4278    i.TIM_Cmd           stm32f10x_tim.o
+    0x080021cc   0x00000098   Code   RO         4307    i.TIM_OC1Init       stm32f10x_tim.o
+    0x08002264   0x00000012   Code   RO         4310    i.TIM_OC1PreloadConfig  stm32f10x_tim.o
+    0x08002276   0x00000002   PAD
+    0x08002278   0x000000a4   Code   RO         4312    i.TIM_OC2Init       stm32f10x_tim.o
+    0x0800231c   0x0000001a   Code   RO         4315    i.TIM_OC2PreloadConfig  stm32f10x_tim.o
+    0x08002336   0x00000002   PAD
+    0x08002338   0x000000a0   Code   RO         4317    i.TIM_OC3Init       stm32f10x_tim.o
+    0x080023d8   0x00000012   Code   RO         4320    i.TIM_OC3PreloadConfig  stm32f10x_tim.o
+    0x080023ea   0x00000002   PAD
+    0x080023ec   0x0000007c   Code   RO         4322    i.TIM_OC4Init       stm32f10x_tim.o
+    0x08002468   0x0000001a   Code   RO         4324    i.TIM_OC4PreloadConfig  stm32f10x_tim.o
+    0x08002482   0x00000004   Code   RO         4339    i.TIM_SetCompare1   stm32f10x_tim.o
+    0x08002486   0x00000004   Code   RO         4340    i.TIM_SetCompare2   stm32f10x_tim.o
+    0x0800248a   0x00000004   Code   RO         4341    i.TIM_SetCompare3   stm32f10x_tim.o
+    0x0800248e   0x00000006   Code   RO         4342    i.TIM_SetCompare4   stm32f10x_tim.o
+    0x08002494   0x000000a4   Code   RO         4349    i.TIM_TimeBaseInit  stm32f10x_tim.o
+    0x08002538   0x0000000a   Code   RO          499    i.USART1_IRQHandler  hal_int.o
+    0x08002542   0x0000000a   Code   RO          500    i.USART2_IRQHandler  hal_int.o
+    0x0800254c   0x0000000a   Code   RO          501    i.USART3_IRQHandler  hal_int.o
+    0x08002556   0x00000018   Code   RO         4814    i.USART_Cmd         stm32f10x_usart.o
+    0x0800256e   0x00000002   PAD
+    0x08002570   0x0000009c   Code   RO         4816    i.USART_DeInit      stm32f10x_usart.o
+    0x0800260c   0x00000054   Code   RO         4818    i.USART_GetITStatus  stm32f10x_usart.o
+    0x08002660   0x0000004a   Code   RO         4820    i.USART_ITConfig    stm32f10x_usart.o
+    0x080026aa   0x00000002   PAD
+    0x080026ac   0x000000d8   Code   RO         4821    i.USART_Init        stm32f10x_usart.o
+    0x08002784   0x0000000a   Code   RO         4828    i.USART_ReceiveData  stm32f10x_usart.o
+    0x0800278e   0x00000008   Code   RO         4831    i.USART_SendData    stm32f10x_usart.o
+    0x08002796   0x0000000a   Code   RO          502    i.USBWakeUp_IRQHandler  hal_int.o
+    0x080027a0   0x0000000a   Code   RO          503    i.USB_HP_CAN1_TX_IRQHandler  hal_int.o
+    0x080027aa   0x0000000a   Code   RO          504    i.USB_LP_CAN1_RX0_IRQHandler  hal_int.o
+    0x080027b4   0x0000000a   Code   RO          505    i.UsageFault_Handler  hal_int.o
+    0x080027be   0x0000000a   Code   RO          506    i.WWDG_IRQHandler   hal_int.o
+    0x080027c8   0x0000002c   Code   RO          170    i.Wifi_DataHandle   app_wifi.o
+    0x080027f4   0x0000000c   Code   RO         1244    i.Wifi_GetConnectSta  gizwits_product.o
+    0x08002800   0x00000084   Code   RO          171    i.Wifi_KeyHandle    app_wifi.o
+    0x08002884   0x00000050   Code   RO          172    i.Wifi_LedSetFlash  app_wifi.o
+    0x080028d4   0x00000014   Code   RO          173    i.Wifi_ShockHandle  app_wifi.o
+    0x080028e8   0x0000003c   Code   RO          174    i.Wifi_TaskHandle   app_wifi.o
+    0x08002924   0x00000010   Code   RO          175    i.Wifi_TaskInit     app_wifi.o
+    0x08002934   0x00000026   Code   RO          176    i.Wifi_TmrCallBack  app_wifi.o
+    0x0800295a   0x00000002   PAD
+    0x0800295c   0x00000030   Code   RO          177    i.Wifi_UpdateTime   app_wifi.o
+    0x0800298c   0x0000005c   Code   RO          178    i.Wifi_WorkManage   app_wifi.o
+    0x080029e8   0x00000020   Code   RO         5266    i.__0printf$8       mc_w.l(printf8.o)
+    0x08002a08   0x0000000e   Code   RO         5372    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08002a16   0x00000002   Code   RO         5373    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08002a18   0x0000000e   Code   RO         5374    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08002a26   0x00000002   PAD
+    0x08002a28   0x00000410   Code   RO         5273    i._printf_core      mc_w.l(printf8.o)
+    0x08002e38   0x00000024   Code   RO         5274    i._printf_post_padding  mc_w.l(printf8.o)
+    0x08002e5c   0x0000002e   Code   RO         5275    i._printf_pre_padding  mc_w.l(printf8.o)
+    0x08002e8a   0x0000001a   Code   RO         1477    i.exchangeBytes     common.o
+    0x08002ea4   0x0000001a   Code   RO         1478    i.exchangeWord      common.o
+    0x08002ebe   0x00000012   Code   RO         1130    i.fputc             std_lib.o
+    0x08002ed0   0x0000002a   Code   RO         1550    i.gizAcrossByteJudge  datapointtools.o
+    0x08002efa   0x00000032   Code   RO         1551    i.gizByteOrderExchange  datapointtools.o
+    0x08002f2c   0x0000016c   Code   RO         1314    i.gizCheckReport    gizwits_protocol.o
+    0x08003098   0x00000144   Code   RO         1315    i.gizDataPoint2Event  gizwits_protocol.o
+    0x080031dc   0x000000b8   Code   RO         1316    i.gizDataPoints2ReportData  gizwits_protocol.o
+    0x08003294   0x000000bc   Code   RO         1317    i.gizDevReportPolicy  gizwits_protocol.o
+    0x08003350   0x0000000c   Code   RO         1245    i.gizGetTimerCount  gizwits_product.o
+    0x0800335c   0x0000008c   Code   RO         1318    i.gizProtocolAckHandle  gizwits_protocol.o
+    0x080033e8   0x000000a0   Code   RO         1319    i.gizProtocolCommonAck  gizwits_protocol.o
+    0x08003488   0x000000a4   Code   RO         1320    i.gizProtocolErrorCmd  gizwits_protocol.o
+    0x0800352c   0x0000017c   Code   RO         1321    i.gizProtocolGetDeviceInfo  gizwits_protocol.o
+    0x080036a8   0x000001a8   Code   RO         1322    i.gizProtocolGetOnePacket  gizwits_protocol.o
+    0x08003850   0x00000050   Code   RO         1323    i.gizProtocolHeadInit  gizwits_protocol.o
+    0x080038a0   0x0000013c   Code   RO         1324    i.gizProtocolIssuedDataAck  gizwits_protocol.o
+    0x080039dc   0x00000110   Code   RO         1325    i.gizProtocolIssuedProcess  gizwits_protocol.o
+    0x08003aec   0x0000005c   Code   RO         1326    i.gizProtocolModuleInfoHandle  gizwits_protocol.o
+    0x08003b48   0x00000504   Code   RO         1327    i.gizProtocolModuleStatus  gizwits_protocol.o
+    0x0800404c   0x00000088   Code   RO         1328    i.gizProtocolNTP    gizwits_protocol.o
+    0x080040d4   0x0000001c   Code   RO         1329    i.gizProtocolReboot  gizwits_protocol.o
+    0x080040f0   0x0000007c   Code   RO         1330    i.gizProtocolResendData  gizwits_protocol.o
+    0x0800416c   0x00000026   Code   RO         1480    i.gizProtocolSum    common.o
+    0x08004192   0x00000002   PAD
+    0x08004194   0x00000064   Code   RO         1331    i.gizProtocolWaitAck  gizwits_protocol.o
+    0x080041f8   0x00000048   Code   RO         1332    i.gizProtocolWaitAckCheck  gizwits_protocol.o
+    0x08004240   0x00000074   Code   RO         1333    i.gizPutData        gizwits_protocol.o
+    0x080042b4   0x000000d8   Code   RO         1334    i.gizReportData     gizwits_protocol.o
+    0x0800438c   0x00000080   Code   RO         1552    i.gizStandardCompressValue  datapointtools.o
+    0x0800440c   0x000000c2   Code   RO         1553    i.gizStandardDecompressionValue  datapointtools.o
+    0x080044ce   0x00000002   PAD
+    0x080044d0   0x00000010   Code   RO         1246    i.gizTimerMs        gizwits_product.o
+    0x080044e0   0x0000000c   Code   RO         1556    i.gizX2Y            datapointtools.o
+    0x080044ec   0x0000000e   Code   RO         1558    i.gizY2X            datapointtools.o
+    0x080044fa   0x00000002   PAD
+    0x080044fc   0x000002f4   Code   RO         1247    i.gizwitsEventProcess  gizwits_product.o
+    0x080047f0   0x00000084   Code   RO         1336    i.gizwitsGetNTP     gizwits_protocol.o
+    0x08004874   0x0000036c   Code   RO         1337    i.gizwitsHandle     gizwits_protocol.o
+    0x08004be0   0x00000064   Code   RO         1338    i.gizwitsInit       gizwits_protocol.o
+    0x08004c44   0x00000288   Code   RO         1340    i.gizwitsSetMode    gizwits_protocol.o
+    0x08004ecc   0x0000001c   Code   RO          120    i.main              uc.o
+    0x08004ee8   0x0000000c   Code   RO         1248    i.mcuRestart        gizwits_product.o
+    0x08004ef4   0x00000038   Code   RO         1619    i.rbCanRead         ringbuffer.o
+    0x08004f2c   0x0000001e   Code   RO         1620    i.rbCanWrite        ringbuffer.o
+    0x08004f4a   0x0000000e   Code   RO         1621    i.rbCapacity        ringbuffer.o
+    0x08004f58   0x00000016   Code   RO         1622    i.rbCreate          ringbuffer.o
+    0x08004f6e   0x000000a2   Code   RO         1624    i.rbRead            ringbuffer.o
+    0x08005010   0x0000009a   Code   RO         1625    i.rbWrite           ringbuffer.o
+    0x080050aa   0x00000002   PAD
+    0x080050ac   0x0000009c   Code   RO         1249    i.uartWrite         gizwits_product.o
+    0x08005148   0x00000064   Code   RO         1250    i.userHandle        gizwits_product.o
+    0x080051ac   0x00000010   Code   RO         1251    i.userInit          gizwits_product.o
+    0x080051bc   0x00000020   Data   RO         1016    .constdata          hal_rtc.o
+    0x080051dc   0x00000120   Data   RO         1720    .constdata          drv_gpio.o
+    0x080052fc   0x000000a0   Data   RO         1768    .constdata          drv_timer.o
+    0x0800539c   0x00000040   Data   RO         1824    .constdata          drv_uart.o
+    0x080053dc   0x00000024   Data   RO         2026    .constdata          drv_adc.o
+    0x08005400   0x00000020   Data   RO         5370    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000e90, Max: 0x00005000, ABSOLUTE)
@@ -2750,7 +2750,7 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
          0          0          0          0          0     267768   app_led.o
-       876        146          0         21          0      11127   app_led_ctrl.o
+       892        154          0         21          0      11131   app_led_ctrl.o
        196         44          0          9          0       3454   app_shock.o
        530         54          0         24          0       5066   app_wifi.o
         90          0          0          0          0       3408   common.o
@@ -2790,10 +2790,10 @@ Image component sizes
        894         92          0          0          0       9477   stm32f10x_tim.o
        572         28          0          0          0       6306   stm32f10x_usart.o
        328         28          0         20          0       2285   system_stm32f10x.o
-        40          0          0          0          0      11415   uc.o
+        40          0          0          0          0      11459   uc.o
 
     ----------------------------------------------------------------------
-     19198       3578        848        164       3560     481871   Object Totals
+     19214       3586        848        164       3560     481919   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         48          0          0         12          2          0   (incl. Padding)
 
@@ -2839,15 +2839,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     20672       3648        848        168       3560     468339   Grand Totals
-     20672       3648        848        168       3560     468339   ELF Image Totals
-     20672       3648        848        168          0          0   ROM Totals
+     20688       3656        848        168       3560     468387   Grand Totals
+     20688       3656        848        168       3560     468387   ELF Image Totals
+     20688       3656        848        168          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                21520 (  21.02kB)
+    Total RO  Size (Code + RO Data)                21536 (  21.03kB)
     Total RW  Size (RW Data + ZI Data)              3728 (   3.64kB)
-    Total ROM Size (Code + RO Data + RW Data)      21688 (  21.18kB)
+    Total ROM Size (Code + RO Data + RW Data)      21704 (  21.20kB)
 
 ==============================================================================
 

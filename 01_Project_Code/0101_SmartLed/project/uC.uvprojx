@@ -529,11 +529,6 @@
               <FilePath>..\HardwareAbstractionLayer\src\hal_rtc.c</FilePath>
             </File>
             <File>
-              <FileName>hal_sd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\HardwareAbstractionLayer\src\hal_sd.c</FilePath>
-            </File>
-            <File>
               <FileName>hal_key.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HardwareAbstractionLayer\src\hal_key.c</FilePath>
@@ -587,11 +582,6 @@
               <FileName>hal_rtc.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\HardwareAbstractionLayer\inc\hal_rtc.h</FilePath>
-            </File>
-            <File>
-              <FileName>hal_sd.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\HardwareAbstractionLayer\inc\hal_sd.h</FilePath>
             </File>
             <File>
               <FileName>hal_key.h</FileName>
@@ -779,16 +769,6 @@
               <FilePath>..\HardwareDriverLayer\src\drv_wdg.c</FilePath>
             </File>
             <File>
-              <FileName>drv_sd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\HardwareDriverLayer\src\drv_sd.c</FilePath>
-            </File>
-            <File>
-              <FileName>drv_spi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\HardwareDriverLayer\src\drv_spi.c</FilePath>
-            </File>
-            <File>
               <FileName>drv_rtc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HardwareDriverLayer\src\drv_rtc.c</FilePath>
@@ -867,16 +847,6 @@
               <FileName>drv_public.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\HardwareDriverLayer\inc\drv_public.h</FilePath>
-            </File>
-            <File>
-              <FileName>drv_sd.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\HardwareDriverLayer\inc\drv_sd.h</FilePath>
-            </File>
-            <File>
-              <FileName>drv_spi.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\HardwareDriverLayer\inc\drv_spi.h</FilePath>
             </File>
             <File>
               <FileName>drv_rtc.h</FileName>

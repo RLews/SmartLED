@@ -1483,51 +1483,51 @@ Image Symbol Table
     ../clib/microlib/ctype/toupper.c         0x00000000   Number         0  toupper.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
-    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
     ../clib/microlib/printf/stubs.s          0x00000000   Number         0  stubs.o ABSOLUTE
     ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
-    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
     ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
     ../clib/microlib/string/strlen.c         0x00000000   Number         0  strlen.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
-    ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
     ../fplib/microlib/fpadd.c                0x00000000   Number         0  fadd.o ABSOLUTE
-    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
     ../fplib/microlib/fpdiv.c                0x00000000   Number         0  fdiv.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
     ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
     ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
-    ../fplib/microlib/fpfix.c                0x00000000   Number         0  ffixui.o ABSOLUTE
     ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  ffixui.o ABSOLUTE
     ../fplib/microlib/fpflt.c                0x00000000   Number         0  ffltui.o ABSOLUTE
-    ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
     ../fplib/microlib/fpmul.c                0x00000000   Number         0  fmul.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
     ..\ApplicationLayer\src\app_led.c        0x00000000   Number         0  app_led.o ABSOLUTE
     ..\ApplicationLayer\src\app_led_ctrl.c   0x00000000   Number         0  app_led_ctrl.o ABSOLUTE
     ..\ApplicationLayer\src\app_shock.c      0x00000000   Number         0  app_shock.o ABSOLUTE
@@ -1539,7 +1539,6 @@ Image Symbol Table
     ..\HardwareAbstractionLayer\src\hal_key.c 0x00000000   Number         0  hal_key.o ABSOLUTE
     ..\HardwareAbstractionLayer\src\hal_led.c 0x00000000   Number         0  hal_led.o ABSOLUTE
     ..\HardwareAbstractionLayer\src\hal_rtc.c 0x00000000   Number         0  hal_rtc.o ABSOLUTE
-    ..\HardwareAbstractionLayer\src\hal_sd.c 0x00000000   Number         0  hal_sd.o ABSOLUTE
     ..\HardwareAbstractionLayer\src\hal_timer.c 0x00000000   Number         0  hal_timer.o ABSOLUTE
     ..\HardwareAbstractionLayer\src\hal_uart.c 0x00000000   Number         0  hal_uart.o ABSOLUTE
     ..\HardwareAbstractionLayer\src\hal_wdg.c 0x00000000   Number         0  hal_wdg.o ABSOLUTE
@@ -1572,8 +1571,6 @@ Image Symbol Table
     ..\HardwareDriverLayer\src\drv_gpio.c    0x00000000   Number         0  drv_gpio.o ABSOLUTE
     ..\HardwareDriverLayer\src\drv_int.c     0x00000000   Number         0  drv_int.o ABSOLUTE
     ..\HardwareDriverLayer\src\drv_rtc.c     0x00000000   Number         0  drv_rtc.o ABSOLUTE
-    ..\HardwareDriverLayer\src\drv_sd.c      0x00000000   Number         0  drv_sd.o ABSOLUTE
-    ..\HardwareDriverLayer\src\drv_spi.c     0x00000000   Number         0  drv_spi.o ABSOLUTE
     ..\HardwareDriverLayer\src\drv_timer.c   0x00000000   Number         0  drv_timer.o ABSOLUTE
     ..\HardwareDriverLayer\src\drv_uart.c    0x00000000   Number         0  drv_uart.o ABSOLUTE
     ..\HardwareDriverLayer\src\drv_wdg.c     0x00000000   Number         0  drv_wdg.o ABSOLUTE
@@ -2372,41 +2369,41 @@ Memory Map of the image
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x08000000   0x000000ec   Data   RO         2019    RESET               startup_stm32f10x_md.o
-    0x080000ec   0x00000000   Code   RO         5044  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x080000ec   0x00000004   Code   RO         5330    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x080000f0   0x00000004   Code   RO         5333    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x080000f4   0x00000000   Code   RO         5335    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x080000f4   0x00000000   Code   RO         5337    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x080000f4   0x00000008   Code   RO         5338    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x080000fc   0x00000000   Code   RO         5340    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x080000fc   0x00000000   Code   RO         5342    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x080000fc   0x00000004   Code   RO         5331    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
-    0x08000100   0x00000024   Code   RO         2020    .text               startup_stm32f10x_md.o
-    0x08000124   0x00000062   Code   RO         5047    .text               mc_w.l(uldiv.o)
-    0x08000186   0x00000024   Code   RO         5051    .text               mc_w.l(memcpya.o)
-    0x080001aa   0x00000024   Code   RO         5053    .text               mc_w.l(memseta.o)
-    0x080001ce   0x0000001e   Code   RO         5347    .text               mc_w.l(llshl.o)
-    0x080001ec   0x00000020   Code   RO         5349    .text               mc_w.l(llushr.o)
-    0x0800020c   0x00000024   Code   RO         5364    .text               mc_w.l(init.o)
+    0x08000000   0x000000ec   Data   RO         1992    RESET               startup_stm32f10x_md.o
+    0x080000ec   0x00000000   Code   RO         5017  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x080000ec   0x00000004   Code   RO         5303    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x080000f0   0x00000004   Code   RO         5306    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x080000f4   0x00000000   Code   RO         5308    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x080000f4   0x00000000   Code   RO         5310    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x080000f4   0x00000008   Code   RO         5311    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x080000fc   0x00000000   Code   RO         5313    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x080000fc   0x00000000   Code   RO         5315    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x080000fc   0x00000004   Code   RO         5304    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000100   0x00000024   Code   RO         1993    .text               startup_stm32f10x_md.o
+    0x08000124   0x00000062   Code   RO         5020    .text               mc_w.l(uldiv.o)
+    0x08000186   0x00000024   Code   RO         5024    .text               mc_w.l(memcpya.o)
+    0x080001aa   0x00000024   Code   RO         5026    .text               mc_w.l(memseta.o)
+    0x080001ce   0x0000001e   Code   RO         5320    .text               mc_w.l(llshl.o)
+    0x080001ec   0x00000020   Code   RO         5322    .text               mc_w.l(llushr.o)
+    0x0800020c   0x00000024   Code   RO         5337    .text               mc_w.l(init.o)
     0x08000230   0x0000000a   Code   RO          429    i.ADC1_2_IRQHandler  hal_int.o
-    0x0800023a   0x00000016   Code   RO         2089    i.ADC_Cmd           stm32f10x_adc.o
-    0x08000250   0x0000005c   Code   RO         2091    i.ADC_DeInit        stm32f10x_adc.o
-    0x080002ac   0x00000014   Code   RO         2097    i.ADC_GetCalibrationStatus  stm32f10x_adc.o
-    0x080002c0   0x00000008   Code   RO         2098    i.ADC_GetConversionValue  stm32f10x_adc.o
-    0x080002c8   0x00000012   Code   RO         2100    i.ADC_GetFlagStatus  stm32f10x_adc.o
-    0x080002da   0x00000014   Code   RO         2103    i.ADC_GetResetCalibrationStatus  stm32f10x_adc.o
+    0x0800023a   0x00000016   Code   RO         2062    i.ADC_Cmd           stm32f10x_adc.o
+    0x08000250   0x0000005c   Code   RO         2064    i.ADC_DeInit        stm32f10x_adc.o
+    0x080002ac   0x00000014   Code   RO         2070    i.ADC_GetCalibrationStatus  stm32f10x_adc.o
+    0x080002c0   0x00000008   Code   RO         2071    i.ADC_GetConversionValue  stm32f10x_adc.o
+    0x080002c8   0x00000012   Code   RO         2073    i.ADC_GetFlagStatus  stm32f10x_adc.o
+    0x080002da   0x00000014   Code   RO         2076    i.ADC_GetResetCalibrationStatus  stm32f10x_adc.o
     0x080002ee   0x00000002   PAD
-    0x080002f0   0x00000050   Code   RO         2107    i.ADC_Init          stm32f10x_adc.o
-    0x08000340   0x000000b8   Code   RO         2111    i.ADC_RegularChannelConfig  stm32f10x_adc.o
-    0x080003f8   0x0000000a   Code   RO         2112    i.ADC_ResetCalibration  stm32f10x_adc.o
-    0x08000402   0x00000016   Code   RO         2114    i.ADC_SoftwareStartConvCmd  stm32f10x_adc.o
-    0x08000418   0x0000000a   Code   RO         2116    i.ADC_StartCalibration  stm32f10x_adc.o
+    0x080002f0   0x00000050   Code   RO         2080    i.ADC_Init          stm32f10x_adc.o
+    0x08000340   0x000000b8   Code   RO         2084    i.ADC_RegularChannelConfig  stm32f10x_adc.o
+    0x080003f8   0x0000000a   Code   RO         2085    i.ADC_ResetCalibration  stm32f10x_adc.o
+    0x08000402   0x00000016   Code   RO         2087    i.ADC_SoftwareStartConvCmd  stm32f10x_adc.o
+    0x08000418   0x0000000a   Code   RO         2089    i.ADC_StartCalibration  stm32f10x_adc.o
     0x08000422   0x0000000c   Code   RO          119    i.AppStartTask      uc.o
-    0x0800042e   0x00000010   Code   RO         2307    i.BKP_DeInit        stm32f10x_bkp.o
+    0x0800042e   0x00000010   Code   RO         2280    i.BKP_DeInit        stm32f10x_bkp.o
     0x0800043e   0x00000002   PAD
-    0x08000440   0x0000001c   Code   RO         2312    i.BKP_ReadBackupRegister  stm32f10x_bkp.o
-    0x0800045c   0x0000001c   Code   RO         2316    i.BKP_WriteBackupRegister  stm32f10x_bkp.o
+    0x08000440   0x0000001c   Code   RO         2285    i.BKP_ReadBackupRegister  stm32f10x_bkp.o
+    0x0800045c   0x0000001c   Code   RO         2289    i.BKP_WriteBackupRegister  stm32f10x_bkp.o
     0x08000478   0x0000000a   Code   RO          431    i.BusFault_Handler  hal_int.o
     0x08000482   0x0000000a   Code   RO          432    i.CAN1_RX1_IRQHandler  hal_int.o
     0x0800048c   0x0000000a   Code   RO          433    i.CAN1_SCE_IRQHandler  hal_int.o
@@ -2419,39 +2416,39 @@ Memory Map of the image
     0x080004d2   0x0000000a   Code   RO          440    i.DMA1_Channel7_IRQHandler  hal_int.o
     0x080004dc   0x0000000a   Code   RO          445    i.DebugMon_Handler  hal_int.o
     0x080004e6   0x00000002   PAD
-    0x080004e8   0x000000f4   Code   RO         2024    i.Drv_AdcInit       drv_adc.o
-    0x080005dc   0x00000084   Code   RO         2025    i.Drv_AdcScanCh     drv_adc.o
-    0x08000660   0x00000030   Code   RO         1681    i.Drv_DwtInit       drv_dwt.o
-    0x08000690   0x00000018   Code   RO         1682    i.Drv_GetCpuFreq    drv_dwt.o
-    0x080006a8   0x0000000c   Code   RO         1683    i.Drv_GetDwtCnt     drv_dwt.o
-    0x080006b4   0x000000cc   Code   RO         1717    i.Drv_GpioInit      drv_gpio.o
-    0x08000780   0x0000003c   Code   RO         1718    i.Drv_GpioNameIn    drv_gpio.o
-    0x080007bc   0x00000024   Code   RO         1815    i.Drv_IsUartRxInt   drv_uart.o
-    0x080007e0   0x00000024   Code   RO         1816    i.Drv_IsUartTxInt   drv_uart.o
-    0x08000804   0x00000118   Code   RO         1761    i.Drv_PwmInit       drv_timer.o
-    0x0800091c   0x00000068   Code   RO         1762    i.Drv_PwmSetDuty    drv_timer.o
-    0x08000984   0x0000001a   Code   RO         1967    i.Drv_RtcDelay      drv_rtc.o
+    0x080004e8   0x000000f4   Code   RO         1997    i.Drv_AdcInit       drv_adc.o
+    0x080005dc   0x00000084   Code   RO         1998    i.Drv_AdcScanCh     drv_adc.o
+    0x08000660   0x00000030   Code   RO         1672    i.Drv_DwtInit       drv_dwt.o
+    0x08000690   0x00000018   Code   RO         1673    i.Drv_GetCpuFreq    drv_dwt.o
+    0x080006a8   0x0000000c   Code   RO         1674    i.Drv_GetDwtCnt     drv_dwt.o
+    0x080006b4   0x000000cc   Code   RO         1708    i.Drv_GpioInit      drv_gpio.o
+    0x08000780   0x0000003c   Code   RO         1709    i.Drv_GpioNameIn    drv_gpio.o
+    0x080007bc   0x00000024   Code   RO         1806    i.Drv_IsUartRxInt   drv_uart.o
+    0x080007e0   0x00000024   Code   RO         1807    i.Drv_IsUartTxInt   drv_uart.o
+    0x08000804   0x00000118   Code   RO         1752    i.Drv_PwmInit       drv_timer.o
+    0x0800091c   0x00000068   Code   RO         1753    i.Drv_PwmSetDuty    drv_timer.o
+    0x08000984   0x0000001a   Code   RO         1940    i.Drv_RtcDelay      drv_rtc.o
     0x0800099e   0x00000002   PAD
-    0x080009a0   0x00000014   Code   RO         1968    i.Drv_RtcGetCount   drv_rtc.o
-    0x080009b4   0x000000c4   Code   RO         1969    i.Drv_RtcInit       drv_rtc.o
-    0x08000a78   0x00000012   Code   RO         1970    i.Drv_RtcIsSecInt   drv_rtc.o
-    0x08000a8a   0x0000000e   Code   RO         1971    i.Drv_RtcIsrHandle  drv_rtc.o
-    0x08000a98   0x00000030   Code   RO         1972    i.Drv_RtcNvicInit   drv_rtc.o
-    0x08000ac8   0x00000020   Code   RO         1973    i.Drv_RtcSetCount   drv_rtc.o
-    0x08000ae8   0x00000012   Code   RO         1764    i.Drv_SysTickIntDisable  drv_timer.o
-    0x08000afa   0x00000012   Code   RO         1765    i.Drv_SysTickIntEnable  drv_timer.o
-    0x08000b0c   0x00000012   Code   RO         1766    i.Drv_SysTickOpen   drv_timer.o
-    0x08000b1e   0x00000008   Code   RO         1767    i.Drv_SysTickSetReload  drv_timer.o
+    0x080009a0   0x00000014   Code   RO         1941    i.Drv_RtcGetCount   drv_rtc.o
+    0x080009b4   0x000000c4   Code   RO         1942    i.Drv_RtcInit       drv_rtc.o
+    0x08000a78   0x00000012   Code   RO         1943    i.Drv_RtcIsSecInt   drv_rtc.o
+    0x08000a8a   0x0000000e   Code   RO         1944    i.Drv_RtcIsrHandle  drv_rtc.o
+    0x08000a98   0x00000030   Code   RO         1945    i.Drv_RtcNvicInit   drv_rtc.o
+    0x08000ac8   0x00000020   Code   RO         1946    i.Drv_RtcSetCount   drv_rtc.o
+    0x08000ae8   0x00000012   Code   RO         1755    i.Drv_SysTickIntDisable  drv_timer.o
+    0x08000afa   0x00000012   Code   RO         1756    i.Drv_SysTickIntEnable  drv_timer.o
+    0x08000b0c   0x00000012   Code   RO         1757    i.Drv_SysTickOpen   drv_timer.o
+    0x08000b1e   0x00000008   Code   RO         1758    i.Drv_SysTickSetReload  drv_timer.o
     0x08000b26   0x00000002   PAD
-    0x08000b28   0x00000124   Code   RO         1817    i.Drv_SysUartInit   drv_uart.o
-    0x08000c4c   0x00000018   Code   RO         1818    i.Drv_UartGetRevData  drv_uart.o
-    0x08000c64   0x0000001c   Code   RO         1819    i.Drv_UartITRxDisable  drv_uart.o
-    0x08000c80   0x0000001c   Code   RO         1820    i.Drv_UartITRxEnable  drv_uart.o
-    0x08000c9c   0x0000001c   Code   RO         1821    i.Drv_UartITTxDisable  drv_uart.o
-    0x08000cb8   0x0000001c   Code   RO         1822    i.Drv_UartITTxEnable  drv_uart.o
-    0x08000cd4   0x0000001c   Code   RO         1823    i.Drv_UartTxByte    drv_uart.o
-    0x08000cf0   0x00000008   Code   RO         1921    i.Drv_WdgFeed       drv_wdg.o
-    0x08000cf8   0x0000002c   Code   RO         1922    i.Drv_WdgInit       drv_wdg.o
+    0x08000b28   0x00000124   Code   RO         1808    i.Drv_SysUartInit   drv_uart.o
+    0x08000c4c   0x00000018   Code   RO         1809    i.Drv_UartGetRevData  drv_uart.o
+    0x08000c64   0x0000001c   Code   RO         1810    i.Drv_UartITRxDisable  drv_uart.o
+    0x08000c80   0x0000001c   Code   RO         1811    i.Drv_UartITRxEnable  drv_uart.o
+    0x08000c9c   0x0000001c   Code   RO         1812    i.Drv_UartITTxDisable  drv_uart.o
+    0x08000cb8   0x0000001c   Code   RO         1813    i.Drv_UartITTxEnable  drv_uart.o
+    0x08000cd4   0x0000001c   Code   RO         1814    i.Drv_UartTxByte    drv_uart.o
+    0x08000cf0   0x00000008   Code   RO         1912    i.Drv_WdgFeed       drv_wdg.o
+    0x08000cf8   0x0000002c   Code   RO         1913    i.Drv_WdgInit       drv_wdg.o
     0x08000d24   0x0000000a   Code   RO          446    i.EXTI0_IRQHandler  hal_int.o
     0x08000d2e   0x0000000a   Code   RO          447    i.EXTI15_10_IRQHandler  hal_int.o
     0x08000d38   0x0000000a   Code   RO          448    i.EXTI1_IRQHandler  hal_int.o
@@ -2460,20 +2457,20 @@ Memory Map of the image
     0x08000d56   0x0000000a   Code   RO          451    i.EXTI4_IRQHandler  hal_int.o
     0x08000d60   0x0000000a   Code   RO          452    i.EXTI9_5_IRQHandler  hal_int.o
     0x08000d6a   0x0000000a   Code   RO          453    i.FLASH_IRQHandler  hal_int.o
-    0x08000d74   0x00000116   Code   RO         3222    i.GPIO_Init         stm32f10x_gpio.o
-    0x08000e8a   0x00000012   Code   RO         3226    i.GPIO_ReadInputDataBit  stm32f10x_gpio.o
-    0x08000e9c   0x00000004   Code   RO         3229    i.GPIO_ResetBits    stm32f10x_gpio.o
-    0x08000ea0   0x00000004   Code   RO         3230    i.GPIO_SetBits      stm32f10x_gpio.o
-    0x08000ea4   0x00000008   Code   RO         1109    i.Hal_AdcInit       hal_adc.o
-    0x08000eac   0x00000010   Code   RO         1068    i.Hal_CheckNewKey   hal_key.o
-    0x08000ebc   0x00000010   Code   RO         1069    i.Hal_ClearNewKeyFlg  hal_key.o
+    0x08000d74   0x00000116   Code   RO         3195    i.GPIO_Init         stm32f10x_gpio.o
+    0x08000e8a   0x00000012   Code   RO         3199    i.GPIO_ReadInputDataBit  stm32f10x_gpio.o
+    0x08000e9c   0x00000004   Code   RO         3202    i.GPIO_ResetBits    stm32f10x_gpio.o
+    0x08000ea0   0x00000004   Code   RO         3203    i.GPIO_SetBits      stm32f10x_gpio.o
+    0x08000ea4   0x00000008   Code   RO         1100    i.Hal_AdcInit       hal_adc.o
+    0x08000eac   0x00000010   Code   RO         1059    i.Hal_CheckNewKey   hal_key.o
+    0x08000ebc   0x00000010   Code   RO         1060    i.Hal_ClearNewKeyFlg  hal_key.o
     0x08000ecc   0x00000014   Code   RO          455    i.Hal_DisableAllInt  hal_int.o
     0x08000ee0   0x00000020   Code   RO          456    i.Hal_EnableAllInt  hal_int.o
     0x08000f00   0x00000018   Code   RO          457    i.Hal_ExcptionHandle  hal_int.o
-    0x08000f18   0x00000010   Code   RO         1070    i.Hal_GetKeySta     hal_key.o
+    0x08000f18   0x00000010   Code   RO         1061    i.Hal_GetKeySta     hal_key.o
     0x08000f28   0x0000000c   Code   RO          906    i.Hal_IoInit        hal_led.o
-    0x08000f34   0x00000040   Code   RO         1071    i.Hal_KeyScan       hal_key.o
-    0x08000f74   0x0000013c   Code   RO         1072    i.Hal_KeyStateManage  hal_key.o
+    0x08000f34   0x00000040   Code   RO         1062    i.Hal_KeyScan       hal_key.o
+    0x08000f74   0x0000013c   Code   RO         1063    i.Hal_KeyStateManage  hal_key.o
     0x080010b0   0x00000080   Code   RO         1010    i.Hal_RtcGetWeek    hal_rtc.o
     0x08001130   0x0000003c   Code   RO         1011    i.Hal_RtcInit       hal_rtc.o
     0x0800116c   0x00000014   Code   RO         1012    i.Hal_RtcIsrHandle  hal_rtc.o
@@ -2481,7 +2478,7 @@ Memory Map of the image
     0x080011ba   0x00000002   PAD
     0x080011bc   0x000000d0   Code   RO         1014    i.Hal_RtcSetTime    hal_rtc.o
     0x0800128c   0x000000f0   Code   RO         1015    i.Hal_RtcUpdate     hal_rtc.o
-    0x0800137c   0x0000000a   Code   RO         1110    i.Hal_ScanShock     hal_adc.o
+    0x0800137c   0x0000000a   Code   RO         1101    i.Hal_ScanShock     hal_adc.o
     0x08001386   0x00000002   PAD
     0x08001388   0x00000070   Code   RO          950    i.Hal_SysComIsrHandle  hal_uart.o
     0x080013f8   0x00000020   Code   RO          460    i.Hal_SysISRSet     hal_int.o
@@ -2500,11 +2497,11 @@ Memory Map of the image
     0x0800167a   0x0000000a   Code   RO          467    i.I2C2_ER_IRQHandler  hal_int.o
     0x08001684   0x0000000a   Code   RO          468    i.I2C2_EV_IRQHandler  hal_int.o
     0x0800168e   0x00000002   PAD
-    0x08001690   0x00000010   Code   RO         3537    i.IWDG_Enable       stm32f10x_iwdg.o
-    0x080016a0   0x00000010   Code   RO         3539    i.IWDG_ReloadCounter  stm32f10x_iwdg.o
-    0x080016b0   0x0000000c   Code   RO         3540    i.IWDG_SetPrescaler  stm32f10x_iwdg.o
-    0x080016bc   0x0000000c   Code   RO         3541    i.IWDG_SetReload    stm32f10x_iwdg.o
-    0x080016c8   0x0000000c   Code   RO         3542    i.IWDG_WriteAccessCmd  stm32f10x_iwdg.o
+    0x08001690   0x00000010   Code   RO         3510    i.IWDG_Enable       stm32f10x_iwdg.o
+    0x080016a0   0x00000010   Code   RO         3512    i.IWDG_ReloadCounter  stm32f10x_iwdg.o
+    0x080016b0   0x0000000c   Code   RO         3513    i.IWDG_SetPrescaler  stm32f10x_iwdg.o
+    0x080016bc   0x0000000c   Code   RO         3514    i.IWDG_SetReload    stm32f10x_iwdg.o
+    0x080016c8   0x0000000c   Code   RO         3515    i.IWDG_WriteAccessCmd  stm32f10x_iwdg.o
     0x080016d4   0x0000001c   Code   RO          268    i.Led_AllOff        app_led_ctrl.o
     0x080016f0   0x00000014   Code   RO          269    i.Led_CtrlHandle    app_led_ctrl.o
     0x08001704   0x00000024   Code   RO          270    i.Led_CtrlInit      app_led_ctrl.o
@@ -2528,62 +2525,62 @@ Memory Map of the image
     0x08001a40   0x00000010   Code   RO          288    i.Led_WarmOn        app_led_ctrl.o
     0x08001a50   0x0000000a   Code   RO          469    i.MemManage_Handler  hal_int.o
     0x08001a5a   0x0000000a   Code   RO          470    i.NMI_Handler       hal_int.o
-    0x08001a64   0x00000070   Code   RO         2047    i.NVIC_Init         misc.o
-    0x08001ad4   0x00000014   Code   RO         2048    i.NVIC_PriorityGroupConfig  misc.o
+    0x08001a64   0x00000070   Code   RO         2020    i.NVIC_Init         misc.o
+    0x08001ad4   0x00000014   Code   RO         2021    i.NVIC_PriorityGroupConfig  misc.o
     0x08001ae8   0x00000054   Code   RO          396    i.Osal_DiffTsToUsec  osal.o
     0x08001b3c   0x00000008   Code   RO          397    i.Osal_GetCurTs     osal.o
     0x08001b44   0x0000000a   Code   RO          471    i.PVD_IRQHandler    hal_int.o
     0x08001b4e   0x00000002   PAD
-    0x08001b50   0x0000000c   Code   RO         3579    i.PWR_BackupAccessCmd  stm32f10x_pwr.o
+    0x08001b50   0x0000000c   Code   RO         3552    i.PWR_BackupAccessCmd  stm32f10x_pwr.o
     0x08001b5c   0x00000010   Code   RO          472    i.PendSV_Handler    hal_int.o
-    0x08001b6c   0x00000018   Code   RO         3639    i.RCC_ADCCLKConfig  stm32f10x_rcc.o
-    0x08001b84   0x00000020   Code   RO         3641    i.RCC_APB1PeriphClockCmd  stm32f10x_rcc.o
-    0x08001ba4   0x00000020   Code   RO         3642    i.RCC_APB1PeriphResetCmd  stm32f10x_rcc.o
-    0x08001bc4   0x00000020   Code   RO         3643    i.RCC_APB2PeriphClockCmd  stm32f10x_rcc.o
-    0x08001be4   0x00000020   Code   RO         3644    i.RCC_APB2PeriphResetCmd  stm32f10x_rcc.o
-    0x08001c04   0x0000000c   Code   RO         3646    i.RCC_BackupResetCmd  stm32f10x_rcc.o
-    0x08001c10   0x000000d4   Code   RO         3651    i.RCC_GetClocksFreq  stm32f10x_rcc.o
-    0x08001ce4   0x0000003c   Code   RO         3652    i.RCC_GetFlagStatus  stm32f10x_rcc.o
+    0x08001b6c   0x00000018   Code   RO         3612    i.RCC_ADCCLKConfig  stm32f10x_rcc.o
+    0x08001b84   0x00000020   Code   RO         3614    i.RCC_APB1PeriphClockCmd  stm32f10x_rcc.o
+    0x08001ba4   0x00000020   Code   RO         3615    i.RCC_APB1PeriphResetCmd  stm32f10x_rcc.o
+    0x08001bc4   0x00000020   Code   RO         3616    i.RCC_APB2PeriphClockCmd  stm32f10x_rcc.o
+    0x08001be4   0x00000020   Code   RO         3617    i.RCC_APB2PeriphResetCmd  stm32f10x_rcc.o
+    0x08001c04   0x0000000c   Code   RO         3619    i.RCC_BackupResetCmd  stm32f10x_rcc.o
+    0x08001c10   0x000000d4   Code   RO         3624    i.RCC_GetClocksFreq  stm32f10x_rcc.o
+    0x08001ce4   0x0000003c   Code   RO         3625    i.RCC_GetFlagStatus  stm32f10x_rcc.o
     0x08001d20   0x0000000a   Code   RO          473    i.RCC_IRQHandler    hal_int.o
     0x08001d2a   0x00000002   PAD
-    0x08001d2c   0x00000034   Code   RO         3659    i.RCC_LSEConfig     stm32f10x_rcc.o
-    0x08001d60   0x0000000c   Code   RO         3666    i.RCC_RTCCLKCmd     stm32f10x_rcc.o
-    0x08001d6c   0x00000010   Code   RO         3667    i.RCC_RTCCLKConfig  stm32f10x_rcc.o
+    0x08001d2c   0x00000034   Code   RO         3632    i.RCC_LSEConfig     stm32f10x_rcc.o
+    0x08001d60   0x0000000c   Code   RO         3639    i.RCC_RTCCLKCmd     stm32f10x_rcc.o
+    0x08001d6c   0x00000010   Code   RO         3640    i.RCC_RTCCLKConfig  stm32f10x_rcc.o
     0x08001d7c   0x0000000a   Code   RO          474    i.RTCAlarm_IRQHandler  hal_int.o
     0x08001d86   0x00000002   PAD
-    0x08001d88   0x00000010   Code   RO         3840    i.RTC_ClearITPendingBit  stm32f10x_rtc.o
-    0x08001d98   0x00000014   Code   RO         3841    i.RTC_EnterConfigMode  stm32f10x_rtc.o
-    0x08001dac   0x00000014   Code   RO         3842    i.RTC_ExitConfigMode  stm32f10x_rtc.o
-    0x08001dc0   0x00000024   Code   RO         3846    i.RTC_GetITStatus   stm32f10x_rtc.o
+    0x08001d88   0x00000010   Code   RO         3813    i.RTC_ClearITPendingBit  stm32f10x_rtc.o
+    0x08001d98   0x00000014   Code   RO         3814    i.RTC_EnterConfigMode  stm32f10x_rtc.o
+    0x08001dac   0x00000014   Code   RO         3815    i.RTC_ExitConfigMode  stm32f10x_rtc.o
+    0x08001dc0   0x00000024   Code   RO         3819    i.RTC_GetITStatus   stm32f10x_rtc.o
     0x08001de4   0x0000000a   Code   RO          475    i.RTC_IRQHandler    hal_int.o
     0x08001dee   0x00000002   PAD
-    0x08001df0   0x00000020   Code   RO         3847    i.RTC_ITConfig      stm32f10x_rtc.o
-    0x08001e10   0x0000001c   Code   RO         3849    i.RTC_SetCounter    stm32f10x_rtc.o
-    0x08001e2c   0x00000020   Code   RO         3850    i.RTC_SetPrescaler  stm32f10x_rtc.o
-    0x08001e4c   0x00000014   Code   RO         3851    i.RTC_WaitForLastTask  stm32f10x_rtc.o
-    0x08001e60   0x00000024   Code   RO         3852    i.RTC_WaitForSynchro  stm32f10x_rtc.o
+    0x08001df0   0x00000020   Code   RO         3820    i.RTC_ITConfig      stm32f10x_rtc.o
+    0x08001e10   0x0000001c   Code   RO         3822    i.RTC_SetCounter    stm32f10x_rtc.o
+    0x08001e2c   0x00000020   Code   RO         3823    i.RTC_SetPrescaler  stm32f10x_rtc.o
+    0x08001e4c   0x00000014   Code   RO         3824    i.RTC_WaitForLastTask  stm32f10x_rtc.o
+    0x08001e60   0x00000024   Code   RO         3825    i.RTC_WaitForSynchro  stm32f10x_rtc.o
     0x08001e84   0x0000000a   Code   RO          477    i.SPI1_IRQHandler   hal_int.o
     0x08001e8e   0x0000000a   Code   RO          478    i.SPI2_IRQHandler   hal_int.o
     0x08001e98   0x0000000a   Code   RO          480    i.SVC_Handler       hal_int.o
-    0x08001ea2   0x00000008   Code   RO         1886    i.SetSysClock       system_stm32f10x.o
+    0x08001ea2   0x00000008   Code   RO         1877    i.SetSysClock       system_stm32f10x.o
     0x08001eaa   0x00000002   PAD
-    0x08001eac   0x000000e0   Code   RO         1887    i.SetSysClockTo72   system_stm32f10x.o
+    0x08001eac   0x000000e0   Code   RO         1878    i.SetSysClockTo72   system_stm32f10x.o
     0x08001f8c   0x0000000c   Code   RO          225    i.Shk_ClrSnsSta     app_shock.o
     0x08001f98   0x0000000c   Code   RO          226    i.Shk_DisableScan   app_shock.o
     0x08001fa4   0x0000000c   Code   RO          227    i.Shk_EnableScan    app_shock.o
     0x08001fb0   0x0000000c   Code   RO          228    i.Shk_GetSnsSta     app_shock.o
     0x08001fbc   0x00000014   Code   RO          229    i.Shk_PeriodHandle  app_shock.o
     0x08001fd0   0x00000080   Code   RO          230    i.Shk_Scan          app_shock.o
-    0x08002050   0x00000032   Code   RO         1201    i.Srv_QueueIn       srv_queue.o
-    0x08002082   0x0000000e   Code   RO         1202    i.Srv_QueueInit     srv_queue.o
-    0x08002090   0x0000000c   Code   RO         1203    i.Srv_QueueIsEmpty  srv_queue.o
-    0x0800209c   0x00000030   Code   RO         1205    i.Srv_QueueOut      srv_queue.o
-    0x080020cc   0x00000018   Code   RO         1206    i.Srv_ReadQueueHead  srv_queue.o
-    0x080020e4   0x00000002   Code   RO         1177    i.Srv_WifiCommInit  srv_wifi_comm.o
-    0x080020e6   0x00000012   Code   RO         1178    i.Srv_WifiCommTx    srv_wifi_comm.o
+    0x08002050   0x00000032   Code   RO         1192    i.Srv_QueueIn       srv_queue.o
+    0x08002082   0x0000000e   Code   RO         1193    i.Srv_QueueInit     srv_queue.o
+    0x08002090   0x0000000c   Code   RO         1194    i.Srv_QueueIsEmpty  srv_queue.o
+    0x0800209c   0x00000030   Code   RO         1196    i.Srv_QueueOut      srv_queue.o
+    0x080020cc   0x00000018   Code   RO         1197    i.Srv_ReadQueueHead  srv_queue.o
+    0x080020e4   0x00000002   Code   RO         1168    i.Srv_WifiCommInit  srv_wifi_comm.o
+    0x080020e6   0x00000012   Code   RO         1169    i.Srv_WifiCommTx    srv_wifi_comm.o
     0x080020f8   0x0000000a   Code   RO          481    i.SysTick_Handler   hal_int.o
     0x08002102   0x00000002   PAD
-    0x08002104   0x00000060   Code   RO         1889    i.SystemInit        system_stm32f10x.o
+    0x08002104   0x00000060   Code   RO         1880    i.SystemInit        system_stm32f10x.o
     0x08002164   0x0000000a   Code   RO          482    i.TAMPER_IRQHandler  hal_int.o
     0x0800216e   0x0000000a   Code   RO          483    i.TIM1_BRK_IRQHandler  hal_int.o
     0x08002178   0x0000000a   Code   RO          484    i.TIM1_CC_IRQHandler  hal_int.o
@@ -2592,42 +2589,42 @@ Memory Map of the image
     0x08002196   0x0000000a   Code   RO          487    i.TIM2_IRQHandler   hal_int.o
     0x080021a0   0x0000000a   Code   RO          488    i.TIM3_IRQHandler   hal_int.o
     0x080021aa   0x0000000a   Code   RO          489    i.TIM4_IRQHandler   hal_int.o
-    0x080021b4   0x00000018   Code   RO         4278    i.TIM_Cmd           stm32f10x_tim.o
-    0x080021cc   0x00000098   Code   RO         4307    i.TIM_OC1Init       stm32f10x_tim.o
-    0x08002264   0x00000012   Code   RO         4310    i.TIM_OC1PreloadConfig  stm32f10x_tim.o
+    0x080021b4   0x00000018   Code   RO         4251    i.TIM_Cmd           stm32f10x_tim.o
+    0x080021cc   0x00000098   Code   RO         4280    i.TIM_OC1Init       stm32f10x_tim.o
+    0x08002264   0x00000012   Code   RO         4283    i.TIM_OC1PreloadConfig  stm32f10x_tim.o
     0x08002276   0x00000002   PAD
-    0x08002278   0x000000a4   Code   RO         4312    i.TIM_OC2Init       stm32f10x_tim.o
-    0x0800231c   0x0000001a   Code   RO         4315    i.TIM_OC2PreloadConfig  stm32f10x_tim.o
+    0x08002278   0x000000a4   Code   RO         4285    i.TIM_OC2Init       stm32f10x_tim.o
+    0x0800231c   0x0000001a   Code   RO         4288    i.TIM_OC2PreloadConfig  stm32f10x_tim.o
     0x08002336   0x00000002   PAD
-    0x08002338   0x000000a0   Code   RO         4317    i.TIM_OC3Init       stm32f10x_tim.o
-    0x080023d8   0x00000012   Code   RO         4320    i.TIM_OC3PreloadConfig  stm32f10x_tim.o
+    0x08002338   0x000000a0   Code   RO         4290    i.TIM_OC3Init       stm32f10x_tim.o
+    0x080023d8   0x00000012   Code   RO         4293    i.TIM_OC3PreloadConfig  stm32f10x_tim.o
     0x080023ea   0x00000002   PAD
-    0x080023ec   0x0000007c   Code   RO         4322    i.TIM_OC4Init       stm32f10x_tim.o
-    0x08002468   0x0000001a   Code   RO         4324    i.TIM_OC4PreloadConfig  stm32f10x_tim.o
-    0x08002482   0x00000004   Code   RO         4339    i.TIM_SetCompare1   stm32f10x_tim.o
-    0x08002486   0x00000004   Code   RO         4340    i.TIM_SetCompare2   stm32f10x_tim.o
-    0x0800248a   0x00000004   Code   RO         4341    i.TIM_SetCompare3   stm32f10x_tim.o
-    0x0800248e   0x00000006   Code   RO         4342    i.TIM_SetCompare4   stm32f10x_tim.o
-    0x08002494   0x000000a4   Code   RO         4349    i.TIM_TimeBaseInit  stm32f10x_tim.o
+    0x080023ec   0x0000007c   Code   RO         4295    i.TIM_OC4Init       stm32f10x_tim.o
+    0x08002468   0x0000001a   Code   RO         4297    i.TIM_OC4PreloadConfig  stm32f10x_tim.o
+    0x08002482   0x00000004   Code   RO         4312    i.TIM_SetCompare1   stm32f10x_tim.o
+    0x08002486   0x00000004   Code   RO         4313    i.TIM_SetCompare2   stm32f10x_tim.o
+    0x0800248a   0x00000004   Code   RO         4314    i.TIM_SetCompare3   stm32f10x_tim.o
+    0x0800248e   0x00000006   Code   RO         4315    i.TIM_SetCompare4   stm32f10x_tim.o
+    0x08002494   0x000000a4   Code   RO         4322    i.TIM_TimeBaseInit  stm32f10x_tim.o
     0x08002538   0x0000000a   Code   RO          499    i.USART1_IRQHandler  hal_int.o
     0x08002542   0x0000000a   Code   RO          500    i.USART2_IRQHandler  hal_int.o
     0x0800254c   0x0000000a   Code   RO          501    i.USART3_IRQHandler  hal_int.o
-    0x08002556   0x00000018   Code   RO         4814    i.USART_Cmd         stm32f10x_usart.o
+    0x08002556   0x00000018   Code   RO         4787    i.USART_Cmd         stm32f10x_usart.o
     0x0800256e   0x00000002   PAD
-    0x08002570   0x0000009c   Code   RO         4816    i.USART_DeInit      stm32f10x_usart.o
-    0x0800260c   0x00000054   Code   RO         4818    i.USART_GetITStatus  stm32f10x_usart.o
-    0x08002660   0x0000004a   Code   RO         4820    i.USART_ITConfig    stm32f10x_usart.o
+    0x08002570   0x0000009c   Code   RO         4789    i.USART_DeInit      stm32f10x_usart.o
+    0x0800260c   0x00000054   Code   RO         4791    i.USART_GetITStatus  stm32f10x_usart.o
+    0x08002660   0x0000004a   Code   RO         4793    i.USART_ITConfig    stm32f10x_usart.o
     0x080026aa   0x00000002   PAD
-    0x080026ac   0x000000d8   Code   RO         4821    i.USART_Init        stm32f10x_usart.o
-    0x08002784   0x0000000a   Code   RO         4828    i.USART_ReceiveData  stm32f10x_usart.o
-    0x0800278e   0x00000008   Code   RO         4831    i.USART_SendData    stm32f10x_usart.o
+    0x080026ac   0x000000d8   Code   RO         4794    i.USART_Init        stm32f10x_usart.o
+    0x08002784   0x0000000a   Code   RO         4801    i.USART_ReceiveData  stm32f10x_usart.o
+    0x0800278e   0x00000008   Code   RO         4804    i.USART_SendData    stm32f10x_usart.o
     0x08002796   0x0000000a   Code   RO          502    i.USBWakeUp_IRQHandler  hal_int.o
     0x080027a0   0x0000000a   Code   RO          503    i.USB_HP_CAN1_TX_IRQHandler  hal_int.o
     0x080027aa   0x0000000a   Code   RO          504    i.USB_LP_CAN1_RX0_IRQHandler  hal_int.o
     0x080027b4   0x0000000a   Code   RO          505    i.UsageFault_Handler  hal_int.o
     0x080027be   0x0000000a   Code   RO          506    i.WWDG_IRQHandler   hal_int.o
     0x080027c8   0x0000002c   Code   RO          170    i.Wifi_DataHandle   app_wifi.o
-    0x080027f4   0x0000000c   Code   RO         1244    i.Wifi_GetConnectSta  gizwits_product.o
+    0x080027f4   0x0000000c   Code   RO         1235    i.Wifi_GetConnectSta  gizwits_product.o
     0x08002800   0x00000084   Code   RO          171    i.Wifi_KeyHandle    app_wifi.o
     0x08002884   0x00000050   Code   RO          172    i.Wifi_LedSetFlash  app_wifi.o
     0x080028d4   0x00000014   Code   RO          173    i.Wifi_ShockHandle  app_wifi.o
@@ -2637,73 +2634,73 @@ Memory Map of the image
     0x0800295a   0x00000002   PAD
     0x0800295c   0x00000030   Code   RO          177    i.Wifi_UpdateTime   app_wifi.o
     0x0800298c   0x0000005c   Code   RO          178    i.Wifi_WorkManage   app_wifi.o
-    0x080029e8   0x00000020   Code   RO         5266    i.__0printf$8       mc_w.l(printf8.o)
-    0x08002a08   0x0000000e   Code   RO         5372    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08002a16   0x00000002   Code   RO         5373    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08002a18   0x0000000e   Code   RO         5374    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x080029e8   0x00000020   Code   RO         5239    i.__0printf$8       mc_w.l(printf8.o)
+    0x08002a08   0x0000000e   Code   RO         5345    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08002a16   0x00000002   Code   RO         5346    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08002a18   0x0000000e   Code   RO         5347    i.__scatterload_zeroinit  mc_w.l(handlers.o)
     0x08002a26   0x00000002   PAD
-    0x08002a28   0x00000410   Code   RO         5273    i._printf_core      mc_w.l(printf8.o)
-    0x08002e38   0x00000024   Code   RO         5274    i._printf_post_padding  mc_w.l(printf8.o)
-    0x08002e5c   0x0000002e   Code   RO         5275    i._printf_pre_padding  mc_w.l(printf8.o)
-    0x08002e8a   0x0000001a   Code   RO         1477    i.exchangeBytes     common.o
-    0x08002ea4   0x0000001a   Code   RO         1478    i.exchangeWord      common.o
-    0x08002ebe   0x00000012   Code   RO         1130    i.fputc             std_lib.o
-    0x08002ed0   0x0000002a   Code   RO         1550    i.gizAcrossByteJudge  datapointtools.o
-    0x08002efa   0x00000032   Code   RO         1551    i.gizByteOrderExchange  datapointtools.o
-    0x08002f2c   0x0000016c   Code   RO         1314    i.gizCheckReport    gizwits_protocol.o
-    0x08003098   0x00000144   Code   RO         1315    i.gizDataPoint2Event  gizwits_protocol.o
-    0x080031dc   0x000000b8   Code   RO         1316    i.gizDataPoints2ReportData  gizwits_protocol.o
-    0x08003294   0x000000bc   Code   RO         1317    i.gizDevReportPolicy  gizwits_protocol.o
-    0x08003350   0x0000000c   Code   RO         1245    i.gizGetTimerCount  gizwits_product.o
-    0x0800335c   0x0000008c   Code   RO         1318    i.gizProtocolAckHandle  gizwits_protocol.o
-    0x080033e8   0x000000a0   Code   RO         1319    i.gizProtocolCommonAck  gizwits_protocol.o
-    0x08003488   0x000000a4   Code   RO         1320    i.gizProtocolErrorCmd  gizwits_protocol.o
-    0x0800352c   0x0000017c   Code   RO         1321    i.gizProtocolGetDeviceInfo  gizwits_protocol.o
-    0x080036a8   0x000001a8   Code   RO         1322    i.gizProtocolGetOnePacket  gizwits_protocol.o
-    0x08003850   0x00000050   Code   RO         1323    i.gizProtocolHeadInit  gizwits_protocol.o
-    0x080038a0   0x0000013c   Code   RO         1324    i.gizProtocolIssuedDataAck  gizwits_protocol.o
-    0x080039dc   0x00000110   Code   RO         1325    i.gizProtocolIssuedProcess  gizwits_protocol.o
-    0x08003aec   0x0000005c   Code   RO         1326    i.gizProtocolModuleInfoHandle  gizwits_protocol.o
-    0x08003b48   0x00000504   Code   RO         1327    i.gizProtocolModuleStatus  gizwits_protocol.o
-    0x0800404c   0x00000088   Code   RO         1328    i.gizProtocolNTP    gizwits_protocol.o
-    0x080040d4   0x0000001c   Code   RO         1329    i.gizProtocolReboot  gizwits_protocol.o
-    0x080040f0   0x0000007c   Code   RO         1330    i.gizProtocolResendData  gizwits_protocol.o
-    0x0800416c   0x00000026   Code   RO         1480    i.gizProtocolSum    common.o
+    0x08002a28   0x00000410   Code   RO         5246    i._printf_core      mc_w.l(printf8.o)
+    0x08002e38   0x00000024   Code   RO         5247    i._printf_post_padding  mc_w.l(printf8.o)
+    0x08002e5c   0x0000002e   Code   RO         5248    i._printf_pre_padding  mc_w.l(printf8.o)
+    0x08002e8a   0x0000001a   Code   RO         1468    i.exchangeBytes     common.o
+    0x08002ea4   0x0000001a   Code   RO         1469    i.exchangeWord      common.o
+    0x08002ebe   0x00000012   Code   RO         1121    i.fputc             std_lib.o
+    0x08002ed0   0x0000002a   Code   RO         1541    i.gizAcrossByteJudge  datapointtools.o
+    0x08002efa   0x00000032   Code   RO         1542    i.gizByteOrderExchange  datapointtools.o
+    0x08002f2c   0x0000016c   Code   RO         1305    i.gizCheckReport    gizwits_protocol.o
+    0x08003098   0x00000144   Code   RO         1306    i.gizDataPoint2Event  gizwits_protocol.o
+    0x080031dc   0x000000b8   Code   RO         1307    i.gizDataPoints2ReportData  gizwits_protocol.o
+    0x08003294   0x000000bc   Code   RO         1308    i.gizDevReportPolicy  gizwits_protocol.o
+    0x08003350   0x0000000c   Code   RO         1236    i.gizGetTimerCount  gizwits_product.o
+    0x0800335c   0x0000008c   Code   RO         1309    i.gizProtocolAckHandle  gizwits_protocol.o
+    0x080033e8   0x000000a0   Code   RO         1310    i.gizProtocolCommonAck  gizwits_protocol.o
+    0x08003488   0x000000a4   Code   RO         1311    i.gizProtocolErrorCmd  gizwits_protocol.o
+    0x0800352c   0x0000017c   Code   RO         1312    i.gizProtocolGetDeviceInfo  gizwits_protocol.o
+    0x080036a8   0x000001a8   Code   RO         1313    i.gizProtocolGetOnePacket  gizwits_protocol.o
+    0x08003850   0x00000050   Code   RO         1314    i.gizProtocolHeadInit  gizwits_protocol.o
+    0x080038a0   0x0000013c   Code   RO         1315    i.gizProtocolIssuedDataAck  gizwits_protocol.o
+    0x080039dc   0x00000110   Code   RO         1316    i.gizProtocolIssuedProcess  gizwits_protocol.o
+    0x08003aec   0x0000005c   Code   RO         1317    i.gizProtocolModuleInfoHandle  gizwits_protocol.o
+    0x08003b48   0x00000504   Code   RO         1318    i.gizProtocolModuleStatus  gizwits_protocol.o
+    0x0800404c   0x00000088   Code   RO         1319    i.gizProtocolNTP    gizwits_protocol.o
+    0x080040d4   0x0000001c   Code   RO         1320    i.gizProtocolReboot  gizwits_protocol.o
+    0x080040f0   0x0000007c   Code   RO         1321    i.gizProtocolResendData  gizwits_protocol.o
+    0x0800416c   0x00000026   Code   RO         1471    i.gizProtocolSum    common.o
     0x08004192   0x00000002   PAD
-    0x08004194   0x00000064   Code   RO         1331    i.gizProtocolWaitAck  gizwits_protocol.o
-    0x080041f8   0x00000048   Code   RO         1332    i.gizProtocolWaitAckCheck  gizwits_protocol.o
-    0x08004240   0x00000074   Code   RO         1333    i.gizPutData        gizwits_protocol.o
-    0x080042b4   0x000000d8   Code   RO         1334    i.gizReportData     gizwits_protocol.o
-    0x0800438c   0x00000080   Code   RO         1552    i.gizStandardCompressValue  datapointtools.o
-    0x0800440c   0x000000c2   Code   RO         1553    i.gizStandardDecompressionValue  datapointtools.o
+    0x08004194   0x00000064   Code   RO         1322    i.gizProtocolWaitAck  gizwits_protocol.o
+    0x080041f8   0x00000048   Code   RO         1323    i.gizProtocolWaitAckCheck  gizwits_protocol.o
+    0x08004240   0x00000074   Code   RO         1324    i.gizPutData        gizwits_protocol.o
+    0x080042b4   0x000000d8   Code   RO         1325    i.gizReportData     gizwits_protocol.o
+    0x0800438c   0x00000080   Code   RO         1543    i.gizStandardCompressValue  datapointtools.o
+    0x0800440c   0x000000c2   Code   RO         1544    i.gizStandardDecompressionValue  datapointtools.o
     0x080044ce   0x00000002   PAD
-    0x080044d0   0x00000010   Code   RO         1246    i.gizTimerMs        gizwits_product.o
-    0x080044e0   0x0000000c   Code   RO         1556    i.gizX2Y            datapointtools.o
-    0x080044ec   0x0000000e   Code   RO         1558    i.gizY2X            datapointtools.o
+    0x080044d0   0x00000010   Code   RO         1237    i.gizTimerMs        gizwits_product.o
+    0x080044e0   0x0000000c   Code   RO         1547    i.gizX2Y            datapointtools.o
+    0x080044ec   0x0000000e   Code   RO         1549    i.gizY2X            datapointtools.o
     0x080044fa   0x00000002   PAD
-    0x080044fc   0x000002f4   Code   RO         1247    i.gizwitsEventProcess  gizwits_product.o
-    0x080047f0   0x00000084   Code   RO         1336    i.gizwitsGetNTP     gizwits_protocol.o
-    0x08004874   0x0000036c   Code   RO         1337    i.gizwitsHandle     gizwits_protocol.o
-    0x08004be0   0x00000064   Code   RO         1338    i.gizwitsInit       gizwits_protocol.o
-    0x08004c44   0x00000288   Code   RO         1340    i.gizwitsSetMode    gizwits_protocol.o
+    0x080044fc   0x000002f4   Code   RO         1238    i.gizwitsEventProcess  gizwits_product.o
+    0x080047f0   0x00000084   Code   RO         1327    i.gizwitsGetNTP     gizwits_protocol.o
+    0x08004874   0x0000036c   Code   RO         1328    i.gizwitsHandle     gizwits_protocol.o
+    0x08004be0   0x00000064   Code   RO         1329    i.gizwitsInit       gizwits_protocol.o
+    0x08004c44   0x00000288   Code   RO         1331    i.gizwitsSetMode    gizwits_protocol.o
     0x08004ecc   0x0000001c   Code   RO          120    i.main              uc.o
-    0x08004ee8   0x0000000c   Code   RO         1248    i.mcuRestart        gizwits_product.o
-    0x08004ef4   0x00000038   Code   RO         1619    i.rbCanRead         ringbuffer.o
-    0x08004f2c   0x0000001e   Code   RO         1620    i.rbCanWrite        ringbuffer.o
-    0x08004f4a   0x0000000e   Code   RO         1621    i.rbCapacity        ringbuffer.o
-    0x08004f58   0x00000016   Code   RO         1622    i.rbCreate          ringbuffer.o
-    0x08004f6e   0x000000a2   Code   RO         1624    i.rbRead            ringbuffer.o
-    0x08005010   0x0000009a   Code   RO         1625    i.rbWrite           ringbuffer.o
+    0x08004ee8   0x0000000c   Code   RO         1239    i.mcuRestart        gizwits_product.o
+    0x08004ef4   0x00000038   Code   RO         1610    i.rbCanRead         ringbuffer.o
+    0x08004f2c   0x0000001e   Code   RO         1611    i.rbCanWrite        ringbuffer.o
+    0x08004f4a   0x0000000e   Code   RO         1612    i.rbCapacity        ringbuffer.o
+    0x08004f58   0x00000016   Code   RO         1613    i.rbCreate          ringbuffer.o
+    0x08004f6e   0x000000a2   Code   RO         1615    i.rbRead            ringbuffer.o
+    0x08005010   0x0000009a   Code   RO         1616    i.rbWrite           ringbuffer.o
     0x080050aa   0x00000002   PAD
-    0x080050ac   0x0000009c   Code   RO         1249    i.uartWrite         gizwits_product.o
-    0x08005148   0x00000064   Code   RO         1250    i.userHandle        gizwits_product.o
-    0x080051ac   0x00000010   Code   RO         1251    i.userInit          gizwits_product.o
+    0x080050ac   0x0000009c   Code   RO         1240    i.uartWrite         gizwits_product.o
+    0x08005148   0x00000064   Code   RO         1241    i.userHandle        gizwits_product.o
+    0x080051ac   0x00000010   Code   RO         1242    i.userInit          gizwits_product.o
     0x080051bc   0x00000020   Data   RO         1016    .constdata          hal_rtc.o
-    0x080051dc   0x00000120   Data   RO         1720    .constdata          drv_gpio.o
-    0x080052fc   0x000000a0   Data   RO         1768    .constdata          drv_timer.o
-    0x0800539c   0x00000040   Data   RO         1824    .constdata          drv_uart.o
-    0x080053dc   0x00000024   Data   RO         2026    .constdata          drv_adc.o
-    0x08005400   0x00000020   Data   RO         5370    Region$$Table       anon$$obj.o
+    0x080051dc   0x00000120   Data   RO         1711    .constdata          drv_gpio.o
+    0x080052fc   0x000000a0   Data   RO         1759    .constdata          drv_timer.o
+    0x0800539c   0x00000040   Data   RO         1815    .constdata          drv_uart.o
+    0x080053dc   0x00000024   Data   RO         1999    .constdata          drv_adc.o
+    0x08005400   0x00000020   Data   RO         5343    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000e90, Max: 0x00005000, ABSOLUTE)
@@ -2719,27 +2716,27 @@ Memory Map of the image
     0x20000041   0x00000003   PAD
     0x20000044   0x00000008   Data   RW          956    .data               hal_uart.o
     0x2000004c   0x0000000a   Data   RW         1017    .data               hal_rtc.o
-    0x20000056   0x00000002   Data   RW         1074    .data               hal_key.o
-    0x20000058   0x00000005   Data   RW         1253    .data               gizwits_product.o
+    0x20000056   0x00000002   Data   RW         1065    .data               hal_key.o
+    0x20000058   0x00000005   Data   RW         1244    .data               gizwits_product.o
     0x2000005d   0x00000003   PAD
-    0x20000060   0x00000010   Data   RW         1342    .data               gizwits_protocol.o
-    0x20000070   0x00000001   Data   RW         1685    .data               drv_dwt.o
-    0x20000071   0x00000001   Data   RW         1721    .data               drv_gpio.o
-    0x20000072   0x00000001   Data   RW         1825    .data               drv_uart.o
+    0x20000060   0x00000010   Data   RW         1333    .data               gizwits_protocol.o
+    0x20000070   0x00000001   Data   RW         1676    .data               drv_dwt.o
+    0x20000071   0x00000001   Data   RW         1712    .data               drv_gpio.o
+    0x20000072   0x00000001   Data   RW         1816    .data               drv_uart.o
     0x20000073   0x00000001   PAD
-    0x20000074   0x00000014   Data   RW         1890    .data               system_stm32f10x.o
-    0x20000088   0x00000001   Data   RW         1923    .data               drv_wdg.o
-    0x20000089   0x00000004   Data   RW         1974    .data               drv_rtc.o
-    0x2000008d   0x00000014   Data   RW         3671    .data               stm32f10x_rcc.o
+    0x20000074   0x00000014   Data   RW         1881    .data               system_stm32f10x.o
+    0x20000088   0x00000001   Data   RW         1914    .data               drv_wdg.o
+    0x20000089   0x00000004   Data   RW         1947    .data               drv_rtc.o
+    0x2000008d   0x00000014   Data   RW         3644    .data               stm32f10x_rcc.o
     0x200000a1   0x00000003   PAD
-    0x200000a4   0x00000004   Data   RW         5344    .data               mc_w.l(stdout.o)
+    0x200000a4   0x00000004   Data   RW         5317    .data               mc_w.l(stdout.o)
     0x200000a8   0x00000110   Zero   RW          507    .bss                hal_int.o
     0x200001b8   0x00000330   Zero   RW          955    .bss                hal_uart.o
-    0x200004e8   0x00000010   Zero   RW         1073    .bss                hal_key.o
-    0x200004f8   0x00000012   Zero   RW         1252    .bss                gizwits_product.o
-    0x2000050a   0x00000184   Zero   RW         1341    .bss                gizwits_protocol.o
+    0x200004e8   0x00000010   Zero   RW         1064    .bss                hal_key.o
+    0x200004f8   0x00000012   Zero   RW         1243    .bss                gizwits_product.o
+    0x2000050a   0x00000184   Zero   RW         1332    .bss                gizwits_protocol.o
     0x2000068e   0x00000002   PAD
-    0x20000690   0x00000800   Zero   RW         2017    STACK               startup_stm32f10x_md.o
+    0x20000690   0x00000800   Zero   RW         1990    STACK               startup_stm32f10x_md.o
 
 
 ==============================================================================

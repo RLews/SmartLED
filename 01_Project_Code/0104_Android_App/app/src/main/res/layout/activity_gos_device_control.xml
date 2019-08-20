@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_toolbar" />
+    
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/background_color"
+	    android:fadingEdge="vertical"
+	    android:paddingBottom="10dp"
+	    android:paddingTop="20dp"
+	    android:scrollbars="vertical" >
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:scrollbars="vertical" >
+	        
+			
+            <!-- Led_WarmSta(布尔可写) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_centerVertical="true"
+						android:text="Led_WarmSta" />
+
+					<Switch
+						android:id="@+id/sw_bool_Led_WarmSta"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:textOff="关闭"
+						android:textOn="开启" />
+						
+			</RelativeLayout>	
+	
+			
+            <!-- LedOnOff(布尔可写) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_centerVertical="true"
+						android:text="LedOnOff" />
+
+					<Switch
+						android:id="@+id/sw_bool_LedOnOff"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:textOff="关闭"
+						android:textOn="开启" />
+						
+			</RelativeLayout>	
+	
+			
+            <!-- Led_RVal(数值可写) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:text="Led_RVal" />
+					
+					<TextView
+						android:id="@+id/tv_data_Led_RVal"
+						android:layout_width="110dp"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:textSize="16sp"
+						android:gravity="end" />	
+										
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/tv_data_Led_RVal"
+						android:layout_marginTop="10dp"
+						android:gravity="center_vertical"
+						android:orientation="horizontal" >
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textSize="16sp"
+							android:text="0" />
+							
+						<SeekBar
+							android:id="@+id/sb_data_Led_RVal"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="3"
+							android:max="255" />
+						
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textSize="16sp"
+							android:text="255" />
+					</LinearLayout>
+				
+			</RelativeLayout>			
+	
+			
+            <!-- Led_GVal(数值可写) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:text="Led_GVal" />
+					
+					<TextView
+						android:id="@+id/tv_data_Led_GVal"
+						android:layout_width="110dp"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:textSize="16sp"
+						android:gravity="end" />	
+										
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/tv_data_Led_GVal"
+						android:layout_marginTop="10dp"
+						android:gravity="center_vertical"
+						android:orientation="horizontal" >
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textSize="16sp"
+							android:text="0" />
+							
+						<SeekBar
+							android:id="@+id/sb_data_Led_GVal"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="3"
+							android:max="255" />
+						
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textSize="16sp"
+							android:text="255" />
+					</LinearLayout>
+				
+			</RelativeLayout>			
+	
+			
+            <!-- Led_BVal(数值可写) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:text="Led_BVal" />
+					
+					<TextView
+						android:id="@+id/tv_data_Led_BVal"
+						android:layout_width="110dp"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:textSize="16sp"
+						android:gravity="end" />	
+										
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/tv_data_Led_BVal"
+						android:layout_marginTop="10dp"
+						android:gravity="center_vertical"
+						android:orientation="horizontal" >
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textSize="16sp"
+							android:text="0" />
+							
+						<SeekBar
+							android:id="@+id/sb_data_Led_BVal"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="3"
+							android:max="255" />
+						
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textSize="16sp"
+							android:text="255" />
+					</LinearLayout>
+				
+			</RelativeLayout>			
+	
+			
+            <!-- Led_Brightness(数值可写) -->
+			 <RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:background="@color/white"
+					android:padding="10dp" >
+			 
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:text="Led_Brightness" />
+					
+					<TextView
+						android:id="@+id/tv_data_Led_Brightness"
+						android:layout_width="110dp"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:textSize="16sp"
+						android:gravity="end" />	
+										
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/tv_data_Led_Brightness"
+						android:layout_marginTop="10dp"
+						android:gravity="center_vertical"
+						android:orientation="horizontal" >
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textSize="16sp"
+							android:text="0" />
+							
+						<SeekBar
+							android:id="@+id/sb_data_Led_Brightness"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_weight="3"
+							android:max="4095" />
+						
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textSize="16sp"
+							android:text="4095" />
+					</LinearLayout>
+				
+			</RelativeLayout>			
+	
+		
+	    </LinearLayout>
+
+	</ScrollView>
+</LinearLayout>

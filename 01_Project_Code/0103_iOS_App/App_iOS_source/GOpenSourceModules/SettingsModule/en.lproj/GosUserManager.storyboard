@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="l5q-yx-V2O">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hAD-AA-qOj">
+            <objects>
+                <navigationController id="l5q-yx-V2O" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s14-9a-bTG">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="eKd-eA-Gcj" kind="relationship" relationship="rootViewController" id="k5t-JW-P4d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dw6-bv-hgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1430" y="-116"/>
+        </scene>
+        <!--User Management-->
+        <scene sceneID="UJb-Pg-OQy">
+            <objects>
+                <viewController id="eKd-eA-Gcj" customClass="GosUserManagerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sXc-5q-Z9d"/>
+                        <viewControllerLayoutGuide type="bottom" id="JBT-DA-mXE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xhx-zZ-SWE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="VlT-MU-wjH">
+                                <rect key="frame" x="0.0" y="64" width="320" height="180"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="5lp-r5-Yo6"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userManagerIdentifier" id="fq5-bW-a0p">
+                                        <rect key="frame" x="0.0" y="55.5" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fq5-bW-a0p" id="PPw-c6-tag">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="eKd-eA-Gcj" id="qhe-Xc-NF3"/>
+                                    <outlet property="delegate" destination="eKd-eA-Gcj" id="rg6-cc-zi1"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxR-h4-31S">
+                                <rect key="frame" x="0.0" y="280" width="320" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PPk-xE-z1d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onUserLogout:" destination="eKd-eA-Gcj" eventType="touchUpInside" id="MCE-CI-lxd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TxR-h4-31S" firstAttribute="top" secondItem="VlT-MU-wjH" secondAttribute="bottom" constant="36" id="FY4-ub-nAs"/>
+                            <constraint firstAttribute="trailing" secondItem="VlT-MU-wjH" secondAttribute="trailing" id="Ndb-Cf-HaM"/>
+                            <constraint firstItem="TxR-h4-31S" firstAttribute="leading" secondItem="xhx-zZ-SWE" secondAttribute="leadingMargin" constant="-16" id="QzA-RG-PqL"/>
+                            <constraint firstItem="TxR-h4-31S" firstAttribute="trailing" secondItem="xhx-zZ-SWE" secondAttribute="trailingMargin" constant="16" id="dk9-yk-aY3"/>
+                            <constraint firstItem="VlT-MU-wjH" firstAttribute="leading" secondItem="xhx-zZ-SWE" secondAttribute="leading" id="uAg-Qh-VKh"/>
+                            <constraint firstItem="VlT-MU-wjH" firstAttribute="top" secondItem="sXc-5q-Z9d" secondAttribute="bottom" id="wvm-1A-Mst"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="User Management" id="ph8-UB-SOB"/>
+                    <connections>
+                        <outlet property="tableView" destination="VlT-MU-wjH" id="dce-nd-fzl"/>
+                        <segue destination="4jX-sc-zCO" kind="show" identifier="toChange" id="Df8-GT-Uhc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QyI-H5-Q9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-577.5" y="-119.36619718309859"/>
+        </scene>
+        <!--Edit password-->
+        <scene sceneID="Um4-kR-nHI">
+            <objects>
+                <viewController id="4jX-sc-zCO" customClass="GosChangeUserPasswordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qwQ-DN-4Qi"/>
+                        <viewControllerLayoutGuide type="bottom" id="fwM-RB-hGs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ou5-Ll-hlw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="lVN-7N-D8F">
+                                <rect key="frame" x="0.0" y="64" width="320" height="240"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="mcZ-UX-vwZ"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="4jX-sc-zCO" id="Pza-QE-nuF"/>
+                                    <outlet property="delegate" destination="4jX-sc-zCO" id="Fwj-cj-eUu"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNh-rb-F4H">
+                                <rect key="frame" x="0.0" y="340" width="320" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Dk1-T5-Sda"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="cd1-yE-gqk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onConfirm:" destination="4jX-sc-zCO" eventType="touchUpInside" id="Gv9-jA-ruR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lVN-7N-D8F" firstAttribute="top" secondItem="qwQ-DN-4Qi" secondAttribute="bottom" id="9l1-HA-ZN5"/>
+                            <constraint firstAttribute="trailing" secondItem="lVN-7N-D8F" secondAttribute="trailing" id="DsP-kZ-m0z"/>
+                            <constraint firstItem="hNh-rb-F4H" firstAttribute="trailing" secondItem="Ou5-Ll-hlw" secondAttribute="trailingMargin" constant="16" id="TgV-6t-q5U"/>
+                            <constraint firstItem="hNh-rb-F4H" firstAttribute="leading" secondItem="Ou5-Ll-hlw" secondAttribute="leadingMargin" constant="-16" id="cmY-p3-C3w"/>
+                            <constraint firstItem="hNh-rb-F4H" firstAttribute="top" secondItem="lVN-7N-D8F" secondAttribute="bottom" constant="36" id="dKA-FZ-QF0"/>
+                            <constraint firstItem="lVN-7N-D8F" firstAttribute="leading" secondItem="Ou5-Ll-hlw" secondAttribute="leading" id="ljL-KK-dwk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit password" id="Wb4-33-CLk"/>
+                    <connections>
+                        <outlet property="tableView" destination="lVN-7N-D8F" id="TRw-K3-ise"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLY-Dd-UCP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="283.125" y="-122.53521126760563"/>
+        </scene>
+    </scenes>
+</document>

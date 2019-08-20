@@ -1,0 +1,6 @@
+framework module SSPullToRefresh {
+  umbrella header "SSPullToRefresh.h"
+
+  export *
+  module * { export * }
+}

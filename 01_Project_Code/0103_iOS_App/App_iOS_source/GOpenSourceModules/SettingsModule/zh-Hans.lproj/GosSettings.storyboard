@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QWm-W2-180">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="xzQ-4d-mnn">
+            <objects>
+                <navigationController id="QWm-W2-180" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Br-tx-3mo">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Mqo-BV-c05" kind="relationship" relationship="rootViewController" id="Eal-c5-Mft"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GlL-ue-rJ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-260" y="352"/>
+        </scene>
+        <!--个人中心-->
+        <scene sceneID="OhD-Gk-El4">
+            <objects>
+                <tableViewController id="Mqo-BV-c05" customClass="GosSettingsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="p0j-wx-JeD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Mqo-BV-c05" id="yXa-x0-1dX"/>
+                            <outlet property="delegate" destination="Mqo-BV-c05" id="vYC-4p-PdH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="个人中心" id="Ykf-Ir-PC6"/>
+                    <connections>
+                        <segue destination="tRm-8j-ehs" kind="show" identifier="toAbout" id="dJz-Gq-JXq"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5E-tn-a8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423" y="351"/>
+        </scene>
+        <!--Gos About View Controller-->
+        <scene sceneID="Wd9-VH-ark">
+            <objects>
+                <viewController storyboardIdentifier="GosAbout" id="tRm-8j-ehs" customClass="GosAboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DSP-6x-7hH"/>
+                        <viewControllerLayoutGuide type="bottom" id="psc-2D-dXR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YsH-Yw-QgI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="UCH-97-ZrQ">
+                                <rect key="frame" x="137.5" y="104" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4yi-M0-bcs"/>
+                                    <constraint firstAttribute="width" constant="100" id="Hsa-yX-kKQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRf-hs-Pyo">
+                                <rect key="frame" x="166.5" y="234" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nvt-oR-rTP">
+                                <rect key="frame" x="166.5" y="274.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="123" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdf-Ub-eAe">
+                                <rect key="frame" x="25" y="315" width="325" height="332"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jdf-Ub-eAe" firstAttribute="top" secondItem="Nvt-oR-rTP" secondAttribute="bottom" constant="20" id="6tr-82-5TC"/>
+                            <constraint firstItem="jdf-Ub-eAe" firstAttribute="leading" secondItem="YsH-Yw-QgI" secondAttribute="leadingMargin" constant="9" id="FkI-1Z-RvG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jdf-Ub-eAe" secondAttribute="trailing" constant="9" id="IcJ-C2-xoX"/>
+                            <constraint firstItem="IRf-hs-Pyo" firstAttribute="centerX" secondItem="YsH-Yw-QgI" secondAttribute="centerX" id="OFx-rB-cfg"/>
+                            <constraint firstItem="Nvt-oR-rTP" firstAttribute="top" secondItem="IRf-hs-Pyo" secondAttribute="bottom" constant="20" id="WuN-Dw-E8G"/>
+                            <constraint firstItem="Nvt-oR-rTP" firstAttribute="centerX" secondItem="YsH-Yw-QgI" secondAttribute="centerX" id="cLV-SO-b5i"/>
+                            <constraint firstItem="psc-2D-dXR" firstAttribute="top" secondItem="jdf-Ub-eAe" secondAttribute="bottom" constant="20" id="dfe-mP-Ezv"/>
+                            <constraint firstItem="UCH-97-ZrQ" firstAttribute="centerX" secondItem="YsH-Yw-QgI" secondAttribute="centerX" id="naB-Ol-bXK"/>
+                            <constraint firstItem="UCH-97-ZrQ" firstAttribute="top" secondItem="DSP-6x-7hH" secondAttribute="bottom" constant="40" id="rAs-Uh-gRm"/>
+                            <constraint firstItem="IRf-hs-Pyo" firstAttribute="top" secondItem="UCH-97-ZrQ" secondAttribute="bottom" constant="30" id="tI2-ZT-TFH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SDKVersionLabel" destination="Nvt-oR-rTP" id="OhU-Lc-K7k"/>
+                        <outlet property="appVersionLabel" destination="IRf-hs-Pyo" id="JKe-Ln-P8b"/>
+                        <outlet property="textAboutInfo" destination="jdf-Ub-eAe" id="Biw-9e-KOl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c6x-Ez-CbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104" y="352"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="about_logo.png" width="512" height="512"/>
+    </resources>
+</document>

@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ttu-iT-fN3">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ROR-tR-vKm">
+            <objects>
+                <navigationController id="ttu-iT-fN3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9CO-LC-bV9">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GmJ-Ah-DNs" kind="relationship" relationship="rootViewController" id="YGn-Rt-ggj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4mm-Rb-MAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-836" y="16"/>
+        </scene>
+        <!--搜索并连接设备-->
+        <scene sceneID="kux-nb-hPb">
+            <objects>
+                <viewController id="MF1-JK-0PK" customClass="GosConfigSoftAPWaiting" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bW1-1A-q2e"/>
+                        <viewControllerLayoutGuide type="bottom" id="l73-j1-VeA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6kv-Sy-mdo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请尽量使路由器、手机和设备靠近" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6k-Cy-O1q">
+                                <rect key="frame" x="1" y="327" width="320" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6nE-W3-iBM"/>
+                                    <constraint firstAttribute="width" constant="320" id="dqC-0a-jSY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.3921568627" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuI-hd-UwB">
+                                <rect key="frame" x="265" y="462" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="AutoJump"/>
+                                <connections>
+                                    <segue destination="qUe-gy-D4Z" kind="show" id="MG5-Fl-RWD"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I29-eH-26C">
+                                <rect key="frame" x="261" y="514" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="AutoJump2"/>
+                                <connections>
+                                    <segue destination="D9T-1h-U8b" kind="show" id="f2P-0s-FEA"/>
+                                </connections>
+                            </button>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RX9-qn-SNX" customClass="UAProgressView">
+                                <rect key="frame" x="70" y="112" width="180" height="180"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="54A-BY-mYP"/>
+                                    <constraint firstAttribute="height" constant="180" id="Bfh-Wa-OuJ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· 搜索设备" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Htk-f5-22i">
+                                <rect key="frame" x="71" y="449" width="179" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Orl-fc-8gE"/>
+                                    <constraint firstAttribute="width" constant="179" id="ufb-M5-42M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· 设备将注册到机智云" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lc8-rI-ZJQ">
+                                <rect key="frame" x="71" y="478" width="179" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="sQh-j3-84A"/>
+                                    <constraint firstAttribute="width" constant="179" id="vps-Fv-SDA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="· 完成设备添加" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVC-1J-HIK">
+                                <rect key="frame" x="71" y="507" width="179" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="179" id="JqZ-2Z-FhQ"/>
+                                    <constraint firstAttribute="height" constant="21" id="P3w-43-mVe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92156862745098034" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a6k-Cy-O1q" firstAttribute="top" secondItem="RX9-qn-SNX" secondAttribute="bottom" constant="35" id="3lf-UM-dDL"/>
+                            <constraint firstItem="TVC-1J-HIK" firstAttribute="top" secondItem="Lc8-rI-ZJQ" secondAttribute="bottom" constant="8" id="5Iy-XM-Fvg"/>
+                            <constraint firstItem="Lc8-rI-ZJQ" firstAttribute="top" secondItem="Htk-f5-22i" secondAttribute="bottom" constant="8" id="6lR-No-gyS"/>
+                            <constraint firstItem="a6k-Cy-O1q" firstAttribute="centerX" secondItem="6kv-Sy-mdo" secondAttribute="centerX" constant="0.5" id="7qe-rK-Yz3"/>
+                            <constraint firstItem="Lc8-rI-ZJQ" firstAttribute="top" secondItem="Htk-f5-22i" secondAttribute="bottom" constant="8" id="8Ie-bJ-gh7"/>
+                            <constraint firstItem="RX9-qn-SNX" firstAttribute="centerX" secondItem="6kv-Sy-mdo" secondAttribute="centerX" id="D8d-kx-eh0"/>
+                            <constraint firstItem="Lc8-rI-ZJQ" firstAttribute="top" secondItem="Htk-f5-22i" secondAttribute="bottom" constant="8" id="Ld6-24-NMD"/>
+                            <constraint firstItem="Lc8-rI-ZJQ" firstAttribute="centerX" secondItem="6kv-Sy-mdo" secondAttribute="centerX" id="XGk-Pf-1dh"/>
+                            <constraint firstItem="TVC-1J-HIK" firstAttribute="top" secondItem="Lc8-rI-ZJQ" secondAttribute="bottom" constant="8" id="ZrR-dm-hwH"/>
+                            <constraint firstItem="TVC-1J-HIK" firstAttribute="top" secondItem="Lc8-rI-ZJQ" secondAttribute="bottom" constant="8" id="ihS-bC-ASY"/>
+                            <constraint firstItem="RX9-qn-SNX" firstAttribute="top" secondItem="bW1-1A-q2e" secondAttribute="bottom" constant="48" id="kmj-5e-eOM"/>
+                            <constraint firstItem="a6k-Cy-O1q" firstAttribute="top" secondItem="bW1-1A-q2e" secondAttribute="bottom" constant="263" id="o57-Qe-LRN"/>
+                            <constraint firstItem="l73-j1-VeA" firstAttribute="top" secondItem="TVC-1J-HIK" secondAttribute="bottom" constant="40" id="ro8-0A-XNU"/>
+                            <constraint firstItem="Htk-f5-22i" firstAttribute="centerX" secondItem="6kv-Sy-mdo" secondAttribute="centerX" id="sBD-Dg-gGO"/>
+                            <constraint firstItem="TVC-1J-HIK" firstAttribute="centerX" secondItem="6kv-Sy-mdo" secondAttribute="centerX" id="zyq-bV-jKe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="搜索并连接设备" id="mzB-oS-pOt">
+                        <barButtonItem key="leftBarButtonItem" title="取消" id="YSn-nc-yM7">
+                            <connections>
+                                <action selector="onCancel:" destination="MF1-JK-0PK" id="Jx5-8M-eI3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnAutoJump" destination="DuI-hd-UwB" id="SFp-by-Cy0"/>
+                        <outlet property="btnAutoJump2" destination="I29-eH-26C" id="Mvs-SQ-YPb"/>
+                        <outlet property="progressView" destination="RX9-qn-SNX" id="er8-dz-RQQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gl6-1Z-QZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="837"/>
+        </scene>
+        <!--配置超时-->
+        <scene sceneID="gw5-hB-Dfe">
+            <objects>
+                <viewController id="D9T-1h-U8b" customClass="GosConfigSoftAPNotSame" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wtc-De-52l"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZT3-4o-fbr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gQH-Zx-IsB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoL-3C-5jR">
+                                <rect key="frame" x="16" y="355" width="288" height="39"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.86274509799999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="SBk-OU-mjF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="去连接Wi-Fixx配置的wifixx">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onGoConnect:" destination="D9T-1h-U8b" eventType="touchUpInside" id="ZWb-cG-Thc"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWa-sM-FqR">
+                                <rect key="frame" x="16" y="79" width="288" height="91"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="pfE-ax-nL6"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="检测到设备工作Wi-Fi与手机连接Wi-Fi不一致：">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="PingFangSC-Semibold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28.299999237060547">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56.650001525878906">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="85">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="113.34999847412109">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="141.69999694824219">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="170.05000305175781">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="198.39999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="226.75">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="255.10000610351562">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="283.45001220703125">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="311.79998779296875">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="340.14999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28.299999237060547">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56.650001525878906">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="85">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="113.34999847412109">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="141.69999694824219">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="170.05000305175781">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="198.39999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="226.75">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="255.10000610351562">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="283.45001220703125">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="311.79998779296875">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="340.14999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="请尝试将手机">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28.299999237060547">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56.650001525878906">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="85">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="113.34999847412109">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="141.69999694824219">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="170.05000305175781">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="198.39999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="226.75">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="255.10000610351562">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="283.45001220703125">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="311.79998779296875">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="340.14999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Wi-Fi">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28.299999237060547">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56.650001525878906">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="85">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="113.34999847412109">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="141.69999694824219">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="170.05000305175781">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="198.39999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="226.75">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="255.10000610351562">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="283.45001220703125">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="311.79998779296875">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="340.14999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="连接到Wi-Fi">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28.299999237060547">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56.650001525878906">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="85">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="113.34999847412109">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="141.69999694824219">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="170.05000305175781">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="198.39999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="226.75">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="255.10000610351562">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="283.45001220703125">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="311.79998779296875">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="340.14999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="”xxwifixx“">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28.299999237060547">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56.650001525878906">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="85">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="113.34999847412109">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="141.69999694824219">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="170.05000305175781">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="198.39999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="226.75">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="255.10000610351562">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="283.45001220703125">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="311.79998779296875">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="340.14999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="，然后返回">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28.299999237060547">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56.650001525878906">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="85">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="113.34999847412109">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="141.69999694824219">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="170.05000305175781">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="198.39999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="226.75">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="255.10000610351562">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="283.45001220703125">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="311.79998779296875">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="340.14999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="app">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28.299999237060547">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56.650001525878906">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="85">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="113.34999847412109">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="141.69999694824219">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="170.05000305175781">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="198.39999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="226.75">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="255.10000610351562">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="283.45001220703125">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="311.79998779296875">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="340.14999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="。">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28.299999237060547">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56.650001525878906">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="85">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="113.34999847412109">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="141.69999694824219">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="170.05000305175781">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="198.39999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="226.75">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="255.10000610351562">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="283.45001220703125">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="311.79998779296875">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="340.14999389648438">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92156862745098034" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KWa-sM-FqR" firstAttribute="top" secondItem="wtc-De-52l" secondAttribute="bottom" constant="15" id="5jP-x6-iMn"/>
+                            <constraint firstItem="KWa-sM-FqR" firstAttribute="trailing" secondItem="gQH-Zx-IsB" secondAttribute="trailingMargin" id="Gzr-6Y-UEX"/>
+                            <constraint firstItem="KWa-sM-FqR" firstAttribute="leading" secondItem="gQH-Zx-IsB" secondAttribute="leadingMargin" id="HHi-8B-qmI"/>
+                            <constraint firstItem="qoL-3C-5jR" firstAttribute="centerX" secondItem="gQH-Zx-IsB" secondAttribute="centerX" id="Lux-iD-xtT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qoL-3C-5jR" secondAttribute="trailing" id="arg-tk-cpd"/>
+                            <constraint firstItem="ZT3-4o-fbr" firstAttribute="top" secondItem="qoL-3C-5jR" secondAttribute="bottom" constant="174" id="hux-59-5qG"/>
+                            <constraint firstItem="qoL-3C-5jR" firstAttribute="leading" secondItem="gQH-Zx-IsB" secondAttribute="leadingMargin" id="q6Z-fp-Y5C"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="配置超时" id="h0P-HV-fmO">
+                        <barButtonItem key="leftBarButtonItem" title="取消" id="19b-mH-hal">
+                            <connections>
+                                <action selector="onCancel:" destination="D9T-1h-U8b" id="m5J-69-MTM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnConnect" destination="qoL-3C-5jR" id="86k-cW-5yn"/>
+                        <outlet property="textTips" destination="KWa-sM-FqR" id="OXQ-lY-G7M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9d9-tP-4nt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="1573"/>
+        </scene>
+        <!--配置超时-->
+        <scene sceneID="R4O-3h-bss">
+            <objects>
+                <viewController storyboardIdentifier="GizConfigSoftAPFailed" id="qUe-gy-D4Z" customClass="GosConfigSoftAPFailed" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nYj-uf-Suq"/>
+                        <viewControllerLayoutGuide type="bottom" id="xtu-ps-Gew"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dje-0F-niF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1、确保您的Wi-Fi账号密码输入正确无误；" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BY7-rJ-n3O">
+                                <rect key="frame" x="16" y="108" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="6oX-mL-dZ6"/>
+                                    <constraint firstAttribute="height" constant="21" id="wWy-SE-MbF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.3921568627" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74t-4F-DSe">
+                                <rect key="frame" x="16" y="479" width="288" height="39"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.86274509799999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="3B4-am-1DH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="重试">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onRetry:" destination="qUe-gy-D4Z" eventType="touchUpInside" id="bwF-Vv-07K"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3、确保手机、设备与路由器靠近；" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5m-eY-c6n">
+                                <rect key="frame" x="16" y="166" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="T2z-Uv-zaS"/>
+                                    <constraint firstAttribute="width" constant="280" id="lgN-2c-JWm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.3921568627" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4、检查路由器是否设置了限制；" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3km-Y7-T3v">
+                                <rect key="frame" x="16" y="195" width="215" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="D5b-CQ-ac1"/>
+                                    <constraint firstAttribute="height" constant="21" id="tOl-QT-ZbS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.3921568627" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请按以下情况排除连接问题并重试：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tF5-66-257">
+                                <rect key="frame" x="16" y="79" width="250" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="9bQ-fI-Yju"/>
+                                    <constraint firstAttribute="height" constant="21" id="Gyq-7E-f1b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.3921568627" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2、确保网络正常；" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqo-cB-7DL">
+                                <rect key="frame" x="16" y="137" width="197" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="b2F-8N-VEP"/>
+                                    <constraint firstAttribute="height" constant="21" id="kec-Rb-S56"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.3921568627" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5、确保路由器是2.4Ghz；" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTw-7i-k3N">
+                                <rect key="frame" x="16" y="224" width="215" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="AhL-um-HI7"/>
+                                    <constraint firstAttribute="height" constant="21" id="eSr-Tp-0s6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.39607843139999999" green="0.3921568627" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92156862745098034" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="74t-4F-DSe" firstAttribute="centerX" secondItem="Dje-0F-niF" secondAttribute="centerX" id="0e1-Pq-yAN"/>
+                            <constraint firstItem="tF5-66-257" firstAttribute="leading" secondItem="Dje-0F-niF" secondAttribute="leadingMargin" id="2Bo-OT-PoX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="74t-4F-DSe" secondAttribute="trailing" id="2Dz-OQ-gpe"/>
+                            <constraint firstItem="rqo-cB-7DL" firstAttribute="top" secondItem="BY7-rJ-n3O" secondAttribute="bottom" constant="8" id="2hR-5e-twK"/>
+                            <constraint firstItem="3km-Y7-T3v" firstAttribute="top" secondItem="Y5m-eY-c6n" secondAttribute="bottom" constant="8" id="3RF-8f-D0E"/>
+                            <constraint firstItem="sTw-7i-k3N" firstAttribute="leading" secondItem="Dje-0F-niF" secondAttribute="leadingMargin" id="8nS-1I-xI9"/>
+                            <constraint firstItem="xtu-ps-Gew" firstAttribute="top" secondItem="74t-4F-DSe" secondAttribute="bottom" constant="50" id="9st-eq-qjS"/>
+                            <constraint firstItem="rqo-cB-7DL" firstAttribute="leading" secondItem="Dje-0F-niF" secondAttribute="leadingMargin" id="Ii5-aA-3QD"/>
+                            <constraint firstItem="BY7-rJ-n3O" firstAttribute="leading" secondItem="Dje-0F-niF" secondAttribute="leadingMargin" id="Ij9-mo-rc6"/>
+                            <constraint firstItem="BY7-rJ-n3O" firstAttribute="top" secondItem="tF5-66-257" secondAttribute="bottom" constant="8" id="Ktr-mX-cEC"/>
+                            <constraint firstItem="Y5m-eY-c6n" firstAttribute="top" secondItem="rqo-cB-7DL" secondAttribute="bottom" constant="8" id="Pq2-Ww-bdC"/>
+                            <constraint firstItem="74t-4F-DSe" firstAttribute="leading" secondItem="Dje-0F-niF" secondAttribute="leadingMargin" id="W86-6V-L58"/>
+                            <constraint firstItem="sTw-7i-k3N" firstAttribute="top" secondItem="3km-Y7-T3v" secondAttribute="bottom" constant="8" id="bTk-S2-SNH"/>
+                            <constraint firstItem="tF5-66-257" firstAttribute="top" secondItem="nYj-uf-Suq" secondAttribute="bottom" constant="15" id="bjc-XX-6ZC"/>
+                            <constraint firstItem="Y5m-eY-c6n" firstAttribute="leading" secondItem="Dje-0F-niF" secondAttribute="leadingMargin" id="jQj-ya-bW2"/>
+                            <constraint firstItem="3km-Y7-T3v" firstAttribute="leading" secondItem="Dje-0F-niF" secondAttribute="leadingMargin" id="ztG-gQ-9Re"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="配置超时" id="NgI-6J-ypM">
+                        <barButtonItem key="leftBarButtonItem" title="取消" id="jib-H9-YjV">
+                            <connections>
+                                <action selector="onCancel:" destination="qUe-gy-D4Z" id="tE9-28-r56"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="retryBtn" destination="74t-4F-DSe" id="kyJ-tK-nnB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grH-ur-HSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233.75" y="836.61971830985919"/>
+        </scene>
+        <!--选择设备热点-->
+        <scene sceneID="84g-kb-9ro">
+            <objects>
+                <viewController id="rXk-7N-mme" customClass="GosConfigSoftAPStart" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UyY-Ur-tvX"/>
+                        <viewControllerLayoutGuide type="bottom" id="g4Y-1m-ZZc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aby-NU-reA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aL2-m3-34Q">
+                                <rect key="frame" x="16" y="479" width="288" height="39"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.86274509799999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="GV0-p3-pNp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="去连接设备热点">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onOpenConfig:" destination="rXk-7N-mme" eventType="touchUpInside" id="rBU-tE-oQX"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ve9-RC-NlX">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="AutoJump"/>
+                                <connections>
+                                    <segue destination="MF1-JK-0PK" kind="show" id="Uri-HK-ErW"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="请将手机的Wi-Fi连接到“XPG-GAgent-xxx”后，返回机智云app" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxb-q1-wAQ">
+                                <rect key="frame" x="16" y="271" width="288" height="55"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="mL9-lu-sqU"/>
+                                </constraints>
+                                <color key="textColor" red="0.39607843139999999" green="0.3921568627" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c6F-Xx-lTE">
+                                <rect key="frame" x="-4" y="64" width="328" height="206"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="c6F-Xx-lTE" secondAttribute="height" multiplier="383:240" id="Saq-gN-v4g"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前连接：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xH-nn-zqs">
+                                <rect key="frame" x="126.5" y="449" width="67" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="config_notice_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="11e-S9-snU">
+                                <rect key="frame" x="108.5" y="451" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="Qzx-MX-sYb"/>
+                                    <constraint firstAttribute="height" constant="12" id="gsV-UH-Un7"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yzd-jM-jCa">
+                                <rect key="frame" x="95" y="334" width="131" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="ku5-kz-Aax"/>
+                                    <constraint firstAttribute="height" constant="30" id="yjd-PR-QeW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STXihei" family="STHeiti" pointSize="14"/>
+                                <state key="normal" title="找不到设备热点？"/>
+                                <connections>
+                                    <action selector="onBack" destination="rXk-7N-mme" eventType="touchUpInside" id="3tQ-cw-YqM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92156862745098034" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="c6F-Xx-lTE" secondAttribute="trailing" constant="-4" id="3W0-Mb-2CM"/>
+                            <constraint firstItem="6xH-nn-zqs" firstAttribute="leading" secondItem="11e-S9-snU" secondAttribute="trailing" constant="6" id="4bI-P5-ehX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aL2-m3-34Q" secondAttribute="trailing" id="9sa-ft-g2g"/>
+                            <constraint firstItem="aL2-m3-34Q" firstAttribute="top" secondItem="6xH-nn-zqs" secondAttribute="bottom" constant="14" id="DMb-wb-UAe"/>
+                            <constraint firstItem="g4Y-1m-ZZc" firstAttribute="top" secondItem="aL2-m3-34Q" secondAttribute="bottom" constant="50" id="HC3-Sf-V7s"/>
+                            <constraint firstItem="c6F-Xx-lTE" firstAttribute="top" secondItem="UyY-Ur-tvX" secondAttribute="bottom" id="OlU-aG-id4"/>
+                            <constraint firstItem="Yzd-jM-jCa" firstAttribute="top" secondItem="sxb-q1-wAQ" secondAttribute="bottom" constant="7.5" id="U7D-NB-UvE"/>
+                            <constraint firstItem="sxb-q1-wAQ" firstAttribute="leading" secondItem="aby-NU-reA" secondAttribute="leadingMargin" id="Xfw-CP-kun"/>
+                            <constraint firstItem="6xH-nn-zqs" firstAttribute="centerX" secondItem="aby-NU-reA" secondAttribute="centerX" id="cOL-q9-9F4"/>
+                            <constraint firstItem="aL2-m3-34Q" firstAttribute="leading" secondItem="aby-NU-reA" secondAttribute="leadingMargin" id="d0H-lb-2Jn"/>
+                            <constraint firstItem="sxb-q1-wAQ" firstAttribute="top" secondItem="c6F-Xx-lTE" secondAttribute="bottom" constant="1" id="fwh-xO-zuV"/>
+                            <constraint firstItem="aL2-m3-34Q" firstAttribute="centerX" secondItem="aby-NU-reA" secondAttribute="centerX" id="nBk-tU-eHG"/>
+                            <constraint firstItem="c6F-Xx-lTE" firstAttribute="leading" secondItem="aby-NU-reA" secondAttribute="leading" constant="-4" id="rxc-dX-4vs"/>
+                            <constraint firstItem="aL2-m3-34Q" firstAttribute="top" secondItem="11e-S9-snU" secondAttribute="bottom" constant="16" id="uIX-CD-KgZ"/>
+                            <constraint firstItem="sxb-q1-wAQ" firstAttribute="trailing" secondItem="aby-NU-reA" secondAttribute="trailingMargin" id="y7Z-hv-fcu"/>
+                            <constraint firstItem="Yzd-jM-jCa" firstAttribute="centerX" secondItem="aby-NU-reA" secondAttribute="centerX" id="yrO-Ie-1bi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="选择设备热点" id="IgT-SM-av6"/>
+                    <connections>
+                        <outlet property="btnAutoJump" destination="ve9-RC-NlX" id="Olj-T0-oDk"/>
+                        <outlet property="btnHelp" destination="Yzd-jM-jCa" id="Gpy-Yx-jBK"/>
+                        <outlet property="connectToSoftApBtn" destination="aL2-m3-34Q" id="w9m-O6-QYz"/>
+                        <outlet property="currentSSID" destination="6xH-nn-zqs" id="vQ2-as-dOh"/>
+                        <outlet property="imgSoftapTips" destination="c6F-Xx-lTE" id="Kc3-Ee-bkh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="muw-Mg-eoR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="16"/>
+        </scene>
+        <!--设备状态确认-->
+        <scene sceneID="JRf-Au-LSM">
+            <objects>
+                <viewController id="GmJ-Ah-DNs" customClass="GosConfigSoftAPConfirm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S35-cs-xd5"/>
+                        <viewControllerLayoutGuide type="bottom" id="WIl-gX-MXi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lav-J9-nhC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLy-NN-C2b">
+                                <rect key="frame" x="16" y="141" width="288" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mmm-jX-V16"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="请将智能设备调试至">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="待连接状态">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94164999999999999" green="0.45241999999999999" blue="0.18845000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="。   ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzI-4E-153">
+                                <rect key="frame" x="16" y="479" width="288" height="39"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.86274509799999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="POp-tP-CEO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="我已完成上述操作">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="rXk-7N-mme" kind="show" id="6Bb-lq-oWU"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="config_softap_tips.png" translatesAutoresizingMaskIntoConstraints="NO" id="9iP-OE-VSA">
+                                <rect key="frame" x="22" y="242" width="276" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="69M-Gr-4O7"/>
+                                    <constraint firstAttribute="width" constant="276" id="sRR-wc-BZI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通电后按图示操作" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSH-7v-QFc">
+                                <rect key="frame" x="20.5" y="94" width="280" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="AxJ-Kh-z7S"/>
+                                    <constraint firstAttribute="width" constant="280" id="O8G-jf-txB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgu-h4-djM">
+                                <rect key="frame" x="22" y="91" width="276" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hFl-PX-mXx"/>
+                                    <constraint firstAttribute="width" constant="276" id="o1W-Gi-r56"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="onHiddenClick:" destination="GmJ-Ah-DNs" eventType="touchUpInside" id="LXt-FJ-v9O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYR-Ac-gU7">
+                                <rect key="frame" x="22" y="189" width="276" height="276"/>
+                                <connections>
+                                    <action selector="onHidden2Click:" destination="GmJ-Ah-DNs" eventType="touchUpInside" id="fbq-sT-f2E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="bYR-Ac-gU7" secondAttribute="trailing" constant="6" id="0Jj-qP-sJb"/>
+                            <constraint firstItem="mzI-4E-153" firstAttribute="leading" secondItem="lav-J9-nhC" secondAttribute="leadingMargin" id="0ej-t4-a84"/>
+                            <constraint firstItem="cLy-NN-C2b" firstAttribute="leading" secondItem="lav-J9-nhC" secondAttribute="leadingMargin" id="4MN-Vc-Y5w"/>
+                            <constraint firstItem="bYR-Ac-gU7" firstAttribute="leading" secondItem="lav-J9-nhC" secondAttribute="leadingMargin" constant="6" id="CqM-F1-qoa"/>
+                            <constraint firstItem="CSH-7v-QFc" firstAttribute="top" secondItem="S35-cs-xd5" secondAttribute="bottom" constant="30" id="Db6-9E-ghq"/>
+                            <constraint firstItem="mzI-4E-153" firstAttribute="trailing" secondItem="lav-J9-nhC" secondAttribute="trailingMargin" id="Mde-FM-Hba"/>
+                            <constraint firstItem="mzI-4E-153" firstAttribute="top" secondItem="bYR-Ac-gU7" secondAttribute="bottom" constant="14" id="R1b-Z2-J6q"/>
+                            <constraint firstItem="cLy-NN-C2b" firstAttribute="top" secondItem="CSH-7v-QFc" secondAttribute="bottom" constant="20" id="XbS-Er-ddp"/>
+                            <constraint firstItem="9iP-OE-VSA" firstAttribute="centerX" secondItem="lav-J9-nhC" secondAttribute="centerX" id="Xma-RA-BeP"/>
+                            <constraint firstItem="lgu-h4-djM" firstAttribute="top" secondItem="S35-cs-xd5" secondAttribute="bottom" constant="27" id="eai-bV-hFD"/>
+                            <constraint firstItem="WIl-gX-MXi" firstAttribute="top" secondItem="mzI-4E-153" secondAttribute="bottom" constant="50" id="iGL-q5-syE"/>
+                            <constraint firstItem="lgu-h4-djM" firstAttribute="centerX" secondItem="lav-J9-nhC" secondAttribute="centerX" id="oOH-Dn-c3O"/>
+                            <constraint firstItem="CSH-7v-QFc" firstAttribute="centerX" secondItem="lav-J9-nhC" secondAttribute="centerX" id="uxE-b7-jeM"/>
+                            <constraint firstItem="bYR-Ac-gU7" firstAttribute="top" secondItem="cLy-NN-C2b" secondAttribute="bottom" constant="8" id="xWc-vJ-ZBl"/>
+                            <constraint firstItem="cLy-NN-C2b" firstAttribute="trailing" secondItem="lav-J9-nhC" secondAttribute="trailingMargin" id="xjA-J6-6Bx"/>
+                            <constraint firstItem="9iP-OE-VSA" firstAttribute="top" secondItem="cLy-NN-C2b" secondAttribute="bottom" constant="61" id="zm5-6R-9Mx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="设备状态确认" id="vY8-hd-suo"/>
+                    <connections>
+                        <outlet property="confirmBtn" destination="mzI-4E-153" id="Tat-aB-iNa"/>
+                        <outlet property="imageView" destination="9iP-OE-VSA" id="x9t-xT-XPm"/>
+                        <outlet property="titleLabel" destination="CSH-7v-QFc" id="FYa-S9-jQF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8OV-7O-SBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.25" y="15.845070422535212"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="config_notice_icon.png" width="12" height="12"/>
+        <image name="config_softap_tips.png" width="5" height="5"/>
+    </resources>
+</document>

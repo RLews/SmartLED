@@ -1,0 +1,760 @@
+/*
+ Gos.strings
+ GOpenSourceAppKit
+ 
+ Created by GeHaitong on 16/6/2.
+ Copyright © 2016年 Gizwits. All rights reserved.
+ */
+
+"GIZ_SDK_PARAM_FORM_INVALID" = "SDK内部通讯数据格式无效";
+"GIZ_SDK_CLIENT_NOT_AUTHEN" = "SDK未启动";
+"GIZ_SDK_CLIENT_VERSION_INVALID" = "无效的SDK版本号";
+"GIZ_SDK_UDP_PORT_BIND_FAILED" = "UDP端口绑定失败";
+"GIZ_SDK_DAEMON_EXCEPTION" = "SDK后台服务发生异常";
+"GIZ_SDK_PARAM_INVALID" = "接口参数无效";
+"GIZ_SDK_APPID_LENGTH_ERROR" = "AppID长度错误";
+"GIZ_SDK_LOG_PATH_INVALID" = "SDK日志路径无效";
+"GIZ_SDK_LOG_LEVEL_INVALID" = "日志级别无效";
+"GIZ_SDK_DEVICE_CONFIG_SEND_FAILED" = "设备配网信息发送失败";
+"GIZ_SDK_DEVICE_CONFIG_IS_RUNNING" = "设备配网正在执行";
+"GIZ_SDK_DEVICE_CONFIG_TIMEOUT" = "设备配网超时";
+"GIZ_SDK_DEVICE_DID_INVALID" = "设备DID无效";
+"GIZ_SDK_DEVICE_MAC_INVALID" = "设备MAC无效";
+"GIZ_SDK_SUBDEVICE_DID_INVALID" = "子设备DID无效";
+"GIZ_SDK_DEVICE_PASSCODE_INVALID" = "设备验证码无效";
+"GIZ_SDK_DEVICE_NOT_SUBSCRIBED" = "设备还未订阅";
+"GIZ_SDK_DEVICE_NO_RESPONSE" = "设备无响应";
+"GIZ_SDK_DEVICE_NOT_READY" = "设备还未就绪";
+"GIZ_SDK_DEVICE_NOT_BINDED" = "设备还未绑定";
+"GIZ_SDK_DEVICE_CONTROL_WITH_INVALID_COMMAND" = "设备操作指令中包含无效指令";
+"GIZ_SDK_DEVICE_CONTROL_FAILED" = "设备操作失败";
+"GIZ_SDK_DEVICE_GET_STATUS_FAILED" = "设备状态获取失败";
+"GIZ_SDK_DEVICE_CONTROL_VALUE_TYPE_ERROR" = "设备操作指令参数类型错误";
+"GIZ_SDK_DEVICE_CONTROL_VALUE_OUT_OF_RANGE" = "设备操作指令参数值不在有效范围内";
+"GIZ_SDK_DEVICE_CONTROL_NOT_WRITABLE_COMMAND" = "设备操作指令中包含不可写指令";
+"GIZ_SDK_BIND_DEVICE_FAILED" = "设备绑定失败";
+"GIZ_SDK_UNBIND_DEVICE_FAILED" = "设备解绑失败";
+"GIZ_OPENAPI_ONLY_OWNER_CAN_BIND" = "只有主账号才能绑定设备";
+
+"GIZ_SDK_DNS_FAILED" = "DNS解析失败";
+"GIZ_SDK_M2M_CONNECTION_SUCCESS" = "M2M服务器连接成功";
+"GIZ_SDK_SET_SOCKET_NON_BLOCK_FAILED" = "socket非阻塞设置失败";
+"GIZ_SDK_CONNECTION_TIMEOUT" = "连接超时";
+"GIZ_SDK_CONNECTION_REFUSED" = "连接被拒绝";
+"GIZ_SDK_CONNECTION_ERROR" = "发生了连接错误";
+"GIZ_SDK_CONNECTION_CLOSED" = "连接被对端关闭";
+"GIZ_SDK_SSL_HANDSHAKE_FAILED" = "ssl握手失败";
+"GIZ_SDK_DEVICE_LOGIN_VERIFY_FAILED" = "设备登录验证失败";
+"GIZ_SDK_INTERNET_NOT_REACHABLE" = "手机外网无法访问";
+"GIZ_SDK_JSON_OBJECT_CREATE_FAILED" = "Json对象创建失败";
+"GIZ_SDK_JSON_PARSE_FAILED" = "Json解析失败";
+"GIZ_SDK_WS_HANDSHAKE_FAILED" = "websocket握手失败";
+"GIZ_SDK_WS_LOGIN_FAILED" = "websocket登录失败";
+"GIZ_SDK_WS_DEVICE_SUBSCRIBE_FAILED" = "websocket设备订阅失败";
+"GIZ_SDK_WS_DEVICE_UNSUBSCRIBE_FAILED" = "websocket设备解除订阅失败";
+
+"GIZ_SDK_HTTP_SERVER_NOT_SUPPORT_API" = "云服务不支持此API";
+"GIZ_SDK_HTTP_ANSWER_FORMAT_ERROR" = "HTTP应答格式错误";
+"GIZ_SDK_HTTP_ANSWER_PARAM_ERROR" = "HTTP应答参数错误";
+"GIZ_SDK_HTTP_SERVER_NO_ANSWER" = "HTTP服务端无应答";
+"GIZ_SDK_HTTP_REQUEST_FAILED" = "HTTP请求失败";
+
+"GIZ_SDK_OTHERWISE" = "其他错误";
+"GIZ_SDK_MEMORY_MALLOC_FAILED" = "内存分配失败";
+"GIZ_SDK_THREAD_CREATE_FAILED" = "线程创建失败";
+
+"GIZ_SDK_USER_ID_INVALID" = "登录用户ID无效";
+"GIZ_SDK_TOKEN_INVALID" = "登录token无效";
+"GIZ_SDK_GROUP_ID_INVALID" = "设备分组的组ID无效";
+"GIZ_SDK_GROUPNAME_INVALID" = "设备分组的组名称无效";
+"GIZ_SDK_GROUP_PRODUCTKEY_INVALID" = "设备分组的组类型无效";
+"GIZ_SDK_GROUP_FAILED_DELETE_DEVICE" = "设备分组删除失败";
+"GIZ_SDK_GROUP_FAILED_ADD_DEVICE" = "设备分组添加失败";
+"GIZ_SDK_GROUP_GET_DEVICE_FAILED" = "设备分组获取失败";
+
+"GIZ_SDK_DATAPOINT_NOT_DOWNLOAD" = "设备数据点配置文件还未下载";
+"GIZ_SDK_DATAPOINT_SERVICE_UNAVAILABLE" = "设备数据点配置服务不可用";
+"GIZ_SDK_DATAPOINT_PARSE_FAILED" = "设备数据点解析失败";
+
+"GIZ_SDK_SDK_NOT_INITIALIZED" = "SDK还未初始化";
+"GIZ_SDK_APK_CONTEXT_IS_NULL" = "Android context为空，无法启动SDK";
+"GIZ_SDK_APK_PERMISSION_NOT_SET" = "使用SDK所需要的Android权限还没有设置";
+"GIZ_SDK_CHMOD_DAEMON_REFUSED" = "SDK后台服务进程的执行权限修改失败";
+"GIZ_SDK_EXEC_DAEMON_FAILED" = "SDK后台服务进程启动失败";
+"GIZ_SDK_EXEC_CATCH_EXCEPTION" = "SDK后台服务进程启动发生异常";
+"GIZ_SDK_APPID_IS_EMPTY" = "AppID为空，无法使用SDK";
+"GIZ_SDK_UNSUPPORTED_API" = "此API已废弃，不再提供支持";
+"GIZ_SDK_REQUEST_TIMEOUT" = "执行超时";
+"GIZ_SDK_DAEMON_VERSION_INVALID" = "SDK后台服务版本无效";
+"GIZ_SDK_PHONE_NOT_CONNECT_TO_SOFTAP_SSID" = "手机没有连接设备热点";
+"GIZ_SDK_DEVICE_CONFIG_SSID_NOT_MATCHED" = "手机当前Wifi与设备配网SSID不匹配，无法完成设备配网";
+"GIZ_SDK_NOT_IN_SOFTAPMODE" = "设备没有在softap配网模式下";
+"GIZ_SDK_PHONE_WIFI_IS_UNAVAILABLE" = "手机当前不是Wifi网络";
+"GIZ_SDK_RAW_DATA_TRANSMIT" = "当前为原始数据透传方式";
+"GIZ_SDK_PRODUCT_IS_DOWNLOADING" = "正在下载设备数据点配置文件";
+"GIZ_SDK_START_SUCCESS" = "SDK启动成功";
+"GIZ_SDK_UID_INVALID" = "uid参数无效";
+"GIZ_SDK_USER_NOT_LOGIN" = "用户未登录";
+"GIZ_SDK_APPID_INVALID" = "AppID无效";
+"GIZ_SDK_APP_SECRET_INVALID" = "App Secret无效";
+"GIZ_SDK_PRODUCT_KEY_INVALID" = "产品类型识别码无效";
+"GIZ_SDK_PRODUCT_SECRET_INVALID" = "产品秘钥无效";
+"GIZ_SDK_DEVICE_NOT_IN_LAN" = "设备不在局域网";
+"GIZ_SDK_PRODUCTKEY_NOT_IN_SPECIAL_LIST" = "设备不在指定的产品类型识别码中";
+"GIZ_SDK_PRODUCTKEY_NOT_RELATED_WITH_APPID" = "设备的产品类型识别码跟当前AppID未关联";
+"GIZ_SDK_AES_ENCRYPT_FAILED" = "数据AES加密失败";
+"GIZ_SDK_AES_DECRYPT_FAILED" = "数据AES解密失败";
+"GIZ_SDK_JSON_UNFORMAT_FAILED" = "Json去格式化失败";
+"GIZ_SDK_JSON_DUPLICATE_FAILED" = "Json拷贝失败";
+"GIZ_SDK_DEVICE_GATWEWAY_UNKNOWN" = "无法识别设备的组网网关";
+"GIZ_SDK_DEVICE_MESHID_INVALID" = "设备的组网mesh id无效";
+"GIZ_SDK_DEVICE_PRODUCTKEY_DIFFERENT" = "设备产品类型不同，无法同时安全解绑";
+"GIZ_SDK_NEED_UPDATE_TO_LATEST" = "SDK需要升级到最新版本";
+"GIZ_SDK_ONBOARDING_STOPPED" = "设备配网被中断";
+"GIZ_SDK_ONBOARDING_WIFI_IS_5G" = "当前配网路由是5G";
+"GIZ_SDK_OTA_DEVICE_NOT_SUPPORT" = "设备不支持手机OTA升级";
+
+
+"GIZ_SITE_PRODUCTKEY_INVALID" = "产品类型标识码无效";
+"GIZ_SITE_DATAPOINTS_NOT_DEFINED" = "产品数据点未定义";
+"GIZ_SITE_DATAPOINTS_NOT_MALFORME" = "产品数据点无效";
+
+
+"GIZ_OPENAPI_MAC_ALREADY_REGISTERED" = "设备MAC已经注册";
+"GIZ_OPENAPI_PRODUCT_KEY_INVALID" = "产品类型标识码无效";
+"GIZ_OPENAPI_APPID_INVALID" = "AppID无效";
+"GIZ_OPENAPI_TOKEN_INVALID" = "用户token无效";
+"GIZ_OPENAPI_USER_NOT_EXIST" = "用户不存在";
+"GIZ_OPENAPI_TOKEN_EXPIRED" = "用户token已过期";
+"GIZ_OPENAPI_M2M_ID_INVALID" = "M2M ID无效";
+"GIZ_OPENAPI_SERVER_ERROR" = "服务发生错误";
+"GIZ_OPENAPI_CODE_EXPIRED" = "验证码已过期";
+"GIZ_OPENAPI_CODE_INVALID" = "验证码无效";
+"GIZ_OPENAPI_SANDBOX_SCALE_QUOTA_EXHAUSTED" = "沙盒配额已耗尽";
+"GIZ_OPENAPI_PRODUCTION_SCALE_QUOTA_EXHAUSTED" = "产品配额已耗尽";
+"GIZ_OPENAPI_PRODUCT_HAS_NO_REQUEST_SCALE" = "";
+"GIZ_OPENAPI_DEVICE_NOT_FOUND" = "找不到对应的设备";
+"GIZ_OPENAPI_FORM_INVALID" = "请求数据格式无效";
+"GIZ_OPENAPI_DID_PASSCODE_INVALID" = "设备的DID或验证码无效";
+"GIZ_OPENAPI_DEVICE_NOT_BOUND" = "设备未绑定";
+"GIZ_OPENAPI_PHONE_UNAVALIABLE" = "手机号已注册";
+"GIZ_OPENAPI_USERNAME_UNAVALIABLE" = "用户名已注册";
+"GIZ_OPENAPI_USERNAME_PASSWORD_ERROR" = "用户名或密码错误";
+"GIZ_OPENAPI_SEND_COMMAND_FAILED" = "指令发送失败";
+"GIZ_OPENAPI_EMAIL_UNAVALIABLE" = "邮箱已注册";
+"GIZ_OPENAPI_DEVICE_DISABLED" = "设备已注销";
+"GIZ_OPENAPI_FAILED_NOTIFY_M2M" = "M2M通知失败";
+"GIZ_OPENAPI_ATTR_INVALID" = "属性无效";
+"GIZ_OPENAPI_USER_INVALID" = "用户名无效";
+"GIZ_OPENAPI_FIRMWARE_NOT_FOUND" = "找不到设备固件";
+"GIZ_OPENAPI_JD_PRODUCT_NOT_FOUND" = "找不到京东产品信息";
+"GIZ_OPENAPI_DATAPOINT_DATA_NOT_FOUND" = "找不到对应的设备数据点数据";
+"GIZ_OPENAPI_SCHEDULER_NOT_FOUND" = "找不到计划任务";
+"GIZ_OPENAPI_QQ_OAUTH_KEY_INVALID" = "QQ登录授权key无效";
+"GIZ_OPENAPI_OTA_SERVICE_OK_BUT_IN_IDLE" = "OTA升级服务闲置或被禁用";
+"GIZ_OPENAPI_BT_FIRMWARE_UNVERIFIED" = "BT固件未验证";
+"GIZ_OPENAPI_BT_FIRMWARE_NOTHING_TO_UPGRADE" = "BT固件不需要升级";
+"GIZ_OPENAPI_SAVE_KAIROSDB_ERROR" = "kairosdb存储错误";
+"GIZ_OPENAPI_EVENT_NOT_DEFINED" = "事件未定义";
+"GIZ_OPENAPI_SEND_SMS_FAILED" = "手机短信发送失败";
+"GIZ_OPENAPI_APPLICATION_AUTH_INVALID" = "应用授权无效";
+"GIZ_OPENAPI_NOT_ALLOWED_CALL_API" = "不允许使用已废弃的API";
+"GIZ_OPENAPI_BAD_QRCODE_CONTENT" = "QRCode内容已损坏";
+"GIZ_OPENAPI_REQUEST_THROTTLED" = "请求队列已满";
+"GIZ_OPENAPI_DEVICE_OFFLINE" = "设备已离线";
+"GIZ_OPENAPI_TIMESTAMP_INVALID" = "时间戳无效";
+"GIZ_OPENAPI_SIGNATURE_INVALID" = "应用签名无效";
+"GIZ_OPENAPI_DEPRECATED_API" = "API已废弃";
+"GIZ_OPENAPI_RESERVED" = "保留的错误字";
+"GIZ_OPENAPI_APPID_PK_NOT_RELATION" = "App ID与产品没有关联";
+"GIZ_OPENAPI_CALL_INNER_FAILED" = "api内部调用错误";
+"GIZ_OPENAPI_DEVICE_SHARING_NOT_ENABLED" = "此设备品类没有开启分享功能，无法分享";
+"GIZ_OPENAPI_NOT_FIRST_USER_OF_DEVICE" = "您不是最先绑定设备的用户，无法分享";
+"GIZ_OPENAPI_PRODUCT_KEY_AUTHEN_FAULT" = "App关联产品标识时签名校验错误";
+"GIZ_OPENAPI_BUSY_NOW" = "用户操作太频繁，请稍后再试";
+"GIZ_OPENAPI_TWITTER_CONSUMER_KEY_INVALID" = "推特账号无效";
+"GIZ_OPENAPI_CODE_NOT_EXIST" = "激活码不存在";
+"GIZ_OPENAPI_EMAIL_NOT_ACTIVE" = "邮箱没激活";
+"GIZ_OPENAPI_EMAIL_NOT_ENABLE" = "邮箱无法使用";
+"GIZ_OPENAPI_DEVICE_REGISTER_NOT_FOUND" = "没有找到设备注册信息";
+"GIZ_OPENAPI_GUEST_NOT_BIND" = "Guest账号没有绑定设备";
+"GIZ_OPENAPI_CANNOT_TRANSFER_OWNER_TO_SELF" = "不能把owner身份转移给owner自己";
+"GIZ_OPENAPI_TRANSFER_OWNER_TO_LIMIT_GUEST" = "不能把owner身份转移给已超期的guest用户";
+
+
+
+
+"GIZ_PUSHAPI_BODY_JSON_INVALID" = "数据体无效";
+"GIZ_PUSHAPI_DATA_NOT_EXIST" = "数据不存在";
+"GIZ_PUSHAPI_NO_CLIENT_CONFIG" = "客户端没有配置推送ID";
+"GIZ_PUSHAPI_NO_SERVER_DATA" = "没有服务端数据";
+"GIZ_PUSHAPI_GIZWITS_APPID_EXIST" = "机智云AppID已经存在";
+"GIZ_PUSHAPI_PARAM_ERROR" = "参数错误";
+"GIZ_PUSHAPI_AUTH_KEY_INVALID" = "授权无效";
+"GIZ_PUSHAPI_APPID_OR_TOKEN_ERROR" = "AppID或用户token错误";
+"GIZ_PUSHAPI_TYPE_PARAM_ERROR" = "参数类型错误";
+"GIZ_PUSHAPI_ID_PARAM_ERROR" = "ID参数错误";
+"GIZ_PUSHAPI_APPKEY_SECRETKEY_INVALID" = "APIKey或者SecretKey无效";
+"GIZ_PUSHAPI_CHANNELID_ERROR_INVALID" = "Channel ID 错误";
+"GIZ_PUSHAPI_PUSH_ERROR" = "推送错误";
+
+"GIZ_OPENAPI_ALTER_PASSWORD_FAILED" = "修改密码失败";
+"GIZ_OPENAPI_NOT_ALLOW_WEEK_PASSWORD" = "禁止使用弱密码";
+
+"UNKNOWN_ERROR" = "未知错误";
+
+"tip" = "提示";
+"Please enter username" = "请输入登录账号";
+"Please enter password" = "请输入密码";
+"please input cellphone" = "请输入手机号";
+"please input email" = "请输入邮箱";
+"OK" = "确定";
+"Login failed" = "登录失败";
+"Login failed, please login again" = "登录失败，请重新登录";
+"Login successful" = "登录成功";
+"the phone number is incorrect" = "手机号码不正确";
+"Cancel" = "取消";
+"Get verification code" = "获取验证码";
+"Next" = "下一步";
+"Reset Password" = "重置密码";
+
+"User name sign up" = "用户名注册";
+"Phone sign up" = "手机号注册";
+"Email sign up" = "邮箱注册";
+"User name" = "请输入用户名";
+"Get code" = "获取验证码";
+"Verification code" = "请输入验证码";
+"Password(at least 6 characters)" = "请输入密码(最少6位)";
+"New password(at least 6 characters)" = "请设置新密码(最少6位)";
+"Password(at least 6 characters)" = "请输入密码(最少6位)";
+"Password again(at least 6 characters)" = "请再次确认密码(最少6位)";
+"Email" = "请输入邮箱";
+"Username is not phone number" = "手机号格式错误";
+"Username is not email" = "邮箱格式错误";
+"SMS Code is error" = "短信验证码错误";
+"Password is at least 6 characters" = "密码不能少于6位";
+"Password confirm failed" = "密码确认失败";
+
+"Phone verification code sent successfully" = "验证码发送成功";
+"Phone verification code sent failure" = "验证码发送失败";
+"Registration success" = "注册成功";
+"Registration failed" = "注册失败";
+"Try again" = "秒后重试";
+
+"Get by phone" = "手机号找回";
+"Get by email" = "邮箱找回";
+"New password(at least 6 characters)" = "请设置新密码(最少6位)";
+"Reset password" = "重置密码";
+"Password failed to reset, please try again" = "密码重置失败，请重试";
+"Reset success" = "密码重置成功";
+
+"Go to Setting" = "去设置";
+
+"Scan QR code" = "扫码绑定设备";
+"Add Device" = "添加设备";
+"Add" = "添加";
+
+"User Account" = "用户账号";
+"Edit password" = "修改密码";
+"Now saving, please wait..." = "正在保存，请稍候";
+
+"Enter current password" = "请输入原密码";
+"Enter new password" = "请设置新密码";
+"Re-enter new password" = "请再次确认密码";
+"Password does not match the confirm password" = "新密码和确认密码不相同";
+"Password change successful" = "修改密码成功";
+"Old password invalid" = "原密码输入有误";
+"Password change failed" = "密码修改失败";
+
+"Please login first, then share device" = "请登录后，再进行设备共享";
+
+"Logout" = "注销";
+"Login" = "登录";
+"Logout?" = "确定要退出账号？";
+"Login Cancel" = "登录取消";
+
+"Bound Devices" = "已绑定设备";
+"Discovery of New Devices" = "发现新设备";
+"Online Devices" = "在线设备";
+"Offline Devices" = "离线设备";
+"No Devices" = "没有设备";
+"Lan" = "局域网";
+"Remote" = "远程";
+"unbound" = "未绑定";
+"Please switch to Wifi environment" = "请切换至Wi-Fi环境";
+"Add Device Failure" = "添加设备失败";
+"Unbinding fail" = "解除绑定失败";
+"Camera access denyed" = "相机权限受限";
+"Allow camera prepend" = "请在iPhone的\"设置->隐私->相机\"选项中,允许";
+"Allow camera access" = "访问您的相机";
+
+"Unknown QR Code" = "未识别的二维码";
+
+"About" = "关于";
+"Program Version" = "程序版本";
+"SDK Version" = "SDK版本";
+
+"Correctly select the module type to help the device configuration succeed. You could refer to the help in the module type selection" = "正确选择模组类型，可提高设备配置成功率。您可点击帮助，查看模组类型选择提示。";
+"Please select the type of module" = "请选择您的设备模组类型";
+"No open Wi-Fi" = "没有打开无线网络";
+"Device is not connected to Wi-Fi, can not configure" = "设备没有连接到Wi-Fi，无法配置";
+"Searching for devices" = "正在搜索设备...";
+"Searched to device" = "已搜索到设备";
+"Trying to connect with the device" = "正在尝试与设备连接...";
+"Configuration timeout, switch to softap mode" = "配置超时，自动切换到热点模式";
+"Configuration timeout" = "配置超时";
+"Search for and connect the device" = "搜索并连接设备";
+"It is expected to need" = "预计还需";
+"seconds" = "秒";
+"Connect successfully, click to return App" = "连接成功，点击返回App";
+"Manually click \"Settings\" icon on your desktop, then select \"Wi-Fi\"" = "请手动点击桌面的 '设置' 图标，然后选择 '无线局域网'。";
+"Configuration is busy, please try another after a moment" = "执行配置的操作过于频繁，请稍后再试";
+"Configuration successfully" = "配置成功";
+
+"Password is empty?" = "确定密码为空吗？";
+"Discard your configuration?" = "确定放弃配置吗？";
+"Device try to connect, discard your configuration?" = "设备正在努力配置中，您确定放弃吗？";
+
+"Put the QR Code into the frame" = "将二维码放入框内，即可自动扫描";
+"Scanning code, binding device" = "扫一扫，轻松绑定设备";
+
+"Module type selection" = "模组类型选择";
+"Select the type of module" = "选择模组类型";
+"ESP" = "乐鑫";
+"HF" = "汉枫";
+"MXCHIP" = "庆科";
+"MXCHIP3" = "庆科V3";
+"RTK" = "瑞昱";
+"WM" = "联盛徳";
+"QCA" = "高通";
+"TI" = "TI";
+"BL" = "古北";
+"Atmel" = "AtmelEE";
+"FSK" = "宇音天下";
+"Other" = "其他";
+"FlyLink" = "FlyLink";
+
+"current connect" = "当前连接：";
+
+"get device status" = "获取设备状态";
+"get device hardware info" = "获取硬件信息";
+"set device info" = "设置设备信息";
+
+"set alias and remark" = "设置别名及备注";
+"input alias" = "请输入别名";
+"input remark" = "请输入备注";
+"set successful" = "设置成功";
+"set failed" = "设置失败";
+"connection dropped" = "连接已断开";
+
+"Only enterprise developers can apply this feature which is not supported by the current version." = "推送功能仅限于企业开发者使用，目前版本暂不支持推送";
+"haven't WeChat Application" = "未检测到微信，请安装后重试";
+
+"Release to refresh" = "松开刷新";
+"Pull down to refresh" = "下拉刷新";
+"Loading" = "正在获取";
+
+"Airlink Config" = "一键配置";
+"Softap Config" = "热点配置";
+
+"Messages" = "消息中心";
+"Personal Center" = "个人中心";
+
+"Sharing" = "共享设备";
+"Device Sharing" = "设备共享";
+"Device Sharing Info" = "设备共享信息";
+"No message" = "没有消息";
+
+"Add Sharing" = "添加共享";
+"Edit Remark" = "修改备注名";
+
+"Sharing Timeout" = "超时失败";
+"Waiting" = "等待接受";
+"Accepted" = "已接受";
+"Refused" = "已拒绝";
+"Cancelled" = "已取消";
+
+"User account can not be empty" = "用户账号不能为空";
+
+"Normal User" = "普通用户";
+"Phone User" = "手机用户";
+"Email User" = "邮箱用户";
+"Other User" = "其他用户";
+
+"Edit" = "编辑";
+
+"Not Sharing" = "未共享";
+"No share devices" = "暂无设备可共享";
+"No guest users" = "还没有小伙伴给您共享设备";
+"No share devices" = "暂无设备可共享";
+"No guest users" = "还没有小伙伴给您共享设备";
+
+"Cancel Sharing" = "取消共享";
+
+"Your request is failed" = "请求失败";
+
+"Send successfully" = "发送成功";
+"Send failed" = "发送失败";
+
+"Scan QRCode to bind" = "扫码绑定设备";
+
+"Sorry unable to get sharing info. Please check your internet connection" = "很抱歉，由于网络原因无法获取邀请信息";
+"Sorry unable to get sharing info. Please check your QR code" = "很抱歉，无法获取到邀请信息，可能二维码信息有误";
+"Tips: The device sharing have been expired" = "提示：本次设备共享邀请已过期";
+
+"QR code has been expired" = "二维码已经失效";
+"Sorry unable sharing device, please check your internet connection" = "对不起，由于网络原因无法发出共享邀请";
+"Failed to sharing device" = "共享邀请失败";
+
+"Account input is incorrect" = "账号输入有误";
+"Account has been shared" = "该账号已被分享";
+"can not share device to self!" = "不能把设备分享给自己";
+"User not exist" = "此用户不存在";
+"Sharing Again" = "重新共享";
+"Delete" = "删除";
+"If you are not logged in or logged on to a third party, you can only use the QR code to share the device" = "未登录或第三方登录用户只能使用设备二维码绑定分享设备";
+
+"Rename the sharing alias" = "编辑共享备注名";
+
+"sharing_device_info_format" = "共享%@，与小伙伴一起使用。";
+"sharing_to_format" = "%@已分享给:";
+"sharing_bind_users_format" = "%@已绑用户:";
+"no_sharing_format" = "%@还未共享给任何小伙伴使用";
+
+"Cancel failed" = "取消共享失败";
+"Successfully modified" = "修改成功";
+"Failure modified" = "修改失败";
+"cancel_sharing_format" = "确定删除%@的使用权限吗？";
+
+"qrcode_sharing_format" = "%@向你共享%@，你接受并绑定设备吗？";
+"qrcode_sharing_tip_format" = "提示：本次设备共享邀请于%@分钟后失效";
+"qrcode_sharing_status_format" = "二维码将于%@分钟后失效";
+"invited_content_format" = "%@向您共享设备";
+
+"Module Type Choose Tips" = "模组类型选择技巧";
+"Please enter the Wi-Fi password" = "请输入Wi-Fi密码";
+
+"My Devices title" = "我的设备";
+"My Devices" = "常用设备";
+"Please add a device!" = "暂无设备，请添加";
+
+"Get device status" = "获取设备状态";
+"Get device hardware info" = "获取硬件信息";
+"Device alerts: " = "设备报警：";
+"Device faults: " = "设备错误：";
+"Set device info" = "设置设备信息";
+"Alias" = "别名";
+"Remark" = "备注";
+"Get device hardware info" = "获取硬件信息";
+"Failed to get device status, error code: " = "获取设备状态失败，错误码：";
+"Failed to get hardware info" = "获取硬件信息失败";
+"Hardware information" = "设备硬件信息";
+"Confirm" = "确定";
+"Failed to set alias" = "设置别名失败";
+"Success to set alias" = "设置别名成功";
+
+"QQ Login" = "QQ登录";
+"Wechat Login" = "微信登录";
+
+"Scan QRCode" = "扫码";
+"HAO" = "好";
+
+"Power on, then refer to the tips" = "通电后按以下提示操作";
+
+//独立部署设置
+"Tip" = "提示";
+"Stand-alone deployment" = "独立部署设置";
+"DEPLOYMENT BY REGION" = "通用区域部署";
+"CUSTOM DEPLOYMENT" = "自定义区域部署";
+"APPLICATION INFO" = "应用信息";
+"PRODUCTION INFO" = "产品信息";
+"Deployment Help" = "独立部署帮助";
+
+"Production deployment" = "生产环境";
+
+"Custom deployment setting" = "自定义区域部署设置";
+"API domain" = "API域名";
+"API domain(required)" = "API域名（必填）";
+"Site domain" = "Site域名";
+"Enter App ID with 32 characters long" = "请输入32位的App ID";
+"Enter App Secret with 32 characters long" = "请输入32位的App Secret";
+"Confirm" = "确认";
+"ADD" = "添加";
+"Production info setting" = "产品信息设置";
+"Deployment by region" = "通用区域部署";
+"Saved" = "已设置";
+"No Set" = "未设置";
+
+"The edited content will not be saved if leave the current page." = "若离开当前页面，已编辑内容将不被保存。";
+"Please enter the valid App ID and App Secret." = "请输入有效的App ID和App Secret。";
+"Please check the info below. Click OK button to switch the deployment:" = "请您核对以下信息，确认后切换环境部署：";
+"Enter Product Key with 32 characters long" = "请输入32位的Product Key";
+"Enter Product Secret with 32 characters long" = "请输入32位的Product Secret";
+"Exit the deployment settings?" = "确定退出设置吗？";
+"SwitchExitMessage" = "若确认，目前正在修改的内容将不被保存。";
+"SwitchServiceMessageFormat" = "第%@组产品信息有误，请修改";
+
+//
+"Feedback" = "意见反馈";
+"Wi-Fi Module Mall" = "模组商城";
+
+"feedback_success" = "反馈提交成功";
+"feedback_contact_empty" = "联系方式为空";
+"feedback_contact_empty_msg" = "填写常用联系方式，可以方便工作人员与您取得联系";
+"feedback_content_empty" = "反馈内容为空";
+"feedback_content_empty_msg" = "填写反馈内容，可以方便工作人员快速帮您解决问题";
+"feedback_fill_in" = "去填写";
+"feedback_continue" = "继续提交";
+
+"Please enter custom domain." = "请输入自定义域名。";
+"devices_connected_format" = "已连接%zi个设备";
+
+//设备控制及设置
+"Set Device Name" = "编辑设备名称";
+"Device Info" = "设备信息";
+"Check for firmware updates" = "检查固件升级";
+"Set Device Scene" = "管理智能场景";
+"Delayed Off" = "延时关机";
+"Device Scheduler" = "定时任务";
+"Set Scheduler" = "设置定时";
+"Delete the device?" = "确定删除该设备吗？";
+"Device removed failed" = "移除设备失败";
+"If sure to delete, settings will not be saved." = "若删除该设备，已设置操作将不被保存。";
+"Device ID" = "设备ID";
+"Device IP" = "设备IP";
+"Device MAC" = "设备MAC";
+"Wi-Fi hardware Version" = "Wi-Fi硬件版本号";
+"Wi-Fi software Version" = "Wi-Fi软件版本号";
+"MCU hardware Version" = "MCU硬件版本号";
+"MCU software Version" = "MCU软件版本号";
+"Firmware ID" = "固件ID";
+"Firmware Version" = "固件版本号";
+"Waiting for device ready..." = "等待设备就绪";
+"Settings" = "设置";
+"Device Data transmission" = "数据透传";
+
+//高通定制
+"Scan To Pay" = "扫码支付";
+"QR code format is invalid" = "二维码格式无效";
+"Payment is successful" = "扫码支付成功";
+"Payment is failed" = "扫码支付失败";
+"The current network is not available. Please check your network settings" = "当前网络不可用，请检查你的网络设置";
+
+//透传
+"Send Data" = "发送数据";
+"Receive Data" = "接收数据";
+"There are some invalid characters" = "输入内容包含了无效字符";
+
+//定时任务
+"Delayed off is failed" = "延时关机设置失败";
+"Scheduler Task" = "定时任务";
+"Turn On" = "开机";
+"Turn Off" = "关机";
+"Once Time" = "仅一次";
+"Weekend" = "周末";
+"Working Day" = "工作日";
+"Haven't scheduler now, please add" = "暂无定时任务，请添加";
+"Add Scheduler" = "添加定时";
+"Not Setting" = "未设置";
+"Custom" = "自定义";
+"Frequency" = "频率";
+"By Week" = "按每周";
+"By Month" = "按每月";
+"Exit the scheduler setting?" = "确定退出定时任务设置吗？";
+"TaskExitMessage" = "若确认，目前正在编辑的任务将不被保存。";
+"Delete the scheduler?" = "确定删除该定时任务吗？";
+"If delete, the setting will not be saved." = "若删除，已设置操作将不被保存。";
+"Mon" = "周一";
+"Tue" = "周二";
+"Wed" = "周三";
+"Thu" = "周四";
+"Fri" = "周五";
+"Sat" = "周六";
+"Sun" = "周日";
+"Please choose day(s)" = "请选择重复日期";
+"Every Monday" = "每周一";
+"Every Tuesday" = "每周二";
+"Every Wednsday" = "每周三";
+"Every Thursday" = "每周四";
+"Every Friday" = "每周五";
+"Every Saturday" = "每周六";
+"Every Sunday" = "每周日";
+"Everyday" = "每天";
+"Please choose repeat type" = "请选择任务重复类型";
+"Scheduler deleted successfully" = "定时任务删除成功";
+"Scheduler delete is failed" = "定时任务删除失败";
+"Scheduler setting is failed" = "定时任务设置失败";
+"Scheduler setting is successful" = "定时任务已设置成功";
+"H" = "时";
+"M" = "分";
+
+//多个页面共用
+"Can not load control command" = "无法加载操作项";
+
+//中控
+"Device" = "设备";
+"Device Internet" = "设备互联";
+"Device Group" = "分组";
+"Device Scene" = "智能场景";
+"Add delay time" = "添加延时时间";
+"Back home" = "回家";
+"Leave home" = "离家";
+"Wake up" = "起床";
+"Sleep" = "睡眠";
+"Device List" = "设备列表";
+"No device" = "没有设备";
+"Device is disconnected" = "设备已断开";
+"Device Online" = "设备在线";
+"Device Offline" = "设备离线";
+"Would you like to do new scene?" = "确定执行新场景任务吗？";
+"If doing new scene, the current one will be stopped." = "若确认，目前正在执行场景将被停止。";
+"Would you like to edit the scene?" = "需要编辑该智能场景吗？";
+"Please edit the scene first" = "该场景尚未编辑，编辑后才能触发";
+"Add Sub Device" = "添加子设备";
+"Add Scene" = "添加场景";
+"Remove" = "移除";
+"Now is removing device, please waiting ..." = "正在移除子设备，请稍候";
+"subdevice_added_counter_format" = "已成功添加%zi个子设备，\n若继续添加，请不要退出该界面。";
+"Do you sure to stop adding?" = "确定退出添加状态吗？";
+"If stop adding, gateway will stop discovering and adding" = "若退出，将停止搜索和添加子设备";
+"No group device, add it please" = "暂无群组设备，请添加";
+"Add group" = "添加分组";
+"Choose Group Type" = "选择分组类别";
+"No group type to choose, please add device first" = "暂无法选择分组类别，请先添加设备";
+"Choose Device" = "选择设备";
+"Create group name" = "创建群组名称";
+"Edit group name" = "编辑群组名称";
+"Edit group device" = "管理群组设备";
+"Group Setting" = "群组设置";
+"Delete group?" = "确定删除该群组吗？";
+"If delete, the setting will be not saved." = "若删除该群组，已设置操作将不被保存。";
+"No device to choose, please add first" = "暂无可选择设备，请先添加";
+"Please enter group name" = "请输入群组名称";
+"No device scene, please add first" = "暂无场景，请添加";
+"Please enter scene name" = "请输入场景名称";
+"Delete the device scene?" = "确定删除该智能场景吗？";
+"If delete, the setting will be not saved." = "若删除，已设置操作将不被保存。";
+"Set the scene action" = "设置场景执行动作";
+"Add scene action" = "添加动作";
+"Add scene delay" = "添加延时";
+"TURN_ON" = "开";
+"TURN_OFF" = "关";
+"Turn on and switch to color mode" = "开启并切换色彩";
+"Turn on and switch to color temprature mode" = "开启并切换色温";
+"Exit the scene setting?" = "确定退出场景设置吗？";
+"SceneExitMessage" = "若确认，目前正在编辑的场景将不被保存。";
+"If exit, the setting being edited will not be saved." = "若确认，目前正在编辑的场景将不被保存。";
+"Adjust the order of scenes?" = "确定编辑智能场景顺序吗？";
+"If sure, the scenes will display by new order." = "编辑后，智能场景将按照新的顺序排列。";
+"Scene setting is successful" = "场景设置成功";
+"No device/group to choose, please add it" = "暂无可选择设备/群组，请添加";
+"Choose device/group" = "选择设备／群组";
+"Group List" = "群组列表";
+"Please choose one action at least" = "请至少选择一个动作";
+"Scene setting is failed" = "场景设置失败";
+"Action saving is failed" = "动作保存失败";
+"Scene name saving is failed" = "场景名称保存失败";
+"Scene name is repeat, please rename" = "场景名称重复了，请重新命名";
+"Repeat" = "重复";
+"Scene Setting" = "场景设置";
+"scene_delay_s_format" = "%i秒后";
+"scene_delay_m_format" = "%i分钟后";
+"scene_delay_m_s_format" = "%i分%i秒后";
+"If the device removed, the related scheduler will be delete, and some exception will be happened. Please notice the following related tasks:" = "若移除设备会导致已关联的定时任务被删除，同时其它关联任务不能正常执行。该设备已被关联以下任务：";
+"Related scheduler is not delete, please try again" = "还有已关联任务未删除，请再试一次";
+"The device has no related task." = "该设备暂无已关联任务。";
+"Device Scene:" = "智能场景：";
+"Device Group:" = "群组列表：";
+"Deleting device group, please waiting..." = "正在删除分组，请稍候";
+"Group setting failed" = "修改失败";
+"Scene executed failed" = "场景执行失败";
+"Sub Device added successfully" = "添加子设备成功";
+"Now is deleting device, please waiting ..." = "正在删除设备，请稍候";
+"Add device group failed" = "添加分组失败";
+"Group control failed" = "分组操作失败";
+"Stop running the scene please, then edit it" = "请先取消场景执行再编辑";
+"Stop running the scene please, then delete it" = "请先取消场景执行再删除";
+"Scene deleting is failed" = "场景删除失败";
+
+//OTA
+"Checking for updates..." = "正在检查更新，请稍候";
+"Check for firmware updates failed, do you want to re-check it?" = "检查固件更新失败，您需要重新检查升级版本吗？";
+"Module firmware" = "模组固件";
+"MCU firmware" = "MCU固件";
+"Current version is up to date." = "当前为最新版本";
+"New version" = "检测到新版本";
+"No version info" = "未检测到版本信息";
+"Are you sure the MCU firmware is updated to the latest version?" = "将MCU固件升级为最新版本吗？";
+"Are you sure the module firmware is updated to the latest version?" = "将模组固件升级为最新版本吗？";
+"Warning:" = "风险提示：";
+"1. Make sure that the device is always powered on during the updates, and that power failure may cause the module to become unusable." = "1、请确保升级期间设备始终保持上电状态，若断电可能会导致模组不可用。";
+"2. firmware updates files for the manufacturers to provide, if the updates can not be used, please contact the product manufacturers to solve." = "2、固件升级文件为厂家提供，升级后若无法正常使用，请联系产品厂家解决。";
+"3. Before the update is completed, the phone does not lock screen and exit App." = "3、升级期间手机不要锁屏和退出App，以确保设备能正常完成升级。";
+"Module firmware update" = "模组固件升级";
+"MCU firmware update" = "MCU固件升级";
+"During updating, make sure your device remains powered on and keep the APP online." = "设备固件升级过程中，请确保您的设备保持上电状态，并保持APP在线。";
+"The device will automatically restart later, please make sure it remains powered on and keep the APP online." = "设备稍候将自动重启，请确保您的设备保持上电状态，并保持APP在线。";
+"Download MCU firmware is complete" = "下载MCU固件完成";
+"Download Module firmware is complete" = "下载模组固件完成";
+"Push the MCU firmware to the device is done" = "向设备推送MCU固件完成";
+"Push the Module firmware to the device is done" = "向设备推送模组固件完成";
+"Device update finished" = "设备升级完成";
+"Downloading firmware MCU" = "正在下载MCU固件";
+"Downloading firmware Module" = "正在下载模组固件";
+"Push the MCU firmware to the device" = "向设备推送MCU固件";
+"Push the Module firmware to the device" = "向设备推送模组固件";
+"The MCU firmware is being pushed to the device" = "正在向设备推送MCU固件";
+"The Module firmware is being pushed to the device" = "正在向设备推送模组固件";
+"Device update" = "设备升级";
+"Device updating" = "设备升级中";
+"Device update finished" = "设备升级完成";
+"Done" = "完成";
+"The device is restarting, pleases waiting..." = "设备正在重启，请稍候";
+"Device update is successful, the current module firmware is up to date." = "设备升级成功，目前模组固件已为最新版本。";
+"Device update is successful, the current MCU firmware is up to date." = "设备升级成功，目前MCU固件已为最新版本。";
+"Got it" = "知道了";
+"Download MCU firmware failed, do you want to re-check it?" = "下载MCU固件失败，您需要重试固件升级吗？";
+"Download Module firmware failed, do you want to re-check it?" = "下载模组固件失败，您需要重试固件升级吗？";
+"Push the MCU firmware to the device failed, do you want to re-check it?" = "向设备推送MCU固件失败，您需要重试固件升级吗？";
+"Push the Module firmware to the device failed, do you want to re-check it?" = "向设备推送模组固件失败，您需要重试固件升级吗？";
+"Verificate MCU firmware is failed, do you want to re-check it?" = "设备校验MCU固件失败，您需要重试固件升级吗？";
+"Verificate Module firmware is failed, do you want to re-check it?" = "设备校验模组固件失败，您需要重试固件升级吗？";
+"Device update failed, do you want to re-check MCU update?" = "设备升级失败，您需要重试MCU固件升级吗？";
+"Device update failed, do you want to re-check Module update?" = "设备升级失败，您需要重试模组固件升级吗？";
+"The firmware version is too low so that the device can not be updated, do you want to re-check the it?" = "固件版本过低，设备无法升级，您需要重新检测升级吗？";
+"Are you sure you want to exit during the firmware update?" = "固件正在升级中，确定退出吗？";
+"Warning: If you exit during the update, it may cause the module to be unusable." = "风险提示：若升级期间退出，可能会导致模组不可用。";
+"Save" = "保存";
+"Exit" = "退出";
+"Retry" = "重试";
+
+//子设备
+"Please enter product secret to bind device" = "请输入产品密钥绑定设备";
+"Please enter 32 length of the Product Secret" = "请输入32位的Product Secret";
+"The product secret is incorrect，please try again" = "产品密钥有误，请重新输入";
+
+//中能
+"PLC Smart" = "PLC智控";
+"Oilling Report" = "加油报表";
+"Video Monitor" = "视频监控";
+"Oil Tank No." = "油  罐  号";
+"Gas Conc." = "气体浓度";
+"Oil Tempr." = "油        温";
+"Oil Height" = "油        高";
+"Weight(L)" = "计重（升）";
+"U.Pump" = "卸油泵";
+"D.Valve" = "出油阀";
+"Oilling" = "加油机";
+"Opened" = "开启状态";
+"Closed" = "关闭状态";
+"Risk Tips" = "风险提示";
+"The control command will change the device status. Send the control command?" = "控制设备会改变设备的运行状态，确认发送控制指令吗？";
+"Super Administrator" = "超级管理员";
+"Administrator" = "管理员";
+"User" = "用户";
+"Security Lock" = "一键锁定";
+"Account" = "账号";
+"The device is locked, please contact super administrator" = "当前设备已被锁定，请联系超级管理员解锁";
+"The device is locked, please unlock first" = "当前设备已被锁定，请先解锁";
+"The function is about to online, please waiting" = "此功能即将上线，敬请期待";
+
